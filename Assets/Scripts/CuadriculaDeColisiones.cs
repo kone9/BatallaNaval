@@ -12,5 +12,15 @@ public class CuadriculaDeColisiones : MonoBehaviour
     private void OnMouseEnter() {
         _Gamehandler.SetGrilla(this.gameObject);
     }
+    // // private void OnTriggerEnter(Collider other) {
+    // //     // if(other.transform.tag == "boat")
+    // //     // {
+    // //     //     this.gameObject.SetActive(false);
+    // //     // }
+    // //     if(other.transform.tag == "bordeDebarco" && other.transform.tag == "boat")
+    // //     {
+    // //         this.gameObject.SetActive(false);
+    // //     }
+    // // }
     
 }

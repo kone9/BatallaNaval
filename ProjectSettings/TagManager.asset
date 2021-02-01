@@ -9,6 +9,7 @@ TagManager:
   - barcosGrilla
   - fondoTablero
   - barcoJugadorColisiones
+  - bordeDebarco
   layers:
   - Default
   - TransparentFX
