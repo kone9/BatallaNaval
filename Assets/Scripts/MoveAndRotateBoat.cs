@@ -12,13 +12,13 @@ public class MoveAndRotateBoat : MonoBehaviour
 
     GameHandlerAcomodarPIezas _GameHandlerAcomodarPIezas;
 
-    BoxCollider _BoxCollider;
+    BoxCollider[] _BoxCollider;
 
     bool puedoMover = false;
 
     private void Awake() {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
-        _BoxCollider = this.gameObject.GetComponent<BoxCollider>();
+        _BoxCollider = this.gameObject.GetComponents<BoxCollider>();
     }
 
     // Start is called before the first frame update
@@ -29,30 +29,16 @@ public class MoveAndRotateBoat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if(_BoxCollider.enabled == false)
-        // {
-        //     if(Input.GetMouseButtonUp(0))
-        //     {
-        //         _BoxCollider.enabled = true;
-        //         // puedoMover = false;
-        //         print("tendria que aparecer el colider");
-        //     }
-        // }
-        if(puedoMover)
+        if(puedoMover)//si puedo mover el barco llamo a las funciones para mover tengo que presionar las teclas para que se mueva
         {
-            // print("tendria que moverse");
+            print("tendria que moverse");
             moverBarcosPorCuadricula();
 
             if(Input.GetMouseButtonDown(1))
             {
-            RotateBoat();
+                RotateBoat();
             }
-            if(Input.GetMouseButtonUp(0) && puedoMover)
-            {
-                puedoMover = false;
-                _BoxCollider.enabled = true;
-                print("Ahora tendria que dejar de moverse");
-            }
+            StartCoroutine("DejarDeMover");//para dejar de mover y evitar que las teclas se superpongan con una corrutina
         }
 
     }
@@ -62,7 +48,10 @@ public class MoveAndRotateBoat : MonoBehaviour
     {
          if(Input.GetMouseButtonUp(0))
             {
-                _BoxCollider.enabled = true;
+                foreach (Collider i in _BoxCollider)
+                {
+                    i.enabled = true;
+                }
                 puedoMover = false;
                 print("tendria que aparecer el colider y dejar de moverse");
             }
@@ -73,8 +62,10 @@ public class MoveAndRotateBoat : MonoBehaviour
             if(Input.GetMouseButton(0))
             {
                 moverBarcosPorCuadricula();
-                _BoxCollider.enabled = false;
-
+                foreach (Collider i in _BoxCollider)
+                {
+                    i.enabled = false;
+                }
                 if(Input.GetMouseButtonDown(1))
                 {
                 RotateBoat();
@@ -86,65 +77,49 @@ public class MoveAndRotateBoat : MonoBehaviour
 
 
     private void OnMouseOver()
+    {  
+        Mover();
+    }
+
+
+    private void Mover()
     {
-        
         if(Input.GetMouseButtonDown(0) && !puedoMover)
         {
             puedoMover = true;
-            _BoxCollider.enabled = false;
-            print("estoy adentro del barco y puedo mover");
+            foreach (Collider i in _BoxCollider)
+            {
+                i.enabled = false;
+            }
         }
-        
     }
 
-    //Para mover las piezas con el mouse
-    // private void OnMouseOver()
-    // {
-    //     // MoverBarcoConMouse();
-       
-    //     if(Input.GetMouseButtonDown(0))
-    //     {
-    //         puedoMover = true;
-    //         print("estoy adentro del barco y puedo mover");
-    //     }
-    //     // if(puedoMover)
-    //     // {
-    //     //     print("tendria que moverse");
-    //     //     moverBarcosPorCuadricula();
-    //     //     _BoxCollider.enabled = false;
 
+    IEnumerator DejarDeMover()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
+    {
+        yield return new WaitForSeconds(1.0f);
+        if(Input.GetMouseButtonDown(0) && puedoMover == true)
+            {
+                puedoMover = false;
+                foreach (Collider i in _BoxCollider)
+                {
+                    i.enabled = true;
+                }
+                print("Ahora tendria que dejar de moverse");
+            }
+    }
 
-    //     //     if(Input.GetMouseButtonDown(1))
-    //     //     {
-    //     //     RotateBoat();
-    //     //     }
-    //     // }
-        
-    // }
+    
 
     private void OnTriggerEnter(Collider other) {
         
         if(other.transform.tag == "boat")
         {
-            // print("entro el barco dentro de otro barco");
+            print("entro el barco dentro de otro barco");
+            
         }
     }
 
-    // private void OnTriggerStay(Collider other)
-    // {
-    //     if(other.transform.tag == "boat")
-    //     {
-    //         gameObject.GetComponent<Material>().color = new Color(0.5f,1,1,1);
-    //         // moverBarcosPorCuadricula();
-    //         // _BoxCollider.enabled = false;
-
-
-    //         // if(Input.GetMouseButtonDown(1))
-    //         // {
-    //         // RotateBoat();
-    //         // }
-    //     }
-    // }
 
 
     /// <summary>Rota 90 grados el barco</summary>

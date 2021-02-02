@@ -627,8 +627,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08096449, y: 0.21284989, z: 0.05125111}
-  m_Center: {x: -0.024377992, y: -0.09107398, z: 0.018114904}
+  m_Size: {x: 0.03, y: 0.175, z: 0.05125111}
+  m_Center: {x: -0.045, y: -0.115, z: 0.018114904}
 --- !u!1 &492765047
 GameObject:
   m_ObjectHideFlags: 0
@@ -11411,6 +11411,7 @@ GameObject:
   - component: {fileID: 1711813855570685444}
   - component: {fileID: 474182276}
   - component: {fileID: 474182277}
+  - component: {fileID: 919132149495254994}
   - component: {fileID: 474182275}
   m_Layer: 8
   m_Name: portaAviones
@@ -11419,6 +11420,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &919132149495254994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149495254993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.175, z: 0.05125111}
+  m_Center: {x: 0, y: -0.068, z: 0.018114904}
 --- !u!23 &946695712238001958
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18074,9 +18088,10 @@ GameObject:
   - component: {fileID: 3775431755800756855}
   - component: {fileID: 3775431755800756854}
   - component: {fileID: 3775431755800756853}
-  m_Layer: 0
+  - component: {fileID: 3775431755800756856}
+  m_Layer: 8
   m_Name: submarino
-  m_TagString: Untagged
+  m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18108,8 +18123,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.072630875, y: 0.11875834, z: 0.017726704}
-  m_Center: {x: 0.027198775, y: -0.049195684, z: 0.0030645402}
+  m_Size: {x: 0.03, y: 0.11875834, z: 0.017726704}
+  m_Center: {x: 0, y: -0.049195684, z: 0.0030645402}
 --- !u!114 &3775431755800756855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18122,6 +18137,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a21e132c27916499b55dc11bf8c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3775431755800756856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3775431755800756852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.017726704}
+  m_Center: {x: 0.045, y: -0.049195684, z: 0.0030645402}
 --- !u!33 &3804381948730504446
 MeshFilter:
   m_ObjectHideFlags: 0
