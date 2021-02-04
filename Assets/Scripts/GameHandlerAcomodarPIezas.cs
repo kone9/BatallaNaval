@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using Photon.Pun;
+using Photon.Realtime;
+
 public class GameHandlerAcomodarPIezas : MonoBehaviour
 {
     DatosGlobales _DatosGlobales;
     GameObject[] barcos;
 
     GameObject Grilla;
+
+    bool playerListo = false;
+
+    bool enemigoListo = false;
     
     public string NombreGameObjectGrilla;
     public Vector3 posicionGrilla;
@@ -80,4 +87,29 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
         return Grilla;
     }
 
+    /// <summary>Para saber si el player esta listo para jugar, se usa en MULTIPLAYER ONLINE</summary>
+    [PunRPC]
+    public bool GetPlayerListo()
+    {
+        return playerListo;
+    }
+
+    /// <summary>Para hacer que el player este listo o no este listo para jugar, se usa en MULTIPLAYER ONLINE y es un BOOLEANO</summary>
+    public void SetPlayerListo(bool isPlayerListo)
+    {
+        playerListo = isPlayerListo;        
+    }
+
+    /// <summary>Para saber si el player esta listo para jugar, se usa en MULTIPLAYER ONLINE y es un BOOLEANO</summary>
+    [PunRPC]
+    public bool GetEnemigoListo()
+    {
+        return enemigoListo;
+    }
+
+    /// <summary>Para hacer que el player este listo o no este listo para jugar, se usa en MULTIPLAYER ONLINE</summary>
+    public void SetEnemigoListo(bool isEnemigoListo)
+    {
+        enemigoListo = isEnemigoListo;
+    }
 }

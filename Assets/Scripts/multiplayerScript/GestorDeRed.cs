@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //importante para usar photon.
 using Photon.Pun;
 using Photon.Realtime;
 
-public class GestorDeRed : MonoBehaviourPunCallbacks
+public class GestorDeRed : MonoBehaviourPunCallbacks 
 {
-    
+    public Text info;
+
     public static GestorDeRed instanciaRed;//para isntanciar la red PHOTON y conectarme al servidor
 
     private void Awake()
@@ -37,23 +39,34 @@ public class GestorDeRed : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.JoinLobby();
         print("Felicidades estoy conectado al servidor maestro");
+        info.text = "Felicidades estoy conectado\n al servidor maestro";
     }
 
     //al unirse al servidor crea un cuarto
     public override void OnJoinedLobby()
     {
         base.OnJoinedLobby();
-        PhotonNetwork.CreateRoom("Cuarta", new RoomOptions{MaxPlayers = 4}, TypedLobby.Default );
+        PhotonNetwork.JoinOrCreateRoom("Cuarta", new RoomOptions{MaxPlayers = 4}, TypedLobby.Default );
     }
 
+    public override void OnCreatedRoom()
+    {
+        print("cuarto creado");
+        info.text = "cuarto creado";
+    }
+
+    
     public override void OnJoinedRoom()//cuando nos unamos al cuerto podemos instanciar jugadores o hacer cualquier cosa con los GameObjects
     {
-        
+        print("Este jugador se unido al cuerto");
+        info.text = "Este jugador se unio al cuerto";
+
+        //desde aqui puedo isntanciar cosas al iniciar el nivel usar la carpeta resources de photon
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

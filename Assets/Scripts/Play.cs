@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class Play : MonoBehaviour
 {
     GameHandlerAcomodarPIezas _GameHandlerAcomodarPIezas;
@@ -26,9 +27,10 @@ public class Play : MonoBehaviour
     /// <param>@None </param>
     public void CambiarDeEscena()//Script para cambiar a la escena principal
     {
-        SceneManager.LoadScene("JugarContraEnemigo");
+        
+        SceneManager.LoadScene("JugarContraEnemigoEnRed");
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
-        _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
+        _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();  
     }
 
     /// <summary>Vuelve a la escena de Inicio</summary>
@@ -36,4 +38,7 @@ public class Play : MonoBehaviour
     {
         SceneManager.LoadScene("AcomodarPiezas");
     }
+
+    
+
 }
