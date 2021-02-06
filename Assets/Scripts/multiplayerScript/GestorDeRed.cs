@@ -62,6 +62,8 @@ public class GestorDeRed : MonoBehaviourPunCallbacks
         info.text = "Este jugador se unio al cuerto";
 
         //desde aqui puedo isntanciar cosas al iniciar el nivel usar la carpeta resources de photon
+        Vector3 posicion = new Vector3(0,4,0);
+        PhotonNetwork.Instantiate("Personaje",posicion,Quaternion.identity,0);
     }
 
 

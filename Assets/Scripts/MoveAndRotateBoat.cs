@@ -12,10 +12,6 @@ public class MoveAndRotateBoat : MonoBehaviourPun
 
     GameHandlerAcomodarPIezas _GameHandlerAcomodarPIezas;
 
-    BoxCollider[] _BoxCollider;
-
-    
-
     private void Awake() {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
        

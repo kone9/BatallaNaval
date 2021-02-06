@@ -10,6 +10,8 @@ TagManager:
   - fondoTablero
   - barcoJugadorColisiones
   - bordeDebarco
+  - Bullet
+  - Proyectil
   layers:
   - Default
   - TransparentFX

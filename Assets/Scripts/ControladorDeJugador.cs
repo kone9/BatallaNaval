@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using Photon.Pun;
-using Photon.Realtime;
 
-public class ControladorDeJugador : MonoBehaviourPunCallbacks
+
+public class ControladorDeJugador : MonoBehaviour
 {
     
 
     MoveAndRotateBoat _MoveAndRotateBoat;
     BoxCollider[] _BoxCollider;
+
+
 
     bool puedoMover = false;
 
@@ -18,22 +19,11 @@ public class ControladorDeJugador : MonoBehaviourPunCallbacks
     {
         _MoveAndRotateBoat = GetComponent<MoveAndRotateBoat>();
         _BoxCollider = this.gameObject.GetComponents<BoxCollider>();
+
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-        //DestruirSinoSoyYoEnRed();
-    }
 
-    /// <summary>Evita que el player mueva las naves de otro jugador en red</summary>
-    void DestruirSinoSoyYoEnRed()
-    {
-        if(!photonView.IsMine)//sino soy yo
-        {
-            Destroy(this);
-        }
-    }
 
     // Update is called once per frame
     void Update()
