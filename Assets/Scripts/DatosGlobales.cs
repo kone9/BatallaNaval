@@ -14,6 +14,7 @@ public class DatosGlobales : MonoBehaviour
 
     private void Awake() 
     {
+        
     }
 
     // Start is called before the first frame update
@@ -81,7 +82,7 @@ public class DatosGlobales : MonoBehaviour
         return rotaciones;
     }
 
-
+    
 
 
 }

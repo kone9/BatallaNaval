@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 using Photon.Pun;
-using Photon.Realtime;
-using Photon.Utilities;
 
 
 public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
@@ -13,11 +11,13 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     GameHandlerAcomodarPIezas _GameHandlerAcomodarPIezas;
     public GameObject pantallaEsperaRival;
     private PhotonView photonMostrar;
+    private DatosGlobalesRed _DatosGlobalesRed;
 
     private void Awake() 
     {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
         photonMostrar = GetComponent<PhotonView>();
+        _DatosGlobalesRed = FindObjectOfType<DatosGlobalesRed>();
     }
 
     // Start is called before the first frame update
@@ -33,7 +33,7 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     // Update is called once per frame
     void Update()
     {
-        if(_GameHandlerAcomodarPIezas.GetPlayerListo() && _GameHandlerAcomodarPIezas.GetEnemigoListo())//si el player esta listo y si el enemigo esta
+        if(_DatosGlobalesRed.GetPlayerListoRed() && _DatosGlobalesRed.GetEnemyListoRed())//si el player esta listo y si el enemigo esta
             {
                 print("cambia al Nivel de juego");
                 SceneManager.LoadScene("JugarContraEnemigoEnRed");    
@@ -44,23 +44,23 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     /// <summary>Al presionar el boton verifico si soy yo o si es el otro jugador</summary>
     public void PreparadoParaIniciarEnRed()
     {
-        // if(photonMostrar.IsMine)//si soy yo el que presione el boton
-        // {
         pantallaEsperaRival.SetActive(true);
-        _GameHandlerAcomodarPIezas.SetPlayerListo(true);
+
+        // _DatosGlobalesRed.SetRivalListoRed(true);
+        // _DatosGlobalesRed.SettPlayerAndEnemyListoRed();
+        photonView.RPC("EmpezarNivel",RpcTarget.All);
+
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
-        // }
-
-        // if(!photonMostrar.IsMine)//sino soy yo el que presione el boton
-        // {
-        //      pantallaEsperaRival.SetActive(true);
-        //     // _GameHandlerAcomodarPIezas.SetPlayerListo(true);
-        //     _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
-        //     _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
-        //     _GameHandlerAcomodarPIezas.SetEnemigoListo(true);
-        // }
     }
+
+
+    [PunRPC]
+    public void EmpezarNivel()
+    {
+        _DatosGlobalesRed.SettPlayerAndEnemyListoRed();
+    }
+
 
     //para sincronizar variables entre jugadores esto es util para la vida entre otras cosas
     void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
