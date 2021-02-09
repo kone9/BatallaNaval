@@ -20,6 +20,7 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
 
     public Toggle ListoJugadorRedToglle;
     public Toggle ListoEnemigoRedToglle;
+    public int tiempoAntesDeCambiarEscena = 5;
    
 
     [SerializeField]
@@ -44,12 +45,11 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     // Start is called before the first frame update
     void Start()
     {
-        listoEnemigoRed = false;
         listoPlayerRed = false;
+        listoEnemigoRed = false;
         ListoJugadorRedToglle.isOn = listoPlayerRed;
         ListoEnemigoRedToglle.isOn = listoEnemigoRed;
-        StartCoroutine("SoyjugadorOenemigo");
-        
+        StartCoroutine("SoyjugadorOenemigo");  
     }
 
 
@@ -70,9 +70,14 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     {
         if(listoPlayerRed && listoEnemigoRed)//si el player esta listo y si el enemigo esta
             {
-                print("cambia al Nivel de juego");
-                SceneManager.LoadScene("JugarContraEnemigoEnRed");    
+                Invoke("CambiarDeEscena",tiempoAntesDeCambiarEscena);
             }    
+    }
+
+    void CambiarDeEscena()
+    {
+        print("cambia al Nivel de juego");
+        SceneManager.LoadScene("JugarContraEnemigoEnRed");    
     }
 
 
@@ -84,6 +89,7 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         // _DatosGlobalesRed.SetRivalListoRed(true);
         // _DatosGlobalesRed.SettPlayerAndEnemyListoRed();
         photonView.RPC("EmpezarNivel",RpcTarget.All);
+        
         // EmpezarNivel();
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
@@ -91,20 +97,23 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
 
 
 
+
     [PunRPC]
+    //se ejecuta en los 2 en simultaneo por lo tanto no funciona como corresponde
+    //porque cuando uno es verdadero el otro se ejecuta tambien como verdadero
     public void EmpezarNivel()
     {
-        if(_DatosGlobalesRed.SoyJugador == true)
-        {
+        if(_DatosGlobalesRed.SoyJugador)//si soy jugador "YO"
+        { 
             listoPlayerRed = true;
-            SoyEnemigo = false;
+         
             ListoJugadorRedToglle.isOn = listoPlayerRed;
             ListoEnemigoRedToglle.isOn = listoEnemigoRed;
         }
-        if(_DatosGlobalesRed.SoyEnemigo == true)
+        if(_DatosGlobalesRed.SoyEnemigo)//si soy enemigo " NO YO "
         {
             listoEnemigoRed = true;
-            SoyJugador = false;
+
             ListoJugadorRedToglle.isOn = listoPlayerRed;
             ListoEnemigoRedToglle.isOn = listoEnemigoRed;
         }

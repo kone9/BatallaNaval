@@ -1001,6 +1001,7 @@ GameObject:
   - component: {fileID: 647676027}
   - component: {fileID: 647676031}
   - component: {fileID: 647676030}
+  - component: {fileID: 647676032}
   m_Layer: 5
   m_Name: ButtonPlay
   m_TagString: Untagged
@@ -1134,7 +1135,7 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  observableSearch: 0
+  observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
@@ -1159,10 +1160,25 @@ MonoBehaviour:
   soyEnemigoToggle: {fileID: 596191980}
   ListoJugadorRedToglle: {fileID: 1477077482}
   ListoEnemigoRedToglle: {fileID: 1882404269}
+  tiempoAntesDeCambiarEscena: 5
   SoyJugador: 0
   SoyEnemigo: 0
   listoPlayerRed: 0
   listoEnemigoRed: 0
+--- !u!114 &647676032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647676025}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a26bf6341c9e54b95331c908a605f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codigos:
+  - {fileID: 647676031}
 --- !u!1 &649738796
 GameObject:
   m_ObjectHideFlags: 0
