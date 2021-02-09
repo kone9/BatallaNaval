@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 using Photon.Pun;
 using Photon.Realtime;
@@ -15,8 +16,10 @@ public class DatosGlobalesRed : MonoBehaviourPunCallbacks,IPunObservable
 
     public Vector3[] posicionesBarcoRivalRed = new Vector3[5];
 
-    public bool listoEnemigoRed = false;
-    public bool listoPlayerRed = false;
+    public bool SoyJugador = false;
+    public bool SoyEnemigo = false;
+
+    public Text informacion;
 
     private void Awake()
     {
@@ -28,6 +31,7 @@ public class DatosGlobalesRed : MonoBehaviourPunCallbacks,IPunObservable
     // Start is called before the first frame update
     void Start()
     {
+
         if (DatosGlobalesRed.instanciaGlobalScript == null)
         {
             DatosGlobalesRed.instanciaGlobalScript =  this;
@@ -36,7 +40,25 @@ public class DatosGlobalesRed : MonoBehaviourPunCallbacks,IPunObservable
         else
         {
             Destroy(this.gameObject);//este GameObject nunca se destruye
-            
+        }
+
+        Invoke("soyJugadorOenemigo",5);
+    }
+
+
+    void soyJugadorOenemigo()
+    {
+        if(photonView.IsMine)
+        {
+            SoyJugador = true;
+            SoyEnemigo = false;
+            informacion.text = "SoyJugador: " + SoyJugador;
+        }
+        if(!photonView.IsMine)//sino soy yo
+        {
+            SoyEnemigo = true;
+            SoyJugador = false;
+            informacion.text = "SoyEnemigo: " + SoyEnemigo;
         }
     }
 
@@ -60,54 +82,53 @@ public class DatosGlobalesRed : MonoBehaviourPunCallbacks,IPunObservable
     }
 
 
-    public bool GetEnemyListoRed()
-    {
-        bool listo = false;
-        // if(!photonView.IsMine)//sino soy yo
-        // {
-        listo = listoEnemigoRed ;
-        // }
-        return listo;
-    }
+    // public bool GetEnemyListoRed()
+    // {
+    //     bool listo = false;
+    //     // if(!photonView.IsMine)//sino soy yo
+    //     // {
+    //     listo = listoEnemigoRed ;
+    //     // }
+    //     return listo;
+    // }
 
-    public bool GetPlayerListoRed()
-    {
-        bool listo = false;
-        listo = listoPlayerRed;
-        return listo;
-    }
+    // public bool GetPlayerListoRed()
+    // {
+    //     bool listo = false;
+    //     listo = listoPlayerRed;
+    //     return listo;
+    // }
 
-    [PunRPC]
-    public void SetEnemyListoRed(bool listo)
-    {
-        if(!photonView.IsMine)
-        {
-            listoEnemigoRed = listo;
-        }
-    }
+
+    // public void SetEnemyListoRed(bool listo)
+    // {
+    //     listoEnemigoRed = listo;
+    //     informacion.text = "soy el enemigo";
+    // }
 
     
-    public void SettPlayerListoRed(bool listo)
-    {
-        listoPlayerRed = listo;
-    }
+    // public void SettPlayerListoRed(bool listo)
+    // {
+    //     listoPlayerRed = listo;
+    //     informacion.text = "soy el player";
+    // }
 
     
-    public void SettPlayerAndEnemyListoRed()
-    {
+    // public void SettPlayerAndEnemyListoRed()
+    // {
         
-        // if(!photonView.IsMine)//si soy yo
-        // {
-            print("soy yo tendria que activar yo");
-            listoPlayerRed = true;//si soy yo
-        // }
+    //     if(photonView.IsMine)//si soy yo
+    //     {
+    //         print("soy yo tendria que activar yo");
+    //         listoPlayerRed = true;//si soy yo
+    //     }
 
-        // if(photonView.IsMine)//sino soy yo
-        // {
-            //print("no soy yo se tendria que activar el enemigo");
-            listoEnemigoRed = true;
-        // }
-    }
+    //     if(!photonView.IsMine)//sino soy yo
+    //     {
+    //         //print("no soy yo se tendria que activar el enemigo");
+    //         listoEnemigoRed = true;
+    //     }
+    // }
 
 
 
@@ -116,14 +137,16 @@ public class DatosGlobalesRed : MonoBehaviourPunCallbacks,IPunObservable
          if(stream.IsWriting)//si estoy escribiendo datos...Siempre soy yo el que escribre datos
         {
             // stream.SendNext(_GameHandlerAcomodarPIezas.GetEnemigoListo());
-            stream.SendNext(listoEnemigoRed);
-            stream.SendNext(listoPlayerRed);
+
+            stream.SendNext(SoyJugador);
+            stream.SendNext(SoyEnemigo);
         }
         else //si esta escribiendo datos un avatar
         {
             // _GameHandlerAcomodarPIezas.SetEnemigoListo((bool)stream.ReceiveNext());
-            listoEnemigoRed = (bool)stream.ReceiveNext();
-            listoPlayerRed =(bool) stream.ReceiveNext();
+
+            SoyJugador = (bool)stream.ReceiveNext();
+            SoyEnemigo = (bool)stream.ReceiveNext();
             // _GameHandlerAcomodarPIezas.SetPlayerListo((bool)stream.ReceiveNext());
         }
     }

@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 using Photon.Pun;
+
 
 
 public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
@@ -12,6 +14,25 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     public GameObject pantallaEsperaRival;
     private PhotonView photonMostrar;
     private DatosGlobalesRed _DatosGlobalesRed;
+
+    public Toggle soyJugadorToggle;
+    public Toggle soyEnemigoToggle;
+
+    public Toggle ListoJugadorRedToglle;
+    public Toggle ListoEnemigoRedToglle;
+   
+
+    [SerializeField]
+    private bool SoyJugador = false;
+    
+    [SerializeField]
+    private bool SoyEnemigo = false;
+    
+    public bool listoPlayerRed = false;
+
+    public bool listoEnemigoRed = false;
+
+
 
     private void Awake() 
     {
@@ -23,21 +44,35 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     // Start is called before the first frame update
     void Start()
     {
-        // if(!photonView.IsMine)//sino soy yo
-        // {
-        //     Destroy(this);
-        // }
+        listoEnemigoRed = false;
+        listoPlayerRed = false;
+        ListoJugadorRedToglle.isOn = listoPlayerRed;
+        ListoEnemigoRedToglle.isOn = listoEnemigoRed;
+        StartCoroutine("SoyjugadorOenemigo");
+        
     }
 
+
+    IEnumerator SoyjugadorOenemigo()
+    {
+        while(true)
+        {
+            SoyJugador = _DatosGlobalesRed.SoyJugador;
+            SoyEnemigo = _DatosGlobalesRed.SoyEnemigo;
+            soyJugadorToggle.isOn =  _DatosGlobalesRed.SoyJugador;
+            soyEnemigoToggle.isOn =  _DatosGlobalesRed.SoyEnemigo;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(_DatosGlobalesRed.GetPlayerListoRed() && _DatosGlobalesRed.GetEnemyListoRed())//si el player esta listo y si el enemigo esta
+        if(listoPlayerRed && listoEnemigoRed)//si el player esta listo y si el enemigo esta
             {
                 print("cambia al Nivel de juego");
                 SceneManager.LoadScene("JugarContraEnemigoEnRed");    
-            }
+            }    
     }
 
 
@@ -49,16 +84,30 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         // _DatosGlobalesRed.SetRivalListoRed(true);
         // _DatosGlobalesRed.SettPlayerAndEnemyListoRed();
         photonView.RPC("EmpezarNivel",RpcTarget.All);
-
+        // EmpezarNivel();
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
     }
 
 
+
     [PunRPC]
     public void EmpezarNivel()
     {
-        _DatosGlobalesRed.SettPlayerAndEnemyListoRed();
+        if(_DatosGlobalesRed.SoyJugador == true)
+        {
+            listoPlayerRed = true;
+            SoyEnemigo = false;
+            ListoJugadorRedToglle.isOn = listoPlayerRed;
+            ListoEnemigoRedToglle.isOn = listoEnemigoRed;
+        }
+        if(_DatosGlobalesRed.SoyEnemigo == true)
+        {
+            listoEnemigoRed = true;
+            SoyJugador = false;
+            ListoJugadorRedToglle.isOn = listoPlayerRed;
+            ListoEnemigoRedToglle.isOn = listoEnemigoRed;
+        }
     }
 
 
@@ -67,13 +116,13 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     {
         if(stream.IsWriting)//si estoy escribiendo datos...Siempre soy yo el que escribre datos
         {
-            // stream.SendNext(_GameHandlerAcomodarPIezas.GetEnemigoListo());
-            stream.SendNext(_GameHandlerAcomodarPIezas.GetPlayerListo());
+            stream.SendNext(listoPlayerRed);
+            stream.SendNext(listoEnemigoRed);
         }
         else //si esta escribiendo datos un avatar
         {
-            // _GameHandlerAcomodarPIezas.SetEnemigoListo((bool)stream.ReceiveNext());
-            _GameHandlerAcomodarPIezas.SetPlayerListo((bool)stream.ReceiveNext());
+            listoPlayerRed =(bool) stream.ReceiveNext();
+            listoEnemigoRed = (bool)stream.ReceiveNext();
         }
     }
     
