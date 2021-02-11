@@ -48,7 +48,7 @@ public class DatosGlobalesRed : MonoBehaviourPunCallbacks,IPunObservable
 
     void soyJugadorOenemigo()
     {
-        if(photonView.IsMine)
+        if(photonView.IsMine)//si soy yo
         {
             SoyJugador = true;
             SoyEnemigo = false;
@@ -134,20 +134,20 @@ public class DatosGlobalesRed : MonoBehaviourPunCallbacks,IPunObservable
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-         if(stream.IsWriting)//si estoy escribiendo datos...Siempre soy yo el que escribre datos
-        {
-            // stream.SendNext(_GameHandlerAcomodarPIezas.GetEnemigoListo());
+        //  if(stream.IsWriting)//si estoy escribiendo datos...Siempre soy yo el que escribre datos
+        // {
+        //     // stream.SendNext(_GameHandlerAcomodarPIezas.GetEnemigoListo());
 
-            stream.SendNext(SoyJugador);
-            stream.SendNext(SoyEnemigo);
-        }
-        else //si esta escribiendo datos un avatar
-        {
-            // _GameHandlerAcomodarPIezas.SetEnemigoListo((bool)stream.ReceiveNext());
+        //     stream.SendNext(SoyJugador);
+        //     stream.SendNext(SoyEnemigo);
+        // }
+        // else //si esta escribiendo datos un avatar
+        // {
+        //     // _GameHandlerAcomodarPIezas.SetEnemigoListo((bool)stream.ReceiveNext());
 
-            SoyJugador = (bool)stream.ReceiveNext();
-            SoyEnemigo = (bool)stream.ReceiveNext();
-            // _GameHandlerAcomodarPIezas.SetPlayerListo((bool)stream.ReceiveNext());
-        }
+        //     SoyJugador = (bool)stream.ReceiveNext();
+        //     SoyEnemigo = (bool)stream.ReceiveNext();
+        //     // _GameHandlerAcomodarPIezas.SetPlayerListo((bool)stream.ReceiveNext());
+        // }
     }
 }

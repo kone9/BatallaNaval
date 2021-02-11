@@ -20,6 +20,7 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
 
     public Toggle ListoJugadorRedToglle;
     public Toggle ListoEnemigoRedToglle;
+
     public int tiempoAntesDeCambiarEscena = 5;
    
 
@@ -28,11 +29,10 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     
     [SerializeField]
     private bool SoyEnemigo = false;
-    
-    public bool listoPlayerRed = false;
 
-    public bool listoEnemigoRed = false;
+    private bool listoPlayerRED = false;
 
+    private bool listoEnemigoRED = false;
 
 
     private void Awake() 
@@ -45,34 +45,39 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     // Start is called before the first frame update
     void Start()
     {
-        listoPlayerRed = false;
-        listoEnemigoRed = false;
-        ListoJugadorRedToglle.isOn = listoPlayerRed;
-        ListoEnemigoRedToglle.isOn = listoEnemigoRed;
-        StartCoroutine("SoyjugadorOenemigo");  
+        listoPlayerRED = false;
+        listoEnemigoRED = false;
+        ListoJugadorRedToglle.isOn = listoPlayerRED;
+        ListoEnemigoRedToglle.isOn = listoEnemigoRED;
+        StartCoroutine("SoyjugadorOenemigo");
     }
 
 
     IEnumerator SoyjugadorOenemigo()
     {
-        while(true)
+        yield return new WaitForSeconds(5f);//espero 5 segundos antes que se cargue todo los componentes de red
+        while(true) //repito constantemente para hacer comprobaciones
         {
             SoyJugador = _DatosGlobalesRed.SoyJugador;
             SoyEnemigo = _DatosGlobalesRed.SoyEnemigo;
             soyJugadorToggle.isOn =  _DatosGlobalesRed.SoyJugador;
-            soyEnemigoToggle.isOn =  _DatosGlobalesRed.SoyEnemigo;
+            soyEnemigoToggle.isOn =  _DatosGlobalesRed.SoyEnemigo;        
             yield return new WaitForSeconds(0.1f);
         }
     }
+    
 
     // Update is called once per frame
     void Update()
     {
-        if(listoPlayerRed && listoEnemigoRed)//si el player esta listo y si el enemigo esta
-            {
-                Invoke("CambiarDeEscena",tiempoAntesDeCambiarEscena);
-            }    
+        // VerificarEnemigosEnRed();//para verificar constantemente el valor del enemigo.
+
+        if(listoPlayerRED && listoEnemigoRED)//si el player esta listo y si el enemigo esta
+        {
+            Invoke("CambiarDeEscena",tiempoAntesDeCambiarEscena);
+        }    
     }
+
 
     void CambiarDeEscena()
     {
@@ -86,36 +91,45 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     {
         pantallaEsperaRival.SetActive(true);
 
-        // _DatosGlobalesRed.SetRivalListoRed(true);
-        // _DatosGlobalesRed.SettPlayerAndEnemyListoRed();
-        photonView.RPC("EmpezarNivel",RpcTarget.All);
+
+        //photonView.RPC("EmpezarNivel",RpcTarget.All);
         
         // EmpezarNivel();
+            
+        photonView.RPC("EmpezarNivel",RpcTarget.All,_DatosGlobalesRed.SoyJugador);
+        
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
     }
 
-
+    
+    // [PunRPC]
+    // void VerificarEnRed()
+    // {
+    //     listoPlayerRED = listoPlayer;
+    //     listoEnemigoRED = listoEnemigo;
+    //     ListoJugadorRedToglle.isOn = listoPlayerRED;
+    //     ListoEnemigoRedToglle.isOn = listoEnemigoRED;
+    //     print("listo PLAYER en red es igual a: " + listoPlayerRED);
+    //     print("listo ENEMIGO en red es igual a: " + listoEnemigoRED);
+    // }
 
 
     [PunRPC]
-    //se ejecuta en los 2 en simultaneo por lo tanto no funciona como corresponde
-    //porque cuando uno es verdadero el otro se ejecuta tambien como verdadero
-    public void EmpezarNivel()
+    public void EmpezarNivel(bool isMine)
     {
-        if(_DatosGlobalesRed.SoyJugador)//si soy jugador "YO"
+        if(isMine)//si soy jugador "YO"
         { 
-            listoPlayerRed = true;
-         
-            ListoJugadorRedToglle.isOn = listoPlayerRed;
-            ListoEnemigoRedToglle.isOn = listoEnemigoRed;
+            listoPlayerRED = true;
+            
+            ListoJugadorRedToglle.isOn = listoPlayerRED;
+            ListoEnemigoRedToglle.isOn = listoEnemigoRED;
         }
-        if(_DatosGlobalesRed.SoyEnemigo)//si soy enemigo " NO YO "
+        if(!isMine)//si soy enemigo " NO YO "
         {
-            listoEnemigoRed = true;
-
-            ListoJugadorRedToglle.isOn = listoPlayerRed;
-            ListoEnemigoRedToglle.isOn = listoEnemigoRed;
+            listoEnemigoRED = true;
+            ListoJugadorRedToglle.isOn = listoPlayerRED;
+            ListoEnemigoRedToglle.isOn = listoEnemigoRED;
         }
     }
 
@@ -125,13 +139,17 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     {
         if(stream.IsWriting)//si estoy escribiendo datos...Siempre soy yo el que escribre datos
         {
-            stream.SendNext(listoPlayerRed);
-            stream.SendNext(listoEnemigoRed);
+            // stream.SendNext(listoPlayerRed);
+            // stream.SendNext(listoEnemigoRed);
+            stream.SendNext(listoPlayerRED);
+            stream.SendNext(listoEnemigoRED);
         }
         else //si esta escribiendo datos un avatar
         {
-            listoPlayerRed =(bool) stream.ReceiveNext();
-            listoEnemigoRed = (bool)stream.ReceiveNext();
+            // listoPlayerRed =(bool) stream.ReceiveNext();
+            // listoEnemigoRed = (bool)stream.ReceiveNext();
+            listoPlayerRED = (bool)stream.ReceiveNext();
+            listoEnemigoRED = (bool)stream.ReceiveNext();
         }
     }
     
