@@ -42,7 +42,7 @@ public class DatosGlobalesRed : MonoBehaviourPunCallbacks,IPunObservable
             Destroy(this.gameObject);//este GameObject nunca se destruye
         }
 
-        Invoke("soyJugadorOenemigo",5);
+        Invoke("soyJugadorOenemigo",6);
     }
 
 

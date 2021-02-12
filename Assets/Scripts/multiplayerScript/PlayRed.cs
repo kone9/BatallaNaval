@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -40,6 +40,7 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
         photonMostrar = GetComponent<PhotonView>();
         _DatosGlobalesRed = FindObjectOfType<DatosGlobalesRed>();
+        
     }
 
     // Start is called before the first frame update
@@ -55,7 +56,7 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
 
     IEnumerator SoyjugadorOenemigo()
     {
-        yield return new WaitForSeconds(5f);//espero 5 segundos antes que se cargue todo los componentes de red
+        yield return new WaitForSeconds(6);//espero 5 segundos antes que se cargue todo los componentes de red
         while(true) //repito constantemente para hacer comprobaciones
         {
             SoyJugador = _DatosGlobalesRed.SoyJugador;
@@ -90,8 +91,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     public void PreparadoParaIniciarEnRed()
     {
         pantallaEsperaRival.SetActive(true);
-
-
         //photonView.RPC("EmpezarNivel",RpcTarget.All);
         
         // EmpezarNivel();

@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using Photon.Pun;
-using Photon.Realtime;
-
 public class GameHandlerAcomodarPIezas : MonoBehaviour
 {
     DatosGlobales _DatosGlobales;
@@ -88,7 +85,6 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     }
 
     /// <summary>Para saber si el player esta listo para jugar, se usa en MULTIPLAYER ONLINE</summary>
-    [PunRPC]
     public bool GetPlayerListo()
     {
         return playerListo;
@@ -101,7 +97,6 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     }
 
     /// <summary>Para saber si el player esta listo para jugar, se usa en MULTIPLAYER ONLINE y es un BOOLEANO</summary>
-    [PunRPC]
     public bool GetEnemigoListo()
     {
         return enemigoListo;

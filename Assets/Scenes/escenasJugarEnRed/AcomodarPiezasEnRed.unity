@@ -1162,8 +1162,6 @@ MonoBehaviour:
   tiempoAntesDeCambiarEscena: 5
   SoyJugador: 0
   SoyEnemigo: 0
-  listoPlayer: 0
-  listoEnemigo: 0
 --- !u!1 &649738796
 GameObject:
   m_ObjectHideFlags: 0
