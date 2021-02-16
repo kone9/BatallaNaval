@@ -162,6 +162,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
+  barcosDeLaEscena: []
 --- !u!4 &139069079
 Transform:
   m_ObjectHideFlags: 0

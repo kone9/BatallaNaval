@@ -42,12 +42,13 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
         for (int i = 0; i < barcos.Length; i++)
         {
             posiciones[i] = barcos[i].transform.position;
+            // _DatosGlobales.OrdenDenombreDeBarcos[i] = barcos[i].transform.name;
         }
+        // print("barcos acomodados de la siguiente manera" + _DatosGlobales.OrdenDenombreDeBarcos);
         _DatosGlobales.SetPosicionesBarcos(posiciones);
     }
     
     /// <summary>Guarda la posicion de los barcos</summary>
-
     public void GuardarRotacionesBarcos()
     {
         Quaternion[] rotaciones = new Quaternion[5];

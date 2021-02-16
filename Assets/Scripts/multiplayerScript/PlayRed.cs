@@ -91,7 +91,10 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     public void PreparadoParaIniciarEnRed()
     {
         pantallaEsperaRival.SetActive(true);
-        //photonView.RPC("EmpezarNivel",RpcTarget.All);
+        
+        //para probar luego borrar
+        listoPlayerRED = true;
+        listoEnemigoRED = true;
         
         // EmpezarNivel();
             
@@ -99,6 +102,7 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
+  
     }
 
     
