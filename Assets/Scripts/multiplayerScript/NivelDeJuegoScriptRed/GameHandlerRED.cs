@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,11 +10,13 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 {
     DatosGlobales _DatosGlobales;
     DatosGlobalesRed _DatosGlobalesRed;
-    GameObject[] barcos;
+    GameObject[] barcos; 
     GameObject[] barcosGrilla;
 
+    //para guardar las posiciones de los barcos enemigos
     Vector3[] barcosEnemigosPosicionRed;
     Quaternion[] barcosEnemigosRotacionRed;
+
 
     public int cantidadDeAciertosJugador = 0;
 
@@ -24,18 +26,25 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 
     private bool puedoPresionarBoton = true;
 
+/////////////////////////////////////////////////////////
+    //referencia a todos los barcos de la escena del JUGADOR
     private GameObject barco_1;
     private GameObject barco_2;
     private GameObject barco_3;
     private GameObject portaAviones;
     private GameObject Submarino;
-
     private GameObject barco_1_jugador;
     private GameObject barco_2_jugador;
     private GameObject barco_3_jugador;
     private GameObject PortaAviones_jugador;
     private GameObject submarino_jugador;
-
+/////////////////////////////////////////////////////////
+    //referencia a todos los barcos de la escena del ENEMIGO
+    private Vector3 enemigo_barco_1_Posicion;
+    private Vector3 enemigo_barco_2_Posicion;
+    private Vector3 enemigo_barco_3_Posicion;
+    private Vector3 enemigo_PortaAviones_Posicion;
+    private Vector3 enemigo_submarino_Posicion;
 
     private void Awake() {
        
@@ -80,12 +89,12 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         photonView.RPC("PosicionarBarcosSegunSeaJugadorOEnemigo",RpcTarget.All,_DatosGlobalesRed.SoyJugador);
         yield return new WaitForSeconds(2);
         
-        AcomodarLosBarcosGrilla();
+        // AcomodarLosBarcosGrilla();
         
-        foreach (Vector3 i in barcosEnemigosPosicionRed)
-        {
-            print(i);
-        }
+        // foreach (Vector3 i in barcosEnemigosPosicionRed)
+        // {
+        //     print(i);
+        // }
         //print(barcosEnemigosRed);
     }
 
@@ -98,13 +107,26 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     {
         if(isMine)
         {
-            barcosEnemigosPosicionRed = _DatosGlobales.GetPosicionesBarcos();
-            barcosEnemigosRotacionRed = _DatosGlobales.GetRotacionBarcos();
+            // barcosEnemigosPosicionRed = _DatosGlobales.GetPosicionesBarcos();
+            // barcosEnemigosRotacionRed = _DatosGlobales.GetRotacionBarcos();
+            // AcomodarLosBarcosGrilla();
+            print("tengo los datos de jugador");
+            // enemigo_submarino_Posicion = _DatosGlobales.Posicion_Submarino;
+            
+            // Submarino.transform.position = _DatosGlobales.Posicion_Submarino;
+            Submarino.transform.position = enemigo_submarino_Posicion;
+            enemigo_submarino_Posicion = _DatosGlobales.Posicion_Submarino;
+            // enemigo_submarino_Posicion = _DatosGlobales.Posicion_Submarino;
         }
         if(!isMine)
         {
-            barcosEnemigosPosicionRed = _DatosGlobales.GetPosicionesBarcos();
-            barcosEnemigosRotacionRed = _DatosGlobales.GetRotacionBarcos();
+            enemigo_submarino_Posicion = _DatosGlobales.Posicion_Submarino;
+            Submarino.transform.position = enemigo_submarino_Posicion;
+            // submarino_jugador.transform.position = _DatosGlobales.Posicion_Submarino;
+            // Submarino.transform.position = enemigo_submarino_Posicion;
+            // barcosEnemigosRotacionRed = _DatosGlobales.GetRotacionBarcos();
+            //AcomodarLosBarcosGrilla();
+            
         }    
     }
 
@@ -148,11 +170,15 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 
     private void AcomodarLosBarcosGrilla()//acomoda los abrcos de la pantalla grande son los de los enemigos
     {
-        barco_1.transform.position = _DatosGlobales.Posicion_barco_1;
-        barco_2.transform.position =_DatosGlobales.Posicion_barco_2;
-        barco_3.transform.position = _DatosGlobales.Posicion_barco_3;
-        portaAviones.transform.position = _DatosGlobales.Posicion_portaAviones;
-        Submarino.transform.position = _DatosGlobales.Posicion_Submarino;
+         Submarino.transform.position = enemigo_submarino_Posicion;
+        
+        // barco_1.transform.position = _DatosGlobales.Posicion_barco_1;
+        // barco_2.transform.position =_DatosGlobales.Posicion_barco_2;
+        // barco_3.transform.position = _DatosGlobales.Posicion_barco_3;
+        // portaAviones.transform.position = _DatosGlobales.Posicion_portaAviones;
+        
+        // Submarino.transform.position = _DatosGlobales.Posicion_Submarino;
+        
         // int indice = 0;
         // foreach (GameObject i in barcosGrilla)
         // {
@@ -205,11 +231,12 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         {
 
             stream.SendNext(barcosEnemigosPosicionRed);
+            stream.SendNext(enemigo_submarino_Posicion);
         }
         else //si esta escribiendo datos un avatar
         {
             barcosEnemigosPosicionRed = (Vector3[])stream.ReceiveNext();
-
+            enemigo_submarino_Posicion = (Vector3)stream.ReceiveNext();
         }
     }
 }

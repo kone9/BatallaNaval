@@ -86,9 +86,7 @@ public class DatosGlobales : MonoBehaviour
                 default:
                     break;
             }
-            
-        }
-        
+        }   
     }
 
 

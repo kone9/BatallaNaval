@@ -93,8 +93,8 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         pantallaEsperaRival.SetActive(true);
         
         //para probar luego borrar
-        listoPlayerRED = true;
-        listoEnemigoRED = true;
+        // listoPlayerRED = true;
+        // listoEnemigoRED = true;
         
         // EmpezarNivel();
             

@@ -5,10 +5,10 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class DeshabilitarMultiplesScriptsEnRed : MonoBehaviourPunCallbacks
+public class DeshabilitarMultiplesScriptsEnRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
 {
 
-    MonoBehaviour[] codigos;
+    public MonoBehaviour[] codigos;
     // Start is called before the first frame update
 
 
@@ -30,5 +30,10 @@ public class DeshabilitarMultiplesScriptsEnRed : MonoBehaviourPunCallbacks
                 i.enabled = false;
             }
         }
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+       
     }
 }
