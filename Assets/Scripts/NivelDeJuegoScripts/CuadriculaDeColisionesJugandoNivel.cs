@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
 {
-    Gamehandler _Gamehandler;
+    GameHandlerRED _GamehandlerRED;
     
     private void Awake()
     {
-        _Gamehandler = FindObjectOfType<Gamehandler>();
+        _GamehandlerRED = FindObjectOfType<GameHandlerRED>();
     }
 
     // Start is called before the first frame update
@@ -25,11 +25,11 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(_Gamehandler.GetPuedoPresionarBoton() == true)
+        if(_GamehandlerRED.GetPuedoPresionarBoton() == true)
         {
             // print("presione en el cubo");
             this.GetComponent<MeshRenderer>().enabled = true;
-            _Gamehandler.IsTurnoEnemigo();
+            _GamehandlerRED.IsTurnoEnemigo();
         }
 
     }

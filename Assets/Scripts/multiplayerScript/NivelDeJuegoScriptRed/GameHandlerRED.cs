@@ -106,7 +106,13 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
                 _DatosGlobales.rotacion_barco_3,//Rotacion del barco enemigo enviado por parametro
                 _DatosGlobales.rotacion_portaAviones,//Rotacion del barco enemigo enviado por parametro
                 _DatosGlobales.rotacion_Submarino//Rotacion del barco enemigo enviado por parametro
-            );  
+            ); 
+
+        if(!photonView.IsMine)//sino soy el que creo el servidor
+        {
+            fondoTablero.SetActive(true);//tablero de color rojo en el fondo
+            puedoPresionarBoton = false;//los botones pueden ser presionados
+        }   
     }
 
     [PunRPC]
@@ -174,43 +180,41 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         
     }
 
-    private void AcomodarLosBarcosGrilla()//acomoda los abrcos de la pantalla grande son los de los enemigos
-    {
-         Submarino.transform.position = enemigo_submarino_Posicion;
-        
-        // barco_1.transform.position = _DatosGlobales.Posicion_barco_1;
-        // barco_2.transform.position =_DatosGlobales.Posicion_barco_2;
-        // barco_3.transform.position = _DatosGlobales.Posicion_barco_3;
-        // portaAviones.transform.position = _DatosGlobales.Posicion_portaAviones;
-        
-        // Submarino.transform.position = _DatosGlobales.Posicion_Submarino;
-        
-        // int indice = 0;
-        // foreach (GameObject i in barcosGrilla)
-        // {
-        //     //acomodar posición
-        //     i.transform.position = posiciones[indice];
-        //     //acomodar rotación
-        //     i.transform.rotation = barcosEnemigosRotacionRed[indice];
-        //     indice += 1;
-        // }
-    }
-
 
     /// <summary>Si es turno del jugador no activa el fondo de grilla<</summary>
     public void IsTurnoJugador()
     {
         fondoTablero.SetActive(false);
         puedoPresionarBoton = true;
+        photonView.RPC("IsTurnoEnemigoAvisarRed", //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered,//para obtener los parámetros de otros
+                false,//Rotacion del barco enemigo enviado por parametro
+                true//Rotacion del barco enemigo enviado por parametro
+            );  
     }
 
-    /// <summary>Si es turno del enemigo activa el fondo de grilla</summary>
+
+    /// <summary>Si es turno del enemigo enciende un tablero de color rojo en el fondo y los botones ya no pueden ser presionados</summary>
     public void IsTurnoEnemigo()
     {
-        fondoTablero.SetActive(true);
-        puedoPresionarBoton = false;
-        _EnemigoHandler.DispararFuegoEnemigoHastaErrar();
-        
+        //aqui deshabilito el jugador actual
+        fondoTablero.SetActive(true);//enciende un tablero de color rojo en el fondo
+        puedoPresionarBoton = false;//los botones ya no pueden ser presionados
+
+        //aqui habilito al enemigo
+        photonView.RPC("IsTurnoEnemigoOJugadorAvisarRed", //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered,//para llamar o obtener los datos de otros
+                false,//apara un tablero de color rojo en el fondo
+                true//los botones pueden ser presionados
+            );  
+    }
+
+
+    [PunRPC]
+    private void IsTurnoEnemigoOJugadorAvisarRed(bool fondoTableroRed,bool puedoPresionarBotonRed)
+    {
+        fondoTablero.SetActive(fondoTableroRed);
+        puedoPresionarBoton = puedoPresionarBotonRed;
     }
 
     /// <summary>Retorna un bolean "si puedo o no puedo" presionar Boton</summary>
