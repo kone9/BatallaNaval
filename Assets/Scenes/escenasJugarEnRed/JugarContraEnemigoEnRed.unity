@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 5032478}
   - component: {fileID: 5032477}
   - component: {fileID: 5032480}
+  - component: {fileID: 5032479}
   m_Layer: 0
   m_Name: Colisionbarco (25)
   m_TagString: Untagged
@@ -262,6 +263,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5032479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 18
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &5032480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +372,7 @@ GameObject:
   - component: {fileID: 51716910}
   - component: {fileID: 51716909}
   - component: {fileID: 51716912}
+  - component: {fileID: 51716911}
   m_Layer: 0
   m_Name: Colisionbarco (23)
   m_TagString: Untagged
@@ -399,6 +423,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &51716911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51716907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 200
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &51716912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +550,7 @@ GameObject:
   - component: {fileID: 74862785}
   - component: {fileID: 74862784}
   - component: {fileID: 74862787}
+  - component: {fileID: 74862786}
   m_Layer: 0
   m_Name: Colisionbarco (18)
   m_TagString: Untagged
@@ -554,6 +601,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 3, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &74862786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74862782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 22
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &74862787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2092,6 +2161,7 @@ GameObject:
   - component: {fileID: 464175413}
   - component: {fileID: 464175412}
   - component: {fileID: 464175415}
+  - component: {fileID: 464175414}
   m_Layer: 0
   m_Name: Colisionbarco (21)
   m_TagString: Untagged
@@ -2142,6 +2212,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &464175414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464175410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 5
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &464175415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2252,6 +2344,7 @@ GameObject:
   - component: {fileID: 504022774}
   - component: {fileID: 504022773}
   - component: {fileID: 504022776}
+  - component: {fileID: 504022775}
   m_Layer: 0
   m_Name: Colisionbarco (24)
   m_TagString: Untagged
@@ -2302,6 +2395,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &504022775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504022771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 3
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &504022776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3068,6 +3183,7 @@ GameObject:
   - component: {fileID: 615155707}
   - component: {fileID: 615155706}
   - component: {fileID: 615155709}
+  - component: {fileID: 615155708}
   m_Layer: 0
   m_Name: Colisionbarco (20)
   m_TagString: Untagged
@@ -3118,6 +3234,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &615155708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615155704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &615155709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3516,6 +3654,7 @@ GameObject:
   - component: {fileID: 813590106}
   - component: {fileID: 813590105}
   - component: {fileID: 813590108}
+  - component: {fileID: 813590107}
   m_Layer: 0
   m_Name: Colisionbarco (12)
   m_TagString: Untagged
@@ -3566,6 +3705,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &813590107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813590103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 13
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &813590108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3989,6 +4150,7 @@ GameObject:
   - component: {fileID: 946848140}
   - component: {fileID: 946848139}
   - component: {fileID: 946848142}
+  - component: {fileID: 946848141}
   m_Layer: 0
   m_Name: Colisionbarco (17)
   m_TagString: Untagged
@@ -4039,6 +4201,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &946848141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946848137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 12
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &946848142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4428,6 +4612,7 @@ GameObject:
   - component: {fileID: 990105525}
   - component: {fileID: 990105524}
   - component: {fileID: 990105527}
+  - component: {fileID: 990105526}
   m_Layer: 0
   m_Name: Colisionbarco (13)
   m_TagString: Untagged
@@ -4478,6 +4663,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &990105526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990105522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 17
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &990105527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4662,6 +4869,7 @@ GameObject:
   - component: {fileID: 1029309095}
   - component: {fileID: 1029309094}
   - component: {fileID: 1029309097}
+  - component: {fileID: 1029309096}
   m_Layer: 0
   m_Name: Colisionbarco (19)
   m_TagString: Untagged
@@ -4712,6 +4920,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 3, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1029309096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029309092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 8
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1029309097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4738,6 +4968,7 @@ GameObject:
   - component: {fileID: 1033820542}
   - component: {fileID: 1033820541}
   - component: {fileID: 1033820544}
+  - component: {fileID: 1033820543}
   m_Layer: 0
   m_Name: Colisionbarco (17)
   m_TagString: Untagged
@@ -4788,6 +5019,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1033820543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033820539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 7
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1033820544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4893,6 +5146,7 @@ GameObject:
   - component: {fileID: 1065561263}
   - component: {fileID: 1065561262}
   - component: {fileID: 1065561265}
+  - component: {fileID: 1065561264}
   m_Layer: 0
   m_Name: Colisionbarco (27)
   m_TagString: Untagged
@@ -4943,6 +5197,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1065561264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065561260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 9
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1065561265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5415,6 +5691,7 @@ GameObject:
   - component: {fileID: 1182939616}
   - component: {fileID: 1182939615}
   - component: {fileID: 1182939618}
+  - component: {fileID: 1182939617}
   m_Layer: 0
   m_Name: Colisionbarco (16)
   m_TagString: Untagged
@@ -5465,6 +5742,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1182939617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182939613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 11
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1182939618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6232,6 +6531,7 @@ GameObject:
   - component: {fileID: 1386326823}
   - component: {fileID: 1386326822}
   - component: {fileID: 1386326825}
+  - component: {fileID: 1386326824}
   m_Layer: 0
   m_Name: Colisionbarco (14)
   m_TagString: Untagged
@@ -6282,6 +6582,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1386326824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386326820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 14
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1386326825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6689,6 +7011,7 @@ GameObject:
   - component: {fileID: 1508536783}
   - component: {fileID: 1508536782}
   - component: {fileID: 1508536785}
+  - component: {fileID: 1508536784}
   m_Layer: 0
   m_Name: Colisionbarco (16)
   m_TagString: Untagged
@@ -6739,6 +7062,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1508536784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508536780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 10
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1508536785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7874,6 +8219,7 @@ GameObject:
   - component: {fileID: 1667069587}
   - component: {fileID: 1667069586}
   - component: {fileID: 1667069589}
+  - component: {fileID: 1667069588}
   m_Layer: 0
   m_Name: Colisionbarco (15)
   m_TagString: Untagged
@@ -7924,6 +8270,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1667069588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667069584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 16
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1667069589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7950,6 +8318,7 @@ GameObject:
   - component: {fileID: 1676464160}
   - component: {fileID: 1676464159}
   - component: {fileID: 1676464162}
+  - component: {fileID: 1676464161}
   m_Layer: 0
   m_Name: Colisionbarco (26)
   m_TagString: Untagged
@@ -8000,6 +8369,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1676464161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676464157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 15
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1676464162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8420,6 +8811,7 @@ GameObject:
   - component: {fileID: 1738816713}
   - component: {fileID: 1738816712}
   - component: {fileID: 1738816715}
+  - component: {fileID: 1738816714}
   m_Layer: 0
   m_Name: Colisionbarco (22)
   m_TagString: Untagged
@@ -8470,6 +8862,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1738816714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738816710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 6
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1738816715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14416,6 +14830,7 @@ GameObject:
   - component: {fileID: 1995689572}
   - component: {fileID: 1995689571}
   - component: {fileID: 1995689574}
+  - component: {fileID: 1995689573}
   m_Layer: 0
   m_Name: Colisionbarco (18)
   m_TagString: Untagged
@@ -14466,6 +14881,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1995689573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995689569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 21
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &1995689574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14566,6 +15003,7 @@ GameObject:
   - component: {fileID: 2021147752}
   - component: {fileID: 2021147751}
   - component: {fileID: 2021147754}
+  - component: {fileID: 2021147753}
   m_Layer: 0
   m_Name: Colisionbarco (15)
   m_TagString: Untagged
@@ -14616,6 +15054,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2021147753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021147749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 19
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &2021147754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14895,6 +15355,7 @@ GameObject:
   - component: {fileID: 2097705185}
   - component: {fileID: 2097705184}
   - component: {fileID: 2097705187}
+  - component: {fileID: 2097705186}
   m_Layer: 0
   m_Name: Colisionbarco (19)
   m_TagString: Untagged
@@ -14945,6 +15406,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2097705186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097705182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 20
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &2097705187
 MonoBehaviour:
   m_ObjectHideFlags: 0

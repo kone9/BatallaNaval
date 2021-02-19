@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarcoTriggerRed : MonoBehaviour
+using Photon.Pun;
+using Photon.Realtime;
+
+public class BarcoTriggerRed : MonoBehaviourPunCallbacks
 {
-     public GameObject fuego;
+    public GameObject fuego;
     public BoxCollider _BoxCollider;
-    
+
+    private PhotonView _photonView;
     GameHandlerRED _GameHandlerRED;
     
     private void Awake() {
         _BoxCollider = GetComponent<BoxCollider>();
         _GameHandlerRED = FindObjectOfType<GameHandlerRED>();
+        _photonView = GetComponent<PhotonView>();
     }
     // Start is called before the first frame update
     void Start()
@@ -29,8 +34,16 @@ public class BarcoTriggerRed : MonoBehaviour
     { 
         if(_GameHandlerRED.GetPuedoPresionarBoton())
         {
-            instanciarFuego();
+            instanciarFuego(this.transform.position);//instancio fuego en esta posición
+
+
+            _photonView.RPC("InstanciarFuegoEnMisBarcos", //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
+                this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
+            ); 
+            
             _GameHandlerRED.cantidadDeAciertosJugador += 1;
+
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
         }
         if(_GameHandlerRED.cantidadDeAciertosJugador == 21)
@@ -38,7 +51,18 @@ public class BarcoTriggerRed : MonoBehaviour
             _GameHandlerRED.GameOverWinner();
         }
 
-    }   
+    }
+
+
+
+    [PunRPC]
+    void InstanciarFuegoEnMisBarcos(Vector3 posicionInicialFuego)
+    {
+        Vector3 fuegoPosicionEnEnemigo = posicionInicialFuego;
+        fuegoPosicionEnEnemigo.z += 250;
+        instanciarFuego(fuegoPosicionEnEnemigo);
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -50,11 +74,11 @@ public class BarcoTriggerRed : MonoBehaviour
     }
 
 
-    private void instanciarFuego()
+    private void instanciarFuego(Vector3 posicionInicialFuego)
     {
         GameObject fuegoInstance = Instantiate(fuego);
         //fuegoInstance.transform.SetParent(this.gameObject.transform);
-        fuegoInstance.transform.position = this.transform.position;
+        fuegoInstance.transform.position = posicionInicialFuego;
         _BoxCollider.enabled = false;
     }
 }
