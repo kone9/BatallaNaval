@@ -195,7 +195,7 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 
 
     /// <summary>Si es turno del enemigo enciende un tablero de color rojo en el fondo y los botones ya no pueden ser presionados</summary>
-    public void IsTurnoEnemigo()
+    public void IsTurnoEnemigo()//se llama cuando se aprieta un elemento de la grilla donde no esta el barco
     {
         //aqui deshabilito el jugador actual
         fondoTablero.SetActive(true);//enciende un tablero de color rojo en el fondo

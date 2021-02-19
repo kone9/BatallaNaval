@@ -209,9 +209,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5032476}
-  - component: {fileID: 5032479}
   - component: {fileID: 5032478}
   - component: {fileID: 5032477}
+  - component: {fileID: 5032480}
   m_Layer: 0
   m_Name: Colisionbarco (25)
   m_TagString: Untagged
@@ -262,7 +262,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5032479
+--- !u!114 &5032480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5032475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -285,7 +285,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 28017829}
-  - component: {fileID: 28017832}
   - component: {fileID: 28017831}
   - component: {fileID: 28017830}
   m_Layer: 0
@@ -338,20 +337,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &28017832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28017828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &51716907
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,9 +346,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 51716908}
-  - component: {fileID: 51716911}
   - component: {fileID: 51716910}
   - component: {fileID: 51716909}
+  - component: {fileID: 51716912}
   m_Layer: 0
   m_Name: Colisionbarco (23)
   m_TagString: Untagged
@@ -414,7 +399,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &51716911
+--- !u!114 &51716912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -423,7 +408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 51716907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -516,9 +501,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 74862783}
-  - component: {fileID: 74862786}
   - component: {fileID: 74862785}
   - component: {fileID: 74862784}
+  - component: {fileID: 74862787}
   m_Layer: 0
   m_Name: Colisionbarco (18)
   m_TagString: Untagged
@@ -569,7 +554,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 3, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &74862786
+--- !u!114 &74862787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -578,7 +563,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 74862782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -750,7 +735,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 98891818}
-  - component: {fileID: 98891821}
   - component: {fileID: 98891820}
   - component: {fileID: 98891819}
   m_Layer: 0
@@ -803,20 +787,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 3, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &98891821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98891817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &139069077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1380,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 302541411}
-  - component: {fileID: 302541414}
   - component: {fileID: 302541413}
   - component: {fileID: 302541412}
   m_Layer: 0
@@ -1463,20 +1432,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &302541414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302541410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &313937474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,7 +1472,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333101725}
-  - component: {fileID: 333101728}
   - component: {fileID: 333101727}
   - component: {fileID: 333101726}
   m_Layer: 0
@@ -1570,20 +1524,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &333101728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333101724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &356542856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,9 +2089,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 464175411}
-  - component: {fileID: 464175414}
   - component: {fileID: 464175413}
   - component: {fileID: 464175412}
+  - component: {fileID: 464175415}
   m_Layer: 0
   m_Name: Colisionbarco (21)
   m_TagString: Untagged
@@ -2202,7 +2142,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &464175414
+--- !u!114 &464175415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2211,7 +2151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 464175410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -2309,9 +2249,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 504022772}
-  - component: {fileID: 504022775}
   - component: {fileID: 504022774}
   - component: {fileID: 504022773}
+  - component: {fileID: 504022776}
   m_Layer: 0
   m_Name: Colisionbarco (24)
   m_TagString: Untagged
@@ -2362,7 +2302,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &504022775
+--- !u!114 &504022776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2371,7 +2311,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 504022771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -2385,7 +2325,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551452853}
-  - component: {fileID: 551452856}
   - component: {fileID: 551452855}
   - component: {fileID: 551452854}
   m_Layer: 0
@@ -2438,20 +2377,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &551452856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551452852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &552264625
 GameObject:
   m_ObjectHideFlags: 0
@@ -3140,9 +3065,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 615155705}
-  - component: {fileID: 615155708}
   - component: {fileID: 615155707}
   - component: {fileID: 615155706}
+  - component: {fileID: 615155709}
   m_Layer: 0
   m_Name: Colisionbarco (20)
   m_TagString: Untagged
@@ -3193,7 +3118,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &615155708
+--- !u!114 &615155709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3202,7 +3127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 615155704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -3295,7 +3220,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717378357}
-  - component: {fileID: 717378360}
   - component: {fileID: 717378359}
   - component: {fileID: 717378358}
   m_Layer: 0
@@ -3348,20 +3272,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &717378360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717378356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &762778125
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,7 +3391,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 765777717}
-  - component: {fileID: 765777720}
   - component: {fileID: 765777719}
   - component: {fileID: 765777718}
   m_Layer: 0
@@ -3534,20 +3443,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &765777720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765777716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &772318273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,7 +3452,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 772318274}
-  - component: {fileID: 772318277}
   - component: {fileID: 772318276}
   - component: {fileID: 772318275}
   m_Layer: 0
@@ -3610,20 +3504,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &772318277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772318273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &813590103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,9 +3513,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 813590104}
-  - component: {fileID: 813590107}
   - component: {fileID: 813590106}
   - component: {fileID: 813590105}
+  - component: {fileID: 813590108}
   m_Layer: 0
   m_Name: Colisionbarco (12)
   m_TagString: Untagged
@@ -3686,7 +3566,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &813590107
+--- !u!114 &813590108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3695,7 +3575,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 813590103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -3709,7 +3589,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 825940160}
-  - component: {fileID: 825940163}
   - component: {fileID: 825940162}
   - component: {fileID: 825940161}
   m_Layer: 0
@@ -3762,20 +3641,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &825940163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825940159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &871230824
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,7 +3925,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920824086}
-  - component: {fileID: 920824089}
   - component: {fileID: 920824088}
   - component: {fileID: 920824087}
   m_Layer: 0
@@ -4113,20 +3977,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &920824089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 920824085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &946848137
 GameObject:
   m_ObjectHideFlags: 0
@@ -4136,9 +3986,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 946848138}
-  - component: {fileID: 946848141}
   - component: {fileID: 946848140}
   - component: {fileID: 946848139}
+  - component: {fileID: 946848142}
   m_Layer: 0
   m_Name: Colisionbarco (17)
   m_TagString: Untagged
@@ -4189,7 +4039,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &946848141
+--- !u!114 &946848142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4198,7 +4048,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 946848137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -4212,7 +4062,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 949504324}
-  - component: {fileID: 949504327}
   - component: {fileID: 949504326}
   - component: {fileID: 949504325}
   m_Layer: 0
@@ -4265,20 +4114,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &949504327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949504323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!20 &963194227 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 6665018441903577359, guid: db220ce92ba594740bc1bbfd4bc23f8b,
@@ -4590,9 +4425,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 990105523}
-  - component: {fileID: 990105526}
   - component: {fileID: 990105525}
   - component: {fileID: 990105524}
+  - component: {fileID: 990105527}
   m_Layer: 0
   m_Name: Colisionbarco (13)
   m_TagString: Untagged
@@ -4643,7 +4478,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &990105526
+--- !u!114 &990105527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4652,7 +4487,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 990105522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -4824,9 +4659,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1029309093}
-  - component: {fileID: 1029309096}
   - component: {fileID: 1029309095}
   - component: {fileID: 1029309094}
+  - component: {fileID: 1029309097}
   m_Layer: 0
   m_Name: Colisionbarco (19)
   m_TagString: Untagged
@@ -4877,7 +4712,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 3, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1029309096
+--- !u!114 &1029309097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4886,7 +4721,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1029309092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -4900,9 +4735,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1033820540}
-  - component: {fileID: 1033820543}
   - component: {fileID: 1033820542}
   - component: {fileID: 1033820541}
+  - component: {fileID: 1033820544}
   m_Layer: 0
   m_Name: Colisionbarco (17)
   m_TagString: Untagged
@@ -4953,7 +4788,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1033820543
+--- !u!114 &1033820544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4962,7 +4797,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1033820539}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -5055,9 +4890,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1065561261}
-  - component: {fileID: 1065561264}
   - component: {fileID: 1065561263}
   - component: {fileID: 1065561262}
+  - component: {fileID: 1065561265}
   m_Layer: 0
   m_Name: Colisionbarco (27)
   m_TagString: Untagged
@@ -5108,7 +4943,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1065561264
+--- !u!114 &1065561265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5117,7 +4952,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1065561260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -5358,7 +5193,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1130245773}
-  - component: {fileID: 1130245776}
   - component: {fileID: 1130245775}
   - component: {fileID: 1130245774}
   m_Layer: 0
@@ -5411,20 +5245,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1130245776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130245772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1152691303
 GameObject:
   m_ObjectHideFlags: 0
@@ -5592,9 +5412,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1182939614}
-  - component: {fileID: 1182939617}
   - component: {fileID: 1182939616}
   - component: {fileID: 1182939615}
+  - component: {fileID: 1182939618}
   m_Layer: 0
   m_Name: Colisionbarco (16)
   m_TagString: Untagged
@@ -5645,7 +5465,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1182939617
+--- !u!114 &1182939618
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5654,7 +5474,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1182939613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -5984,7 +5804,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1272498019}
-  - component: {fileID: 1272498022}
   - component: {fileID: 1272498021}
   - component: {fileID: 1272498020}
   m_Layer: 0
@@ -6037,20 +5856,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1272498022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272498018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1291095410
 GameObject:
   m_ObjectHideFlags: 0
@@ -6060,7 +5865,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291095411}
-  - component: {fileID: 1291095414}
   - component: {fileID: 1291095413}
   - component: {fileID: 1291095412}
   m_Layer: 0
@@ -6113,20 +5917,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1291095414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291095410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1328290634
 GameObject:
   m_ObjectHideFlags: 0
@@ -6439,9 +6229,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1386326821}
-  - component: {fileID: 1386326824}
   - component: {fileID: 1386326823}
   - component: {fileID: 1386326822}
+  - component: {fileID: 1386326825}
   m_Layer: 0
   m_Name: Colisionbarco (14)
   m_TagString: Untagged
@@ -6492,7 +6282,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1386326824
+--- !u!114 &1386326825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6501,7 +6291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1386326820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -6515,7 +6305,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1441995105}
-  - component: {fileID: 1441995108}
   - component: {fileID: 1441995107}
   - component: {fileID: 1441995106}
   m_Layer: 0
@@ -6568,20 +6357,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1441995108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441995104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1468016627
 GameObject:
   m_ObjectHideFlags: 0
@@ -6911,9 +6686,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1508536781}
-  - component: {fileID: 1508536784}
   - component: {fileID: 1508536783}
   - component: {fileID: 1508536782}
+  - component: {fileID: 1508536785}
   m_Layer: 0
   m_Name: Colisionbarco (16)
   m_TagString: Untagged
@@ -6964,7 +6739,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1508536784
+--- !u!114 &1508536785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6973,7 +6748,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1508536780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -7649,7 +7424,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1599381182}
-  - component: {fileID: 1599381185}
   - component: {fileID: 1599381184}
   - component: {fileID: 1599381183}
   m_Layer: 0
@@ -7702,20 +7476,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1599381185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599381181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1620081605
 GameObject:
   m_ObjectHideFlags: 0
@@ -8050,7 +7810,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1663942101}
-  - component: {fileID: 1663942104}
   - component: {fileID: 1663942103}
   - component: {fileID: 1663942102}
   m_Layer: 0
@@ -8103,20 +7862,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 3, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1663942104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663942100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1667069584
 GameObject:
   m_ObjectHideFlags: 0
@@ -8126,9 +7871,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1667069585}
-  - component: {fileID: 1667069588}
   - component: {fileID: 1667069587}
   - component: {fileID: 1667069586}
+  - component: {fileID: 1667069589}
   m_Layer: 0
   m_Name: Colisionbarco (15)
   m_TagString: Untagged
@@ -8179,7 +7924,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1667069588
+--- !u!114 &1667069589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8188,7 +7933,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1667069584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -8202,9 +7947,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1676464158}
-  - component: {fileID: 1676464161}
   - component: {fileID: 1676464160}
   - component: {fileID: 1676464159}
+  - component: {fileID: 1676464162}
   m_Layer: 0
   m_Name: Colisionbarco (26)
   m_TagString: Untagged
@@ -8255,7 +8000,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1676464161
+--- !u!114 &1676464162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8264,7 +8009,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1676464157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -8278,7 +8023,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1691007463}
-  - component: {fileID: 1691007466}
   - component: {fileID: 1691007465}
   - component: {fileID: 1691007464}
   m_Layer: 0
@@ -8331,20 +8075,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 6, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1691007466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691007462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1702476209
 GameObject:
   m_ObjectHideFlags: 0
@@ -8626,7 +8356,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726472865}
-  - component: {fileID: 1726472868}
   - component: {fileID: 1726472867}
   - component: {fileID: 1726472866}
   m_Layer: 0
@@ -8679,20 +8408,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1726472868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726472864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1738816710
 GameObject:
   m_ObjectHideFlags: 0
@@ -8702,9 +8417,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1738816711}
-  - component: {fileID: 1738816714}
   - component: {fileID: 1738816713}
   - component: {fileID: 1738816712}
+  - component: {fileID: 1738816715}
   m_Layer: 0
   m_Name: Colisionbarco (22)
   m_TagString: Untagged
@@ -8755,7 +8470,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1738816714
+--- !u!114 &1738816715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8764,7 +8479,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1738816710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -8857,7 +8572,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778247069}
-  - component: {fileID: 1778247072}
   - component: {fileID: 1778247071}
   - component: {fileID: 1778247070}
   m_Layer: 0
@@ -8910,20 +8624,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1778247072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778247068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1799350002
 GameObject:
   m_ObjectHideFlags: 0
@@ -9654,7 +9354,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1946157620}
-  - component: {fileID: 1946157623}
   - component: {fileID: 1946157622}
   - component: {fileID: 1946157621}
   m_Layer: 0
@@ -9707,20 +9406,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1946157623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946157619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
 --- !u!1 &1946561025
 GameObject:
   m_ObjectHideFlags: 0
@@ -14728,9 +14413,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1995689570}
-  - component: {fileID: 1995689573}
   - component: {fileID: 1995689572}
   - component: {fileID: 1995689571}
+  - component: {fileID: 1995689574}
   m_Layer: 0
   m_Name: Colisionbarco (18)
   m_TagString: Untagged
@@ -14781,7 +14466,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1995689573
+--- !u!114 &1995689574
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14790,7 +14475,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995689569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -14878,9 +14563,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2021147750}
-  - component: {fileID: 2021147753}
   - component: {fileID: 2021147752}
   - component: {fileID: 2021147751}
+  - component: {fileID: 2021147754}
   m_Layer: 0
   m_Name: Colisionbarco (15)
   m_TagString: Untagged
@@ -14931,7 +14616,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2021147753
+--- !u!114 &2021147754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14940,7 +14625,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021147749}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
@@ -15207,9 +14892,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2097705183}
-  - component: {fileID: 2097705186}
   - component: {fileID: 2097705185}
   - component: {fileID: 2097705184}
+  - component: {fileID: 2097705187}
   m_Layer: 0
   m_Name: Colisionbarco (19)
   m_TagString: Untagged
@@ -15260,7 +14945,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2097705186
+--- !u!114 &2097705187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15269,7 +14954,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2097705182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
+  m_Script: {fileID: 11500000, guid: 27e49c90b5be211429a4c07a0f76b988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
