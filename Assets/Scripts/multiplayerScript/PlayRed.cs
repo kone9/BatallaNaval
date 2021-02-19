@@ -13,7 +13,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     GameHandlerAcomodarPIezas _GameHandlerAcomodarPIezas;
     public GameObject pantallaEsperaRival;
     private PhotonView photonMostrar;
-    private DatosGlobalesRed _DatosGlobalesRed;
 
     public Toggle soyJugadorToggle;
     public Toggle soyEnemigoToggle;
@@ -24,12 +23,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     public int tiempoAntesDeCambiarEscena = 5;
    
 
-    [SerializeField]
-    private bool SoyJugador = false;
-    
-    [SerializeField]
-    private bool SoyEnemigo = false;
-
     private bool listoPlayerRED = false;
 
     private bool listoEnemigoRED = false;
@@ -39,7 +32,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
         photonMostrar = GetComponent<PhotonView>();
-        _DatosGlobalesRed = FindObjectOfType<DatosGlobalesRed>();
         
     }
 
@@ -50,21 +42,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         listoEnemigoRED = false;
         ListoJugadorRedToglle.isOn = listoPlayerRED;
         ListoEnemigoRedToglle.isOn = listoEnemigoRED;
-        StartCoroutine("SoyjugadorOenemigo");
-    }
-
-
-    IEnumerator SoyjugadorOenemigo()
-    {
-        yield return new WaitForSeconds(6);//espero 5 segundos antes que se cargue todo los componentes de red
-        while(true) //repito constantemente para hacer comprobaciones
-        {
-            SoyJugador = _DatosGlobalesRed.SoyJugador;
-            SoyEnemigo = _DatosGlobalesRed.SoyEnemigo;
-            soyJugadorToggle.isOn =  _DatosGlobalesRed.SoyJugador;
-            soyEnemigoToggle.isOn =  _DatosGlobalesRed.SoyEnemigo;        
-            yield return new WaitForSeconds(0.1f);
-        }
     }
     
 
@@ -95,28 +72,14 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         //para probar luego borrar
         // listoPlayerRED = true;
         // listoEnemigoRED = true;
-        
-        // EmpezarNivel();
+
             
-        photonView.RPC("EmpezarNivel",RpcTarget.All,_DatosGlobalesRed.SoyJugador);
+        photonView.RPC("EmpezarNivel",RpcTarget.All,photonView.IsMine);
         
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
   
     }
-
-    
-    // [PunRPC]
-    // void VerificarEnRed()
-    // {
-    //     listoPlayerRED = listoPlayer;
-    //     listoEnemigoRED = listoEnemigo;
-    //     ListoJugadorRedToglle.isOn = listoPlayerRED;
-    //     ListoEnemigoRedToglle.isOn = listoEnemigoRED;
-    //     print("listo PLAYER en red es igual a: " + listoPlayerRED);
-    //     print("listo ENEMIGO en red es igual a: " + listoEnemigoRED);
-    // }
-
 
     [PunRPC]
     public void EmpezarNivel(bool isMine)

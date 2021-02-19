@@ -163,6 +163,23 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
   barcosDeLaEscena: []
+  Posicion_barco_1: {x: 0, y: 0, z: 0}
+  Posicion_barco_2: {x: 0, y: 0, z: 0}
+  Posicion_barco_3: {x: 0, y: 0, z: 0}
+  Posicion_portaAviones: {x: 0, y: 0, z: 0}
+  Posicion_Submarino: {x: 0, y: 0, z: 0}
+  rotacion_barco_1: {x: 0, y: 0, z: 0, w: 0}
+  rotacion_barco_2: {x: 0, y: 0, z: 0, w: 0}
+  rotacion_barco_3: {x: 0, y: 0, z: 0, w: 0}
+  rotacion_portaAviones: {x: 0, y: 0, z: 0, w: 0}
+  rotacion_Submarino: {x: 0, y: 0, z: 0, w: 0}
+  OrdenDenombreDeBarcos:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!4 &139069079
 Transform:
   m_ObjectHideFlags: 0
@@ -175,7 +192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &149208409
 GameObject:
@@ -655,7 +672,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &474182275
 MonoBehaviour:
@@ -733,8 +750,9 @@ Transform:
   - {fileID: 543450652778663234}
   - {fileID: 6231475139743515617}
   - {fileID: 543450652084897488}
+  - {fileID: 2022496967}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &516538500
 Rigidbody:
@@ -752,6 +770,73 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &521716728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 521716730}
+  - component: {fileID: 521716729}
+  - component: {fileID: 521716731}
+  m_Layer: 0
+  m_Name: SoyJugadorOEnemigo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &521716729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521716728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ed0ce3851788e49b4b4b520443422a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoText: {fileID: 1372226773}
+--- !u!4 &521716730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521716728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 216.54472, y: 1122.7267, z: 225.98367}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &521716731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521716728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 3
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &591216903
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,8 +1246,6 @@ MonoBehaviour:
   ListoJugadorRedToglle: {fileID: 1477077482}
   ListoEnemigoRedToglle: {fileID: 1882404269}
   tiempoAntesDeCambiarEscena: 5
-  SoyJugador: 0
-  SoyEnemigo: 0
 --- !u!1 &649738796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,82 +2106,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963787483}
   m_CullTransparentMesh: 0
---- !u!1 &988648473
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 988648474}
-  - component: {fileID: 988648475}
-  - component: {fileID: 988648477}
-  m_Layer: 0
-  m_Name: DatosGlobalesRed
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &988648474
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988648473}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &988648475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988648473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d381d875947658040a5890ccd54104a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posicionesBarcoRivalRed:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  SoyJugador: 0
-  SoyEnemigo: 0
-  informacion: {fileID: 1372226773}
---- !u!114 &988648477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988648473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 0
-  Synchronization: 3
-  OwnershipTransfer: 0
-  ObservedComponents:
-  - {fileID: 988648475}
-  viewIdField: 3
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!54 &989628526
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2993,7 +3000,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1382436524
 MonoBehaviour:
@@ -4258,16 +4265,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022496966}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.632788, y: -27.772446, z: 291.2565}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.632788, y: 5.3227005, z: 291.2565}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 317286551}
   - {fileID: 691876259}
   - {fileID: 876223281}
   - {fileID: 1473246825}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 500765745}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070368780
 GameObject:
@@ -5705,7 +5712,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149009664717}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -11.496366, y: 0.6655704, z: 16.086739}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
@@ -5719,7 +5726,7 @@ Transform:
   - {fileID: 1796352688}
   m_Father: {fileID: 543450652084897488}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &543450652778663234
 Transform:
   m_ObjectHideFlags: 0
@@ -6704,11 +6711,8 @@ GameObject:
   - component: {fileID: 1711813856091925272}
   - component: {fileID: 1062336416}
   - component: {fileID: 1062336417}
-  - component: {fileID: 919132149009664719}
-  - component: {fileID: 919132149009664718}
   - component: {fileID: 1062336415}
   - component: {fileID: 919132149009664720}
-  - component: {fileID: 919132149009664721}
   m_Layer: 8
   m_Name: Barco_1
   m_TagString: boat
@@ -6716,45 +6720,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &919132149009664718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149009664717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
---- !u!114 &919132149009664719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149009664717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 0
-  ObservedComponents:
-  - {fileID: 919132149009664718}
-  viewIdField: 2
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &919132149009664720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6767,21 +6732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d2b231150a7744f939684b933231c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &919132149009664721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149009664717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a26bf6341c9e54b95331c908a605f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  codigos:
-  - {fileID: 919132149009664718}
-  - {fileID: 919132149009664721}
 --- !u!1 &919132149043681272
 GameObject:
   m_ObjectHideFlags: 0

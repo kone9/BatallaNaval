@@ -12,11 +12,18 @@ public class DatosGlobales : MonoBehaviour
     public Quaternion[] rotacionesBarcos = new Quaternion[5];
     public GameObject[] barcosDeLaEscena = new GameObject[5];
 
+
+    //Posciones y rotaciones separadas por barcos
     public Vector3 Posicion_barco_1;
     public Vector3 Posicion_barco_2;
     public Vector3 Posicion_barco_3;
     public Vector3 Posicion_portaAviones;
     public Vector3 Posicion_Submarino;
+    public Quaternion rotacion_barco_1;
+    public Quaternion rotacion_barco_2;
+    public Quaternion rotacion_barco_3;
+    public Quaternion rotacion_portaAviones;
+    public Quaternion rotacion_Submarino;
 
 
     //Como estan ordenados los barcos de la escena
@@ -96,6 +103,26 @@ public class DatosGlobales : MonoBehaviour
         for(int i = 0;i < rotacionesBarcos.Length; i++)
         {
             rotacionesBarcos[i] = rotaciones[i];
+            switch (i)
+            {
+                case 0:
+                    rotacion_barco_1 = rotaciones[i];
+                    break;
+                case 1:
+                    rotacion_barco_2 = rotaciones[i];
+                    break;
+                case 2:
+                    rotacion_barco_3 = rotaciones[i];
+                    break;
+                case 3:
+                    rotacion_portaAviones = rotaciones[i];
+                    break;
+                case 4:
+                    rotacion_Submarino = rotaciones[i];
+                    break;
+                default:
+                    break;
+            }
         }
         
     }
@@ -159,18 +186,18 @@ public class DatosGlobales : MonoBehaviour
     //     return barcoCorrecto;
     // }
 
-    public GameObject VerificarTipoDeBarcoEnPosicion(Vector3 posicion)
-    {
+    // public GameObject VerificarTipoDeBarcoEnPosicion(Vector3 posicion)
+    // {
 
-        GameObject barcoCorrecto = null;
-        foreach (GameObject i in barcosDeLaEscena)//esto reccorre todos los barcos guardados de la escena
-        {
-            if(posicion == i.transform.position)
-            {
-                barcoCorrecto = i;
-            }
-        }
-        return barcoCorrecto;
-    }
+    //     GameObject barcoCorrecto = null;
+    //     foreach (GameObject i in barcosDeLaEscena)//esto reccorre todos los barcos guardados de la escena
+    //     {
+    //         if(posicion == i.transform.position)
+    //         {
+    //             barcoCorrecto = i;
+    //         }
+    //     }
+    //     return barcoCorrecto;
+    // }
 
 }

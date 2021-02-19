@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameHandlerAcomodarPIezas : MonoBehaviour
 {
     DatosGlobales _DatosGlobales;
+
     GameObject[] barcos;
 
     GameObject Grilla;
@@ -15,6 +16,7 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     
     public string NombreGameObjectGrilla;
     public Vector3 posicionGrilla;
+
     private void Awake() {
          _DatosGlobales = FindObjectOfType<DatosGlobales>();
          barcos = GameObject.FindGameObjectsWithTag("boat");
@@ -32,6 +34,8 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     {
         
     }
+
+   
 
 
     /// <summary>Guarda la posicion de los barcos</summary>
