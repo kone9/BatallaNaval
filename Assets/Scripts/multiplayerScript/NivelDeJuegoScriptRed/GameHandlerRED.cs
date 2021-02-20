@@ -127,6 +127,7 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     }
 
 
+
     [PunRPC]
     //hace que los barcos que representan al enemigo se roten segun la rotacion del rival.
     void RotarBarcosDelEnemigo(Quaternion enemigo_barco_1_rotacion,Quaternion enemigo_barco_2_rotacion,Quaternion enemigo_barco_3_rotacion,Quaternion enemigo_portaAviones_rotacion,Quaternion enemigo_Submarino_rotacion)

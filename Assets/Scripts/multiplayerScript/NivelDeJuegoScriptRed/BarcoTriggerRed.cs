@@ -5,7 +5,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class BarcoTriggerRed : MonoBehaviourPunCallbacks
+public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
 {
     public GameObject fuego;
     public BoxCollider _BoxCollider;
@@ -36,7 +36,6 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks
         {
             instanciarFuego(this.transform.position);//instancio fuego en esta posición
 
-
             _photonView.RPC("InstanciarFuegoEnMisBarcos", //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
                 this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
@@ -46,6 +45,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks
 
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
         }
+
         if(_GameHandlerRED.cantidadDeAciertosJugador == 21)
         {
             _GameHandlerRED.GameOverWinner();
@@ -73,12 +73,22 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks
         }
     }
 
-
     private void instanciarFuego(Vector3 posicionInicialFuego)
     {
         GameObject fuegoInstance = Instantiate(fuego);
         //fuegoInstance.transform.SetParent(this.gameObject.transform);
         fuegoInstance.transform.position = posicionInicialFuego;
+        
+    }
+
+
+    private void DeshabilitarColision()
+    {
         _BoxCollider.enabled = false;
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        
     }
 }
