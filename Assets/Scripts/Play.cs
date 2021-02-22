@@ -28,7 +28,7 @@ public class Play : MonoBehaviour
     public void CambiarDeEscena()//Script para cambiar a la escena principal
     {
         
-        SceneManager.LoadScene("JugarContraEnemigoEnRed");
+        SceneManager.LoadScene("JugarContraEnemigo");
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();  
     }

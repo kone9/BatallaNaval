@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/MenuInicio.unity
+    guid: 925ef332c16c45445bcd0d72b399715e
+  - enabled: 1
     path: Assets/Scenes/AcomodarPiezas.unity
     guid: 8b34dd605d2d5f14fb8dc6e2bad34d0e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/JugarContraEnemigo.unity
     guid: 29c329d59b9964c41b0de49c6cd431fa
   - enabled: 1
