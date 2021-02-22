@@ -36,7 +36,7 @@ public class Play : MonoBehaviour
     /// <summary>Vuelve a la escena de Inicio</summary>
     public void Volver()
     {
-        SceneManager.LoadScene("AcomodarPiezas");
+        SceneManager.LoadScene("MenuInicio");
     }
 
     
