@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 8398fc4aa637d044cb35a56c126d302a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Armalite Rifle
+  fontNames:
+  - Armalite Rifle
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a913b633cbf066443bf2b62f7c99e290, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
