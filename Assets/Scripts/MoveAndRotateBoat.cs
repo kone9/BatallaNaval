@@ -36,7 +36,7 @@ public class MoveAndRotateBoat : MonoBehaviourPun
                 this.transform.position.y,
                 _GameHandlerAcomodarPIezas.GetGrilla().transform.position.z
             );
-           ;
+           
         }
     }
 

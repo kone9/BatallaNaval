@@ -11437,6 +11437,7 @@ GameObject:
   - component: {fileID: 1062336416}
   - component: {fileID: 1062336417}
   - component: {fileID: 1062336415}
+  - component: {fileID: 919132149009664718}
   m_Layer: 8
   m_Name: Barco_1
   m_TagString: boat
@@ -11444,6 +11445,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132149009664718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149009664717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d2b231150a7744f939684b933231c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &919132149043681272
 GameObject:
   m_ObjectHideFlags: 0
@@ -11474,6 +11487,7 @@ GameObject:
   - component: {fileID: 169942773}
   - component: {fileID: 169942774}
   - component: {fileID: 169942772}
+  - component: {fileID: 919132149325243297}
   m_Layer: 8
   m_Name: barco_2
   m_TagString: boat
@@ -11481,6 +11495,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132149325243297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149325243296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d2b231150a7744f939684b933231c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &919132149398006285
 GameObject:
   m_ObjectHideFlags: 0
@@ -11495,6 +11521,7 @@ GameObject:
   - component: {fileID: 378492768}
   - component: {fileID: 378492769}
   - component: {fileID: 378492767}
+  - component: {fileID: 919132149398006286}
   m_Layer: 8
   m_Name: barco_3
   m_TagString: boat
@@ -11502,6 +11529,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132149398006286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149398006285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d2b231150a7744f939684b933231c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &919132149495254993
 GameObject:
   m_ObjectHideFlags: 0
@@ -11517,6 +11556,7 @@ GameObject:
   - component: {fileID: 474182277}
   - component: {fileID: 919132149495254994}
   - component: {fileID: 474182275}
+  - component: {fileID: 919132149495254995}
   m_Layer: 8
   m_Name: portaAviones
   m_TagString: boat
@@ -11537,6 +11577,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.175, z: 0.05125111}
   m_Center: {x: 0, y: -0.068, z: 0.018114904}
+--- !u!114 &919132149495254995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149495254993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d2b231150a7744f939684b933231c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &946695712238001958
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18193,6 +18245,7 @@ GameObject:
   - component: {fileID: 3775431755800756854}
   - component: {fileID: 3775431755800756853}
   - component: {fileID: 3775431755800756856}
+  - component: {fileID: 3775431755800756857}
   m_Layer: 8
   m_Name: submarino
   m_TagString: boat
@@ -18254,6 +18307,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.017726704}
   m_Center: {x: 0.045, y: -0.049195684, z: 0.0030645402}
+--- !u!114 &3775431755800756857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3775431755800756852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d2b231150a7744f939684b933231c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &3804381948730504446
 MeshFilter:
   m_ObjectHideFlags: 0
