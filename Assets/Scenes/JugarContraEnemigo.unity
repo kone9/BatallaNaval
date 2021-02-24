@@ -2101,7 +2101,7 @@ GameObject:
   - component: {fileID: 432235278}
   - component: {fileID: 432235277}
   m_Layer: 0
-  m_Name: barco_1
+  m_Name: barco_1_jugador
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4638,7 +4638,7 @@ GameObject:
   - component: {fileID: 897168353}
   - component: {fileID: 897168352}
   m_Layer: 0
-  m_Name: PortaAviones
+  m_Name: PortaAviones_jugador
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13273,7 +13273,7 @@ GameObject:
   - component: {fileID: 1520948538}
   - component: {fileID: 1520948537}
   m_Layer: 0
-  m_Name: submarino
+  m_Name: submarino_jugador
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15336,7 +15336,7 @@ GameObject:
   - component: {fileID: 1799350006}
   - component: {fileID: 1799350005}
   m_Layer: 0
-  m_Name: barco_3
+  m_Name: barco_3_jugador
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21063,7 +21063,7 @@ GameObject:
   - component: {fileID: 1985781192}
   - component: {fileID: 1985781191}
   m_Layer: 0
-  m_Name: barco_2
+  m_Name: barco_2_jugador
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
