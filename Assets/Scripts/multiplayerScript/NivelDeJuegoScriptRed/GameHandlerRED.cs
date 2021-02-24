@@ -25,6 +25,8 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 
     private bool puedoPresionarBoton = true;
 
+    public Animator animacionLuzDecoradoRoja;
+
 /////////////////////////////////////////////////////////
     //referencia a todos los barcos de la escena del JUGADOR
     private GameObject barco_1;
@@ -112,6 +114,7 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         {
             fondoTablero.SetActive(true);//tablero de color rojo en el fondo
             puedoPresionarBoton = false;//los botones pueden ser presionados
+            animacionLuzDecoradoRoja.SetBool("isTurnEnemy",true);
         }   
     }
 
@@ -185,12 +188,16 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     /// <summary>Si es turno del jugador no activa el fondo de grilla<</summary>
     public void IsTurnoJugador()
     {
+        //aqui habilito el jugador actual
         fondoTablero.SetActive(false);
         puedoPresionarBoton = true;
+        animacionLuzDecoradoRoja.SetBool("isTurnEnemy",false);
+        //aqui deshabilito al enemigo
         photonView.RPC("IsTurnoEnemigoAvisarRed", //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered,//para obtener los parámetros de otros
-                false,//Rotacion del barco enemigo enviado por parametro
-                true//Rotacion del barco enemigo enviado por parametro
+                true,////apara un tablero de color rojo en el fondo
+                false,//los botones pueden ser presionados
+                true//luz roja que aparace con el tablero de no puedo jugar
             );  
     }
 
@@ -201,21 +208,23 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         //aqui deshabilito el jugador actual
         fondoTablero.SetActive(true);//enciende un tablero de color rojo en el fondo
         puedoPresionarBoton = false;//los botones ya no pueden ser presionados
-
+        animacionLuzDecoradoRoja.SetBool("isTurnEnemy",true);
         //aqui habilito al enemigo
         photonView.RPC("IsTurnoEnemigoOJugadorAvisarRed", //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered,//para llamar o obtener los datos de otros
                 false,//apara un tablero de color rojo en el fondo
-                true//los botones pueden ser presionados
+                true,//los botones pueden ser presionados
+                false//luz roja que aparace con el tablero de no puedo jugar
             );  
     }
 
 
     [PunRPC]
-    private void IsTurnoEnemigoOJugadorAvisarRed(bool fondoTableroRed,bool puedoPresionarBotonRed)
+    private void IsTurnoEnemigoOJugadorAvisarRed(bool fondoTableroRed,bool puedoPresionarBotonRed,bool cambiarColorBotones)
     {
         fondoTablero.SetActive(fondoTableroRed);
         puedoPresionarBoton = puedoPresionarBotonRed;
+        animacionLuzDecoradoRoja.SetBool("isTurnEnemy",cambiarColorBotones);
     }
 
     /// <summary>Retorna un bolean "si puedo o no puedo" presionar Boton</summary>

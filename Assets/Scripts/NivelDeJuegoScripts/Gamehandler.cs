@@ -18,6 +18,8 @@ public class Gamehandler : MonoBehaviour
 
     private bool puedoPresionarBoton = true;
 
+    public Animator animacionLuzDecoradoRoja;
+
     private void Awake() {
        
         _DatosGlobales = FindObjectOfType<DatosGlobales>();
@@ -73,6 +75,7 @@ public class Gamehandler : MonoBehaviour
     /// <summary>Si es turno del jugador no activa el fondo de grilla<</summary>
     public void IsTurnoJugador()
     {
+        animacionLuzDecoradoRoja.SetBool("isTurnEnemy",false);
         fondoTablero.SetActive(false);
         puedoPresionarBoton = true;
     }
@@ -82,6 +85,7 @@ public class Gamehandler : MonoBehaviour
     {
         fondoTablero.SetActive(true);
         puedoPresionarBoton = false;
+        animacionLuzDecoradoRoja.SetBool("isTurnEnemy",true);
         _EnemigoHandler.DispararFuegoEnemigoHastaErrar();
         
     }
