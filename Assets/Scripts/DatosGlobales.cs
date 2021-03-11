@@ -25,6 +25,19 @@ public class DatosGlobales : MonoBehaviour
     public Quaternion rotacion_portaAviones;
     public Quaternion rotacion_Submarino;
 
+    //BARCOS ENEMIGO
+    public Vector3 Posicion_barco_1_enemigo;
+    public Vector3 Posicion_barco_2_enemigo;
+    public Vector3 Posicion_barco_3_enemigo;
+    public Vector3 Posicion_portaAviones_enemigo;
+    public Vector3 Posicion_Submarino_enemigo;
+    public Quaternion rotacion_barco_1_enemigo;
+    public Quaternion rotacion_barco_2_enemigo;
+    public Quaternion rotacion_barco_3_enemigo;
+    public Quaternion rotacion_portaAviones_enemigo;
+    public Quaternion rotacion_Submarino_enemigo;
+
+
 
     //Como estan ordenados los barcos de la escena
     public string[] OrdenDenombreDeBarcos = new string[6];
@@ -66,7 +79,7 @@ public class DatosGlobales : MonoBehaviour
     }
 
 
-    /// <summary>Referencia para cambiar la posicion de todos los barcos</summary>
+    /// <summary>Referencia para cambiar la posicion de todos los barcos JUGADOR</summary>
     /// <param>@Vector3[] </param>
     public void SetPosicionesBarcos(Vector3[] posiciones)
     {
@@ -95,7 +108,6 @@ public class DatosGlobales : MonoBehaviour
             }
         }   
     }
-
 
     /// <summary>Referencia para cambiar la rotacion de todos los barcos</summary>
     public void SetRotacionesBarcos(Quaternion[] rotaciones)
@@ -127,6 +139,67 @@ public class DatosGlobales : MonoBehaviour
         
     }
 
+
+    /// <summary>Referencia para cambiar la posicion de todos los barcos ENEMIGOS</summary>
+    /// <param>@Vector3[] </param>
+    public void SetPosicionesBarcosEnemigos(Vector3[] posiciones)
+    {
+        for(int i = 0;i < posicionesBarcos.Length; i++)
+        {
+            posicionesBarcos[i] = posiciones[i];
+            switch (i)
+            {
+                case 0:
+                    Posicion_barco_1_enemigo = posiciones[i];
+                    break;
+                case 1:
+                    Posicion_barco_2_enemigo = posiciones[i];
+                    break;
+                case 2:
+                    Posicion_barco_3_enemigo = posiciones[i];
+                    break;
+                case 3:
+                    Posicion_portaAviones_enemigo = posiciones[i];
+                    break;
+                case 4:
+                    Posicion_Submarino_enemigo = posiciones[i];
+                    break;
+                default:
+                    break;
+            }
+        }   
+    }
+
+        /// <summary>Referencia para cambiar la rotacion de todos los barcos ENEMIGOS</summary>
+    public void SetRotacionesBarcosEnemigos(Quaternion[] rotaciones)
+    {
+        for(int i = 0;i < rotacionesBarcos.Length; i++)
+        {
+            rotacionesBarcos[i] = rotaciones[i];
+            switch (i)
+            {
+                case 0:
+                    rotacion_barco_1_enemigo = rotaciones[i];
+                    break;
+                case 1:
+                    rotacion_barco_2_enemigo = rotaciones[i];
+                    break;
+                case 2:
+                    rotacion_barco_3_enemigo = rotaciones[i];
+                    break;
+                case 3:
+                    rotacion_portaAviones_enemigo = rotaciones[i];
+                    break;
+                case 4:
+                    rotacion_Submarino_enemigo = rotaciones[i];
+                    break;
+                default:
+                    break;
+            }
+        }
+    }    
+    
+
     /// <summary>Devuelve las posiciones de todos los barcos en un arreglo de tipo vector3</summary>
     /// <param>@None </param>
     public Vector3[] GetPosicionesBarcos()
@@ -151,6 +224,11 @@ public class DatosGlobales : MonoBehaviour
         }
         return rotaciones;
     }
+
+
+
+
+
 
      /// <summary>verifica el tipo de barco en esa posicion sobre todos los barcos guardados en datos globales y Devuelve verdadero cuando el barco es identico..Importante para acomodar los barcos</summary>
     // public bool VerificarTipoDeBarcoEnPosicion(Vector3 posicion,GameObject barcoActual)

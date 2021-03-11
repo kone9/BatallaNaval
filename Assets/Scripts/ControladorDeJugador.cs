@@ -7,11 +7,9 @@ using UnityEngine;
 public class ControladorDeJugador : MonoBehaviour
 {
     
-
+    GameHandlerAcomodarPIezas _GameHandlerAcomodarPIezas;
     MoveAndRotateBoat _MoveAndRotateBoat;
     BoxCollider[] _BoxCollider;
-
-
 
     bool puedoMover = false;
 
@@ -19,104 +17,68 @@ public class ControladorDeJugador : MonoBehaviour
     {
         _MoveAndRotateBoat = GetComponent<MoveAndRotateBoat>();
         _BoxCollider = this.gameObject.GetComponents<BoxCollider>();
+        _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>(); 
 
     }
 
-    // Start is called before the first frame update
-
-
-    // Update is called once per frame
+        // Update is called once per frame
     void Update()
     {
+
         if(puedoMover)//si puedo mover el barco llamo a las funciones para mover tengo que presionar las teclas para que se mueva
-        {
-            print("tendria que moverse");
-            _MoveAndRotateBoat.moverBarcosPorCuadricula();
+        { 
+            //hay un pequeño bug con el movimiento
+            StartCoroutine(MoverSoloUnaVes());
 
             if(Input.GetMouseButtonDown(1))
             {
-                _MoveAndRotateBoat.RotateBoat();
+                //si esta en la grilla
+                if(_GameHandlerAcomodarPIezas.inGrid(_MoveAndRotateBoat.lengthBarco,_MoveAndRotateBoat.lenghtBarcoDerecha,_MoveAndRotateBoat.lenghtBarcoIzquierda, (_MoveAndRotateBoat.direccion + 1) % 4,_MoveAndRotateBoat.X_posicion_imaginaria,_MoveAndRotateBoat.Y_posicion_imaginaria))
+                {
+                    //puedo rotar
+                    _MoveAndRotateBoat.RotarBarco();
+                }
             }
-            StartCoroutine("DejarDeMover");//para dejar de mover y evitar que las teclas se superpongan con una corrutina
+
+            if(Input.GetMouseButtonUp(0))
+            {
+                DejarDeMover();
+            }
         }
 
     }
 
 
-    void GestorDeTeclas()
+
+    private IEnumerator MoverSoloUnaVes()
     {
-         if(Input.GetMouseButtonUp(0))
-            {
-                foreach (Collider i in _BoxCollider)
-                {
-                    i.enabled = true;
-                }
-                puedoMover = false;
-                print("tendria que aparecer el colider y dejar de moverse");
-            }
+        _MoveAndRotateBoat.MoverBarcosPorCuadricula();
+        yield return null;
+    }
 
-
-        if(puedoMover == true)
+    private void OnMouseOver()//si el mouse esta arriba de la colision
+    {   
+        //hay un pequeño bug con el movimiento
+        if(Input.GetMouseButtonDown(0))
         {
-            if(Input.GetMouseButton(0))
-            {
-                _MoveAndRotateBoat.moverBarcosPorCuadricula();
-                foreach (Collider i in _BoxCollider)
-                {
-                    i.enabled = false;
-                }
-                if(Input.GetMouseButtonDown(1))
-                {
-                _MoveAndRotateBoat.RotateBoat();
-                }
-            }
-
+            _MoveAndRotateBoat.startPos = transform.localPosition;
+            puedoMover = true;//puedo mover
         }
+
     }
 
 
-    private void OnMouseOver()
-    {  
-        Mover();
-    }
-
-
-    private void Mover()
+    void DejarDeMover()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
     {
-        if(Input.GetMouseButtonDown(0) && !puedoMover)
+        if(_MoveAndRotateBoat.EstaChocandoContraOtroBarco())
         {
-            puedoMover = true;
-            foreach (Collider i in _BoxCollider)
-            {
-                i.enabled = false;
-            }
+            puedoMover = false;
+            StartCoroutine(_MoveAndRotateBoat.PosicionarBarcoAleatoriamenteSinColisionarConOtros());
+            // _MoverYrotar.PosicionarBarcoAleatoriamenteSinColisionarConOtros();
         }
-    }
-
-
-    IEnumerator DejarDeMover()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
-    {
-        yield return new WaitForSeconds(1.0f);
-        if(Input.GetMouseButtonDown(0) && puedoMover == true)
-            {
-                puedoMover = false;
-                foreach (Collider i in _BoxCollider)
-                {
-                    i.enabled = true;
-                }
-                print("Ahora tendria que dejar de moverse");
-            }
-    }
-
-    
-
-    private void OnTriggerEnter(Collider other) {
+        puedoMover = false;
         
-        if(other.transform.tag == "boat")
-        {
-            print("entro el barco dentro de otro barco");
-            
-        }
+        // print("Ahora tendria que dejar de moverse")
     }
 
 

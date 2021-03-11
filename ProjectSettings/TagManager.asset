@@ -23,8 +23,8 @@ TagManager:
   - 
   - barcos
   - grilla
-  - 
-  - 
+  - cuadriculaColision
+  - Overlap
   - 
   - 
   - 
