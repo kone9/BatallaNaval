@@ -48,6 +48,8 @@ public class Gamehandler : MonoBehaviour
     private Quaternion enemigo_PortaAviones_Rotacion;
     private Quaternion enemigo_submarino_Rotacion;
 
+
+
 //////////////////////////////////////////////////////    
 
     private void Awake() {
@@ -57,6 +59,9 @@ public class Gamehandler : MonoBehaviour
         barcos = GameObject.FindGameObjectsWithTag("boat");
         barcosGrilla = GameObject.FindGameObjectsWithTag("barcosGrilla");
         buscarBarcos();
+
+
+
     }
     
     void buscarBarcos()

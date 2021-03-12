@@ -11,8 +11,11 @@ public class Play : MonoBehaviour
     private BotonAuto _botonAuto;
     GameHandlerAcomodarPIezas _GameHandlerAcomodarPIezas;
 
+    GameObject musicaInicio;
+
     private void Awake() {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
+        musicaInicio = GameObject.Find("musicaInicio");
     }
     // Start is called before the first frame update
     void Start()
@@ -37,9 +40,16 @@ public class Play : MonoBehaviour
     /// <summary>Cosas que hago antes de cambiar de escena uso corrutina</summary>
     IEnumerator acomodarBarcosParaCambiarDeNivel()
     {
+        //activo sonido de boton
+
+        //activo sonido de puerta
+
         //guardo las posiciones de los barcos del jugador
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcos();
+
+        //destruyo la musica inicio
+        Destroy(musicaInicio);
 
         //coloco cartel esperando enemigo
         imagenEsperandoEnemigo.SetActive(true);

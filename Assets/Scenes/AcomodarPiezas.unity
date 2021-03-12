@@ -254,6 +254,18 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
+  posicionesBarcos_enemigo:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  rotacionesBarcos_enemigo:
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
   Posicion_barco_1: {x: 0, y: 0, z: 0}
   Posicion_barco_2: {x: 0, y: 0, z: 0}
   Posicion_barco_3: {x: 0, y: 0, z: 0}
@@ -8779,17 +8791,17 @@ PrefabInstance:
     - target: {fileID: 3490102796532164708, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.45882353
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3490102796532164708, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3490102796532164708, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3490102796532164708, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
@@ -9364,7 +9376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2022496967
 Transform:
   m_ObjectHideFlags: 0

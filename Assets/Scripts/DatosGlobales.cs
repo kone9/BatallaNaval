@@ -11,6 +11,11 @@ public class DatosGlobales : MonoBehaviour
     public Vector3[] posicionesBarcos = new Vector3[5];
     public Quaternion[] rotacionesBarcos = new Quaternion[5];
 
+    public Vector3[] posicionesBarcos_enemigo = new Vector3[5];
+    public Quaternion[] rotacionesBarcos_enemigo = new Quaternion[5];
+
+
+
 
 
     //Posciones y rotaciones separadas por barcos
@@ -144,9 +149,9 @@ public class DatosGlobales : MonoBehaviour
     /// <param>@Vector3[] </param>
     public void SetPosicionesBarcosEnemigos(Vector3[] posiciones)
     {
-        for(int i = 0;i < posicionesBarcos.Length; i++)
+        for(int i = 0;i < posiciones.Length; i++)
         {
-            posicionesBarcos[i] = posiciones[i];
+            posicionesBarcos_enemigo[i] = posiciones[i];
             switch (i)
             {
                 case 0:
