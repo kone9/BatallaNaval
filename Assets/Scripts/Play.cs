@@ -12,10 +12,16 @@ public class Play : MonoBehaviour
     GameHandlerAcomodarPIezas _GameHandlerAcomodarPIezas;
 
     GameObject musicaInicio;
+    AudioSource PuertaSonido;
+    AudioSource efectoBoton_3;
+    AudioSource efectoBoton_2;
 
     private void Awake() {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
         musicaInicio = GameObject.Find("musicaInicio");
+        PuertaSonido = GameObject.Find("PuertaSonido").GetComponent<AudioSource>();
+        efectoBoton_3 = GameObject.Find("efectoBoton_3").GetComponent<AudioSource>();
+        efectoBoton_2 = GameObject.Find("efectoBoton_2").GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
@@ -41,8 +47,9 @@ public class Play : MonoBehaviour
     IEnumerator acomodarBarcosParaCambiarDeNivel()
     {
         //activo sonido de boton
-
+        efectoBoton_3.Play();
         //activo sonido de puerta
+        PuertaSonido.Play();
 
         //guardo las posiciones de los barcos del jugador
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();
