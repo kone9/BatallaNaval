@@ -21,12 +21,14 @@ public class Gamehandler : MonoBehaviour
     public Animator animacionLuzDecoradoRoja;
 
     /////////////////////////////////////////////////////////
-    //referencia a todos los barcos de la escena del JUGADOR
-    private GameObject barco_1;
-    private GameObject barco_2;
-    private GameObject barco_3;
-    private GameObject portaAviones;
-    private GameObject Submarino;
+    //referencia a todos los barcos de la escena del ENEMIGO
+    private GameObject barco_1_enemigo;
+    private GameObject barco_2_enemigo;
+    private GameObject barco_3_enemigo;
+    private GameObject portaAviones_enemigo;
+    private GameObject Submarino_enemigo;
+
+     //referencia a todos los barcos de la escena del JUGADOR
     private GameObject barco_1_jugador;
     private GameObject barco_2_jugador;
     private GameObject barco_3_jugador;
@@ -60,11 +62,11 @@ public class Gamehandler : MonoBehaviour
     void buscarBarcos()
     {
         //barcos de la grilla cuadro de abajo
-        barco_1 = GameObject.Find("barco_1");
-        barco_2 = GameObject.Find("barco_2");
-        barco_3 = GameObject.Find("barco_3");
-        portaAviones = GameObject.Find("PortaAviones");
-        Submarino  = GameObject.Find("submarino");
+        barco_1_enemigo = GameObject.Find("barco_1");
+        barco_2_enemigo = GameObject.Find("barco_2");
+        barco_3_enemigo = GameObject.Find("barco_3");
+        portaAviones_enemigo = GameObject.Find("PortaAviones");
+        Submarino_enemigo  = GameObject.Find("submarino");
         //barcos del jugador cuadro de arriba
         barco_1_jugador = GameObject.Find("barco_1_jugador");
         barco_2_jugador = GameObject.Find("barco_2_jugador");
@@ -90,7 +92,7 @@ public class Gamehandler : MonoBehaviour
     }
 
 
-    //acomoda los barcos que estan en la pantalla de arriba,osea los del jugador
+    /// <summary>Acomoda los barcos del JUGADOR según la posicion del nivel acomodar piezas</summary>
     private void AcomodarLosBarcos()
     {
         Vector3 Posicion_barco_1 = _DatosGlobales.Posicion_barco_1;
@@ -128,8 +130,7 @@ public class Gamehandler : MonoBehaviour
         submarino_jugador.transform.rotation = rotacion_submarino;
     }
 
-    //estotendria que hacer mediante una aleatoriedad ya que son los barcos del enemigo
-    // y como es la maquina con hacer esto aleatorio seria suficiente
+    /// <summary>Acomoda los barcos del ENEMIGO según la posicion del nivel acomodar piezas</summary>
     private void AcomodarLosBarcosGrillaEnemigo()
     {
         Vector3 Posicion_barco_1 = _DatosGlobales.Posicion_barco_1_enemigo;
@@ -146,41 +147,18 @@ public class Gamehandler : MonoBehaviour
 
 
         //posiciones
-        barco_1.transform.position = Posicion_barco_1;
-        barco_2.transform.position = Posicion_barco_2;
-        barco_3.transform.position = Posicion_barco_3;
-        portaAviones.transform.position = Posicion_portaAviones;
-        Submarino.transform.position = Posicion_Submarino;
+        barco_1_enemigo.transform.position = Posicion_barco_1;
+        barco_2_enemigo.transform.position = Posicion_barco_2;
+        barco_3_enemigo.transform.position = Posicion_barco_3;
+        portaAviones_enemigo.transform.position = Posicion_portaAviones;
+        Submarino_enemigo.transform.position = Posicion_Submarino;
 
         //rotaciones
-        barco_1.transform.rotation = rotacion_barco_1;
-        barco_2.transform.rotation = rotacion_barco_2;
-        barco_3.transform.rotation = rotacion_barco_3;
-        portaAviones.transform.rotation = rotacion_portaAviones;
-        Submarino.transform.rotation = rotacion_submarino;
-        // int indice = 0;
-        // foreach (GameObject i in barcosGrilla)
-        // {
-        //     //acomodar posición
-        //     i.transform.position = _DatosGlobales.GetPosicionesBarcos()[indice];
-        //     //acomodar rotación
-        //     i.transform.rotation = _DatosGlobales.GetRotacionBarcos()[indice];
-        //     indice += 1;
-        // }
-
-        // // asi tendria que obtener las posiciones del los barcos del enemigo
-        // // posiciones
-        //     barco_1.transform.position = enemigo_barco_1_posicion;
-        //     barco_2.transform.position = enemigo_barco_2_posicion;
-        //     barco_3.transform.position = enemigo_barco_3_posicion;
-        //     portaAviones.transform.position = enemigo_portaAviones_posicion;
-        //     Submarino.transform.position = enemigoPosicionSubmarino;
-        // // rotaciones
-        //     barco_1.transform.rotation = enemigo_barco_1_Rotacion;
-        //     barco_2.transform.rotation = enemigo_barco_2_rotacion;
-        //     barco_3.transform.rotation = enemigo_barco_3_rotacion;
-        //     portaAviones.transform.rotation = enemigo_portaAviones_rotacion;
-        //     Submarino.transform.rotation = enemigo_Submarino_rotacion;
+        barco_1_enemigo.transform.rotation = rotacion_barco_1;
+        barco_2_enemigo.transform.rotation = rotacion_barco_2;
+        barco_3_enemigo.transform.rotation = rotacion_barco_3;
+        portaAviones_enemigo.transform.rotation = rotacion_portaAviones;
+        Submarino_enemigo.transform.rotation = rotacion_submarino;
     }
 
     /// <summary>Si es turno del jugador no activa el fondo de grilla<</summary>
