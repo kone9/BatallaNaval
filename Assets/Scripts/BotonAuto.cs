@@ -9,6 +9,7 @@ public class BotonAuto : MonoBehaviour
     GameObject[] cuadriculas;
 
     GameHandlerAcomodarPIezas _GameHandler;
+    AudioSource efectoBoton_2;
 
 
     private void Awake()
@@ -16,11 +17,13 @@ public class BotonAuto : MonoBehaviour
         barcos = GameObject.FindGameObjectsWithTag("boat");//busca todos los barcos
         cuadriculas = GameObject.FindGameObjectsWithTag("cuadriculaColision");
         _GameHandler = FindObjectOfType<GameHandlerAcomodarPIezas>();
+        efectoBoton_2 = GameObject.Find("efectoBoton_2").GetComponent<AudioSource>();
         // listaDeNumeros = new int[cantidadNumerosAletorios];
     }
 
     public void AutoBoton()
     {
+        efectoBoton_2.Play();
         StartCoroutine("PosicionarBarcoAleatoriamente");
         // PosicionarBarcoAleatoriamente();
     }

@@ -13,11 +13,16 @@ public class ControladorDeJugador : MonoBehaviour
 
     bool puedoMover = false;
 
+    AudioSource efectoBoton_2;
+    AudioSource PuertaSonido;
+
     private void Awake()
     {
         _MoveAndRotateBoat = GetComponent<MoveAndRotateBoat>();
         _BoxCollider = this.gameObject.GetComponents<BoxCollider>();
-        _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>(); 
+        _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
+        efectoBoton_2 = GameObject.Find("efectoBoton_2").GetComponent<AudioSource>();
+        PuertaSonido = GameObject.Find("PuertaSonido").GetComponent<AudioSource>(); 
 
     }
 
@@ -37,12 +42,14 @@ public class ControladorDeJugador : MonoBehaviour
                 {
                     //puedo rotar
                     _MoveAndRotateBoat.RotarBarco();
+                    efectoBoton_2.Play();
                 }
             }
 
             if(Input.GetMouseButtonUp(0))
             {
                 DejarDeMover();
+                PuertaSonido.Play();
             }
         }
 
@@ -63,6 +70,7 @@ public class ControladorDeJugador : MonoBehaviour
         {
             _MoveAndRotateBoat.startPos = transform.localPosition;
             puedoMover = true;//puedo mover
+            efectoBoton_2.Play();//activo sonido agarre
         }
 
     }
