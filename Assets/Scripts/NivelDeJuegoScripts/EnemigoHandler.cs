@@ -10,10 +10,21 @@ public class EnemigoHandler : MonoBehaviour
     List<GameObject> barcoJugadorColisiones = new List<GameObject>();
 
     private Gamehandler _Gamehandler;
+
+    //Para el audio
+    AudioSource audio_hit_Own;//sonido hit
+    AudioSource audio_sink_Own;//sonido hundio barco
+    GameObject[] audio_miss;//sonido erro disparo
+
     private void Awake()
     {
         barcoJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("barcoJugadorColisiones"));
         _Gamehandler = FindObjectOfType<Gamehandler>();
+        
+        audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
+        audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
+        audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");
+
     }
     
     // Start is called before the first frame update
@@ -67,15 +78,24 @@ public class EnemigoHandler : MonoBehaviour
                     
                 //fuegoInstance.transform.SetParent(this.gameObject.transform);
                 fuegoInstance.transform.position = barcoJugadorColisiones[LugarAleatorio].transform.position;
+                // barcoJugadorColisiones[LugarAleatorio].GetComponent<MeshRenderer>().enabled = true;
                 elementoEliminar += 1;
                 barcoJugadorColisiones.RemoveAt(LugarAleatorio);
                 
-                numeroAleatorio = Random.Range(0,2);//Esto tiene que ver con la dificultad,cuanto más alto el segundo número mas fácil es jugar contra la maquina como minimo comienza con 2 para una dificultad muy alta
+                
+                numeroAleatorio = Random.Range(0,10);//Esto tiene que ver con la dificultad,cuanto más alto el segundo número mas fácil es jugar contra la maquina como minimo comienza con 2 para una dificultad muy alta
                 print("el numero aleatorio es: "+numeroAleatorio);
-                yield return new WaitForSeconds(1);
+
+
+                audio_hit_Own.Play();//sonido acerto al barco
+
+                yield return new WaitForSeconds(2);//espera 2 segundos antes de volver a hacer lo mismo
             }
             else
             {
+                // audio_sink_Own.Play();//sonido erro el disparo
+                audio_miss[Random.Range(0,audio_miss.Length)].GetComponent<AudioSource>().Play();
+                yield return new WaitForSeconds(1.0f);
                 _Gamehandler.IsTurnoJugador();
                 break;
             }

@@ -156,7 +156,7 @@ public class MoveAndRotateBoat : MonoBehaviourPun
     public IEnumerator PosicionarBarcoAleatoriamenteSinColisionarConOtros()
     {   
         //tiro primera vez           
-        Mover_Y_Rotar_Barcos_AutomaticamentePorCuadricula(cuadriculas[Random.Range(0,cuadriculas.Length - 1)]);
+        Mover_Y_Rotar_Barcos_AutomaticamentePorCuadricula(cuadriculas[Random.Range(0,cuadriculas.Length)]);
         yield return new WaitForSeconds(0.01f);//prueba luego borrar
 
         //repetir sino esta en grilla y si esta colisionando con otro barco
@@ -164,7 +164,7 @@ public class MoveAndRotateBoat : MonoBehaviourPun
         { 
             print("el barco no esta en la grilla");
             //mover y rotar barcos automaticamente
-            Mover_Y_Rotar_Barcos_AutomaticamentePorCuadricula(cuadriculas[Random.Range(0,cuadriculas.Length - 1)]);
+            Mover_Y_Rotar_Barcos_AutomaticamentePorCuadricula(cuadriculas[Random.Range(0,cuadriculas.Length)]);
             yield return new WaitForSeconds(0.01f);//prueba luego borrar
             // yield return null;
         }      

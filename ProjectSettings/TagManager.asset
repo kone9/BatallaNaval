@@ -12,6 +12,8 @@ TagManager:
   - bordeDebarco
   - Bullet
   - Proyectil
+  - miss_audio
+  - hit
   layers:
   - Default
   - TransparentFX

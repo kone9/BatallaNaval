@@ -5,11 +5,15 @@ using UnityEngine;
 public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
 {
     // Start is called before the first frame update
-        Gamehandler _GamehandlerRED;
+    Gamehandler _Gamehandler;
+    
+    //AUDIO globales
+    public GameObject[] audio_miss;//sonido errar disparo
     
     private void Awake()
     {
-        _GamehandlerRED = FindObjectOfType<Gamehandler>();
+        _Gamehandler = FindObjectOfType<Gamehandler>();
+        audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");//sonido errar disparo
     }
 
     // Start is called before the first frame update
@@ -26,11 +30,12 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(_GamehandlerRED.GetPuedoPresionarBoton() == true)
+        if(_Gamehandler.GetPuedoPresionarBoton() == true)
         {
             // print("presione en el cubo");
             this.GetComponent<MeshRenderer>().enabled = true;
-            _GamehandlerRED.IsTurnoEnemigo();
+            audio_miss[Random.Range(0,audio_miss.Length)].GetComponent<AudioSource>().Play();//activo sonido errar disparo
+            _Gamehandler.IsTurnoEnemigo();
         }
 
     }

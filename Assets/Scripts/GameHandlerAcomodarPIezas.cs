@@ -92,10 +92,7 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
         _DatosGlobales.SetRotacionesBarcosEnemigos(rotaciones);
     }
     
-
-
     /// <summary>Acomoda los barcos</summary>
-    /// <param>@None </param>
     private void AcomodarLosBarcos()
     {
         int indice = 0;

@@ -50,6 +50,9 @@ public class Gamehandler : MonoBehaviour
 
 
 
+
+
+
 //////////////////////////////////////////////////////    
 
     private void Awake() {

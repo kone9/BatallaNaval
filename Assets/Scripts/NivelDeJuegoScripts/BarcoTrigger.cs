@@ -8,10 +8,13 @@ public class BarcoTrigger : MonoBehaviour
     public BoxCollider _BoxCollider;
     
     Gamehandler _Gamehandler;
+
+    GameObject[] sound_hit;
     
     private void Awake() {
         _BoxCollider = GetComponent<BoxCollider>();
         _Gamehandler = FindObjectOfType<Gamehandler>();
+        sound_hit = GameObject.FindGameObjectsWithTag("hit");
     }
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,9 @@ public class BarcoTrigger : MonoBehaviour
         {
             instanciarFuego();
             _Gamehandler.cantidadDeAciertosJugador += 1;
+            sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
+            // sound_hit[2].GetComponent<AudioSource>().Play();
+
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
         }
         if(_Gamehandler.cantidadDeAciertosJugador == 21)

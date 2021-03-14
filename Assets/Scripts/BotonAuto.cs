@@ -12,6 +12,7 @@ public class BotonAuto : MonoBehaviour
     AudioSource efectoBoton_2;
 
 
+
     private void Awake()
     {
         barcos = GameObject.FindGameObjectsWithTag("boat");//busca todos los barcos
@@ -25,6 +26,7 @@ public class BotonAuto : MonoBehaviour
     {
         efectoBoton_2.Play();
         StartCoroutine("PosicionarBarcoAleatoriamente");
+    
         // PosicionarBarcoAleatoriamente();
     }
 
@@ -39,6 +41,7 @@ public class BotonAuto : MonoBehaviour
 
             StartCoroutine(barcoActual.GetComponent<MoveAndRotateBoat>().PosicionarBarcoAleatoriamenteSinColisionarConOtros());    
         }
+        
         yield return new WaitForSeconds(0.5f);
         this.GetComponent<Button>().interactable = true;//puedo volver a tocar el boton
         
