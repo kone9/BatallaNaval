@@ -9,11 +9,17 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
     
     //AUDIO globales
     public GameObject[] audio_miss;//sonido errar disparo
+
+    private MeshRenderer mymesh;
+    private BoxCollider miCollyder;
     
     private void Awake()
     {
         _Gamehandler = FindObjectOfType<Gamehandler>();
         audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");//sonido errar disparo
+        mymesh = GetComponent<MeshRenderer>();
+        miCollyder = GetComponent<BoxCollider>();
+       
     }
 
     // Start is called before the first frame update
@@ -34,11 +40,13 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
 
     }
 
+    //al persionar una grilla
     IEnumerator PresioneGrilla()
     {
         if(_Gamehandler.GetPuedoPresionarBoton() == true)
         {            // print("presione en el cubo");
-            this.GetComponent<MeshRenderer>().enabled = true;
+            mymesh.enabled = false;
+            miCollyder.enabled = false;
             audio_miss[Random.Range(0,audio_miss.Length)].GetComponent<AudioSource>().Play();//activo sonido errar disparo
             _Gamehandler.SetPuedoPresionarBoton(false);
             yield return new WaitForSeconds(0.4f);

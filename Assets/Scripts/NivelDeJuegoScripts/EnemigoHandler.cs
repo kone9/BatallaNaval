@@ -54,8 +54,8 @@ public class EnemigoHandler : MonoBehaviour
 
     IEnumerator  DispararFuegos()
     {
-        int numeroAcierto = 1;
-        int numeroAleatorio = 1;
+        int numeroAcierto = 1;//para representar dificultad
+        int numeroAleatorio = Random.Range(0,10);//para representar dificultad
         int elementoEliminar = 0;
  
         yield return new WaitForSeconds(1);
