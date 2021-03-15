@@ -48,8 +48,10 @@ public class Gamehandler : MonoBehaviour
     private Quaternion enemigo_PortaAviones_Rotacion;
     private Quaternion enemigo_submarino_Rotacion;
 
-
-
+    //para saber si puedo o no puedo presionar un boton de la grilla,
+    // se usa para ver que no se acerto el disparo o si y para un delay
+    // por el tema de sonido
+   
 
 
 
@@ -185,6 +187,12 @@ public class Gamehandler : MonoBehaviour
         animacionLuzDecoradoRoja.SetBool("isTurnEnemy",true);
         _EnemigoHandler.DispararFuegoEnemigoHastaErrar();
         
+    }
+
+    /// <summary>Si puedo o no puedo presionar boton</summary>
+    public void SetPuedoPresionarBoton(bool presioneBoton)
+    {
+        puedoPresionarBoton = presioneBoton;
     }
 
     /// <summary>Retorna un bolean "si puedo o no puedo" presionar Boton</summary>

@@ -30,13 +30,19 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
 
     private void OnMouseDown()
     {
+        StartCoroutine("PresioneGrilla");
+
+    }
+
+    IEnumerator PresioneGrilla()
+    {
         if(_Gamehandler.GetPuedoPresionarBoton() == true)
-        {
-            // print("presione en el cubo");
+        {            // print("presione en el cubo");
             this.GetComponent<MeshRenderer>().enabled = true;
             audio_miss[Random.Range(0,audio_miss.Length)].GetComponent<AudioSource>().Play();//activo sonido errar disparo
+            _Gamehandler.SetPuedoPresionarBoton(false);
+            yield return new WaitForSeconds(0.5f);
             _Gamehandler.IsTurnoEnemigo();
         }
-
     }
 }
