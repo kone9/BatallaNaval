@@ -41,7 +41,7 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
             this.GetComponent<MeshRenderer>().enabled = true;
             audio_miss[Random.Range(0,audio_miss.Length)].GetComponent<AudioSource>().Play();//activo sonido errar disparo
             _Gamehandler.SetPuedoPresionarBoton(false);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.4f);
             _Gamehandler.IsTurnoEnemigo();
         }
     }

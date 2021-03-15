@@ -95,7 +95,7 @@ public class EnemigoHandler : MonoBehaviour
             {
                 // audio_sink_Own.Play();//sonido erro el disparo
                 audio_miss[Random.Range(0,audio_miss.Length)].GetComponent<AudioSource>().Play();
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.4f);
                 _Gamehandler.IsTurnoJugador();
                 break;
             }
