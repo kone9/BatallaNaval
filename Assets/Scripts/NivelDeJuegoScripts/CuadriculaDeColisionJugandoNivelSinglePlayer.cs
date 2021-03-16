@@ -47,7 +47,7 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
         {            // print("presione en el cubo");
             mymesh.enabled = false;
             miCollyder.enabled = false;
-            audio_miss[Random.Range(0,audio_miss.Length)].GetComponent<AudioSource>().Play();//activo sonido errar disparo
+            audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
             _Gamehandler.SetPuedoPresionarBoton(false);
             yield return new WaitForSeconds(0.4f);
             _Gamehandler.IsTurnoEnemigo();

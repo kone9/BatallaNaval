@@ -14,6 +14,7 @@ TagManager:
   - Proyectil
   - miss_audio
   - hit
+  - CuadriculaColisionJugador
   layers:
   - Default
   - TransparentFX

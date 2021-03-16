@@ -36,11 +36,11 @@ public class BarcoTrigger : MonoBehaviour
         if(_Gamehandler.GetPuedoPresionarBoton())
         {
             // puedoDesactivarFondo = true;
+            sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
             bool haycolision = DeshabilitarFondo();
             print("hay colision" + haycolision);
             instanciarFuego();
             _Gamehandler.cantidadDeAciertosJugador += 1;
-            sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
             // sound_hit[2].GetComponent<AudioSource>().Play();
 
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
@@ -70,10 +70,6 @@ public class BarcoTrigger : MonoBehaviour
                     print(collisions[0].name);
                     collisions[0].GetComponent<MeshRenderer>().enabled = false;
                     collisions[0].GetComponent<BoxCollider>().enabled = false;
-                    // foreach (var j in collisions)
-                    // {
-                    //     j.GetComponent<MeshRenderer>().enabled = false;
-                    // }
                     estaColisionando = true;
                     break;
                 }
@@ -87,16 +83,6 @@ public class BarcoTrigger : MonoBehaviour
 		}
         return estaColisionando;
     }
-
-    // private void OnTriggerEnter(Collider other)
-    // {
-    //     if(other.transform.CompareTag("cuadriculaColision") && puedoDesactivarFondo)
-    //     {
-    //         print("el barco colisiona con " + other.gameObject.name);
-    //         other.gameObject.SetActive(false);
-    //         // print("la grilla colisiono con un barco");
-    //     }
-    // }
 
 
     private void instanciarFuego()

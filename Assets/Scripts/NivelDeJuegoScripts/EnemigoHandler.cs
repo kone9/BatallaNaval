@@ -7,7 +7,8 @@ public class EnemigoHandler : MonoBehaviour
     public GameObject fuego;
     public int cantidadDeAciertosEnemigo = 21;
     // private GameObject[] barcoJugadorColisiones;
-    List<GameObject> barcoJugadorColisiones = new List<GameObject>();
+    List<GameObject> barcoJugadorColisiones = new List<GameObject>();//listo de los barcos
+    List<GameObject> GrillaJugadorColisiones = new List<GameObject>();//lista de la grilla
 
     private Gamehandler _Gamehandler;
 
@@ -18,7 +19,8 @@ public class EnemigoHandler : MonoBehaviour
 
     private void Awake()
     {
-        barcoJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("barcoJugadorColisiones"));
+        barcoJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("barcoJugadorColisiones"));//referencia a todos los barcos guardados en una lista
+        GrillaJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("CuadriculaColisionJugador"));//referencia a toda la grilla guardados en una lista
         _Gamehandler = FindObjectOfType<Gamehandler>();
         
         audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
@@ -55,19 +57,19 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator  DispararFuegos()
     {
         int numeroAcierto = 1;//para representar dificultad
-        int numeroAleatorio = Random.Range(0,10);//para representar dificultad
+        int numeroAleatorio = Random.Range(0,5);//para representar dificultad
         int elementoEliminar = 0;
  
         yield return new WaitForSeconds(1);
         while(true)
         {
             //Para saber cuando es Game Over
-            if(cantidadDeAciertosEnemigo < 1)
-            {
-                _Gamehandler.GameOverLose();
-                yield return null;
-            }   
-            cantidadDeAciertosEnemigo -= 1;
+            // if(cantidadDeAciertosEnemigo < 1)
+            // {
+            //     _Gamehandler.GameOverLose();
+            //     yield return null;
+            // }   
+            // cantidadDeAciertosEnemigo -= 1;
 
             //Disparo al enemigo con un rango aleatorio
             if(numeroAcierto == numeroAleatorio)
@@ -83,7 +85,7 @@ public class EnemigoHandler : MonoBehaviour
                 barcoJugadorColisiones.RemoveAt(LugarAleatorio);
                 
                 
-                numeroAleatorio = Random.Range(0,10);//Esto tiene que ver con la dificultad,cuanto más alto el segundo número mas fácil es jugar contra la maquina como minimo comienza con 2 para una dificultad muy alta
+                numeroAleatorio = Random.Range(0,5);//Esto tiene que ver con la dificultad,cuanto más alto el segundo número mas fácil es jugar contra la maquina como minimo comienza con 2 para una dificultad muy alta
                 print("el numero aleatorio es: "+numeroAleatorio);
 
 
@@ -93,9 +95,12 @@ public class EnemigoHandler : MonoBehaviour
             }
             else
             {
+                int LugarAleatorio = Random.Range(0,GrillaJugadorColisiones.Count);//numero eleatorio entre cantidad de grillas
+                GrillaJugadorColisiones[LugarAleatorio].GetComponent<MeshRenderer>().enabled = false;//deshabilito la malla
+                GrillaJugadorColisiones.RemoveAt(LugarAleatorio);//elimino este lugar de la grilla
                 // audio_sink_Own.Play();//sonido erro el disparo
-                audio_miss[Random.Range(0,audio_miss.Length)].GetComponent<AudioSource>().Play();
-                yield return new WaitForSeconds(0.4f);
+                audio_miss[1].GetComponent<AudioSource>().Play();
+                yield return new WaitForSeconds(1f);
                 _Gamehandler.IsTurnoJugador();
                 break;
             }
