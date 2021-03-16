@@ -90,7 +90,7 @@ public class Gamehandler : MonoBehaviour
     void Start()
     {
        AcomodarLosBarcos();
-       AcomodarLosBarcosGrillaEnemigo();
+    //    AcomodarLosBarcosGrillaEnemigo();
     }
 
     

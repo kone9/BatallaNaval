@@ -11,6 +11,8 @@ public class BotonAuto : MonoBehaviour
     GameHandlerAcomodarPIezas _GameHandler;
     AudioSource efectoBoton_2;
 
+    public Button play;//referencia al boton
+
 
 
     private void Awake()
@@ -34,6 +36,7 @@ public class BotonAuto : MonoBehaviour
     public IEnumerator PosicionarBarcoAleatoriamente()
     {
         this.GetComponent<Button>().interactable = false;//no puedo tocar el boton
+        play.interactable = false;//deshabilita el boton
         
         for (int i = 0; i < 5; i++)//Solo funciona hasta 3 tengo..No funciona portaAviones, ni submarino
         {
@@ -44,6 +47,6 @@ public class BotonAuto : MonoBehaviour
         
         yield return new WaitForSeconds(0.5f);
         this.GetComponent<Button>().interactable = true;//puedo volver a tocar el boton
-        
+        play.interactable = true;//habilita el boton
     }
 }
