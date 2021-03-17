@@ -15,6 +15,7 @@ TagManager:
   - miss_audio
   - hit
   - CuadriculaColisionJugador
+  - SonidoBarcoEnemigoDestruido
   layers:
   - Default
   - TransparentFX

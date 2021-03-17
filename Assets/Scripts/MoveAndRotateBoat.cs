@@ -120,6 +120,8 @@ public class MoveAndRotateBoat : MonoBehaviourPun
 			{
                 BoxCollider box = overlappers[i];
                 Collider[] collisions = Physics.OverlapBox(box.transform.position, box.bounds.size / 2, Quaternion.identity, isOverlapper);
+                // Collider[] collisions = Physics.OverlapBox(box.transform.position, box.bounds.size / 2, box.transform.rotation, isOverlapper);
+
                 if (collisions.Length > 1)
                 {
                     Debug.Log("Hay Overlap");
@@ -157,7 +159,7 @@ public class MoveAndRotateBoat : MonoBehaviourPun
     {   
         //tiro primera vez           
         Mover_Y_Rotar_Barcos_AutomaticamentePorCuadricula(cuadriculas[Random.Range(0,cuadriculas.Length)]);
-        yield return new WaitForSeconds(0.01f);//prueba luego borrar
+        yield return new WaitForSeconds(0.1f);//prueba luego borrar
 
         //repetir sino esta en grilla y si esta colisionando con otro barco
         while (!EstaEngrilla_Y_NoEstaColisionandoConOtroBarco())
@@ -165,7 +167,7 @@ public class MoveAndRotateBoat : MonoBehaviourPun
             print("el barco no esta en la grilla");
             //mover y rotar barcos automaticamente
             Mover_Y_Rotar_Barcos_AutomaticamentePorCuadricula(cuadriculas[Random.Range(0,cuadriculas.Length)]);
-            yield return new WaitForSeconds(0.01f);//prueba luego borrar
+            yield return new WaitForSeconds(0.1f);//prueba luego borrar
             // yield return null;
         }      
     }

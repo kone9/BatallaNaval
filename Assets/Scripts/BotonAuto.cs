@@ -45,7 +45,7 @@ public class BotonAuto : MonoBehaviour
             StartCoroutine(barcoActual.GetComponent<MoveAndRotateBoat>().PosicionarBarcoAleatoriamenteSinColisionarConOtros());    
         }
         
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         this.GetComponent<Button>().interactable = true;//puedo volver a tocar el boton
         play.interactable = true;//habilita el boton
     }

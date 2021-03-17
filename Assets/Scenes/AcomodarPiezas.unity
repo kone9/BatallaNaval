@@ -8980,17 +8980,17 @@ PrefabInstance:
     - target: {fileID: 3490102796532164708, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.3647059
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3490102796532164708, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3490102796532164708, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3490102796532164708, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
