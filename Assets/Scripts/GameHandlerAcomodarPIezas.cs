@@ -71,37 +71,24 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
      /// <summary>Guarda la posicion de los barcos ENEMIGOS</summary>
     public void GuardarPosicionBarcosEnemigos()
     {
-        // Vector3[] posiciones = new Vector3[5];
-        // for (int i = 0; i < barcos.Length; i++)
-        // {
-        //     posiciones[i] = barcos[i].transform.position;
-        //     // _DatosGlobales.OrdenDenombreDeBarcos[i] = barcos[i].transform.name;
-        // }
-        Vector3 barco1 = GameObject.Find("Barco_1").transform.position;
-        Vector3 barco2 = GameObject.Find("barco_2").transform.position;
-        Vector3 barco3 = GameObject.Find("barco_3").transform.position;
-        Vector3 portaAviones = GameObject.Find("portaAviones").transform.position;
-        Vector3 submarino = GameObject.Find("submarino").transform.position;
 
-        // print("barcos acomodados de la siguiente manera" + _DatosGlobales.OrdenDenombreDeBarcos);
-        _DatosGlobales.SetPosicionesBarcosEnemigos(barco1,barco2,barco3,portaAviones,submarino);
+        Vector3 barco1_posicion = GameObject.Find("Barco_1").transform.position;
+        Vector3 barco2_posicion = GameObject.Find("barco_2").transform.position;
+        Vector3 barco3_posicion = GameObject.Find("barco_3").transform.position;
+        Vector3 portaAviones_posicion = GameObject.Find("portaAviones").transform.position;
+        Vector3 submarino_posicion = GameObject.Find("submarino").transform.position;
+        _DatosGlobales.SetPosicionesBarcosEnemigos(barco1_posicion,barco2_posicion,barco3_posicion,portaAviones_posicion,submarino_posicion);
     }
 
     /// <summary>Guarda la posicion de los barcos ENEMIGOS</summary>
     public void GuardarRotacionesBarcosEnemigo()
     {
-        // Quaternion[] rotaciones = new Quaternion[5];
-        // for (int i = 0; i < barcos.Length; i++)
-        // {
-        //     rotaciones[i] = barcos[i].transform.rotation;
-        // }
-        // _DatosGlobales.SetRotacionesBarcosEnemigos(rotaciones);
-        Quaternion barco1 = GameObject.Find("Barco_1").transform.rotation;
-        Quaternion barco2 = GameObject.Find("barco_2").transform.rotation;
-        Quaternion barco3 = GameObject.Find("barco_3").transform.rotation;
-        Quaternion portaAviones = GameObject.Find("portaAviones").transform.rotation;
-        Quaternion submarino = GameObject.Find("submarino").transform.rotation;
-        _DatosGlobales.SetRotacionesBarcosEnemigos(barco1,barco2,barco3,portaAviones,submarino);
+        Quaternion barco1_rotacion = GameObject.Find("Barco_1").transform.rotation;
+        Quaternion barco2_rotacion = GameObject.Find("barco_2").transform.rotation;
+        Quaternion barco3_rotacion = GameObject.Find("barco_3").transform.rotation;
+        Quaternion portaAviones_rotacion = GameObject.Find("portaAviones").transform.rotation;
+        Quaternion submarino_rotacion = GameObject.Find("submarino").transform.rotation;
+        _DatosGlobales.SetRotacionesBarcosEnemigos(barco1_rotacion,barco2_rotacion,barco3_rotacion,portaAviones_rotacion,submarino_rotacion);
     }
     
     /// <summary>Acomoda los barcos</summary>

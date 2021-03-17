@@ -147,72 +147,17 @@ public class DatosGlobales : MonoBehaviour
 
 
     /// <summary>Referencia para cambiar la posicion de todos los barcos ENEMIGOS</summary>
-    /// <param>@Vector3[] </param>
-    // public void SetPosicionesBarcosEnemigos(Vector3[] posiciones)
-    // {
-    //     for(int i = 0;i < posicionesBarcos_enemigo.Length; i++)
-    //     {
-    //         posicionesBarcos_enemigo[i] = posiciones[i];
-    //         switch (i)
-    //         {
-    //             case 0:
-    //                 Posicion_barco_1_enemigo = posiciones[i];
-    //                 break;
-    //             case 1:
-    //                 Posicion_barco_2_enemigo = posiciones[i];
-    //                 break;
-    //             case 2:
-    //                 Posicion_barco_3_enemigo = posiciones[i];
-    //                 break;
-    //             case 3:
-    //                 Posicion_portaAviones_enemigo = posiciones[i];
-    //                 break;
-    //             case 4:
-    //                 Posicion_Submarino_enemigo = posiciones[i];
-    //                 break;
-    //             default:
-    //                 break;
-    //         }
-    //     }   
-    // }
     public void SetPosicionesBarcosEnemigos(Vector3 barco1_enemigo_posicion,Vector3 barco2_enemigo_posicion,Vector3 barco3_enemigo_posicion,Vector3 portaviones_enemigo_posicion,Vector3 sumbarino_enemigo_posicion)
     {
         Posicion_barco_1_enemigo = barco1_enemigo_posicion;
-        Posicion_barco_2_enemigo =barco2_enemigo_posicion;
+        Posicion_barco_2_enemigo = barco2_enemigo_posicion;
         Posicion_barco_3_enemigo = barco3_enemigo_posicion;
         Posicion_portaAviones_enemigo = portaviones_enemigo_posicion;
         Posicion_Submarino_enemigo = sumbarino_enemigo_posicion;  
     }
 
 
-    /// <summary>Referencia para cambiar la rotacion de todos los barcos ENEMIGOS</summary>
-    // public void SetRotacionesBarcosEnemigos(Quaternion[] rotaciones)
-    // {
-    //     for(int i = 0;i < rotacionesBarcos.Length; i++)
-    //     {
-    //         rotacionesBarcos[i] = rotaciones[i];
-    //         switch (i)
-    //         {
-    //             case 0:
-    //                 rotacion_barco_1_enemigo = rotaciones[i];
-    //                 break;
-    //             case 1:
-    //                 rotacion_barco_2_enemigo = rotaciones[i];
-    //                 break;
-    //             case 2:
-    //                 rotacion_barco_3_enemigo = rotaciones[i];
-    //                 break;
-    //             case 3:
-    //                 rotacion_portaAviones_enemigo = rotaciones[i];
-    //                 break;
-    //             case 4:
-    //                 rotacion_Submarino_enemigo = rotaciones[i];
-    //                 break;
-    //             default:
-    //                 break;
-    //         }
-    //     }
-    // }    
+    /// <summary>Referencia para cambiar la rotacion de todos los barcos ENEMIGOS</summary>   
     public void SetRotacionesBarcosEnemigos(Quaternion barco1_enemigo_rotacion,Quaternion barco2_enemigo_rotacion,Quaternion barco3_enemigo_rotacion,Quaternion portaAviones_enemigo_rotacion,Quaternion submarino_enemigo_rotacion)
     {
         rotacion_barco_1_enemigo = barco1_enemigo_rotacion;
