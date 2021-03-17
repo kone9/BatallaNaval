@@ -72,11 +72,11 @@ public class Gamehandler : MonoBehaviour
     void buscarBarcos()
     {
         //barcos de la grilla cuadro de abajo
-        barco_1_enemigo = GameObject.Find("barco_1");
-        barco_2_enemigo = GameObject.Find("barco_2");
-        barco_3_enemigo = GameObject.Find("barco_3");
-        portaAviones_enemigo = GameObject.Find("PortaAviones");
-        Submarino_enemigo  = GameObject.Find("submarino");
+        barco_1_enemigo = GameObject.Find("barco_1_enemigo");
+        barco_2_enemigo = GameObject.Find("barco_2_enemigo");
+        barco_3_enemigo = GameObject.Find("barco_3_enemigo");
+        portaAviones_enemigo = GameObject.Find("PortaAviones_enemigo");
+        Submarino_enemigo  = GameObject.Find("submarino_enemigo");
         //barcos del jugador cuadro de arriba
         barco_1_jugador = GameObject.Find("barco_1_jugador");
         barco_2_jugador = GameObject.Find("barco_2_jugador");
@@ -90,7 +90,7 @@ public class Gamehandler : MonoBehaviour
     void Start()
     {
        AcomodarLosBarcos();
-    //    AcomodarLosBarcosGrillaEnemigo();
+       AcomodarLosBarcosGrillaEnemigo();
     }
 
     

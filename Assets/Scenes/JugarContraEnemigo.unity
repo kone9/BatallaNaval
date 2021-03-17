@@ -30635,7 +30635,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2916399185950136184}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -35145,7 +35145,7 @@ GameObject:
   - component: {fileID: 4712128601221786185}
   - component: {fileID: 7083675598584323829}
   m_Layer: 10
-  m_Name: submarino
+  m_Name: submarino_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35568,7 +35568,7 @@ GameObject:
   - component: {fileID: 534581082932441208}
   - component: {fileID: 244657186647654348}
   m_Layer: 10
-  m_Name: barco_3
+  m_Name: barco_3_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37299,7 +37299,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4856885525991969987}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39265,7 +39265,7 @@ GameObject:
   - component: {fileID: 668137815759670300}
   - component: {fileID: 3793198900922100791}
   m_Layer: 10
-  m_Name: barco_2
+  m_Name: barco_2_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42864,7 +42864,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2594288726603058842}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43337,7 +43337,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8022957695093612687}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -44014,7 +44014,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9097337997971125798}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -44467,7 +44467,7 @@ GameObject:
   - component: {fileID: 5873533385077321948}
   - component: {fileID: 7405381254539290330}
   m_Layer: 10
-  m_Name: PortaAviones
+  m_Name: PortaAviones_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45919,7 +45919,7 @@ GameObject:
   - component: {fileID: 3585174937047834178}
   - component: {fileID: 7786417237573212790}
   m_Layer: 10
-  m_Name: barco_1
+  m_Name: barco_1_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

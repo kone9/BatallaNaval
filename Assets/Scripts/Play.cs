@@ -59,10 +59,11 @@ public class Play : MonoBehaviour
         imagenEsperandoEnemigo.SetActive(true);
         yield return new WaitForSeconds(2);
         //Presiono boton automatico para volver a acomodar y luego guardo las posiciones 
-        StartCoroutine(_botonAuto.PosicionarBarcoAleatoriamente());
-        _GameHandlerAcomodarPIezas.GuardarPosicionBarcosEnemigos();
-        _GameHandlerAcomodarPIezas.GuardarRotacionesBarcosEnemigo();
+        StartCoroutine(_botonAuto.PosicionarBarcoAleatoriamente());//vuelvo a posicionar los barcos
         yield return new WaitForSeconds(1);
+
+        _GameHandlerAcomodarPIezas.GuardarPosicionBarcosEnemigos();//guardo sus posiciones
+        _GameHandlerAcomodarPIezas.GuardarRotacionesBarcosEnemigo();//guardo sus posiciones
         SceneManager.LoadScene("JugarContraEnemigo");
     }
 
