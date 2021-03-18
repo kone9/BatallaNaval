@@ -44,17 +44,24 @@ public class BarcoTrigger : MonoBehaviour
         
     }
     
-    private void OnMouseDown() 
+    private void OnMouseDown()//si el mouse presiona el area 
     { 
-        if(_Gamehandler.GetPuedoPresionarBoton())
+        Diparar();//disparo contra el barco
+    }
+
+    /// <summary>Disparo contra los barcos y hago todo lo referenciado a disparar</summary>
+    void Diparar()
+    {
+        if(_Gamehandler.GetPuedoPresionarBoton())//si puedo presionar boton
         {
             // puedoDesactivarFondo = true;
-            if(_BarcoHandler.vidas > 1)
+            if(_BarcoHandler.vidas > 1 && _Gamehandler.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
             {
                 sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
-            }  
-            
-            bool haycolision = DeshabilitarFondo();
+                _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
+                StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
+            }
+            bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
             print("hay colision" + haycolision);
             instanciarFuego();
             _Gamehandler.cantidadDeAciertosJugador += 1;//para saber cuando gano
@@ -64,20 +71,41 @@ public class BarcoTrigger : MonoBehaviour
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
         }
 
-        if(_BarcoHandler.vidas < 1)//si las vidas del barco es menor a uno
+        if(_BarcoHandler.vidas < 1 && _Gamehandler.cantidadDeAciertosJugador < 21)//si las vidas del barco es menor a uno
         {
             sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
             _Animator.SetBool("barcoDestruido", true);
+            _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
+            StartCoroutine("jugarContraEnemigoDelayTargetDestroy");//delay antes de que el enemigo dispare           }  
         }
 
         if(_Gamehandler.cantidadDeAciertosJugador == 21)//si destrui todos los barcos
         {
+            //destruyo última pieza del barco
+            sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
+            _Animator.SetBool("barcoDestruido", true);
+
             _Gamehandler.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
-            StartCoroutine("JugadorWinner");
+            StartCoroutine("JugadorWinner");//hago las cosas de winner
         }
 
     }
 
+     /// <summary>hace que sea el turno del enemigo cuando acertas al disparo</summary>
+    IEnumerator jugarContraEnemigoDelay()
+    {
+        yield return new WaitForSeconds(2);
+         _Gamehandler.IsTurnoEnemigo();
+    }
+    
+    /// <summary>hace que sea el turno del enemigo cuando destruis un barco</summary>
+    IEnumerator jugarContraEnemigoDelayTargetDestroy()//hace que sea el turno del enemigo cuando destruis un barco
+    {
+        yield return new WaitForSeconds(4);
+         _Gamehandler.IsTurnoEnemigo();
+    }
+
+    /// <summary>Hace que aparescan las cosas cuando el jugador gana</summary>
     IEnumerator JugadorWinner()
     {  
         yield return new WaitForSeconds(2);
