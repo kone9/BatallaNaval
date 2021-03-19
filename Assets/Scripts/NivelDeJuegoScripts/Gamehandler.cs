@@ -87,8 +87,8 @@ public class Gamehandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    //    AcomodarLosBarcos();
-    //    AcomodarLosBarcosGrillaEnemigo();
+       AcomodarLosBarcos();
+       AcomodarLosBarcosGrillaEnemigo();
     }
 
     
