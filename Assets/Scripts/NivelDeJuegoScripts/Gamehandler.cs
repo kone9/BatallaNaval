@@ -64,10 +64,8 @@ public class Gamehandler : MonoBehaviour
         barcos = GameObject.FindGameObjectsWithTag("boat");
         barcosGrilla = GameObject.FindGameObjectsWithTag("barcosGrilla");
         buscarBarcos();
-
-
-
     }
+
     
     void buscarBarcos()
     {

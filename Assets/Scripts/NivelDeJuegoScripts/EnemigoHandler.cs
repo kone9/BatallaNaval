@@ -20,13 +20,22 @@ public class EnemigoHandler : MonoBehaviour
     private void Awake()
     {
         barcoJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("barcoJugadorColisiones"));//referencia a todos los barcos guardados en una lista
-        GrillaJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("CuadriculaColisionJugador"));//referencia a toda la grilla guardados en una lista
         _Gamehandler = FindObjectOfType<Gamehandler>();
+       
 
         audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
         audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
         audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");
 
+        StartCoroutine("BuscarCuadriculaColisionJugador");//Busca las cuadriculas despues de un tiempo ya que deshabilito algunos
+
+    }
+
+    /// <summary>Busca las cuadriculas despues de un tiempo ya que deshabilito algunos</summary>
+     IEnumerator BuscarCuadriculaColisionJugador()
+    {
+        GrillaJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("CuadriculaColisionJugador"));//referencia a toda la grilla guardados en una lista
+        yield return new WaitForSeconds(2f);
     }
 
     // Start is called before the first frame update
@@ -85,7 +94,7 @@ public class EnemigoHandler : MonoBehaviour
             barcoJugadorColisiones.RemoveAt(LugarAleatorio);
 
 
-            numeroAleatorio = Random.Range(0,5);//Esto tiene que ver con la dificultad,cuanto más alto el segundo número mas fácil es jugar contra la maquina como minimo comienza con 2 para una dificultad muy alta
+            numeroAleatorio = Random.Range(0,100);//Esto tiene que ver con la dificultad,cuanto más alto el segundo número mas fácil es jugar contra la maquina como minimo comienza con 2 para una dificultad muy alta
             print("el numero aleatorio es: "+numeroAleatorio);
 
 

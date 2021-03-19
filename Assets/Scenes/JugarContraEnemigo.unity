@@ -292,6 +292,8 @@ GameObject:
   - component: {fileID: 7949434}
   - component: {fileID: 7949438}
   - component: {fileID: 7949437}
+  - component: {fileID: 7949435}
+  - component: {fileID: 7949436}
   m_Layer: 0
   m_Name: CuadriculaColion.070
   m_TagString: CuadriculaColisionJugador
@@ -313,6 +315,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7949435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &7949436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949433}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: -0.000000023337634}
 --- !u!23 &7949437
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -501,6 +528,8 @@ GameObject:
   - component: {fileID: 24368367}
   - component: {fileID: 24368371}
   - component: {fileID: 24368370}
+  - component: {fileID: 24368368}
+  - component: {fileID: 24368369}
   m_Layer: 0
   m_Name: CuadriculaColion.001
   m_TagString: CuadriculaColisionJugador
@@ -522,6 +551,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &24368368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24368366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &24368369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24368366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: 9.93168e-10}
 --- !u!23 &24368370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -578,7 +632,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 28017829}
-  - component: {fileID: 28017832}
   - component: {fileID: 28017831}
   - component: {fileID: 28017830}
   m_Layer: 0
@@ -626,30 +679,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28017828}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &28017832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28017828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 28017831}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &51716907
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,6 +855,8 @@ GameObject:
   - component: {fileID: 61372556}
   - component: {fileID: 61372560}
   - component: {fileID: 61372559}
+  - component: {fileID: 61372557}
+  - component: {fileID: 61372558}
   m_Layer: 0
   m_Name: CuadriculaColion.053
   m_TagString: CuadriculaColisionJugador
@@ -842,6 +878,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61372557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61372555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &61372558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61372555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: 0, y: 0.000000004656612, z: -0.000000009949872}
 --- !u!23 &61372559
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -900,6 +961,8 @@ GameObject:
   - component: {fileID: 71797434}
   - component: {fileID: 71797438}
   - component: {fileID: 71797437}
+  - component: {fileID: 71797435}
+  - component: {fileID: 71797436}
   m_Layer: 0
   m_Name: CuadriculaColion.004
   m_TagString: CuadriculaColisionJugador
@@ -921,6 +984,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &71797435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71797433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &71797436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71797433}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000001542503}
 --- !u!23 &71797437
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1216,7 +1304,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 98891818}
-  - component: {fileID: 98891821}
   - component: {fileID: 98891820}
   - component: {fileID: 98891819}
   m_Layer: 0
@@ -1264,30 +1351,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98891817}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 3, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &98891821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98891817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 98891820}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1025
 --- !u!1 &139069077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1546,8 @@ GameObject:
   - component: {fileID: 143167094}
   - component: {fileID: 143167098}
   - component: {fileID: 143167097}
+  - component: {fileID: 143167095}
+  - component: {fileID: 143167096}
   m_Layer: 0
   m_Name: CuadriculaColion.076
   m_TagString: CuadriculaColisionJugador
@@ -1499,6 +1569,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &143167095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143167093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &143167096
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143167093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000002636807}
 --- !u!23 &143167097
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1716,6 +1811,8 @@ GameObject:
   - component: {fileID: 189683011}
   - component: {fileID: 189683015}
   - component: {fileID: 189683014}
+  - component: {fileID: 189683012}
+  - component: {fileID: 189683013}
   m_Layer: 0
   m_Name: CuadriculaColion.085
   m_TagString: CuadriculaColisionJugador
@@ -1737,6 +1834,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &189683012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189683010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &189683013
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189683010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: -0.0000000018626448, z: -0.00000002089655}
 --- !u!23 &189683014
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1870,6 +1992,8 @@ GameObject:
   - component: {fileID: 205864481}
   - component: {fileID: 205864485}
   - component: {fileID: 205864484}
+  - component: {fileID: 205864482}
+  - component: {fileID: 205864483}
   m_Layer: 0
   m_Name: CuadriculaColion.057
   m_TagString: CuadriculaColisionJugador
@@ -1891,6 +2015,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205864482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205864480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &205864483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205864480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0, y: 0.0000002188608, z: -0.0000000020372684}
 --- !u!23 &205864484
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2028,6 +2177,8 @@ GameObject:
   - component: {fileID: 209807775}
   - component: {fileID: 209807779}
   - component: {fileID: 209807778}
+  - component: {fileID: 209807776}
+  - component: {fileID: 209807777}
   m_Layer: 0
   m_Name: CuadriculaColion.051
   m_TagString: CuadriculaColisionJugador
@@ -2049,6 +2200,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &209807776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209807774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &209807777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209807774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0.000000009313224, z: 9.93168e-10}
 --- !u!23 &209807778
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2186,6 +2362,8 @@ GameObject:
   - component: {fileID: 224107339}
   - component: {fileID: 224107343}
   - component: {fileID: 224107342}
+  - component: {fileID: 224107340}
+  - component: {fileID: 224107341}
   m_Layer: 0
   m_Name: CuadriculaColion.010
   m_TagString: CuadriculaColisionJugador
@@ -2207,6 +2385,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &224107340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224107338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &224107341
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224107338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: -0.000000009313224, z: -0.000000023337634}
 --- !u!23 &224107342
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2454,6 +2657,8 @@ GameObject:
   - component: {fileID: 259782019}
   - component: {fileID: 259782023}
   - component: {fileID: 259782022}
+  - component: {fileID: 259782020}
+  - component: {fileID: 259782021}
   m_Layer: 0
   m_Name: CuadriculaColion.077
   m_TagString: CuadriculaColisionJugador
@@ -2475,6 +2680,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259782020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259782018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &259782021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259782018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0.0000002188608, z: -0.0000000020372684}
 --- !u!23 &259782022
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2533,6 +2763,8 @@ GameObject:
   - component: {fileID: 268783897}
   - component: {fileID: 268783901}
   - component: {fileID: 268783900}
+  - component: {fileID: 268783898}
+  - component: {fileID: 268783899}
   m_Layer: 0
   m_Name: CuadriculaColion.031
   m_TagString: CuadriculaColisionJugador
@@ -2554,6 +2786,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268783898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268783896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &268783899
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268783896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: 0.000000009313224, z: 9.93168e-10}
 --- !u!23 &268783900
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2612,6 +2869,8 @@ GameObject:
   - component: {fileID: 268902226}
   - component: {fileID: 268902230}
   - component: {fileID: 268902229}
+  - component: {fileID: 268902227}
+  - component: {fileID: 268902228}
   m_Layer: 0
   m_Name: CuadriculaColion.094
   m_TagString: CuadriculaColisionJugador
@@ -2633,6 +2892,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268902227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268902225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &268902228
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268902225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.0000000018626448, z: -0.00000001542503}
 --- !u!23 &268902229
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2768,7 +3052,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 302541411}
-  - component: {fileID: 302541414}
   - component: {fileID: 302541413}
   - component: {fileID: 302541412}
   m_Layer: 0
@@ -2816,30 +3099,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302541410}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &302541414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302541410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 302541413}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &313937474
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,7 +3144,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333101725}
-  - component: {fileID: 333101728}
   - component: {fileID: 333101727}
   - component: {fileID: 333101726}
   m_Layer: 0
@@ -2928,30 +3191,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333101724}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &333101728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333101724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 333101727}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &341371485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,6 +3207,8 @@ GameObject:
   - component: {fileID: 341371486}
   - component: {fileID: 341371490}
   - component: {fileID: 341371489}
+  - component: {fileID: 341371487}
+  - component: {fileID: 341371488}
   m_Layer: 0
   m_Name: CuadriculaColion.040
   m_TagString: CuadriculaColisionJugador
@@ -2984,6 +3230,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &341371487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341371485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &341371488
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341371485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: 0.000000009313224, z: -0.000000023337634}
 --- !u!23 &341371489
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3598,6 +3869,8 @@ GameObject:
   - component: {fileID: 450857398}
   - component: {fileID: 450857402}
   - component: {fileID: 450857401}
+  - component: {fileID: 450857399}
+  - component: {fileID: 450857400}
   m_Layer: 0
   m_Name: CuadriculaColion.060
   m_TagString: CuadriculaColisionJugador
@@ -3619,6 +3892,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &450857399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450857397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &450857400
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450857397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000055879354, y: 0.000000009313224, z: -0.000000023337634}
 --- !u!23 &450857401
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3758,6 +4056,8 @@ GameObject:
   - component: {fileID: 464322565}
   - component: {fileID: 464322569}
   - component: {fileID: 464322568}
+  - component: {fileID: 464322566}
+  - component: {fileID: 464322567}
   m_Layer: 0
   m_Name: CuadriculaColion.080
   m_TagString: CuadriculaColisionJugador
@@ -3779,6 +4079,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &464322566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464322564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &464322567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464322564}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: -0.000000009313224, z: -0.000000023337634}
 --- !u!23 &464322568
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3837,6 +4162,8 @@ GameObject:
   - component: {fileID: 488675931}
   - component: {fileID: 488675935}
   - component: {fileID: 488675934}
+  - component: {fileID: 488675932}
+  - component: {fileID: 488675933}
   m_Layer: 0
   m_Name: CuadriculaColion.029
   m_TagString: CuadriculaColisionJugador
@@ -3858,6 +4185,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &488675932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488675930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &488675933
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488675930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: -0.000000004656613, y: 0, z: -0.000000012980308}
 --- !u!23 &488675934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4040,6 +4392,8 @@ GameObject:
   - component: {fileID: 493456431}
   - component: {fileID: 493456435}
   - component: {fileID: 493456434}
+  - component: {fileID: 493456432}
+  - component: {fileID: 493456433}
   m_Layer: 0
   m_Name: CuadriculaColion.025
   m_TagString: CuadriculaColisionJugador
@@ -4061,6 +4415,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &493456432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493456430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &493456433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493456430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: -0.000000013969839, y: 0.000000004656612, z: -0.00000002089655}
 --- !u!23 &493456434
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4320,6 +4699,8 @@ GameObject:
   - component: {fileID: 518571506}
   - component: {fileID: 518571510}
   - component: {fileID: 518571509}
+  - component: {fileID: 518571507}
+  - component: {fileID: 518571508}
   m_Layer: 0
   m_Name: CuadriculaColion.019
   m_TagString: CuadriculaColisionJugador
@@ -4341,6 +4722,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &518571507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518571505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &518571508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518571505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0, z: -0.000000012980308}
 --- !u!23 &518571509
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4399,6 +4805,8 @@ GameObject:
   - component: {fileID: 527788909}
   - component: {fileID: 527788913}
   - component: {fileID: 527788912}
+  - component: {fileID: 527788910}
+  - component: {fileID: 527788911}
   m_Layer: 0
   m_Name: CuadriculaColion.024
   m_TagString: CuadriculaColisionJugador
@@ -4420,6 +4828,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &527788910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527788908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &527788911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527788908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: -0.000000013969839, y: -0.000000004656612, z: -0.00000001542503}
 --- !u!23 &527788912
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4478,6 +4911,8 @@ GameObject:
   - component: {fileID: 535125233}
   - component: {fileID: 535125237}
   - component: {fileID: 535125236}
+  - component: {fileID: 535125234}
+  - component: {fileID: 535125235}
   m_Layer: 0
   m_Name: CuadriculaColion.093
   m_TagString: CuadriculaColisionJugador
@@ -4499,6 +4934,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535125234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535125232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &535125235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535125232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: 0, y: 0.000000004656612, z: -0.000000009949872}
 --- !u!23 &535125236
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4555,7 +5015,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551452853}
-  - component: {fileID: 551452856}
   - component: {fileID: 551452855}
   - component: {fileID: 551452854}
   m_Layer: 0
@@ -4603,30 +5062,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551452852}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &551452856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551452852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 551452855}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &552264625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,6 +5237,8 @@ GameObject:
   - component: {fileID: 559620342}
   - component: {fileID: 559620346}
   - component: {fileID: 559620345}
+  - component: {fileID: 559620343}
+  - component: {fileID: 559620344}
   m_Layer: 0
   m_Name: CuadriculaColion.086
   m_TagString: CuadriculaColisionJugador
@@ -4818,6 +5260,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &559620343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559620341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &559620344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559620341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: 0, z: -0.00000002636807}
 --- !u!23 &559620345
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4955,6 +5422,8 @@ GameObject:
   - component: {fileID: 569548078}
   - component: {fileID: 569548082}
   - component: {fileID: 569548081}
+  - component: {fileID: 569548079}
+  - component: {fileID: 569548080}
   m_Layer: 0
   m_Name: CuadriculaColion.007
   m_TagString: CuadriculaColisionJugador
@@ -4976,6 +5445,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &569548079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569548077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &569548080
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569548077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0, y: 0.00000023841858, z: -0.0000000020372684}
 --- !u!23 &569548081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5034,6 +5528,8 @@ GameObject:
   - component: {fileID: 570319947}
   - component: {fileID: 570319951}
   - component: {fileID: 570319950}
+  - component: {fileID: 570319948}
+  - component: {fileID: 570319949}
   m_Layer: 0
   m_Name: CuadriculaColion.035
   m_TagString: CuadriculaColisionJugador
@@ -5055,6 +5551,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570319948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570319946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &570319949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570319946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: 0, z: -0.00000002089655}
 --- !u!23 &570319950
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5113,6 +5634,8 @@ GameObject:
   - component: {fileID: 576550282}
   - component: {fileID: 576550286}
   - component: {fileID: 576550285}
+  - component: {fileID: 576550283}
+  - component: {fileID: 576550284}
   m_Layer: 0
   m_Name: CuadriculaColion.097
   m_TagString: CuadriculaColisionJugador
@@ -5134,6 +5657,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &576550283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576550281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &576550284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576550281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0, y: 0.00000023841858, z: -0.0000000020372684}
 --- !u!23 &576550285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5461,6 +6009,8 @@ GameObject:
   - component: {fileID: 592824966}
   - component: {fileID: 592824970}
   - component: {fileID: 592824969}
+  - component: {fileID: 592824967}
+  - component: {fileID: 592824968}
   m_Layer: 0
   m_Name: CuadriculaColion.030
   m_TagString: CuadriculaColisionJugador
@@ -5482,6 +6032,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &592824967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592824965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &592824968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592824965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: -0.000000009313224, z: -0.000000023337634}
 --- !u!23 &592824969
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5540,6 +6115,8 @@ GameObject:
   - component: {fileID: 595364422}
   - component: {fileID: 595364426}
   - component: {fileID: 595364425}
+  - component: {fileID: 595364423}
+  - component: {fileID: 595364424}
   m_Layer: 0
   m_Name: CuadriculaColion.018
   m_TagString: CuadriculaColisionJugador
@@ -5561,6 +6138,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &595364423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595364421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &595364424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595364421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: -0.000000009313226, y: 0.00000023841858, z: -0.000000007508788}
 --- !u!23 &595364425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6030,6 +6632,8 @@ GameObject:
   - component: {fileID: 671741422}
   - component: {fileID: 671741426}
   - component: {fileID: 671741425}
+  - component: {fileID: 671741423}
+  - component: {fileID: 671741424}
   m_Layer: 0
   m_Name: CuadriculaColion.013
   m_TagString: CuadriculaColisionJugador
@@ -6051,6 +6655,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &671741423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671741421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &671741424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671741421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0.000000004656612, z: -0.000000009949872}
 --- !u!23 &671741425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6109,6 +6738,8 @@ GameObject:
   - component: {fileID: 682151454}
   - component: {fileID: 682151458}
   - component: {fileID: 682151457}
+  - component: {fileID: 682151455}
+  - component: {fileID: 682151456}
   m_Layer: 0
   m_Name: CuadriculaColion.063
   m_TagString: CuadriculaColisionJugador
@@ -6130,6 +6761,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &682151455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682151453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &682151456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682151453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000055879354, y: 0.000000009313224, z: -0.000000009949872}
 --- !u!23 &682151457
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6318,6 +6974,8 @@ GameObject:
   - component: {fileID: 707817587}
   - component: {fileID: 707817591}
   - component: {fileID: 707817590}
+  - component: {fileID: 707817588}
+  - component: {fileID: 707817589}
   m_Layer: 0
   m_Name: CuadriculaColion.054
   m_TagString: CuadriculaColisionJugador
@@ -6339,6 +6997,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &707817588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707817586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &707817589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707817586}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000001542503}
 --- !u!23 &707817590
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6397,6 +7080,8 @@ GameObject:
   - component: {fileID: 710783399}
   - component: {fileID: 710783403}
   - component: {fileID: 710783402}
+  - component: {fileID: 710783400}
+  - component: {fileID: 710783401}
   m_Layer: 0
   m_Name: CuadriculaColion.064
   m_TagString: CuadriculaColisionJugador
@@ -6418,6 +7103,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &710783400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710783398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &710783401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710783398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000055879354, y: 0, z: -0.00000001542503}
 --- !u!23 &710783402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6474,7 +7184,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717378357}
-  - component: {fileID: 717378360}
   - component: {fileID: 717378359}
   - component: {fileID: 717378358}
   m_Layer: 0
@@ -6522,30 +7231,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717378356}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &717378360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717378356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 717378359}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &725311640
 GameObject:
   m_ObjectHideFlags: 0
@@ -6557,6 +7247,8 @@ GameObject:
   - component: {fileID: 725311641}
   - component: {fileID: 725311645}
   - component: {fileID: 725311644}
+  - component: {fileID: 725311642}
+  - component: {fileID: 725311643}
   m_Layer: 0
   m_Name: CuadriculaColion.021
   m_TagString: CuadriculaColisionJugador
@@ -6578,6 +7270,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &725311642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725311640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &725311643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725311640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: -0.000000013969839, y: -0.000000028870994, z: 9.93168e-10}
 --- !u!23 &725311644
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6636,6 +7353,8 @@ GameObject:
   - component: {fileID: 756083332}
   - component: {fileID: 756083336}
   - component: {fileID: 756083335}
+  - component: {fileID: 756083333}
+  - component: {fileID: 756083334}
   m_Layer: 0
   m_Name: CuadriculaColion.074
   m_TagString: CuadriculaColisionJugador
@@ -6657,6 +7376,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &756083333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756083331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &756083334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756083331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000001542503}
 --- !u!23 &756083335
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6823,7 +7567,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 765777717}
-  - component: {fileID: 765777720}
   - component: {fileID: 765777719}
   - component: {fileID: 765777718}
   m_Layer: 0
@@ -6871,30 +7614,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765777716}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &765777720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765777716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 765777719}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &772318273
 GameObject:
   m_ObjectHideFlags: 0
@@ -6904,7 +7628,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 772318274}
-  - component: {fileID: 772318277}
   - component: {fileID: 772318276}
   - component: {fileID: 772318275}
   m_Layer: 0
@@ -6952,30 +7675,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772318273}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &772318277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772318273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 772318276}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &775214588
 GameObject:
   m_ObjectHideFlags: 0
@@ -7146,6 +7850,8 @@ GameObject:
   - component: {fileID: 791161539}
   - component: {fileID: 791161543}
   - component: {fileID: 791161542}
+  - component: {fileID: 791161540}
+  - component: {fileID: 791161541}
   m_Layer: 0
   m_Name: CuadriculaColion.017
   m_TagString: CuadriculaColisionJugador
@@ -7167,6 +7873,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &791161540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791161538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &791161541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791161538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: -0.000000009313226, y: 0.0000002188608, z: -0.0000000020372684}
 --- !u!23 &791161542
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7225,6 +7956,8 @@ GameObject:
   - component: {fileID: 803138901}
   - component: {fileID: 803138905}
   - component: {fileID: 803138904}
+  - component: {fileID: 803138902}
+  - component: {fileID: 803138903}
   m_Layer: 0
   m_Name: CuadriculaColion.081
   m_TagString: CuadriculaColisionJugador
@@ -7246,6 +7979,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803138902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803138900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &803138903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803138900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: -0.000000009313224, z: 9.93168e-10}
 --- !u!23 &803138904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7304,6 +8062,8 @@ GameObject:
   - component: {fileID: 812435761}
   - component: {fileID: 812435765}
   - component: {fileID: 812435764}
+  - component: {fileID: 812435762}
+  - component: {fileID: 812435763}
   m_Layer: 0
   m_Name: CuadriculaColion.078
   m_TagString: CuadriculaColisionJugador
@@ -7325,6 +8085,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &812435762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812435760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &812435763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812435760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0.00000023841858, z: -0.000000007508788}
 --- !u!23 &812435764
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7464,6 +8249,8 @@ GameObject:
   - component: {fileID: 823911182}
   - component: {fileID: 823911186}
   - component: {fileID: 823911185}
+  - component: {fileID: 823911183}
+  - component: {fileID: 823911184}
   m_Layer: 0
   m_Name: CuadriculaColion.028
   m_TagString: CuadriculaColisionJugador
@@ -7485,6 +8272,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &823911183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823911181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &823911184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823911181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: -0.000000004656613, y: 0.00000023841858, z: -0.000000007508788}
 --- !u!23 &823911185
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7541,7 +8353,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 825940160}
-  - component: {fileID: 825940163}
   - component: {fileID: 825940162}
   - component: {fileID: 825940161}
   m_Layer: 0
@@ -7589,30 +8400,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825940159}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &825940163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825940159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 825940162}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1025
 --- !u!1 &826398213
 GameObject:
   m_ObjectHideFlags: 0
@@ -7624,6 +8416,8 @@ GameObject:
   - component: {fileID: 826398214}
   - component: {fileID: 826398218}
   - component: {fileID: 826398217}
+  - component: {fileID: 826398215}
+  - component: {fileID: 826398216}
   m_Layer: 0
   m_Name: CuadriculaColion.048
   m_TagString: CuadriculaColisionJugador
@@ -7645,6 +8439,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &826398215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826398213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &826398216
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826398213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: 0.0000002188608, z: -0.000000007508788}
 --- !u!23 &826398217
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7789,6 +8608,8 @@ GameObject:
   - component: {fileID: 862831814}
   - component: {fileID: 862831818}
   - component: {fileID: 862831817}
+  - component: {fileID: 862831815}
+  - component: {fileID: 862831816}
   m_Layer: 0
   m_Name: CuadriculaColion.027
   m_TagString: CuadriculaColisionJugador
@@ -7810,6 +8631,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &862831815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862831813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &862831816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862831813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: -0.000000004656613, y: 0.0000002477318, z: -0.0000000020372684}
 --- !u!23 &862831817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7947,6 +8793,8 @@ GameObject:
   - component: {fileID: 888962614}
   - component: {fileID: 888962618}
   - component: {fileID: 888962617}
+  - component: {fileID: 888962615}
+  - component: {fileID: 888962616}
   m_Layer: 0
   m_Name: CuadriculaColion.012
   m_TagString: CuadriculaColisionJugador
@@ -7968,6 +8816,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &888962615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888962613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &888962616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888962613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: -0.000000009313224, z: -0.000000004478352}
 --- !u!23 &888962617
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8026,6 +8899,8 @@ GameObject:
   - component: {fileID: 895519300}
   - component: {fileID: 895519304}
   - component: {fileID: 895519303}
+  - component: {fileID: 895519301}
+  - component: {fileID: 895519302}
   m_Layer: 0
   m_Name: CuadriculaColion.032
   m_TagString: CuadriculaColisionJugador
@@ -8047,6 +8922,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895519301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895519299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &895519302
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895519299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: -0.000000009313224, z: -0.000000004478352}
 --- !u!23 &895519303
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8273,6 +9173,8 @@ GameObject:
   - component: {fileID: 905740002}
   - component: {fileID: 905740006}
   - component: {fileID: 905740005}
+  - component: {fileID: 905740003}
+  - component: {fileID: 905740004}
   m_Layer: 0
   m_Name: CuadriculaColion.022
   m_TagString: CuadriculaColisionJugador
@@ -8294,6 +9196,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905740003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905740001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &905740004
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905740001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: -0.000000013969839, y: -0.000000009313224, z: -0.000000004478352}
 --- !u!23 &905740005
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8463,6 +9390,8 @@ GameObject:
   - component: {fileID: 915643960}
   - component: {fileID: 915643964}
   - component: {fileID: 915643963}
+  - component: {fileID: 915643961}
+  - component: {fileID: 915643962}
   m_Layer: 0
   m_Name: CuadriculaColion.072
   m_TagString: CuadriculaColisionJugador
@@ -8484,6 +9413,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &915643961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915643959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &915643962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915643959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: -0.000000004478352}
 --- !u!23 &915643963
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8540,7 +9494,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920824086}
-  - component: {fileID: 920824089}
   - component: {fileID: 920824088}
   - component: {fileID: 920824087}
   m_Layer: 0
@@ -8588,30 +9541,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920824085}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &920824089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 920824085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 920824088}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &933089795
 GameObject:
   m_ObjectHideFlags: 0
@@ -8623,6 +9557,8 @@ GameObject:
   - component: {fileID: 933089796}
   - component: {fileID: 933089800}
   - component: {fileID: 933089799}
+  - component: {fileID: 933089797}
+  - component: {fileID: 933089798}
   m_Layer: 0
   m_Name: CuadriculaColion.045
   m_TagString: CuadriculaColisionJugador
@@ -8644,6 +9580,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &933089797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933089795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &933089798
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933089795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: 0, z: -0.00000002089655}
 --- !u!23 &933089799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8781,7 +9742,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 949504324}
-  - component: {fileID: 949504327}
   - component: {fileID: 949504326}
   - component: {fileID: 949504325}
   m_Layer: 0
@@ -8829,30 +9789,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949504323}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &949504327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949504323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 949504326}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -9126,6 +10067,8 @@ GameObject:
   - component: {fileID: 971453066}
   - component: {fileID: 971453070}
   - component: {fileID: 971453069}
+  - component: {fileID: 971453067}
+  - component: {fileID: 971453068}
   m_Layer: 0
   m_Name: CuadriculaColion.069
   m_TagString: CuadriculaColisionJugador
@@ -9147,6 +10090,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &971453067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971453065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &971453068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971453065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: 0.0000000055879354, y: 0.000000018626448, z: -0.000000012980308}
 --- !u!23 &971453069
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9205,6 +10173,8 @@ GameObject:
   - component: {fileID: 975127647}
   - component: {fileID: 975127651}
   - component: {fileID: 975127650}
+  - component: {fileID: 975127648}
+  - component: {fileID: 975127649}
   m_Layer: 0
   m_Name: CuadriculaColion.087
   m_TagString: CuadriculaColisionJugador
@@ -9226,6 +10196,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &975127648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975127646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &975127649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975127646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: 0.00000023841858, z: -0.0000000020372684}
 --- !u!23 &975127650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9437,6 +10432,8 @@ GameObject:
   - component: {fileID: 989640458}
   - component: {fileID: 989640462}
   - component: {fileID: 989640461}
+  - component: {fileID: 989640459}
+  - component: {fileID: 989640460}
   m_Layer: 0
   m_Name: CuadriculaColion.067
   m_TagString: CuadriculaColisionJugador
@@ -9458,6 +10455,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &989640459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989640457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &989640460
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989640457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0, y: 0.00000023841858, z: -0.0000000020372684}
 --- !u!23 &989640461
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9597,6 +10619,8 @@ GameObject:
   - component: {fileID: 992560271}
   - component: {fileID: 992560275}
   - component: {fileID: 992560274}
+  - component: {fileID: 992560272}
+  - component: {fileID: 992560273}
   m_Layer: 0
   m_Name: CuadriculaColion.041
   m_TagString: CuadriculaColisionJugador
@@ -9618,6 +10642,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &992560272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992560270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &992560273
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992560270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: -0.000000009313224, z: 9.93168e-10}
 --- !u!23 &992560274
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9676,6 +10725,8 @@ GameObject:
   - component: {fileID: 994270030}
   - component: {fileID: 994270034}
   - component: {fileID: 994270033}
+  - component: {fileID: 994270031}
+  - component: {fileID: 994270032}
   m_Layer: 0
   m_Name: CuadriculaColion.082
   m_TagString: CuadriculaColisionJugador
@@ -9697,6 +10748,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &994270031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994270029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &994270032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994270029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: 0, z: -0.000000004478352}
 --- !u!23 &994270033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9913,6 +10989,8 @@ GameObject:
   - component: {fileID: 1012374201}
   - component: {fileID: 1012374205}
   - component: {fileID: 1012374204}
+  - component: {fileID: 1012374202}
+  - component: {fileID: 1012374203}
   m_Layer: 0
   m_Name: CuadriculaColion.092
   m_TagString: CuadriculaColisionJugador
@@ -9934,6 +11012,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1012374202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012374200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1012374203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012374200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.000000004478352}
 --- !u!23 &1012374204
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10201,6 +11304,8 @@ GameObject:
   - component: {fileID: 1058179257}
   - component: {fileID: 1058179261}
   - component: {fileID: 1058179260}
+  - component: {fileID: 1058179258}
+  - component: {fileID: 1058179259}
   m_Layer: 0
   m_Name: CuadriculaColion.043
   m_TagString: CuadriculaColisionJugador
@@ -10222,6 +11327,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1058179258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058179256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1058179259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058179256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: 0.000000009313224, z: -0.000000009949872}
 --- !u!23 &1058179260
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10593,6 +11723,8 @@ GameObject:
   - component: {fileID: 1107409695}
   - component: {fileID: 1107409699}
   - component: {fileID: 1107409698}
+  - component: {fileID: 1107409696}
+  - component: {fileID: 1107409697}
   m_Layer: 0
   m_Name: CuadriculaColion.046
   m_TagString: CuadriculaColisionJugador
@@ -10614,6 +11746,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1107409696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107409694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1107409697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107409694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: -0.000000009313224, z: -0.00000002636807}
 --- !u!23 &1107409698
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10744,7 +11901,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1130245773}
-  - component: {fileID: 1130245776}
   - component: {fileID: 1130245775}
   - component: {fileID: 1130245774}
   m_Layer: 0
@@ -10792,30 +11948,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130245772}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1130245776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130245772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1130245775}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &1137230813
 GameObject:
   m_ObjectHideFlags: 0
@@ -10827,6 +11964,8 @@ GameObject:
   - component: {fileID: 1137230814}
   - component: {fileID: 1137230818}
   - component: {fileID: 1137230817}
+  - component: {fileID: 1137230815}
+  - component: {fileID: 1137230816}
   m_Layer: 0
   m_Name: CuadriculaColion.059
   m_TagString: CuadriculaColisionJugador
@@ -10848,6 +11987,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1137230815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137230813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1137230816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137230813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: 0, z: -0.000000012980308}
 --- !u!23 &1137230817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10906,6 +12070,8 @@ GameObject:
   - component: {fileID: 1146961982}
   - component: {fileID: 1146961986}
   - component: {fileID: 1146961985}
+  - component: {fileID: 1146961983}
+  - component: {fileID: 1146961984}
   m_Layer: 0
   m_Name: CuadriculaColion.073
   m_TagString: CuadriculaColisionJugador
@@ -10927,6 +12093,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146961983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146961981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1146961984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146961981}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: 0, y: 0.000000004656612, z: -0.000000009949872}
 --- !u!23 &1146961985
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11064,6 +12255,8 @@ GameObject:
   - component: {fileID: 1155170766}
   - component: {fileID: 1155170770}
   - component: {fileID: 1155170769}
+  - component: {fileID: 1155170767}
+  - component: {fileID: 1155170768}
   m_Layer: 0
   m_Name: CuadriculaColion.042
   m_TagString: CuadriculaColisionJugador
@@ -11085,6 +12278,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155170767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155170765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1155170768
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155170765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: 0, z: -0.000000004478352}
 --- !u!23 &1155170769
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11143,6 +12361,8 @@ GameObject:
   - component: {fileID: 1156538949}
   - component: {fileID: 1156538953}
   - component: {fileID: 1156538952}
+  - component: {fileID: 1156538950}
+  - component: {fileID: 1156538951}
   m_Layer: 0
   m_Name: CuadriculaColion.089
   m_TagString: CuadriculaColisionJugador
@@ -11164,6 +12384,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1156538950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156538948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1156538951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156538948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: 0, y: 0.000000018626448, z: -0.000000012980308}
 --- !u!23 &1156538952
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11222,6 +12467,8 @@ GameObject:
   - component: {fileID: 1156785411}
   - component: {fileID: 1156785415}
   - component: {fileID: 1156785414}
+  - component: {fileID: 1156785412}
+  - component: {fileID: 1156785413}
   m_Layer: 0
   m_Name: CuadriculaColion.014
   m_TagString: CuadriculaColisionJugador
@@ -11243,6 +12490,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1156785412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156785410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1156785413
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156785410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0, z: -0.00000001542503}
 --- !u!23 &1156785414
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11461,6 +12733,8 @@ GameObject:
   - component: {fileID: 1183590480}
   - component: {fileID: 1183590484}
   - component: {fileID: 1183590483}
+  - component: {fileID: 1183590481}
+  - component: {fileID: 1183590482}
   m_Layer: 0
   m_Name: CuadriculaColion.003
   m_TagString: CuadriculaColisionJugador
@@ -11482,6 +12756,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1183590481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183590479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1183590482
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183590479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0.000000009313224, z: -0.000000009949872}
 --- !u!23 &1183590483
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11698,6 +12997,8 @@ GameObject:
   - component: {fileID: 1232998602}
   - component: {fileID: 1232998606}
   - component: {fileID: 1232998605}
+  - component: {fileID: 1232998603}
+  - component: {fileID: 1232998604}
   m_Layer: 0
   m_Name: CuadriculaColion.084
   m_TagString: CuadriculaColisionJugador
@@ -11719,6 +13020,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1232998603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232998601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1232998604
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232998601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: -0.0000000018626448, z: -0.00000001542503}
 --- !u!23 &1232998605
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11935,6 +13261,8 @@ GameObject:
   - component: {fileID: 1247389449}
   - component: {fileID: 1247389453}
   - component: {fileID: 1247389452}
+  - component: {fileID: 1247389450}
+  - component: {fileID: 1247389451}
   m_Layer: 0
   m_Name: CuadriculaColion.034
   m_TagString: CuadriculaColisionJugador
@@ -11956,6 +13284,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1247389450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247389448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1247389451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247389448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: 0, z: -0.00000001542503}
 --- !u!23 &1247389452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12012,7 +13365,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1272498019}
-  - component: {fileID: 1272498022}
   - component: {fileID: 1272498021}
   - component: {fileID: 1272498020}
   m_Layer: 0
@@ -12060,30 +13412,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272498018}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1272498022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272498018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1272498021}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &1274722114
 GameObject:
   m_ObjectHideFlags: 0
@@ -12095,6 +13428,8 @@ GameObject:
   - component: {fileID: 1274722115}
   - component: {fileID: 1274722119}
   - component: {fileID: 1274722118}
+  - component: {fileID: 1274722116}
+  - component: {fileID: 1274722117}
   m_Layer: 0
   m_Name: CuadriculaColion.098
   m_TagString: CuadriculaColisionJugador
@@ -12116,6 +13451,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1274722116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274722114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1274722117
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274722114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0, y: 0.00000025797635, z: -0.000000007508788}
 --- !u!23 &1274722118
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12210,6 +13570,8 @@ GameObject:
   - component: {fileID: 1288686792}
   - component: {fileID: 1288686796}
   - component: {fileID: 1288686795}
+  - component: {fileID: 1288686793}
+  - component: {fileID: 1288686794}
   m_Layer: 0
   m_Name: CuadriculaColion.091
   m_TagString: CuadriculaColisionJugador
@@ -12231,6 +13593,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1288686793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288686791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1288686794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288686791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: 9.93168e-10}
 --- !u!23 &1288686795
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12287,7 +13674,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291095411}
-  - component: {fileID: 1291095414}
   - component: {fileID: 1291095413}
   - component: {fileID: 1291095412}
   m_Layer: 0
@@ -12335,30 +13721,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291095410}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1291095414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291095410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1291095413}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1025
 --- !u!1 &1297229497
 GameObject:
   m_ObjectHideFlags: 3
@@ -12544,6 +13911,8 @@ GameObject:
   - component: {fileID: 1324264288}
   - component: {fileID: 1324264292}
   - component: {fileID: 1324264291}
+  - component: {fileID: 1324264289}
+  - component: {fileID: 1324264290}
   m_Layer: 0
   m_Name: CuadriculaColion.020
   m_TagString: CuadriculaColisionJugador
@@ -12565,6 +13934,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1324264289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324264287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1324264290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324264287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: -0.000000013969839, y: -0.000000009313224, z: -0.000000023337634}
 --- !u!23 &1324264291
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12689,6 +14083,8 @@ GameObject:
   - component: {fileID: 1331302796}
   - component: {fileID: 1331302800}
   - component: {fileID: 1331302799}
+  - component: {fileID: 1331302797}
+  - component: {fileID: 1331302798}
   m_Layer: 0
   m_Name: CuadriculaColion.015
   m_TagString: CuadriculaColisionJugador
@@ -12710,6 +14106,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1331302797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331302795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1331302798
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331302795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0, z: -0.00000002089655}
 --- !u!23 &1331302799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12847,6 +14268,8 @@ GameObject:
   - component: {fileID: 1339786028}
   - component: {fileID: 1339786032}
   - component: {fileID: 1339786031}
+  - component: {fileID: 1339786029}
+  - component: {fileID: 1339786030}
   m_Layer: 0
   m_Name: CuadriculaColion.090
   m_TagString: CuadriculaColisionJugador
@@ -12868,6 +14291,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339786029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339786027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1339786030
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339786027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: -0.000000023337634}
 --- !u!23 &1339786031
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12926,6 +14374,8 @@ GameObject:
   - component: {fileID: 1341994075}
   - component: {fileID: 1341994079}
   - component: {fileID: 1341994078}
+  - component: {fileID: 1341994076}
+  - component: {fileID: 1341994077}
   m_Layer: 0
   m_Name: CuadriculaColion.056
   m_TagString: CuadriculaColisionJugador
@@ -12947,6 +14397,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1341994076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341994074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1341994077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341994074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000002636807}
 --- !u!23 &1341994078
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13084,6 +14559,8 @@ GameObject:
   - component: {fileID: 1364008297}
   - component: {fileID: 1364008301}
   - component: {fileID: 1364008300}
+  - component: {fileID: 1364008298}
+  - component: {fileID: 1364008299}
   m_Layer: 0
   m_Name: CuadriculaColion.068
   m_TagString: CuadriculaColisionJugador
@@ -13105,6 +14582,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1364008298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364008296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1364008299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364008296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0, y: 0.0000002188608, z: -0.000000007508788}
 --- !u!23 &1364008300
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13323,6 +14825,8 @@ GameObject:
   - component: {fileID: 1391714814}
   - component: {fileID: 1391714818}
   - component: {fileID: 1391714817}
+  - component: {fileID: 1391714815}
+  - component: {fileID: 1391714816}
   m_Layer: 0
   m_Name: CuadriculaColion.088
   m_TagString: CuadriculaColisionJugador
@@ -13344,6 +14848,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1391714815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391714813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1391714816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391714813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: 0.00000025797635, z: -0.000000007508788}
 --- !u!23 &1391714817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13452,6 +14981,8 @@ GameObject:
   - component: {fileID: 1423558573}
   - component: {fileID: 1423558577}
   - component: {fileID: 1423558576}
+  - component: {fileID: 1423558574}
+  - component: {fileID: 1423558575}
   m_Layer: 0
   m_Name: CuadriculaColion.079
   m_TagString: CuadriculaColisionJugador
@@ -13473,6 +15004,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1423558574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423558572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1423558575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423558572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0, z: -0.000000012980308}
 --- !u!23 &1423558576
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13564,6 +15120,8 @@ GameObject:
   - component: {fileID: 1427781658}
   - component: {fileID: 1427781662}
   - component: {fileID: 1427781661}
+  - component: {fileID: 1427781659}
+  - component: {fileID: 1427781660}
   m_Layer: 0
   m_Name: CuadriculaColion.049
   m_TagString: CuadriculaColisionJugador
@@ -13585,6 +15143,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1427781659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427781657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1427781660
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427781657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: 0, y: 0.000000018626448, z: -0.000000012980308}
 --- !u!23 &1427781661
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13643,6 +15226,8 @@ GameObject:
   - component: {fileID: 1439844918}
   - component: {fileID: 1439844922}
   - component: {fileID: 1439844921}
+  - component: {fileID: 1439844919}
+  - component: {fileID: 1439844920}
   m_Layer: 0
   m_Name: CuadriculaColion.055
   m_TagString: CuadriculaColisionJugador
@@ -13664,6 +15249,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1439844919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439844917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1439844920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439844917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000002089655}
 --- !u!23 &1439844921
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13720,7 +15330,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1441995105}
-  - component: {fileID: 1441995108}
   - component: {fileID: 1441995107}
   - component: {fileID: 1441995106}
   m_Layer: 0
@@ -13768,30 +15377,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441995104}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1441995108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441995104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1441995107}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1025
 --- !u!1 &1468016627
 GameObject:
   m_ObjectHideFlags: 0
@@ -14157,6 +15747,8 @@ GameObject:
   - component: {fileID: 1496068986}
   - component: {fileID: 1496068990}
   - component: {fileID: 1496068989}
+  - component: {fileID: 1496068987}
+  - component: {fileID: 1496068988}
   m_Layer: 0
   m_Name: CuadriculaColion.026
   m_TagString: CuadriculaColisionJugador
@@ -14178,6 +15770,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496068987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496068985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1496068988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496068985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: -0.000000013969839, y: 0.000000009313224, z: -0.00000002636807}
 --- !u!23 &1496068989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19733,6 +21350,8 @@ GameObject:
   - component: {fileID: 1595787170}
   - component: {fileID: 1595787174}
   - component: {fileID: 1595787173}
+  - component: {fileID: 1595787171}
+  - component: {fileID: 1595787172}
   m_Layer: 0
   m_Name: CuadriculaColion.033
   m_TagString: CuadriculaColisionJugador
@@ -19754,6 +21373,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1595787171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595787169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1595787172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595787169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: 0.000000004656612, z: -0.000000009949872}
 --- !u!23 &1595787173
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19810,7 +21454,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1599381182}
-  - component: {fileID: 1599381185}
   - component: {fileID: 1599381184}
   - component: {fileID: 1599381183}
   m_Layer: 0
@@ -19858,30 +21501,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599381181}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1599381185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599381181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1599381184}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &1600640744
 GameObject:
   m_ObjectHideFlags: 0
@@ -19893,6 +21517,8 @@ GameObject:
   - component: {fileID: 1600640745}
   - component: {fileID: 1600640749}
   - component: {fileID: 1600640748}
+  - component: {fileID: 1600640746}
+  - component: {fileID: 1600640747}
   m_Layer: 0
   m_Name: CuadriculaColion.071
   m_TagString: CuadriculaColisionJugador
@@ -19914,6 +21540,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1600640746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600640744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1600640747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600640744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0.000000009313224, z: 9.93168e-10}
 --- !u!23 &1600640748
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19972,6 +21623,8 @@ GameObject:
   - component: {fileID: 1602233279}
   - component: {fileID: 1602233283}
   - component: {fileID: 1602233282}
+  - component: {fileID: 1602233280}
+  - component: {fileID: 1602233281}
   m_Layer: 0
   m_Name: CuadriculaColion.039
   m_TagString: CuadriculaColisionJugador
@@ -19993,6 +21646,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1602233280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602233278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1602233281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602233278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.000000012980308}
 --- !u!23 &1602233282
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20051,6 +21729,8 @@ GameObject:
   - component: {fileID: 1611883333}
   - component: {fileID: 1611883337}
   - component: {fileID: 1611883336}
+  - component: {fileID: 1611883334}
+  - component: {fileID: 1611883335}
   m_Layer: 0
   m_Name: CuadriculaColion.075
   m_TagString: CuadriculaColisionJugador
@@ -20072,6 +21752,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611883334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611883332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1611883335
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611883332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000002089655}
 --- !u!23 &1611883336
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20673,6 +22378,8 @@ GameObject:
   - component: {fileID: 1659978008}
   - component: {fileID: 1659978012}
   - component: {fileID: 1659978011}
+  - component: {fileID: 1659978009}
+  - component: {fileID: 1659978010}
   m_Layer: 0
   m_Name: CuadriculaColion.008
   m_TagString: CuadriculaColisionJugador
@@ -20694,6 +22401,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659978009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659978007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1659978010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659978007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0, y: 0.0000002188608, z: -0.000000007508788}
 --- !u!23 &1659978011
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20752,6 +22484,8 @@ GameObject:
   - component: {fileID: 1660478158}
   - component: {fileID: 1660478162}
   - component: {fileID: 1660478161}
+  - component: {fileID: 1660478159}
+  - component: {fileID: 1660478160}
   m_Layer: 0
   m_Name: CuadriculaColion.002
   m_TagString: CuadriculaColisionJugador
@@ -20773,6 +22507,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660478159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660478157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1660478160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660478157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.000000004478352}
 --- !u!23 &1660478161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20829,7 +22588,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1663942101}
-  - component: {fileID: 1663942104}
   - component: {fileID: 1663942103}
   - component: {fileID: 1663942102}
   m_Layer: 0
@@ -20877,30 +22635,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663942100}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 3, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1663942104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663942100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1663942103}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1025
 --- !u!1 &1664081005
 GameObject:
   m_ObjectHideFlags: 0
@@ -20912,6 +22651,8 @@ GameObject:
   - component: {fileID: 1664081006}
   - component: {fileID: 1664081010}
   - component: {fileID: 1664081009}
+  - component: {fileID: 1664081007}
+  - component: {fileID: 1664081008}
   m_Layer: 0
   m_Name: CuadriculaColion.009
   m_TagString: CuadriculaColisionJugador
@@ -20933,6 +22674,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1664081007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664081005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1664081008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664081005}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: -0.000000018626451, y: 0.000000018626448, z: -0.000000012980308}
 --- !u!23 &1664081009
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21153,6 +22919,8 @@ GameObject:
   - component: {fileID: 1680601451}
   - component: {fileID: 1680601455}
   - component: {fileID: 1680601454}
+  - component: {fileID: 1680601452}
+  - component: {fileID: 1680601453}
   m_Layer: 0
   m_Name: CuadriculaColion.005
   m_TagString: CuadriculaColisionJugador
@@ -21174,6 +22942,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1680601452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680601450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1680601453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680601450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000002089655}
 --- !u!23 &1680601454
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21232,6 +23025,8 @@ GameObject:
   - component: {fileID: 1689043673}
   - component: {fileID: 1689043677}
   - component: {fileID: 1689043676}
+  - component: {fileID: 1689043674}
+  - component: {fileID: 1689043675}
   m_Layer: 0
   m_Name: CuadriculaColion.047
   m_TagString: CuadriculaColisionJugador
@@ -21253,6 +23048,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689043674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689043672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1689043675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689043672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: 0.00000023841858, z: -0.0000000020372684}
 --- !u!23 &1689043676
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21309,7 +23129,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1691007463}
-  - component: {fileID: 1691007466}
   - component: {fileID: 1691007465}
   - component: {fileID: 1691007464}
   m_Layer: 0
@@ -21357,30 +23176,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691007462}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1691007466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691007462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1691007465}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &1702476209
 GameObject:
   m_ObjectHideFlags: 0
@@ -21506,6 +23306,8 @@ GameObject:
   - component: {fileID: 1705645727}
   - component: {fileID: 1705645731}
   - component: {fileID: 1705645730}
+  - component: {fileID: 1705645728}
+  - component: {fileID: 1705645729}
   m_Layer: 0
   m_Name: CuadriculaColion.036
   m_TagString: CuadriculaColisionJugador
@@ -21527,6 +23329,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1705645728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705645726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1705645729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705645726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: 0, z: -0.00000002636807}
 --- !u!23 &1705645730
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21585,6 +23412,8 @@ GameObject:
   - component: {fileID: 1705743245}
   - component: {fileID: 1705743249}
   - component: {fileID: 1705743248}
+  - component: {fileID: 1705743246}
+  - component: {fileID: 1705743247}
   m_Layer: 0
   m_Name: CuadriculaColion.083
   m_TagString: CuadriculaColisionJugador
@@ -21606,6 +23435,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1705743246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705743244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1705743247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705743244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: 0.000000019557774, y: 0.000000004656612, z: -0.000000009949872}
 --- !u!23 &1705743248
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21820,7 +23674,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726472865}
-  - component: {fileID: 1726472868}
   - component: {fileID: 1726472867}
   - component: {fileID: 1726472866}
   m_Layer: 0
@@ -21868,30 +23721,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726472864}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1726472868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726472864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1726472867}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &1729935394
 GameObject:
   m_ObjectHideFlags: 0
@@ -21903,6 +23737,8 @@ GameObject:
   - component: {fileID: 1729935395}
   - component: {fileID: 1729935399}
   - component: {fileID: 1729935398}
+  - component: {fileID: 1729935396}
+  - component: {fileID: 1729935397}
   m_Layer: 0
   m_Name: CuadriculaColion.061
   m_TagString: CuadriculaColisionJugador
@@ -21924,6 +23760,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1729935396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729935394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1729935397
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729935394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000055879354, y: -0.000000009313224, z: 9.93168e-10}
 --- !u!23 &1729935398
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21982,6 +23843,8 @@ GameObject:
   - component: {fileID: 1731178949}
   - component: {fileID: 1731178953}
   - component: {fileID: 1731178952}
+  - component: {fileID: 1731178950}
+  - component: {fileID: 1731178951}
   m_Layer: 0
   m_Name: CuadriculaColion.011
   m_TagString: CuadriculaColisionJugador
@@ -22003,6 +23866,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1731178950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731178948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1731178951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731178948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0.000000009313224, z: 9.93168e-10}
 --- !u!23 &1731178952
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22225,6 +24113,8 @@ GameObject:
   - component: {fileID: 1743907411}
   - component: {fileID: 1743907415}
   - component: {fileID: 1743907414}
+  - component: {fileID: 1743907412}
+  - component: {fileID: 1743907413}
   m_Layer: 0
   m_Name: CuadriculaColion.062
   m_TagString: CuadriculaColisionJugador
@@ -22246,6 +24136,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743907412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743907410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1743907413
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743907410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000055879354, y: 0, z: -0.000000004478352}
 --- !u!23 &1743907414
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22383,6 +24298,8 @@ GameObject:
   - component: {fileID: 1760287478}
   - component: {fileID: 1760287482}
   - component: {fileID: 1760287481}
+  - component: {fileID: 1760287479}
+  - component: {fileID: 1760287480}
   m_Layer: 0
   m_Name: CuadriculaColion.052
   m_TagString: CuadriculaColisionJugador
@@ -22404,6 +24321,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1760287479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760287477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1760287480
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760287477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: -0.000000004478352}
 --- !u!23 &1760287481
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22466,7 +24408,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778247069}
-  - component: {fileID: 1778247072}
   - component: {fileID: 1778247071}
   - component: {fileID: 1778247070}
   m_Layer: 0
@@ -22514,30 +24455,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778247068}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1778247072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778247068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1778247071}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &1799350002
 GameObject:
   m_ObjectHideFlags: 0
@@ -22645,6 +24567,8 @@ GameObject:
   - component: {fileID: 1799578069}
   - component: {fileID: 1799578073}
   - component: {fileID: 1799578072}
+  - component: {fileID: 1799578070}
+  - component: {fileID: 1799578071}
   m_Layer: 0
   m_Name: CuadriculaColion.016
   m_TagString: CuadriculaColisionJugador
@@ -22666,6 +24590,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1799578070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799578068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1799578071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799578068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.000000009313226, y: 0, z: -0.00000002636807}
 --- !u!23 &1799578072
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22724,6 +24673,8 @@ GameObject:
   - component: {fileID: 1810786791}
   - component: {fileID: 1810786795}
   - component: {fileID: 1810786794}
+  - component: {fileID: 1810786792}
+  - component: {fileID: 1810786793}
   m_Layer: 0
   m_Name: CuadriculaColion
   m_TagString: CuadriculaColisionJugador
@@ -22745,6 +24696,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1810786792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810786790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1810786793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810786790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: -0.000000023337634}
 --- !u!23 &1810786794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22803,6 +24779,8 @@ GameObject:
   - component: {fileID: 1811664276}
   - component: {fileID: 1811664280}
   - component: {fileID: 1811664279}
+  - component: {fileID: 1811664277}
+  - component: {fileID: 1811664278}
   m_Layer: 0
   m_Name: CuadriculaColion.096
   m_TagString: CuadriculaColisionJugador
@@ -22824,6 +24802,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1811664277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811664275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1811664278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811664275}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: 0, z: -0.00000002636807}
 --- !u!23 &1811664279
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22882,6 +24885,8 @@ GameObject:
   - component: {fileID: 1813014620}
   - component: {fileID: 1813014624}
   - component: {fileID: 1813014623}
+  - component: {fileID: 1813014621}
+  - component: {fileID: 1813014622}
   m_Layer: 0
   m_Name: CuadriculaColion.065
   m_TagString: CuadriculaColisionJugador
@@ -22903,6 +24908,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1813014621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813014619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1813014622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813014619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000055879354, y: 0, z: -0.00000002089655}
 --- !u!23 &1813014623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22994,6 +25024,8 @@ GameObject:
   - component: {fileID: 1847071685}
   - component: {fileID: 1847071689}
   - component: {fileID: 1847071688}
+  - component: {fileID: 1847071686}
+  - component: {fileID: 1847071687}
   m_Layer: 0
   m_Name: CuadriculaColion.038
   m_TagString: CuadriculaColisionJugador
@@ -23015,6 +25047,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1847071686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847071684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1847071687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847071684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: 0.00000023841858, z: -0.000000007508788}
 --- !u!23 &1847071688
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23470,6 +25527,8 @@ GameObject:
   - component: {fileID: 1914096083}
   - component: {fileID: 1914096087}
   - component: {fileID: 1914096086}
+  - component: {fileID: 1914096084}
+  - component: {fileID: 1914096085}
   m_Layer: 0
   m_Name: CuadriculaColion.006
   m_TagString: CuadriculaColisionJugador
@@ -23491,6 +25550,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1914096084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914096082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1914096085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914096082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: -0.00000002636807}
 --- !u!23 &1914096086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23549,6 +25633,8 @@ GameObject:
   - component: {fileID: 1915418417}
   - component: {fileID: 1915418421}
   - component: {fileID: 1915418420}
+  - component: {fileID: 1915418418}
+  - component: {fileID: 1915418419}
   m_Layer: 0
   m_Name: CuadriculaColion.099
   m_TagString: CuadriculaColisionJugador
@@ -23570,6 +25656,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1915418418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915418416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1915418419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915418416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387137, z: 0.010142214}
+  m_Center: {x: -0.000000019557774, y: 0.000000018626448, z: -0.000000012980308}
 --- !u!23 &1915418420
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23872,7 +25983,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1946157620}
-  - component: {fileID: 1946157623}
   - component: {fileID: 1946157622}
   - component: {fileID: 1946157621}
   m_Layer: 0
@@ -23920,30 +26030,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946157619}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 3.5, y: 10, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1946157623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946157619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d609ecdfba77034eb1d24d791f11992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
-  _BoxCollider: {fileID: 0}
-  overlappers:
-  - {fileID: 1946157622}
-  isOverlapper:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &1946561025
 GameObject:
   m_ObjectHideFlags: 0
@@ -28788,6 +30879,8 @@ GameObject:
   - component: {fileID: 1955493896}
   - component: {fileID: 1955493900}
   - component: {fileID: 1955493899}
+  - component: {fileID: 1955493897}
+  - component: {fileID: 1955493898}
   m_Layer: 0
   m_Name: CuadriculaColion.066
   m_TagString: CuadriculaColisionJugador
@@ -28809,6 +30902,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1955493897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955493895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1955493898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955493895}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000055879354, y: -0.000000009313224, z: -0.00000002636807}
 --- !u!23 &1955493899
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28913,6 +31031,8 @@ GameObject:
   - component: {fileID: 1972252343}
   - component: {fileID: 1972252347}
   - component: {fileID: 1972252346}
+  - component: {fileID: 1972252344}
+  - component: {fileID: 1972252345}
   m_Layer: 0
   m_Name: CuadriculaColion.058
   m_TagString: CuadriculaColisionJugador
@@ -28934,6 +31054,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1972252344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972252342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1972252345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972252342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0, y: 0.00000023841858, z: -0.000000007508788}
 --- !u!23 &1972252346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29315,6 +31460,8 @@ GameObject:
   - component: {fileID: 2003963007}
   - component: {fileID: 2003963011}
   - component: {fileID: 2003963010}
+  - component: {fileID: 2003963008}
+  - component: {fileID: 2003963009}
   m_Layer: 0
   m_Name: CuadriculaColion.023
   m_TagString: CuadriculaColisionJugador
@@ -29336,6 +31483,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2003963008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003963006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2003963009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003963006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387152, y: 0.04338716, z: 0.010142214}
+  m_Center: {x: -0.000000013969839, y: -0.000000004656612, z: -0.000000009949872}
 --- !u!23 &2003963010
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29394,6 +31566,8 @@ GameObject:
   - component: {fileID: 2008878272}
   - component: {fileID: 2008878276}
   - component: {fileID: 2008878275}
+  - component: {fileID: 2008878273}
+  - component: {fileID: 2008878274}
   m_Layer: 0
   m_Name: CuadriculaColion.050
   m_TagString: CuadriculaColisionJugador
@@ -29415,6 +31589,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2008878273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008878271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2008878274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008878271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387163, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.000000009313224, z: -0.000000023337634}
 --- !u!23 &2008878275
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29628,6 +31827,8 @@ GameObject:
   - component: {fileID: 2023657156}
   - component: {fileID: 2023657160}
   - component: {fileID: 2023657159}
+  - component: {fileID: 2023657157}
+  - component: {fileID: 2023657158}
   m_Layer: 0
   m_Name: CuadriculaColion.044
   m_TagString: CuadriculaColisionJugador
@@ -29649,6 +31850,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2023657157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023657155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2023657158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023657155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387145, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0.0000000018626451, y: 0, z: -0.00000001542503}
 --- !u!23 &2023657159
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29801,6 +32027,8 @@ GameObject:
   - component: {fileID: 2046452091}
   - component: {fileID: 2046452095}
   - component: {fileID: 2046452094}
+  - component: {fileID: 2046452092}
+  - component: {fileID: 2046452093}
   m_Layer: 0
   m_Name: CuadriculaColion.095
   m_TagString: CuadriculaColisionJugador
@@ -29822,6 +32050,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2046452092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046452090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2046452093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046452090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387182, y: 0.043387156, z: 0.010142214}
+  m_Center: {x: 0, y: -0.0000000018626448, z: -0.00000002089655}
 --- !u!23 &2046452094
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30114,6 +32367,8 @@ GameObject:
   - component: {fileID: 2123825533}
   - component: {fileID: 2123825537}
   - component: {fileID: 2123825536}
+  - component: {fileID: 2123825534}
+  - component: {fileID: 2123825535}
   m_Layer: 0
   m_Name: CuadriculaColion.037
   m_TagString: CuadriculaColisionJugador
@@ -30135,6 +32390,31 @@ Transform:
   m_Father: {fileID: 12235348}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2123825534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123825532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63da4e2c0abdbe041bc7c6c46a077869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2123825535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123825532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043387167, y: 0.043387175, z: 0.010142214}
+  m_Center: {x: 0.000000004656613, y: 0.0000002188608, z: -0.0000000020372684}
 --- !u!23 &2123825536
 MeshRenderer:
   m_ObjectHideFlags: 0
