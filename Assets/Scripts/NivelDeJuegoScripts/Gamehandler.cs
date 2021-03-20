@@ -208,6 +208,7 @@ public class Gamehandler : MonoBehaviour
     /// <summary>Cambia al nivel GameOverLose</summary>
     public void GameOverLose()
     {
+        SetPuedoPresionarBoton(false);//no puedo presionar botones
         SceneManager.LoadScene("Youlose");
     }
 

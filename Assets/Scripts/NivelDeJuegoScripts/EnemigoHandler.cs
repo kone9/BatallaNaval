@@ -116,7 +116,7 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
-        numeroAleatorio = Random.Range(0,2);//Random.Range(0,5);//para representar dificultad
+        numeroAleatorio = 1;//Random.Range(0,1);//Random.Range(0,5);//para representar dificultad
         // elementoEliminar = 0;
         // print("el numero aleatorio es: " + numeroAleatorio);
 
@@ -161,18 +161,16 @@ public class EnemigoHandler : MonoBehaviour
 
     IEnumerator SeleccionarGrillaAleatoria()
     {
-        if(GrillaJugadorColisiones.Count > 0)//si todavía hay enemigos para disparar
+        if(GrillaJugadorColisiones.Count > 0)//si todavía hay grilla para disparar
         {
             int LugarAleatorio = Random.Range(0,GrillaJugadorColisiones.Count);//numero eleatorio entre cantidad de grillas
             GrillaJugadorColisiones[LugarAleatorio].GetComponent<MeshRenderer>().enabled = false;//deshabilito la malla
             GrillaJugadorColisiones.RemoveAt(LugarAleatorio);//elimino este lugar de la grilla
-            // audio_sink_Own.Play();//sonido erro el disparo
+            
             audio_miss[1].GetComponent<AudioSource>().Play();
 
             yield return new WaitForSeconds(0.1f);//por defecto es 1
-            
-            _Gamehandler.IsTurnoJugador();
-            // break;
+            _Gamehandler.IsTurnoJugador();//es turno de jugador
         }
         else//sino solo va a disparar fuego hasta terminar el juego
         {
