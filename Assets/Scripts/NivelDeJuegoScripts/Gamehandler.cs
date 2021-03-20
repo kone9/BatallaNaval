@@ -52,6 +52,10 @@ public class Gamehandler : MonoBehaviour
     // se usa para ver que no se acerto el disparo o si y para un delay
     // por el tema de sonido
    
+    ///////////////////////////////////////////////////
+    //relacioando a GameOver
+    public GameObject UI_GameOver;
+    public GameObject UI_Winner;
 
 
 
@@ -87,8 +91,8 @@ public class Gamehandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       AcomodarLosBarcos();
-       AcomodarLosBarcosGrillaEnemigo();
+    //    AcomodarLosBarcos();
+    //    AcomodarLosBarcosGrillaEnemigo();
     }
 
     
@@ -202,14 +206,16 @@ public class Gamehandler : MonoBehaviour
     /// <summary>Cambia al nivel GameOverWinner</summary>
     public void GameOverWinner()
     {
-        SceneManager.LoadScene("YouWinner");
+        fondoTablero.SetActive(false);//hago que el tablero no se vea
+        SetPuedoPresionarBoton(false);//no puedo presionar botones
+        UI_Winner.SetActive(true);
     }
 
     /// <summary>Cambia al nivel GameOverLose</summary>
     public void GameOverLose()
     {
         SetPuedoPresionarBoton(false);//no puedo presionar botones
-        SceneManager.LoadScene("Youlose");
+        UI_GameOver.SetActive(true);
     }
 
 }

@@ -19,6 +19,9 @@ public class EnemigoHandler : MonoBehaviour
     AudioSource audio_sink_Own;//sonido hundio barco
     GameObject[] audio_miss;//sonido erro disparo
 
+    AudioSource musicaJugandoContraEnemigo;
+    AudioSource sonidoGameOver;
+
     private void Awake()
     {
         barcoJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("barcoJugadorColisiones"));//referencia a todos los barcos guardados en una lista
@@ -28,6 +31,8 @@ public class EnemigoHandler : MonoBehaviour
         audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
         audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
         audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");
+        musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();
+        sonidoGameOver = GameObject.Find("SonidoGameOver").GetComponent<AudioSource>();
 
         StartCoroutine("BuscarCuadriculaColisionJugador");//Busca las cuadriculas despues de un tiempo ya que deshabilito algunos
 
@@ -112,7 +117,7 @@ public class EnemigoHandler : MonoBehaviour
     }
 
 
-
+    /// <summary>Hace la comprobación para saber si disparar a grilla o barco</summary>
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
@@ -120,7 +125,7 @@ public class EnemigoHandler : MonoBehaviour
         // elementoEliminar = 0;
         // print("el numero aleatorio es: " + numeroAleatorio);
 
-        yield return new WaitForSeconds(0.1f);//por defecto uno
+        yield return new WaitForSeconds(1f);//por defecto uno
 
         //Disparo al enemigo con un rango aleatorio
         if(numeroAcierto == numeroAleatorio)//entonces el enemigo dispara al jugador
@@ -133,32 +138,30 @@ public class EnemigoHandler : MonoBehaviour
         }
     }
 
+    /// <summary>Dispara fuego a barco hasta que sea gameOver</summary>
     IEnumerator DispararFuegoAJugador()
     {
-        if(barcoJugadorColisiones.Count > 0)//si hay colisiones
+        if(barcoJugadorColisiones.Count > 1)//si hay colisiones
         {
-            int LugarAleatorio = Random.Range(0,barcoJugadorColisiones.Count);//el ultimo numero no se incluye asi que es correcto
-
-            GameObject fuegoInstance = Instantiate(fuego);
-
-            fuegoInstance.transform.position = barcoJugadorColisiones[LugarAleatorio].transform.position;
-
-            // elementoEliminar += 1;
-            barcoJugadorColisiones.RemoveAt(LugarAleatorio);
-            // print("la cantidad de posiciones de barco para destruir son: " + barcoJugadorColisiones.Count );            
-
-            audio_hit_Own.Play();//sonido acerto al barco
-
+            InstanciarFuego();
             // yield return new WaitForSeconds(2);//espera 2 segundos antes de volver a hacer lo mismo
-            yield return new WaitForSeconds(0.1f);//por defecto 2 segundos funciona bien
+            yield return new WaitForSeconds(2f);//por defecto 2 segundos funciona bien
             _Gamehandler.IsTurnoJugador();
         }
         else //sino es GameOver ya que gana el enemigo
         {
+            InstanciarFuego();
+            yield return new WaitForSeconds(1);
+            _Gamehandler.SetPuedoPresionarBoton(false);
+            musicaJugandoContraEnemigo.Stop();
+            sonidoGameOver.Play();//sonido winner
+            yield return new WaitForSeconds(2);//despues de 2 segundos 
+            _Gamehandler.fondoTablero.SetActive(false);
             _Gamehandler.GameOverLose();//es game
         }
     }
 
+    /// <summary>Selecciona una grilla de forma aleatoria y la destruye</summary>
     IEnumerator SeleccionarGrillaAleatoria()
     {
         if(GrillaJugadorColisiones.Count > 0)//si todavía hay grilla para disparar
@@ -169,7 +172,7 @@ public class EnemigoHandler : MonoBehaviour
             
             audio_miss[1].GetComponent<AudioSource>().Play();
 
-            yield return new WaitForSeconds(0.1f);//por defecto es 1
+            yield return new WaitForSeconds(1f);//por defecto es 1
             _Gamehandler.IsTurnoJugador();//es turno de jugador
         }
         else//sino solo va a disparar fuego hasta terminar el juego
@@ -177,4 +180,22 @@ public class EnemigoHandler : MonoBehaviour
             StartCoroutine("DispararFuegoAJugador");
         }
     }
+
+    /// <summary>Instancia el fuego a la escena en una cuadricula</summary>
+    void InstanciarFuego()
+    {
+        int LugarAleatorio = Random.Range(0,barcoJugadorColisiones.Count);//el ultimo numero no se incluye asi que es correcto
+
+        GameObject fuegoInstance = Instantiate(fuego);
+
+        fuegoInstance.transform.position = barcoJugadorColisiones[LugarAleatorio].transform.position;
+
+        // elementoEliminar += 1;
+        barcoJugadorColisiones.RemoveAt(LugarAleatorio);
+        // print("la cantidad de posiciones de barco para destruir son: " + barcoJugadorColisiones.Count );            
+
+        audio_hit_Own.Play();//sonido acerto al barco
+    }
+
+
 }

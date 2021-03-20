@@ -94,7 +94,7 @@ public class BarcoTrigger : MonoBehaviour
      /// <summary>hace que sea el turno del enemigo cuando acertas al disparo</summary>
     IEnumerator jugarContraEnemigoDelay()
     {
-        yield return new WaitForSeconds(0.1f);//por defecto 2 segundos
+        yield return new WaitForSeconds(2f);//por defecto 2 segundos
          _Gamehandler.IsTurnoEnemigo();
     }
     
@@ -112,7 +112,7 @@ public class BarcoTrigger : MonoBehaviour
         musicaJugandoContraEnemigo.Stop();
         sonidoWinner.Play();//sonido winner
         yield return new WaitForSeconds(2);//despues de 2 segundos 
-        //  _Gamehandler.GameOverWinner();//cambio a nivel winner
+        _Gamehandler.GameOverWinner();//cambio a nivel winner
     }   
 
 
