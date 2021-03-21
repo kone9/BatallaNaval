@@ -206,15 +206,15 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     public void IsTurnoEnemigo()//se llama cuando se aprieta un elemento de la grilla donde no esta el barco
     {
         //aqui deshabilito el jugador actual
-        fondoTablero.SetActive(true);//enciende un tablero de color rojo en el fondo
+        fondoTablero.SetActive(true);//enciende un tablero 
         puedoPresionarBoton = false;//los botones ya no pueden ser presionados
-        animacionLuzDecoradoRoja.SetBool("isTurnEnemy",true);
+        animacionLuzDecoradoRoja.SetBool("isTurnEnemy",true);//luz que aparece con el tablero
         //aqui habilito al enemigo
         photonView.RPC("IsTurnoEnemigoOJugadorAvisarRed", //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered,//para llamar o obtener los datos de otros
-                false,//apara un tablero de color rojo en el fondo
+                false,//saca el tablero de color rojo del fondo
                 true,//los botones pueden ser presionados
-                false//luz roja que aparace con el tablero de no puedo jugar
+                false//luz roja que aparace con el tablero deja de estar visible
             );  
     }
 
@@ -231,6 +231,11 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     public bool GetPuedoPresionarBoton()
     {
         return this.puedoPresionarBoton;
+    }
+
+    public void SetPuedoPresionarBoton(bool PresionaBoton)
+    {
+        this.puedoPresionarBoton = PresionaBoton;
     }
 
     /// <summary>Cambia al nivel GameOverWinner</summary>

@@ -188,7 +188,6 @@ public class Gamehandler : MonoBehaviour
         puedoPresionarBoton = false;
         animacionLuzDecoradoRoja.SetBool("isTurnEnemy",true);
         _EnemigoHandler.DispararFuegoEnemigoHastaErrar();
-        
     }
 
     /// <summary>Si puedo o no puedo presionar boton</summary>

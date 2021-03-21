@@ -43,6 +43,9 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
             
             _GameHandlerRED.cantidadDeAciertosJugador += 1;
 
+            //tengo que usar un delay voy a tener que mover todo a una función
+            _GameHandlerRED.IsTurnoEnemigo();//turno enemigo
+
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
         }
 
@@ -68,7 +71,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     {
         if(other.transform.tag == "cuadriculaColision")
         {
-            other.gameObject.SetActive(false);
+            // other.gameObject.SetActive(false);
             // print("la grilla colisiono con un barco");
         }
     }

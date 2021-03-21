@@ -5,10 +5,20 @@ using UnityEngine;
 public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
 {
     GameHandlerRED _GamehandlerRED;
+
+     //AUDIO globales
+    public GameObject[] audio_miss;//sonido errar disparo
+
+    private MeshRenderer mymesh;
+    private BoxCollider miCollyder;
+
     
     private void Awake()
     {
         _GamehandlerRED = FindObjectOfType<GameHandlerRED>();
+        audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");//sonido errar disparo
+        mymesh = GetComponent<MeshRenderer>();
+        miCollyder = GetComponent<BoxCollider>();
     }
 
     // Start is called before the first frame update
@@ -25,12 +35,18 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(_GamehandlerRED.GetPuedoPresionarBoton() == true)
-        {
-            // print("presione en el cubo");
-            this.GetComponent<MeshRenderer>().enabled = true;
-            _GamehandlerRED.IsTurnoEnemigo();
-        }
+        StartCoroutine("PresioneGrilla");
+    }
+
+    /// <summary>Desactivo todo lo relacionado a la cuadricula y activa turno enemigo</summary>
+    IEnumerator PresioneGrilla()
+    {
+        mymesh.enabled = false;
+        miCollyder.enabled = false;
+        audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
+        _GamehandlerRED.SetPuedoPresionarBoton(false);
+        yield return new WaitForSeconds(0.4f);
+        _GamehandlerRED.IsTurnoEnemigo();
 
     }
 }
