@@ -886,6 +886,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a554bf40767d4143aa5f98a6adb12d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barcosDeLaEscena:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   posicionesBarcos:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -898,12 +904,18 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}
-  barcosDeLaEscena:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  posicionesBarcos_enemigo:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  rotacionesBarcos_enemigo:
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
   Posicion_barco_1: {x: 0, y: 0, z: 0}
   Posicion_barco_2: {x: 0, y: 0, z: 0}
   Posicion_barco_3: {x: 0, y: 0, z: 0}
@@ -914,6 +926,16 @@ MonoBehaviour:
   rotacion_barco_3: {x: 0, y: 0, z: 0, w: 0}
   rotacion_portaAviones: {x: 0, y: 0, z: 0, w: 0}
   rotacion_Submarino: {x: 0, y: 0, z: 0, w: 0}
+  Posicion_barco_1_enemigo: {x: 0, y: 0, z: 0}
+  Posicion_barco_2_enemigo: {x: 0, y: 0, z: 0}
+  Posicion_barco_3_enemigo: {x: 0, y: 0, z: 0}
+  Posicion_portaAviones_enemigo: {x: 0, y: 0, z: 0}
+  Posicion_Submarino_enemigo: {x: 0, y: 0, z: 0}
+  rotacion_barco_1_enemigo: {x: 0, y: 0, z: 0, w: 0}
+  rotacion_barco_2_enemigo: {x: 0, y: 0, z: 0, w: 0}
+  rotacion_barco_3_enemigo: {x: 0, y: 0, z: 0, w: 0}
+  rotacion_portaAviones_enemigo: {x: 0, y: 0, z: 0, w: 0}
+  rotacion_Submarino_enemigo: {x: 0, y: 0, z: 0, w: 0}
   OrdenDenombreDeBarcos:
   - 
   - 
@@ -2396,7 +2418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &491747337
 Transform:
   m_ObjectHideFlags: 0
@@ -2425,6 +2447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   cantidadDeAciertosEnemigo: 21
+  cantidadDeGrillas: 0
 --- !u!1 &500765744
 GameObject:
   m_ObjectHideFlags: 0
@@ -4694,6 +4717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 307eeed58e3962b4e8e60f3c50b47f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imagenEsperandoEnemigo: {fileID: 0}
 --- !u!1 &982489655
 GameObject:
   m_ObjectHideFlags: 0
@@ -10177,6 +10201,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908258331}
   m_Mesh: {fileID: 4791636734271447416, guid: 7063a574a58637d4685ce0d33b812bee, type: 3}
+--- !u!1001 &1926989672
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 873835504, guid: b6b1292117b0bcd4fb056237e6b1ff3d, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682748, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_Name
+      value: MusicAndSFXMenuInicio
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182628058279682749, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6b1292117b0bcd4fb056237e6b1ff3d, type: 3}
 --- !u!1 &1930005691
 GameObject:
   m_ObjectHideFlags: 0
