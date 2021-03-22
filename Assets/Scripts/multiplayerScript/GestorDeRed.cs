@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,8 @@ using Photon.Realtime;
 
 public class GestorDeRed : MonoBehaviourPunCallbacks 
 {
+    public static Action OnPlayersConnected = delegate { };
+
     public Text info;
 
     public static GestorDeRed instanciaRed;//para isntanciar la red PHOTON y conectarme al servidor
@@ -64,12 +67,19 @@ public class GestorDeRed : MonoBehaviourPunCallbacks
         //desde aqui puedo isntanciar cosas al iniciar el nivel usar la carpeta resources de photon
         Vector3 posicion = new Vector3(0,4,0);
         // PhotonNetwork.Instantiate("Personaje",posicion,Quaternion.identity,0);
+        if (PhotonNetwork.PlayerList.Length == 2)
+            OnPlayersConnected();
     }
 
+	public override void OnPlayerEnteredRoom(Player newPlayer)
+	{
+		base.OnPlayerEnteredRoom(newPlayer);
+        if (PhotonNetwork.PlayerList.Length == 2)
+            OnPlayersConnected();
+    }
 
-
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
     }
 }
