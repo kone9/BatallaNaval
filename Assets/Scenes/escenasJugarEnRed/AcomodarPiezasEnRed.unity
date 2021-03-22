@@ -634,7 +634,7 @@ GameObject:
   - component: {fileID: 373228414}
   - component: {fileID: 373228413}
   m_Layer: 5
-  m_Name: Image
+  m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3404,7 +3404,6 @@ GameObject:
   - component: {fileID: 1461790609}
   - component: {fileID: 1461790608}
   - component: {fileID: 1461790607}
-  - component: {fileID: 1461790610}
   m_Layer: 5
   m_Name: "TextInformaci\xF3nAntesDeConectar"
   m_TagString: Untagged
@@ -3487,25 +3486,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461790605}
   m_CullTransparentMesh: 0
---- !u!95 &1461790610
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461790605}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0bab96a18e13be04a9c83e7cb5552135, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1473246824
 GameObject:
   m_ObjectHideFlags: 0
