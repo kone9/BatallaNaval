@@ -8,6 +8,7 @@ using Photon.Realtime;
 
 public class SoyJugadorOEnemigo : MonoBehaviour
 {
+    //ESTO ES TESTING
     public Text infoText;
     private PhotonView infoPhoton;
     // Start is called before the first frame update
