@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,11 +13,27 @@ public class ControladorDeJugador : MonoBehaviour
     BoxCollider[] _BoxCollider;
 
     bool puedoMover = false;
+    bool waitingForOtherPlayer = true;
 
     AudioSource efectoBoton_2;
     AudioSource PuertaSonido;
 
-    private void Awake()
+	private void OnEnable()
+	{
+        GestorDeRed.OnPlayersConnected += EnableMovement;
+	}
+
+	private void OnDisable()
+	{
+        GestorDeRed.OnPlayersConnected -= EnableMovement;
+    }
+
+	private void EnableMovement()
+	{
+        waitingForOtherPlayer = false;
+	}
+
+	private void Awake()
     {
         _MoveAndRotateBoat = GetComponent<MoveAndRotateBoat>();
         _BoxCollider = this.gameObject.GetComponents<BoxCollider>();
@@ -64,15 +81,17 @@ public class ControladorDeJugador : MonoBehaviour
     }
 
     private void OnMouseOver()//si el mouse esta arriba de la colision
-    {   
-        //hay un pequeño bug con el movimiento
-        if(Input.GetMouseButtonDown(0))
+    {
+        if (!waitingForOtherPlayer)
         {
-            _MoveAndRotateBoat.startPos = transform.localPosition;
-            puedoMover = true;//puedo mover
-            efectoBoton_2.Play();//activo sonido agarre
+            //hay un pequeño bug con el movimiento
+            if (Input.GetMouseButtonDown(0))
+            {
+                _MoveAndRotateBoat.startPos = transform.localPosition;
+                puedoMover = true;//puedo mover
+                efectoBoton_2.Play();//activo sonido agarre
+            }
         }
-
     }
 
 
