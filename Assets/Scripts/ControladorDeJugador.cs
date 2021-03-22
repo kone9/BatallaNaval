@@ -12,6 +12,7 @@ public class ControladorDeJugador : MonoBehaviour
     BoxCollider[] _BoxCollider;
 
     bool puedoMover = false;
+    bool waitingForOtherPlayer = true;
 
     AudioSource efectoBoton_2;
     AudioSource PuertaSonido;
@@ -64,15 +65,17 @@ public class ControladorDeJugador : MonoBehaviour
     }
 
     private void OnMouseOver()//si el mouse esta arriba de la colision
-    {   
-        //hay un pequeño bug con el movimiento
-        if(Input.GetMouseButtonDown(0))
+    {
+        if (!waitingForOtherPlayer)
         {
-            _MoveAndRotateBoat.startPos = transform.localPosition;
-            puedoMover = true;//puedo mover
-            efectoBoton_2.Play();//activo sonido agarre
+            //hay un pequeño bug con el movimiento
+            if (Input.GetMouseButtonDown(0))
+            {
+                _MoveAndRotateBoat.startPos = transform.localPosition;
+                puedoMover = true;//puedo mover
+                efectoBoton_2.Play();//activo sonido agarre
+            }
         }
-
     }
 
 
