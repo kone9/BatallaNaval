@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,7 +18,22 @@ public class ControladorDeJugador : MonoBehaviour
     AudioSource efectoBoton_2;
     AudioSource PuertaSonido;
 
-    private void Awake()
+	private void OnEnable()
+	{
+        GestorDeRed.OnPlayersConnected += EnableMovement;
+	}
+
+	private void OnDisable()
+	{
+        GestorDeRed.OnPlayersConnected -= EnableMovement;
+    }
+
+	private void EnableMovement()
+	{
+        waitingForOtherPlayer = false;
+	}
+
+	private void Awake()
     {
         _MoveAndRotateBoat = GetComponent<MoveAndRotateBoat>();
         _BoxCollider = this.gameObject.GetComponents<BoxCollider>();
