@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +20,7 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
 
 
     public GameObject grillaActual;
+    public GameObject espera;
 
     public LayerMask grillaParaColision;
 
@@ -30,7 +32,22 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     private const int NORTH = 0;
 
 
-    private void Awake() {
+	private void OnEnable()
+	{
+        GestorDeRed.OnPlayersConnected += DisableEspera;
+	}
+
+	private void OnDisable()
+	{
+        GestorDeRed.OnPlayersConnected -= DisableEspera;
+    }
+
+	private void DisableEspera()
+	{
+        espera.SetActive(false);
+	}
+
+	private void Awake() {
          _DatosGlobales = FindObjectOfType<DatosGlobales>();
          barcos = GameObject.FindGameObjectsWithTag("boat");
     }
