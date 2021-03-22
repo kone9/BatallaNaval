@@ -44,7 +44,8 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
             _GameHandlerRED.cantidadDeAciertosJugador += 1;
 
             //tengo que usar un delay voy a tener que mover todo a una función
-            _GameHandlerRED.IsTurnoEnemigo();//turno enemigo
+            StartCoroutine("jugarContraEnemigoDelay");
+            // _GameHandlerRED.IsTurnoEnemigo();//turno enemigo
 
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
         }
@@ -53,8 +54,15 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
         {
             _GameHandlerRED.GameOverWinner();
         }
-
     }
+
+    /// <summary>hace que sea el turno del enemigo cuando acertas al disparo</summary>
+    IEnumerator jugarContraEnemigoDelay()
+    {
+        yield return new WaitForSeconds(2f);//por defecto 2 segundos
+         _GameHandlerRED.IsTurnoEnemigo();
+    }
+
 
 
 
@@ -67,14 +75,14 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.transform.tag == "cuadriculaColision")
-        {
-            // other.gameObject.SetActive(false);
-            // print("la grilla colisiono con un barco");
-        }
-    }
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if(other.transform.tag == "cuadriculaColision")
+    //     {
+    //         // other.gameObject.SetActive(false);
+    //         // print("la grilla colisiono con un barco");
+    //     }
+    // }
 
     private void instanciarFuego(Vector3 posicionInicialFuego)
     {
@@ -85,10 +93,10 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     }
 
 
-    private void DeshabilitarColision()
-    {
-        _BoxCollider.enabled = false;
-    }
+    // private void DeshabilitarColision()
+    // {
+    //     _BoxCollider.enabled = false;
+    // }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
