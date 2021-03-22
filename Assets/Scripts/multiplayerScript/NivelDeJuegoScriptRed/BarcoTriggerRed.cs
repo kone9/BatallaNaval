@@ -25,7 +25,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     AudioSource musicaJugandoContraEnemigo;
     GameObject[] sound_hit;
 
-    //ProbandoGithubDesktop
+    //ProbandoGithubDes
     
     private void Awake()
     {
