@@ -25,9 +25,10 @@ public class BarcoTrigger : MonoBehaviour
     private void Awake() {
         _BoxCollider = GetComponent<BoxCollider>();
         _Gamehandler = FindObjectOfType<Gamehandler>();
-        sound_hit = GameObject.FindGameObjectsWithTag("hit");
         _BarcoHandler = transform.parent.GetComponent<BarcoHandler>();
         _Animator = transform.parent.GetComponent<Animator>();
+        
+        sound_hit = GameObject.FindGameObjectsWithTag("hit");
         sonidoWinner = GameObject.Find("SonidoWinner").GetComponent<AudioSource>();
         sonidoBarcoEnemigoDestruido = GameObject.FindGameObjectsWithTag("SonidoBarcoEnemigoDestruido");//referencia a la sonido barcos destruidos
         musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();//referencia a la música del juego
