@@ -66,23 +66,24 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
             if(_BarcoHandler.vidas > 1 && _GameHandlerRED.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
             {
                 sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
-                _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones
-                
-                //instanciar fuego en mis barcos, osea la pantalla de arriba
-                _photonView.RPC("InstanciarFuegoEnMisBarcos", //Nombre de la función que es llamada localmente
-                    RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
-                    this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
-                ); 
-                
+                _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones 
+
                 StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
             }
+           
             // // // bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
             // // // print("hay colision" + haycolision);
             instanciarFuego(this.transform.position);
+
+            //instanciar fuego en los barcos que estan en la pantalla de arriba tanto Yo como El otro jugador
+            _photonView.RPC("InstanciarFuegoEnMisBarcos", //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
+                this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
+            );
+
              _BoxCollider.enabled = false;
             _GameHandlerRED.cantidadDeAciertosJugador += 1;//para saber cuando gano
             _BarcoHandler.vidas -= 1;//una vida menos
-            // sound_hit[2].GetComponent<AudioSource>().Play();
 
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
         }
