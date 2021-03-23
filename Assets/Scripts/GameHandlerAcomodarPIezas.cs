@@ -12,7 +12,7 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     GameObject barco_1;
     GameObject barco_2;
     GameObject barco_3;
-    GameObject PortaAviones;
+    GameObject portaAviones;
     GameObject submarino;
 
 
@@ -60,15 +60,15 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
         barco_1 = GameObject.Find("barco_1");
         barco_2 = GameObject.Find("barco_2");
         barco_3 = GameObject.Find("barco_3");
-        PortaAviones = GameObject.Find("PortaAviones");
+        portaAviones = GameObject.Find("portaAviones");
         submarino = GameObject.Find("submarino");
         
     }
     // Start is called before the first frame update
     void Start()
     {
-        // GuardarPosicionBarcos();
-        // GuardarRotacionesBarcos();
+        GuardarPosicionBarcos();
+        GuardarRotacionesBarcos();
         AcomodarLosBarcos();
     }
 
@@ -83,11 +83,11 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
         //     // _DatosGlobales.OrdenDenombreDeBarcos[i] = barcos[i].transform.name;
         // }
         // print("barcos acomodados de la siguiente manera" + _DatosGlobales.OrdenDenombreDeBarcos);
-        Vector3 barco1_posicion =  GameObject.Find("barco_1").transform.position;
-        Vector3 barco2_posicion =  GameObject.Find("barco_2").transform.position;
-        Vector3 barco3_posicion =  GameObject.Find("barco_3").transform.position;
-        Vector3 portaAviones_posicion =  GameObject.Find("PortaAviones").transform.position;
-        Vector3 submarino_posicion =  GameObject.Find("submarino").transform.position;
+        Vector3 barco1_posicion =  barco_1.transform.position;
+        Vector3 barco2_posicion =  barco_2.transform.position;
+        Vector3 barco3_posicion =  barco_3.transform.position;
+        Vector3 portaAviones_posicion =  portaAviones.transform.position;
+        Vector3 submarino_posicion =  submarino.transform.position;
         _DatosGlobales.SetPosicionesBarcos(barco1_posicion,barco2_posicion,barco3_posicion,portaAviones_posicion,submarino_posicion);
 
     }
@@ -101,11 +101,11 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
         //     rotaciones[i] = barcos[i].transform.rotation;
         // }
         // _DatosGlobales.SetRotacionesBarcos(rotaciones);
-        Quaternion barco1_rotacion =  GameObject.Find("barco_1").transform.rotation;
-        Quaternion barco2_rotacion =  GameObject.Find("barco_2").transform.rotation;
-        Quaternion barco3_rotacion =  GameObject.Find("barco_3").transform.rotation;
-        Quaternion portaAviones_rotacion =  GameObject.Find("PortaAviones").transform.rotation;
-        Quaternion submarino_rotacion =  GameObject.Find("submarino").transform.rotation;
+        Quaternion barco1_rotacion =  barco_1.transform.rotation;
+        Quaternion barco2_rotacion =  barco_2.transform.rotation;
+        Quaternion barco3_rotacion =  barco_3.transform.rotation;
+        Quaternion portaAviones_rotacion =  portaAviones.transform.rotation;
+        Quaternion submarino_rotacion =  submarino.transform.rotation;
         _DatosGlobales.SetRotacionesBarcos(barco1_rotacion,barco2_rotacion,barco3_rotacion,portaAviones_rotacion,submarino_rotacion);
     }
 
@@ -113,22 +113,22 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     public void GuardarPosicionBarcosEnemigos()
     {
 
-        Vector3 barco1_posicion = GameObject.Find("barco_1").transform.position;
-        Vector3 barco2_posicion = GameObject.Find("barco_2").transform.position;
-        Vector3 barco3_posicion = GameObject.Find("barco_3").transform.position;
-        Vector3 portaAviones_posicion = GameObject.Find("PortaAviones").transform.position;
-        Vector3 submarino_posicion = GameObject.Find("submarino").transform.position;
+        Vector3 barco1_posicion = barco_1.transform.position;
+        Vector3 barco2_posicion = barco_2.transform.position;
+        Vector3 barco3_posicion = barco_3.transform.position;
+        Vector3 portaAviones_posicion = portaAviones.transform.position;
+        Vector3 submarino_posicion = submarino.transform.position;
         _DatosGlobales.SetPosicionesBarcosEnemigos(barco1_posicion,barco2_posicion,barco3_posicion,portaAviones_posicion,submarino_posicion);
     }
 
     /// <summary>Guarda la posicion de los barcos ENEMIGOS</summary>
     public void GuardarRotacionesBarcosEnemigo()
     {
-        Quaternion barco1_rotacion =  GameObject.Find("barco_1").transform.rotation;
-        Quaternion barco2_rotacion =  GameObject.Find("barco_2").transform.rotation;
-        Quaternion barco3_rotacion =  GameObject.Find("barco_3").transform.rotation;
-        Quaternion portaAviones_rotacion =  GameObject.Find("PortaAviones").transform.rotation;
-        Quaternion submarino_rotacion =  GameObject.Find("submarino").transform.rotation;
+        Quaternion barco1_rotacion =  barco_1.transform.rotation;
+        Quaternion barco2_rotacion =  barco_2.transform.rotation;
+        Quaternion barco3_rotacion =  barco_3.transform.rotation;
+        Quaternion portaAviones_rotacion =  portaAviones.transform.rotation;
+        Quaternion submarino_rotacion =  submarino.transform.rotation;
         _DatosGlobales.SetRotacionesBarcosEnemigos(barco1_rotacion,barco2_rotacion,barco3_rotacion,portaAviones_rotacion,submarino_rotacion);
     }
     
@@ -164,14 +164,14 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
         barco_1.transform.position = Posicion_barco_1;
         barco_2.transform.position = Posicion_barco_2;
         barco_3.transform.position = Posicion_barco_3;
-        PortaAviones.transform.position = Posicion_portaAviones;
+        portaAviones.transform.position = Posicion_portaAviones;
         submarino.transform.position = Posicion_Submarino;
 
         //rotaciones
         barco_1.transform.rotation = rotacion_barco_1;
         barco_2.transform.rotation = rotacion_barco_2;
         barco_3.transform.rotation = rotacion_barco_3;
-        PortaAviones.transform.rotation = rotacion_portaAviones;
+        portaAviones.transform.rotation = rotacion_portaAviones;
         submarino.transform.rotation = rotacion_submarino;
            
     }

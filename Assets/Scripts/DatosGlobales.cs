@@ -66,7 +66,7 @@ public class DatosGlobales : MonoBehaviour
         {
             Destroy(this.gameObject);//este GameObject nunca se destruye
         }
-       
+        
         
    
     }
@@ -83,14 +83,14 @@ public class DatosGlobales : MonoBehaviour
     {
         // barcosDeLaEscena = GameObject.FindGameObjectsWithTag("boat");
         //posiciones
-        Posicion_barco_1 = GameObject.Find("Barco_1").transform.position;
+        Posicion_barco_1 = GameObject.Find("barco_1").transform.position;
         Posicion_barco_2 = GameObject.Find("barco_2").transform.position;
         Posicion_barco_3 = GameObject.Find("barco_3").transform.position;
         Posicion_portaAviones = GameObject.Find("portaAviones").transform.position;
         Posicion_Submarino = GameObject.Find("submarino").transform.position;
 
         //rotaciones
-        rotacion_barco_1 = GameObject.Find("Barco_1").transform.rotation;
+        rotacion_barco_1 = GameObject.Find("barco_1").transform.rotation;
         rotacion_barco_2 = GameObject.Find("barco_2").transform.rotation;
         rotacion_barco_3 = GameObject.Find("barco_3").transform.rotation;
         rotacion_portaAviones = GameObject.Find("portaAviones").transform.rotation;
