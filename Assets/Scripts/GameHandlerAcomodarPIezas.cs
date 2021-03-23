@@ -9,6 +9,13 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
 
     GameObject[] barcos;
 
+    GameObject barco_1;
+    GameObject barco_2;
+    GameObject barco_3;
+    GameObject PortaAviones;
+    GameObject submarino;
+
+
     GameObject Grilla;
 
     bool playerListo = false;
@@ -48,51 +55,68 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
 	}
 
 	private void Awake() {
-         _DatosGlobales = FindObjectOfType<DatosGlobales>();
-         barcos = GameObject.FindGameObjectsWithTag("boat");
+        _DatosGlobales = FindObjectOfType<DatosGlobales>();
+        // barcos = GameObject.FindGameObjectsWithTag("boat");
+        barco_1 = GameObject.Find("barco_1");
+        barco_2 = GameObject.Find("barco_2");
+        barco_3 = GameObject.Find("barco_3");
+        PortaAviones = GameObject.Find("PortaAviones");
+        submarino = GameObject.Find("submarino");
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-        GuardarPosicionBarcos();
-        GuardarRotacionesBarcos();
+        // GuardarPosicionBarcos();
+        // GuardarRotacionesBarcos();
         AcomodarLosBarcos();
     }
 
 
     /// <summary>Guarda la posicion de los barcos</summary>
-    /// <param>@None </param>
     public void GuardarPosicionBarcos()
     {
-        Vector3[] posiciones = new Vector3[5];
-        for (int i = 0; i < barcos.Length; i++)
-        {
-            posiciones[i] = barcos[i].transform.position;
-            // _DatosGlobales.OrdenDenombreDeBarcos[i] = barcos[i].transform.name;
-        }
+        // Vector3[] posiciones = new Vector3[5];
+        // for (int i = 0; i < barcos.Length; i++)
+        // {
+        //     posiciones[i] = barcos[i].transform.position;
+        //     // _DatosGlobales.OrdenDenombreDeBarcos[i] = barcos[i].transform.name;
+        // }
         // print("barcos acomodados de la siguiente manera" + _DatosGlobales.OrdenDenombreDeBarcos);
-        _DatosGlobales.SetPosicionesBarcos(posiciones);
+        Vector3 barco1_posicion =  GameObject.Find("barco_1").transform.position;
+        Vector3 barco2_posicion =  GameObject.Find("barco_2").transform.position;
+        Vector3 barco3_posicion =  GameObject.Find("barco_3").transform.position;
+        Vector3 portaAviones_posicion =  GameObject.Find("PortaAviones").transform.position;
+        Vector3 submarino_posicion =  GameObject.Find("submarino").transform.position;
+        _DatosGlobales.SetPosicionesBarcos(barco1_posicion,barco2_posicion,barco3_posicion,portaAviones_posicion,submarino_posicion);
+
     }
 
     /// <summary>Guarda la posicion de los barcos</summary>
     public void GuardarRotacionesBarcos()
     {
-        Quaternion[] rotaciones = new Quaternion[5];
-        for (int i = 0; i < barcos.Length; i++)
-        {
-            rotaciones[i] = barcos[i].transform.rotation;
-        }
-        _DatosGlobales.SetRotacionesBarcos(rotaciones);
+        // Quaternion[] rotaciones = new Quaternion[5];
+        // for (int i = 0; i < barcos.Length; i++)
+        // {
+        //     rotaciones[i] = barcos[i].transform.rotation;
+        // }
+        // _DatosGlobales.SetRotacionesBarcos(rotaciones);
+        Quaternion barco1_rotacion =  GameObject.Find("barco_1").transform.rotation;
+        Quaternion barco2_rotacion =  GameObject.Find("barco_2").transform.rotation;
+        Quaternion barco3_rotacion =  GameObject.Find("barco_3").transform.rotation;
+        Quaternion portaAviones_rotacion =  GameObject.Find("PortaAviones").transform.rotation;
+        Quaternion submarino_rotacion =  GameObject.Find("submarino").transform.rotation;
+        _DatosGlobales.SetRotacionesBarcos(barco1_rotacion,barco2_rotacion,barco3_rotacion,portaAviones_rotacion,submarino_rotacion);
     }
 
      /// <summary>Guarda la posicion de los barcos ENEMIGOS</summary>
     public void GuardarPosicionBarcosEnemigos()
     {
 
-        Vector3 barco1_posicion = GameObject.Find("Barco_1").transform.position;
+        Vector3 barco1_posicion = GameObject.Find("barco_1").transform.position;
         Vector3 barco2_posicion = GameObject.Find("barco_2").transform.position;
         Vector3 barco3_posicion = GameObject.Find("barco_3").transform.position;
-        Vector3 portaAviones_posicion = GameObject.Find("portaAviones").transform.position;
+        Vector3 portaAviones_posicion = GameObject.Find("PortaAviones").transform.position;
         Vector3 submarino_posicion = GameObject.Find("submarino").transform.position;
         _DatosGlobales.SetPosicionesBarcosEnemigos(barco1_posicion,barco2_posicion,barco3_posicion,portaAviones_posicion,submarino_posicion);
     }
@@ -100,23 +124,56 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     /// <summary>Guarda la posicion de los barcos ENEMIGOS</summary>
     public void GuardarRotacionesBarcosEnemigo()
     {
-        Quaternion barco1_rotacion = GameObject.Find("Barco_1").transform.rotation;
-        Quaternion barco2_rotacion = GameObject.Find("barco_2").transform.rotation;
-        Quaternion barco3_rotacion = GameObject.Find("barco_3").transform.rotation;
-        Quaternion portaAviones_rotacion = GameObject.Find("portaAviones").transform.rotation;
-        Quaternion submarino_rotacion = GameObject.Find("submarino").transform.rotation;
+        Quaternion barco1_rotacion =  GameObject.Find("barco_1").transform.rotation;
+        Quaternion barco2_rotacion =  GameObject.Find("barco_2").transform.rotation;
+        Quaternion barco3_rotacion =  GameObject.Find("barco_3").transform.rotation;
+        Quaternion portaAviones_rotacion =  GameObject.Find("PortaAviones").transform.rotation;
+        Quaternion submarino_rotacion =  GameObject.Find("submarino").transform.rotation;
         _DatosGlobales.SetRotacionesBarcosEnemigos(barco1_rotacion,barco2_rotacion,barco3_rotacion,portaAviones_rotacion,submarino_rotacion);
     }
     
     /// <summary>Acomoda los barcos</summary>
     private void AcomodarLosBarcos()
     {
-        int indice = 0;
-        foreach (GameObject i in barcos)
-        {
-            i.transform.position = _DatosGlobales.GetPosicionesBarcos()[indice];
-            indice += 1;
-        }
+        // int indice = 0;
+
+        // foreach (GameObject i in barcos)
+        // {
+        //     i.transform.position = _DatosGlobales.GetPosicionesBarcos()[indice];
+        //     indice += 1;
+        // }
+        Vector3 Posicion_barco_1 = _DatosGlobales.Posicion_barco_1;
+        Vector3 Posicion_barco_2 = _DatosGlobales.Posicion_barco_2;
+        Vector3 Posicion_barco_3 = _DatosGlobales.Posicion_barco_3;
+        Vector3 Posicion_portaAviones = _DatosGlobales.Posicion_portaAviones;
+        Vector3 Posicion_Submarino = _DatosGlobales.Posicion_Submarino;
+
+        Quaternion rotacion_barco_1 = _DatosGlobales.rotacion_barco_1;
+        Quaternion rotacion_barco_2 = _DatosGlobales.rotacion_barco_2;
+        Quaternion rotacion_barco_3 = _DatosGlobales.rotacion_barco_3;
+        Quaternion rotacion_portaAviones = _DatosGlobales.rotacion_portaAviones;
+        Quaternion rotacion_submarino = _DatosGlobales.rotacion_Submarino;
+
+        Posicion_barco_1.z = this.transform.position.z;
+        Posicion_barco_2.z = this.transform.position.z;
+        Posicion_barco_3.z = this.transform.position.z;
+        Posicion_portaAviones.z = this.transform.position.z;
+        Posicion_Submarino.z = this.transform.position.z;
+
+        //posiciones
+        barco_1.transform.position = Posicion_barco_1;
+        barco_2.transform.position = Posicion_barco_2;
+        barco_3.transform.position = Posicion_barco_3;
+        PortaAviones.transform.position = Posicion_portaAviones;
+        submarino.transform.position = Posicion_Submarino;
+
+        //rotaciones
+        barco_1.transform.rotation = rotacion_barco_1;
+        barco_2.transform.rotation = rotacion_barco_2;
+        barco_3.transform.rotation = rotacion_barco_3;
+        PortaAviones.transform.rotation = rotacion_portaAviones;
+        submarino.transform.rotation = rotacion_submarino;
+           
     }
 
     /// <summary>Obtiene el elemento de la grilla que esta el mouse por arriba</summary>
@@ -213,12 +270,10 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     }
 
 
-
-
     // Update is called once per frame
     void Update()
     {
-        rayoParaDetectarSuelo();
+        rayoParaDetectarSuelo();//uso el raycast para el suelo
     }
 
 }

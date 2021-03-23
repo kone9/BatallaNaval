@@ -50,7 +50,7 @@ public class DatosGlobales : MonoBehaviour
 
     private void Awake() 
     {
-        
+        BuscarBarcosDeLaEscena();//busca los barcos de la escena
     }
     
 
@@ -67,7 +67,7 @@ public class DatosGlobales : MonoBehaviour
             Destroy(this.gameObject);//este GameObject nunca se destruye
         }
        
-        BuscarBarcosDeLaEscena();//busca los barcos de la escena
+        
    
     }
 
@@ -81,67 +81,89 @@ public class DatosGlobales : MonoBehaviour
     /// <summary>guardo los barcos de la escena para tener guardados en la referencía de datos globales que no se destruye entre escenas</summary>
     public void BuscarBarcosDeLaEscena()
     {
-        barcosDeLaEscena = GameObject.FindGameObjectsWithTag("boat");
+        // barcosDeLaEscena = GameObject.FindGameObjectsWithTag("boat");
+        //posiciones
+        Posicion_barco_1 = GameObject.Find("Barco_1").transform.position;
+        Posicion_barco_2 = GameObject.Find("barco_2").transform.position;
+        Posicion_barco_3 = GameObject.Find("barco_3").transform.position;
+        Posicion_portaAviones = GameObject.Find("portaAviones").transform.position;
+        Posicion_Submarino = GameObject.Find("submarino").transform.position;
+
+        //rotaciones
+        rotacion_barco_1 = GameObject.Find("Barco_1").transform.rotation;
+        rotacion_barco_2 = GameObject.Find("barco_2").transform.rotation;
+        rotacion_barco_3 = GameObject.Find("barco_3").transform.rotation;
+        rotacion_portaAviones = GameObject.Find("portaAviones").transform.rotation;
+        rotacion_Submarino = GameObject.Find("submarino").transform.rotation;
+
     }
 
-
     /// <summary>Referencia para cambiar la posicion de todos los barcos JUGADOR</summary>
-    /// <param>@Vector3[] </param>
-    public void SetPosicionesBarcos(Vector3[] posiciones)
+    public void SetPosicionesBarcos(Vector3 barco1_posicion,Vector3 barco2_posicion,Vector3 barco3_posicion,Vector3 portaviones_posicion,Vector3 sumbarino_posicion)
     {
-        for(int i = 0;i < posicionesBarcos.Length; i++)
-        {
-            posicionesBarcos[i] = posiciones[i];
-            switch (i)
-            {
-                case 0:
-                    Posicion_barco_1 = posiciones[i];
-                    break;
-                case 1:
-                    Posicion_barco_2 = posiciones[i];
-                    break;
-                case 2:
-                    Posicion_barco_3 = posiciones[i];
-                    break;
-                case 3:
-                    Posicion_portaAviones = posiciones[i];
-                    break;
-                case 4:
-                    Posicion_Submarino = posiciones[i];
-                    break;
-                default:
-                    break;
-            }
-        }   
+        Posicion_barco_1 = barco1_posicion;
+        Posicion_barco_2 = barco2_posicion;
+        Posicion_barco_3 = barco3_posicion;
+        Posicion_portaAviones = portaviones_posicion;
+        Posicion_Submarino = sumbarino_posicion; 
+        // for(int i = 0;i < posicionesBarcos.Length; i++)
+        // {
+        //     posicionesBarcos[i] = posiciones[i];
+        //     switch (i)
+        //     {
+        //         case 0:
+        //             Posicion_barco_1 = posiciones[i];
+        //             break;
+        //         case 1:
+        //             Posicion_barco_2 = posiciones[i];
+        //             break;
+        //         case 2:
+        //             Posicion_barco_3 = posiciones[i];
+        //             break;
+        //         case 3:
+        //             Posicion_portaAviones = posiciones[i];
+        //             break;
+        //         case 4:
+        //             Posicion_Submarino = posiciones[i];
+        //             break;
+        //         default:
+        //             break;
+        //     }
+        // }   
     }
 
     /// <summary>Referencia para cambiar la rotacion de todos los barcos</summary>
-    public void SetRotacionesBarcos(Quaternion[] rotaciones)
+    public void SetRotacionesBarcos(Quaternion barco1_rotacion,Quaternion barco2_rotacion,Quaternion barco3_rotacion,Quaternion portaAviones_rotacion,Quaternion submarino_rotacion)
     {
-        for(int i = 0;i < rotacionesBarcos.Length; i++)
-        {
-            rotacionesBarcos[i] = rotaciones[i];
-            switch (i)
-            {
-                case 0:
-                    rotacion_barco_1 = rotaciones[i];
-                    break;
-                case 1:
-                    rotacion_barco_2 = rotaciones[i];
-                    break;
-                case 2:
-                    rotacion_barco_3 = rotaciones[i];
-                    break;
-                case 3:
-                    rotacion_portaAviones = rotaciones[i];
-                    break;
-                case 4:
-                    rotacion_Submarino = rotaciones[i];
-                    break;
-                default:
-                    break;
-            }
-        }
+        rotacion_barco_1 = barco1_rotacion;
+        rotacion_barco_2 = barco2_rotacion;
+        rotacion_barco_3 = barco3_rotacion;
+        rotacion_portaAviones = portaAviones_rotacion;
+        rotacion_Submarino = submarino_rotacion;
+        // for(int i = 0;i < rotacionesBarcos.Length; i++)
+        // {
+        //     rotacionesBarcos[i] = rotaciones[i];
+        //     switch (i)
+        //     {
+        //         case 0:
+        //             rotacion_barco_1 = rotaciones[i];
+        //             break;
+        //         case 1:
+        //             rotacion_barco_2 = rotaciones[i];
+        //             break;
+        //         case 2:
+        //             rotacion_barco_3 = rotaciones[i];
+        //             break;
+        //         case 3:
+        //             rotacion_portaAviones = rotaciones[i];
+        //             break;
+        //         case 4:
+        //             rotacion_Submarino = rotaciones[i];
+        //             break;
+        //         default:
+        //             break;
+        //     }
+        // }
         
     }
 
@@ -167,34 +189,32 @@ public class DatosGlobales : MonoBehaviour
         rotacion_Submarino_enemigo = submarino_enemigo_rotacion;
     }    
 
-    /// <summary>Devuelve las posiciones de todos los barcos en un arreglo de tipo vector3</summary>
-    /// <param>@None </param>
-    public Vector3[] GetPosicionesBarcos()
-    {
-        Vector3[] posiciones = new Vector3[5];
-        for (int i = 0; i < posicionesBarcos.Length; i++)
-        {
-            posiciones[i] = posicionesBarcos[i];
-        }
-        return posiciones;
-    }
+
+
+    // /// <summary>Devuelve las posiciones de todos los barcos en un arreglo de tipo vector3</summary>
+    // /// <param>@None </param>
+    // public Vector3[] GetPosicionesBarcos()
+    // {
+    //     Vector3[] posiciones = new Vector3[5];
+    //     for (int i = 0; i < posicionesBarcos.Length; i++)
+    //     {
+    //         posiciones[i] = posicionesBarcos[i];
+    //     }
+    //     return posiciones;
+    // }
 
     
-    /// <summary>Devuelve un arreglo de las rotaciónes de los barcos en quaternions</summary>
-    /// <param>@None </param>
-    public Quaternion[] GetRotacionBarcos()
-    {
-        Quaternion[] rotaciones = new Quaternion[5];
-        for (int i = 0; i < rotacionesBarcos.Length; i++)
-        {
-            rotaciones[i] = rotacionesBarcos[i];
-        }
-        return rotaciones;
-    }
-
-
-
-
+    // /// <summary>Devuelve un arreglo de las rotaciónes de los barcos en quaternions</summary>
+    // /// <param>@None </param>
+    // public Quaternion[] GetRotacionBarcos()
+    // {
+    //     Quaternion[] rotaciones = new Quaternion[5];
+    //     for (int i = 0; i < rotacionesBarcos.Length; i++)
+    //     {
+    //         rotaciones[i] = rotacionesBarcos[i];
+    //     }
+    //     return rotaciones;
+    // }
 
 
      /// <summary>verifica el tipo de barco en esa posicion sobre todos los barcos guardados en datos globales y Devuelve verdadero cuando el barco es identico..Importante para acomodar los barcos</summary>

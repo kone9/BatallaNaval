@@ -85,7 +85,6 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     // Start is called before the first frame update
     void Start()
     {
-        
         AcomodarLosBarcos();
         StartCoroutine("cargarBarcosRivalRed");//carga las posiciones de los barcos desde la red
     }
