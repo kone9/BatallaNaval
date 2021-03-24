@@ -4873,80 +4873,11 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2115690587610192396}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2143103319
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 500765745}
-    m_Modifications:
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 33.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6782542483689042783, guid: 596d05538dca54248b781bf968e768b6,
-        type: 3}
-      propertyPath: m_Name
-      value: GridConBarcosAcomodarBarcos (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 596d05538dca54248b781bf968e768b6, type: 3}
 --- !u!4 &2143103320 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+  m_CorrespondingSourceObject: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
     type: 3}
-  m_PrefabInstance: {fileID: 2143103319}
+  m_PrefabInstance: {fileID: 7292487554222706058}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &10396965152695348
 MeshRenderer:
@@ -23236,6 +23167,75 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &7292487554222706058
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 500765745}
+    m_Modifications:
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485680643917761848, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257151515553961858, guid: 057c8e80352abb8429605c69942cf45e,
+        type: 3}
+      propertyPath: m_Name
+      value: GridConBarcosAcomodarBarcosMultiplayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 057c8e80352abb8429605c69942cf45e, type: 3}
 --- !u!23 &7303468966329555808
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -299,6 +299,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &28017828
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +463,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &54724025
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +646,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &87018766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,7 +2118,7 @@ GameObject:
   - component: {fileID: 432235278}
   - component: {fileID: 432235277}
   m_Layer: 0
-  m_Name: barco_1_jugador
+  m_Name: barco_1
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2402,6 +2414,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &491747336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,6 +2602,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &551452852
 GameObject:
   m_ObjectHideFlags: 0
@@ -3426,6 +3446,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &620508416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3897,6 +3921,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &825940159
 GameObject:
   m_ObjectHideFlags: 0
@@ -4049,7 +4077,7 @@ GameObject:
   - component: {fileID: 897168353}
   - component: {fileID: 897168352}
   m_Layer: 0
-  m_Name: PortaAviones_jugador
+  m_Name: portaAviones
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4395,6 +4423,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &949504323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4970,6 +5002,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &998240224
 GameObject:
   m_ObjectHideFlags: 0
@@ -5228,6 +5264,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1033820539
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,6 +5368,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1060198921
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,6 +5550,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1075413430
 GameObject:
   m_ObjectHideFlags: 0
@@ -6051,6 +6099,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1223826323
 GameObject:
   m_ObjectHideFlags: 0
@@ -6985,6 +7037,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1441995104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7466,6 +7522,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1512854556
 GameObject:
   m_ObjectHideFlags: 0
@@ -7667,7 +7727,7 @@ GameObject:
   - component: {fileID: 1520948538}
   - component: {fileID: 1520948537}
   m_Layer: 0
-  m_Name: submarino_jugador
+  m_Name: submarino
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8749,6 +8809,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1676464157
 GameObject:
   m_ObjectHideFlags: 0
@@ -8848,6 +8912,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1691007462
 GameObject:
   m_ObjectHideFlags: 0
@@ -9341,6 +9409,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1755430800
 GameObject:
   m_ObjectHideFlags: 0
@@ -9493,7 +9565,7 @@ GameObject:
   - component: {fileID: 1799350006}
   - component: {fileID: 1799350005}
   m_Layer: 0
-  m_Name: barco_3_jugador
+  m_Name: barco_3
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15403,7 +15475,7 @@ GameObject:
   - component: {fileID: 1985781192}
   - component: {fileID: 1985781191}
   m_Layer: 0
-  m_Name: barco_2_jugador
+  m_Name: barco_2
   m_TagString: boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15586,6 +15658,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1998530762
 GameObject:
   m_ObjectHideFlags: 0
@@ -15826,6 +15902,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &2034528434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2272484751275663074, guid: c7fc8cb1b72cf544fbac3fae12ddc06c,
@@ -16178,6 +16258,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
+  overlappers: []
+  isOverlapper:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &2137827175
 GameObject:
   m_ObjectHideFlags: 0
@@ -24815,7 +24899,7 @@ GameObject:
   - component: {fileID: 2594288726603058844}
   - component: {fileID: 2594288726603058843}
   m_Layer: 0
-  m_Name: submarino
+  m_Name: submarino_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25677,7 +25761,7 @@ GameObject:
   - component: {fileID: 2916399185950136186}
   - component: {fileID: 2916399185950136185}
   m_Layer: 0
-  m_Name: barco_3
+  m_Name: barco_3_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30864,7 +30948,7 @@ GameObject:
   - component: {fileID: 4856885525991969989}
   - component: {fileID: 4856885525991969988}
   m_Layer: 0
-  m_Name: barco_2
+  m_Name: barco_2_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39626,7 +39710,7 @@ GameObject:
   - component: {fileID: 8022957695093612689}
   - component: {fileID: 8022957695093612688}
   m_Layer: 0
-  m_Name: PortaAviones
+  m_Name: PortaAviones_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42409,7 +42493,7 @@ GameObject:
   - component: {fileID: 9097337997971125800}
   - component: {fileID: 9097337997971125799}
   m_Layer: 0
-  m_Name: barco_1
+  m_Name: barco_1_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

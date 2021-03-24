@@ -67,9 +67,9 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GuardarPosicionBarcos();
-        GuardarRotacionesBarcos();
-        AcomodarLosBarcos();
+        // GuardarPosicionBarcos();
+        // GuardarRotacionesBarcos();
+        // AcomodarLosBarcos();
     }
 
 

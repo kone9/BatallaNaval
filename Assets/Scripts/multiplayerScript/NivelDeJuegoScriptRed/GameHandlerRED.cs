@@ -69,17 +69,17 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     void buscarBarcos()
     {
         //barcos de la grilla cuadro de abajo
-        barco_1 = GameObject.Find("barco_1");
-        barco_2 = GameObject.Find("barco_2");
-        barco_3 = GameObject.Find("barco_3");
-        portaAviones = GameObject.Find("PortaAviones");
-        Submarino  = GameObject.Find("submarino");
+        barco_1 = GameObject.Find("barco_1_enemigo");
+        barco_2 = GameObject.Find("barco_2_enemigo");
+        barco_3 = GameObject.Find("barco_3_enemigo");
+        portaAviones = GameObject.Find("PortaAviones_enemigo");
+        Submarino  = GameObject.Find("submarino_enemigo");
         //barcos del jugador cuadro de arriba
-        barco_1_jugador = GameObject.Find("barco_1_jugador");
-        barco_2_jugador = GameObject.Find("barco_2_jugador");
-        barco_3_jugador = GameObject.Find("barco_3_jugador");
-        PortaAviones_jugador = GameObject.Find("PortaAviones_jugador");
-        submarino_jugador = GameObject.Find("submarino_jugador");
+        barco_1_jugador = GameObject.Find("barco_1");
+        barco_2_jugador = GameObject.Find("barco_2");
+        barco_3_jugador = GameObject.Find("barco_3");
+        PortaAviones_jugador = GameObject.Find("portaAviones");
+        submarino_jugador = GameObject.Find("submarino");
     }
     
     // Start is called before the first frame update
