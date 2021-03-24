@@ -76,13 +76,6 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     /// <summary>Guarda la posicion de los barcos</summary>
     public void GuardarPosicionBarcos()
     {
-        // Vector3[] posiciones = new Vector3[5];
-        // for (int i = 0; i < barcos.Length; i++)
-        // {
-        //     posiciones[i] = barcos[i].transform.position;
-        //     // _DatosGlobales.OrdenDenombreDeBarcos[i] = barcos[i].transform.name;
-        // }
-        // print("barcos acomodados de la siguiente manera" + _DatosGlobales.OrdenDenombreDeBarcos);
         Vector3 barco1_posicion =  barco_1.transform.position;
         Vector3 barco2_posicion =  barco_2.transform.position;
         Vector3 barco3_posicion =  barco_3.transform.position;
@@ -95,12 +88,6 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     /// <summary>Guarda la posicion de los barcos</summary>
     public void GuardarRotacionesBarcos()
     {
-        // Quaternion[] rotaciones = new Quaternion[5];
-        // for (int i = 0; i < barcos.Length; i++)
-        // {
-        //     rotaciones[i] = barcos[i].transform.rotation;
-        // }
-        // _DatosGlobales.SetRotacionesBarcos(rotaciones);
         Quaternion barco1_rotacion =  barco_1.transform.rotation;
         Quaternion barco2_rotacion =  barco_2.transform.rotation;
         Quaternion barco3_rotacion =  barco_3.transform.rotation;
@@ -135,13 +122,6 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
     /// <summary>Acomoda los barcos</summary>
     private void AcomodarLosBarcos()
     {
-        // int indice = 0;
-
-        // foreach (GameObject i in barcos)
-        // {
-        //     i.transform.position = _DatosGlobales.GetPosicionesBarcos()[indice];
-        //     indice += 1;
-        // }
         Vector3 Posicion_barco_1 = _DatosGlobales.Posicion_barco_1;
         Vector3 Posicion_barco_2 = _DatosGlobales.Posicion_barco_2;
         Vector3 Posicion_barco_3 = _DatosGlobales.Posicion_barco_3;
