@@ -101,7 +101,7 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
         //     rotaciones[i] = barcos[i].transform.rotation;
         // }
         // _DatosGlobales.SetRotacionesBarcos(rotaciones);
-        Quaternion barco1_rotacion =  barco_1.transform.rotation;
+        Quaternion barco1_rotacion =  barco_1.transform.localRotation;
         Quaternion barco2_rotacion =  barco_2.transform.rotation;
         Quaternion barco3_rotacion =  barco_3.transform.rotation;
         Quaternion portaAviones_rotacion =  portaAviones.transform.rotation;

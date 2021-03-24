@@ -28,19 +28,24 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     public Animator animacionLuzDecoradoRoja;
 
 /////////////////////////////////////////////////////////
-    //referencia a todos los barcos de la escena del JUGADOR
+    //referencia a todos los barcos de la escena
+    
+    //ENEMIGO
     private GameObject barco_1_enemigo; //enemigo
     private GameObject barco_2_enemigo; //enemigo
     private GameObject barco_3_enemigo; //enemigo
     private GameObject portaAviones_enemigo; //enemigo
     private GameObject Submarino_enemigo; //enemigo
 
+    //JUGADOR
     private GameObject barco_1_jugador; //jugador
     private GameObject barco_2_jugador; //jugador
     private GameObject barco_3_jugador; //jugador
     private GameObject PortaAviones_jugador; //jugador
     private GameObject submarino_jugador; //jugador
+
 /////////////////////////////////////////////////////////
+
     //referencia a todos las posiciones y rotaciones de barcos de la escena del ENEMIGO
     private Vector3 enemigo_barco_1_Posicion;
     private Vector3 enemigo_barco_2_Posicion;

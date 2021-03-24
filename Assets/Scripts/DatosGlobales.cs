@@ -7,13 +7,13 @@ public class DatosGlobales : MonoBehaviour
 {
 
     public static DatosGlobales instanciaGlobalScript;
-    public GameObject[] barcosDeLaEscena = new GameObject[5];
-    public Vector3[] posicionesBarcos = new Vector3[5];
+    // public GameObject[] barcosDeLaEscena = new GameObject[5];
+    // public Vector3[] posicionesBarcos = new Vector3[5];
 
-    public Quaternion[] rotacionesBarcos = new Quaternion[5];
+    // public Quaternion[] rotacionesBarcos = new Quaternion[5];
 
-    public Vector3[] posicionesBarcos_enemigo = new Vector3[5];
-    public Quaternion[] rotacionesBarcos_enemigo = new Quaternion[5];
+    // public Vector3[] posicionesBarcos_enemigo = new Vector3[5];
+    // public Quaternion[] rotacionesBarcos_enemigo = new Quaternion[5];
 
 
 
