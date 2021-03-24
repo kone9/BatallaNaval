@@ -39710,7 +39710,7 @@ GameObject:
   - component: {fileID: 8022957695093612689}
   - component: {fileID: 8022957695093612688}
   m_Layer: 0
-  m_Name: PortaAviones_enemigo
+  m_Name: portaAviones_enemigo
   m_TagString: barcosGrilla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

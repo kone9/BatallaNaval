@@ -19,7 +19,8 @@ public class DatosGlobales : MonoBehaviour
 
 
 
-    //Posciones y rotaciones separadas por barcos
+    //Posiciones y rotaciones separadas por barcos
+    //BARCOS JUGADOR
     public Vector3 Posicion_barco_1;
     public Vector3 Posicion_barco_2;
     public Vector3 Posicion_barco_3;
@@ -50,7 +51,7 @@ public class DatosGlobales : MonoBehaviour
 
     private void Awake() 
     {
-        BuscarBarcosDeLaEscena();//busca los barcos de la escena
+       
     }
     
 
@@ -78,25 +79,25 @@ public class DatosGlobales : MonoBehaviour
     }
 
 
-    /// <summary>guardo los barcos de la escena para tener guardados en la referencía de datos globales que no se destruye entre escenas</summary>
-    public void BuscarBarcosDeLaEscena()
-    {
-        // barcosDeLaEscena = GameObject.FindGameObjectsWithTag("boat");
-        //posiciones
-        Posicion_barco_1 = GameObject.Find("barco_1").transform.position;
-        Posicion_barco_2 = GameObject.Find("barco_2").transform.position;
-        Posicion_barco_3 = GameObject.Find("barco_3").transform.position;
-        Posicion_portaAviones = GameObject.Find("portaAviones").transform.position;
-        Posicion_Submarino = GameObject.Find("submarino").transform.position;
+    // /// <summary>guardo los barcos de la escena para tener guardados en la referencía de datos globales que no se destruye entre escenas</summary>
+    // public void BuscarBarcosDeLaEscena()
+    // {
+    //     // barcosDeLaEscena = GameObject.FindGameObjectsWithTag("boat");
+    //     //posiciones
+    //     Posicion_barco_1 = GameObject.Find("barco_1").transform.position;
+    //     Posicion_barco_2 = GameObject.Find("barco_2").transform.position;
+    //     Posicion_barco_3 = GameObject.Find("barco_3").transform.position;
+    //     Posicion_portaAviones = GameObject.Find("portaAviones").transform.position;
+    //     Posicion_Submarino = GameObject.Find("submarino").transform.position;
 
-        //rotaciones
-        rotacion_barco_1 = GameObject.Find("barco_1").transform.rotation;
-        rotacion_barco_2 = GameObject.Find("barco_2").transform.rotation;
-        rotacion_barco_3 = GameObject.Find("barco_3").transform.rotation;
-        rotacion_portaAviones = GameObject.Find("portaAviones").transform.rotation;
-        rotacion_Submarino = GameObject.Find("submarino").transform.rotation;
+    //     //rotaciones
+    //     rotacion_barco_1 = GameObject.Find("barco_1").transform.rotation;
+    //     rotacion_barco_2 = GameObject.Find("barco_2").transform.rotation;
+    //     rotacion_barco_3 = GameObject.Find("barco_3").transform.rotation;
+    //     rotacion_portaAviones = GameObject.Find("portaAviones").transform.rotation;
+    //     rotacion_Submarino = GameObject.Find("submarino").transform.rotation;
 
-    }
+    // }
 
     /// <summary>Referencia para cambiar la posicion de todos los barcos JUGADOR</summary>
     public void SetPosicionesBarcos(Vector3 barco1_posicion,Vector3 barco2_posicion,Vector3 barco3_posicion,Vector3 portaviones_posicion,Vector3 sumbarino_posicion)

@@ -73,7 +73,7 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         // listoPlayerRED = true;
         // listoEnemigoRED = true;
 
-            
+        //para avisar cuando el player esta listo
         photonView.RPC("EmpezarNivel",RpcTarget.All,photonView.IsMine);
         
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcos();

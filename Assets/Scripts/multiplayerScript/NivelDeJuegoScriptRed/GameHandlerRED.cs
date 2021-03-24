@@ -9,12 +9,12 @@ using Photon.Pun;
 public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 {
     DatosGlobales _DatosGlobales;
-    GameObject[] barcos; 
-    GameObject[] barcosGrilla;
+    // GameObject[] barcos; 
+    // GameObject[] barcosGrilla;
 
-    //para guardar las posiciones de los barcos enemigos
-    Vector3[] barcosEnemigosPosicionRed;
-    Quaternion[] barcosEnemigosRotacionRed;
+    // //para guardar las posiciones de los barcos enemigos
+    // Vector3[] barcosEnemigosPosicionRed;
+    // Quaternion[] barcosEnemigosRotacionRed;
 
 
     public int cantidadDeAciertosJugador = 0;
@@ -29,16 +29,17 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 
 /////////////////////////////////////////////////////////
     //referencia a todos los barcos de la escena del JUGADOR
-    private GameObject barco_1;
-    private GameObject barco_2;
-    private GameObject barco_3;
-    private GameObject portaAviones;
-    private GameObject Submarino;
-    private GameObject barco_1_jugador;
-    private GameObject barco_2_jugador;
-    private GameObject barco_3_jugador;
-    private GameObject PortaAviones_jugador;
-    private GameObject submarino_jugador;
+    private GameObject barco_1_enemigo; //enemigo
+    private GameObject barco_2_enemigo; //enemigo
+    private GameObject barco_3_enemigo; //enemigo
+    private GameObject portaAviones_enemigo; //enemigo
+    private GameObject Submarino_enemigo; //enemigo
+
+    private GameObject barco_1_jugador; //jugador
+    private GameObject barco_2_jugador; //jugador
+    private GameObject barco_3_jugador; //jugador
+    private GameObject PortaAviones_jugador; //jugador
+    private GameObject submarino_jugador; //jugador
 /////////////////////////////////////////////////////////
     //referencia a todos las posiciones y rotaciones de barcos de la escena del ENEMIGO
     private Vector3 enemigo_barco_1_Posicion;
@@ -59,9 +60,8 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
        
         _DatosGlobales = FindObjectOfType<DatosGlobales>();
         _EnemigoHandler = FindObjectOfType<EnemigoHandler>();
-        _DatosGlobales.BuscarBarcosDeLaEscena();
-        barcos = GameObject.FindGameObjectsWithTag("boat");
-        barcosGrilla = GameObject.FindGameObjectsWithTag("barcosGrilla");
+        // barcos = GameObject.FindGameObjectsWithTag("boat");
+        // barcosGrilla = GameObject.FindGameObjectsWithTag("barcosGrilla");
         buscarBarcos();
     }
 
@@ -69,11 +69,11 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     void buscarBarcos()
     {
         //barcos de la grilla cuadro de abajo
-        barco_1 = GameObject.Find("barco_1_enemigo");
-        barco_2 = GameObject.Find("barco_2_enemigo");
-        barco_3 = GameObject.Find("barco_3_enemigo");
-        portaAviones = GameObject.Find("PortaAviones_enemigo");
-        Submarino  = GameObject.Find("submarino_enemigo");
+        barco_1_enemigo = GameObject.Find("barco_1_enemigo");
+        barco_2_enemigo = GameObject.Find("barco_2_enemigo");
+        barco_3_enemigo = GameObject.Find("barco_3_enemigo");
+        portaAviones_enemigo = GameObject.Find("portaAviones_enemigo");
+        Submarino_enemigo  = GameObject.Find("submarino_enemigo");
         //barcos del jugador cuadro de arriba
         barco_1_jugador = GameObject.Find("barco_1");
         barco_2_jugador = GameObject.Find("barco_2");
@@ -85,10 +85,11 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     // Start is called before the first frame update
     void Start()
     {
-        AcomodarLosBarcos();
+        AcomodarLosBarcos();//acomoda los barcos del jugador en la pantalla de arriba
         StartCoroutine("cargarBarcosRivalRed");//carga las posiciones de los barcos desde la red
     }
 
+    /// <summary>carga las posiciones de los barcos desde la red</summary>
     IEnumerator cargarBarcosRivalRed()
     {
         yield return new WaitForSeconds(1);
@@ -117,34 +118,32 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         }   
     }
 
+    /// <summary>Acomoda los barcos del enemigo usando la posición por parametro en la red porque es PunRPC. Hace que los barcos que representan al enemigo se posiciones segun la posicion del rival.</summary>
     [PunRPC]
-    //hace que los barcos que representan al enemigo se posiciones segun la posicion del rival.
     void PosicionarBarcosDelEnemigo(Vector3 enemigo_barco_1_posicion,Vector3 enemigo_barco_2_posicion,Vector3 enemigo_barco_3_posicion,Vector3 enemigo_portaAviones_posicion,Vector3 enemigoPosicionSubmarino){
         //posiciones
-        barco_1.transform.position = enemigo_barco_1_posicion;
-        barco_2.transform.position = enemigo_barco_2_posicion;
-        barco_3.transform.position = enemigo_barco_3_posicion;
-        portaAviones.transform.position = enemigo_portaAviones_posicion;
-        Submarino.transform.position = enemigoPosicionSubmarino;
+        barco_1_enemigo.transform.position = enemigo_barco_1_posicion;
+        barco_2_enemigo.transform.position = enemigo_barco_2_posicion;
+        barco_3_enemigo.transform.position = enemigo_barco_3_posicion;
+        portaAviones_enemigo.transform.position = enemigo_portaAviones_posicion;
+        Submarino_enemigo.transform.position = enemigoPosicionSubmarino;
     }
 
 
-
+    /// <summary>Rota los barcos del enemigo usando la posición por parametro en la red porque es PunRPC. Hace que los barcos que representan al enemigo se roten segun la rotacion del rival.</summary>
     [PunRPC]
-    //hace que los barcos que representan al enemigo se roten segun la rotacion del rival.
     void RotarBarcosDelEnemigo(Quaternion enemigo_barco_1_rotacion,Quaternion enemigo_barco_2_rotacion,Quaternion enemigo_barco_3_rotacion,Quaternion enemigo_portaAviones_rotacion,Quaternion enemigo_Submarino_rotacion)
     {
         //rotaciones
-        barco_1.transform.rotation = enemigo_barco_1_Rotacion;
-        barco_2.transform.rotation = enemigo_barco_2_rotacion;
-        barco_3.transform.rotation = enemigo_barco_3_rotacion;
-        portaAviones.transform.rotation = enemigo_portaAviones_rotacion;
-        Submarino.transform.rotation = enemigo_Submarino_rotacion;
+        barco_1_enemigo.transform.rotation = enemigo_barco_1_Rotacion;
+        barco_2_enemigo.transform.rotation = enemigo_barco_2_rotacion;
+        barco_3_enemigo.transform.rotation = enemigo_barco_3_rotacion;
+        portaAviones_enemigo.transform.rotation = enemigo_portaAviones_rotacion;
+        Submarino_enemigo.transform.rotation = enemigo_Submarino_rotacion;
     }
 
-
-
-    private void AcomodarLosBarcos()//acomoda los barcos que estan en la pantalla de arriba,osea los del jugador
+    /// <summary>acomoda los barcos que estan en la pantalla de arriba,osea los del jugador.</summary>
+    private void AcomodarLosBarcos()
     {
         Vector3 Posicion_barco_1 = _DatosGlobales.Posicion_barco_1;
         Vector3 Posicion_barco_2 = _DatosGlobales.Posicion_barco_2;
