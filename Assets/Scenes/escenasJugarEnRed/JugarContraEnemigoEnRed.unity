@@ -3146,7 +3146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591326169}
   m_Layer: 0
-  m_Name: BarcosJugador
+  m_Name: GridConBarcosJugador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23402,7 +23402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1724735216282794820}
   m_Layer: 0
-  m_Name: BarcosEnemigo
+  m_Name: GridConBarcosParaDestruir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
