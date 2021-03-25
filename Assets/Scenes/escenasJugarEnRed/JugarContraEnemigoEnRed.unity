@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 5032477}
   - component: {fileID: 5032480}
   - component: {fileID: 5032479}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 4.35, y: 6, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5032479
 MonoBehaviour:
@@ -281,7 +281,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 5032480}
   viewIdField: 18
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -299,10 +300,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 5032478}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &28017828
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +379,7 @@ GameObject:
   - component: {fileID: 51716909}
   - component: {fileID: 51716912}
   - component: {fileID: 51716911}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +427,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &51716911
 MonoBehaviour:
@@ -445,7 +447,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 51716912}
   viewIdField: 200
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -463,10 +466,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 51716910}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 5120
 --- !u!1 &54724025
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +563,7 @@ GameObject:
   - component: {fileID: 74862784}
   - component: {fileID: 74862787}
   - component: {fileID: 74862786}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +611,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 3, z: 3.5}
+  m_Size: {x: 4.35, y: 3, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &74862786
 MonoBehaviour:
@@ -646,10 +650,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 74862785}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &87018766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,7 +2296,7 @@ GameObject:
   - component: {fileID: 464175412}
   - component: {fileID: 464175415}
   - component: {fileID: 464175414}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2339,7 +2344,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &464175414
 MonoBehaviour:
@@ -2359,7 +2364,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 464175415}
   viewIdField: 5
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -2377,10 +2383,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 464175413}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 5120
 --- !u!1 &491747336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,7 +2486,7 @@ GameObject:
   - component: {fileID: 504022773}
   - component: {fileID: 504022776}
   - component: {fileID: 504022775}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2527,7 +2534,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 4.35, y: 6, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &504022775
 MonoBehaviour:
@@ -2547,7 +2554,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 504022776}
   viewIdField: 3
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -2565,10 +2573,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 504022774}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &523723598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3140,7 +3149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591326169}
   m_Layer: 0
-  m_Name: GridConBarcosJugador
+  m_Name: BarcosJugador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3353,7 +3362,7 @@ GameObject:
   - component: {fileID: 615155706}
   - component: {fileID: 615155709}
   - component: {fileID: 615155708}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3401,7 +3410,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &615155708
 MonoBehaviour:
@@ -3440,10 +3449,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 615155707}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 5120
 --- !u!1 &620508416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3829,7 +3839,7 @@ GameObject:
   - component: {fileID: 813590105}
   - component: {fileID: 813590108}
   - component: {fileID: 813590107}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3877,7 +3887,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &813590107
 MonoBehaviour:
@@ -3897,7 +3907,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 813590108}
   viewIdField: 13
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -3915,10 +3926,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 813590106}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &825940159
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,7 +4343,7 @@ GameObject:
   - component: {fileID: 946848139}
   - component: {fileID: 946848142}
   - component: {fileID: 946848141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4379,7 +4391,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &946848141
 MonoBehaviour:
@@ -4399,7 +4411,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 946848142}
   viewIdField: 12
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4417,10 +4430,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 946848140}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &949504323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4910,7 +4924,7 @@ GameObject:
   - component: {fileID: 990105524}
   - component: {fileID: 990105527}
   - component: {fileID: 990105526}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4958,7 +4972,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &990105526
 MonoBehaviour:
@@ -4978,7 +4992,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 990105527}
   viewIdField: 17
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -4996,10 +5011,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 990105525}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &998240224
 GameObject:
   m_ObjectHideFlags: 0
@@ -5171,7 +5187,7 @@ GameObject:
   - component: {fileID: 1029309094}
   - component: {fileID: 1029309097}
   - component: {fileID: 1029309096}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5219,7 +5235,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 3, z: 3.5}
+  m_Size: {x: 4.35, y: 3, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1029309096
 MonoBehaviour:
@@ -5258,10 +5274,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1029309095}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1033820539
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,7 +5292,7 @@ GameObject:
   - component: {fileID: 1033820541}
   - component: {fileID: 1033820544}
   - component: {fileID: 1033820543}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5323,7 +5340,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 4.35, y: 6, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1033820543
 MonoBehaviour:
@@ -5362,10 +5379,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1033820542}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1060198921
 GameObject:
   m_ObjectHideFlags: 0
@@ -5458,7 +5476,7 @@ GameObject:
   - component: {fileID: 1065561262}
   - component: {fileID: 1065561265}
   - component: {fileID: 1065561264}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5506,7 +5524,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 4.35, y: 6, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1065561264
 MonoBehaviour:
@@ -5526,7 +5544,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 1065561265}
   viewIdField: 9
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5544,10 +5563,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1065561263}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1075413430
 GameObject:
   m_ObjectHideFlags: 0
@@ -6007,7 +6027,7 @@ GameObject:
   - component: {fileID: 1182939615}
   - component: {fileID: 1182939618}
   - component: {fileID: 1182939617}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6055,7 +6075,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1182939617
 MonoBehaviour:
@@ -6075,7 +6095,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 1182939618}
   viewIdField: 11
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -6093,10 +6114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1182939616}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1223826323
 GameObject:
   m_ObjectHideFlags: 0
@@ -6945,7 +6967,7 @@ GameObject:
   - component: {fileID: 1386326822}
   - component: {fileID: 1386326825}
   - component: {fileID: 1386326824}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6993,7 +7015,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1386326824
 MonoBehaviour:
@@ -7013,7 +7035,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 1386326825}
   viewIdField: 14
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -7031,10 +7054,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1386326823}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1441995104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7429,7 +7453,7 @@ GameObject:
   - component: {fileID: 1508536782}
   - component: {fileID: 1508536785}
   - component: {fileID: 1508536784}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7477,7 +7501,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 4.35, y: 6, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1508536784
 MonoBehaviour:
@@ -7516,10 +7540,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1508536783}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1512854556
 GameObject:
   m_ObjectHideFlags: 0
@@ -8716,7 +8741,7 @@ GameObject:
   - component: {fileID: 1667069586}
   - component: {fileID: 1667069589}
   - component: {fileID: 1667069588}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8764,7 +8789,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 4.35, y: 6, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1667069588
 MonoBehaviour:
@@ -8803,10 +8828,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1667069587}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1676464157
 GameObject:
   m_ObjectHideFlags: 0
@@ -8820,7 +8846,7 @@ GameObject:
   - component: {fileID: 1676464159}
   - component: {fileID: 1676464162}
   - component: {fileID: 1676464161}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8868,7 +8894,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Size: {x: 4.35, y: 6, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1676464161
 MonoBehaviour:
@@ -8888,7 +8914,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 1676464162}
   viewIdField: 15
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -8906,10 +8933,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1676464160}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1691007462
 GameObject:
   m_ObjectHideFlags: 0
@@ -9317,7 +9345,7 @@ GameObject:
   - component: {fileID: 1738816712}
   - component: {fileID: 1738816715}
   - component: {fileID: 1738816714}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9365,7 +9393,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1738816714
 MonoBehaviour:
@@ -9385,7 +9413,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 1738816715}
   viewIdField: 6
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -9403,10 +9432,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1738816713}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 5120
 --- !u!1 &1755430800
 GameObject:
   m_ObjectHideFlags: 0
@@ -15566,7 +15596,7 @@ GameObject:
   - component: {fileID: 1995689571}
   - component: {fileID: 1995689574}
   - component: {fileID: 1995689573}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15614,7 +15644,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1995689573
 MonoBehaviour:
@@ -15634,7 +15664,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 1995689574}
   viewIdField: 21
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -15652,10 +15683,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 1995689572}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1998530762
 GameObject:
   m_ObjectHideFlags: 0
@@ -15810,7 +15842,7 @@ GameObject:
   - component: {fileID: 2021147751}
   - component: {fileID: 2021147754}
   - component: {fileID: 2021147753}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15858,7 +15890,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2021147753
 MonoBehaviour:
@@ -15878,7 +15910,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 2021147754}
   viewIdField: 19
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -15896,10 +15929,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 2021147752}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!4 &2034528434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2272484751275663074, guid: c7fc8cb1b72cf544fbac3fae12ddc06c,
@@ -16166,7 +16200,7 @@ GameObject:
   - component: {fileID: 2097705184}
   - component: {fileID: 2097705187}
   - component: {fileID: 2097705186}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colisionbarco (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16214,7 +16248,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
+  m_Size: {x: 4.35, y: 7, z: 4.35}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2097705186
 MonoBehaviour:
@@ -16234,7 +16268,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 2097705187}
   viewIdField: 20
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -16252,10 +16287,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
   _BoxCollider: {fileID: 0}
-  overlappers: []
+  overlappers:
+  - {fileID: 2097705185}
   isOverlapper:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &2137827175
 GameObject:
   m_ObjectHideFlags: 0
@@ -16366,7 +16402,7 @@ GameObject:
   - component: {fileID: 8997077507131027513}
   - component: {fileID: 13180243347605750}
   - component: {fileID: 13180243347605749}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.061
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -16459,7 +16495,7 @@ GameObject:
   - component: {fileID: 867837191620433444}
   - component: {fileID: 44511972541863129}
   - component: {fileID: 44511972541863128}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.084
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -17886,7 +17922,7 @@ GameObject:
   - component: {fileID: 8852125362644120716}
   - component: {fileID: 83802840249071204}
   - component: {fileID: 83802840249071203}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.049
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -17971,7 +18007,7 @@ GameObject:
   - component: {fileID: 7153531909287770606}
   - component: {fileID: 91668642827028906}
   - component: {fileID: 91668642827028905}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.026
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -18794,7 +18830,7 @@ GameObject:
   - component: {fileID: 1855627028821812496}
   - component: {fileID: 437995611768780899}
   - component: {fileID: 437995611768780898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.029
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -18999,7 +19035,7 @@ GameObject:
   - component: {fileID: 1481528549358424604}
   - component: {fileID: 514009751135378857}
   - component: {fileID: 514009751135378856}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.004
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -19891,7 +19927,7 @@ GameObject:
   - component: {fileID: 6654266068336075537}
   - component: {fileID: 795233064109721838}
   - component: {fileID: 795233064109721837}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.069
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -19990,7 +20026,7 @@ GameObject:
   - component: {fileID: 998346107362251228}
   - component: {fileID: 810696245004270489}
   - component: {fileID: 810696245004270488}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.036
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -20108,7 +20144,7 @@ GameObject:
   - component: {fileID: 9017957065832716108}
   - component: {fileID: 825174807761676202}
   - component: {fileID: 825174807761676201}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.039
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -20402,7 +20438,7 @@ GameObject:
   - component: {fileID: 6055867799269156203}
   - component: {fileID: 928266916985522436}
   - component: {fileID: 928266916985522435}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.076
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -20528,7 +20564,7 @@ GameObject:
   - component: {fileID: 5795875216690076743}
   - component: {fileID: 945466581648776306}
   - component: {fileID: 945466581648776305}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.098
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -20705,7 +20741,7 @@ GameObject:
   - component: {fileID: 4635444208492717421}
   - component: {fileID: 968024958476023339}
   - component: {fileID: 968024958476023338}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.023
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -20935,7 +20971,7 @@ GameObject:
   - component: {fileID: 7647247162490615199}
   - component: {fileID: 1010420783809979413}
   - component: {fileID: 1010420783809979412}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.031
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -21092,7 +21128,7 @@ GameObject:
   - component: {fileID: 6269609235144696308}
   - component: {fileID: 1068722544450461873}
   - component: {fileID: 1068722544450461872}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.019
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -21332,7 +21368,7 @@ GameObject:
   - component: {fileID: 3625032269773114053}
   - component: {fileID: 1150005457390648108}
   - component: {fileID: 1150005457390648107}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.045
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -21527,7 +21563,7 @@ GameObject:
   - component: {fileID: 3981730541703614526}
   - component: {fileID: 1240368828926441869}
   - component: {fileID: 1240368828926441868}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.056
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -21737,7 +21773,7 @@ GameObject:
   - component: {fileID: 6207710875016748198}
   - component: {fileID: 1307771732790922617}
   - component: {fileID: 1307771732790922616}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.017
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -22265,7 +22301,7 @@ GameObject:
   - component: {fileID: 8221244455431697232}
   - component: {fileID: 1526413415073300103}
   - component: {fileID: 1526413415073300102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.068
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -22364,7 +22400,7 @@ GameObject:
   - component: {fileID: 7252582891455340289}
   - component: {fileID: 1556683178424973495}
   - component: {fileID: 1556683178424973494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.059
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -22772,7 +22808,7 @@ GameObject:
   - component: {fileID: 3674937191190898056}
   - component: {fileID: 1838975153097774825}
   - component: {fileID: 1838975153097774824}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.035
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -22857,7 +22893,7 @@ GameObject:
   - component: {fileID: 2040110640484846011}
   - component: {fileID: 1840152318545395105}
   - component: {fileID: 1840152318545395104}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.022
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -23339,7 +23375,7 @@ GameObject:
   - component: {fileID: 1028903600317348097}
   - component: {fileID: 2048718706310999754}
   - component: {fileID: 2048718706310999753}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.090
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -23396,7 +23432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1724735216282794820}
   m_Layer: 0
-  m_Name: GridConBarcosParaDestruir
+  m_Name: BarcosEnemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23441,7 +23477,7 @@ GameObject:
   - component: {fileID: 7217461459176471026}
   - component: {fileID: 2113884751026160348}
   - component: {fileID: 2113884751026160347}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.053
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -23682,7 +23718,7 @@ GameObject:
   - component: {fileID: 8634612350820144185}
   - component: {fileID: 2190733908851835524}
   - component: {fileID: 2190733908851835523}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.027
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -23790,7 +23826,7 @@ GameObject:
   - component: {fileID: 2763952648316745810}
   - component: {fileID: 2205596951718843796}
   - component: {fileID: 2205596951718843795}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.078
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -24303,7 +24339,7 @@ GameObject:
   - component: {fileID: 1839311742727536078}
   - component: {fileID: 2342309599993945465}
   - component: {fileID: 2342309599993945464}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.042
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -24349,7 +24385,7 @@ GameObject:
   - component: {fileID: 5989323072658660240}
   - component: {fileID: 2349025652051738654}
   - component: {fileID: 2349025652051738653}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.063
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -24409,7 +24445,7 @@ GameObject:
   - component: {fileID: 1005142386949133226}
   - component: {fileID: 2367154288091456001}
   - component: {fileID: 2367154288091456000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.091
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -25005,7 +25041,7 @@ GameObject:
   - component: {fileID: 3513974849572974988}
   - component: {fileID: 2646065957851661237}
   - component: {fileID: 2646065957851661236}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.018
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -25059,7 +25095,7 @@ GameObject:
   - component: {fileID: 7122898731712314944}
   - component: {fileID: 2682822916992313628}
   - component: {fileID: 2682822916992313627}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.086
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -25105,7 +25141,7 @@ GameObject:
   - component: {fileID: 4812488535614655697}
   - component: {fileID: 2708568208682750831}
   - component: {fileID: 2708568208682750830}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.060
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -25680,7 +25716,7 @@ GameObject:
   - component: {fileID: 6765500902673430372}
   - component: {fileID: 2901722780240573237}
   - component: {fileID: 2901722780240573236}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.025
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -25871,7 +25907,7 @@ GameObject:
   - component: {fileID: 7608088264323507326}
   - component: {fileID: 2961834637796137291}
   - component: {fileID: 2961834637796137290}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.024
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -25931,7 +25967,7 @@ GameObject:
   - component: {fileID: 8526807579883768552}
   - component: {fileID: 2975610021598872035}
   - component: {fileID: 2975610021598872034}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.030
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -26080,7 +26116,7 @@ GameObject:
   - component: {fileID: 6565424874867983900}
   - component: {fileID: 3024529314298300882}
   - component: {fileID: 3024529314298300881}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.034
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -26126,7 +26162,7 @@ GameObject:
   - component: {fileID: 1366184903556698067}
   - component: {fileID: 3031660951687470976}
   - component: {fileID: 3031660951687470975}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -26400,7 +26436,7 @@ GameObject:
   - component: {fileID: 4494540290209225424}
   - component: {fileID: 3105660239140666976}
   - component: {fileID: 3105660239140666975}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.007
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -27006,7 +27042,7 @@ GameObject:
   - component: {fileID: 2264916057824593309}
   - component: {fileID: 3294212254865557589}
   - component: {fileID: 3294212254865557588}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.021
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -27119,7 +27155,7 @@ GameObject:
   - component: {fileID: 7623938336619632438}
   - component: {fileID: 3318564613981907445}
   - component: {fileID: 3318564613981907444}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.082
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -27309,7 +27345,7 @@ GameObject:
   - component: {fileID: 8267417558426566828}
   - component: {fileID: 3364701537296403924}
   - component: {fileID: 3364701537296403923}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.094
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -27385,7 +27421,7 @@ GameObject:
   - component: {fileID: 4958197388827627316}
   - component: {fileID: 3374646427139086282}
   - component: {fileID: 3374646427139086281}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.055
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -27431,7 +27467,7 @@ GameObject:
   - component: {fileID: 618666599024577472}
   - component: {fileID: 3383641960235588967}
   - component: {fileID: 3383641960235588966}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.095
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -27477,7 +27513,7 @@ GameObject:
   - component: {fileID: 8286972418932904309}
   - component: {fileID: 3403220511207633997}
   - component: {fileID: 3403220511207633996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.079
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -27562,7 +27598,7 @@ GameObject:
   - component: {fileID: 1088171392317563370}
   - component: {fileID: 3411507774164543512}
   - component: {fileID: 3411507774164543511}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.065
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -27873,7 +27909,7 @@ GameObject:
   - component: {fileID: 7403527482168063153}
   - component: {fileID: 3541917585393228989}
   - component: {fileID: 3541917585393228988}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.015
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -28444,7 +28480,7 @@ GameObject:
   - component: {fileID: 7376259017093744755}
   - component: {fileID: 3824474358672708174}
   - component: {fileID: 3824474358672708173}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.072
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -28545,7 +28581,7 @@ GameObject:
   - component: {fileID: 7988270994845780591}
   - component: {fileID: 3866738998549673553}
   - component: {fileID: 3866738998549673552}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.003
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -28663,7 +28699,7 @@ GameObject:
   - component: {fileID: 3138830575260714331}
   - component: {fileID: 3885176476103299626}
   - component: {fileID: 3885176476103299625}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.057
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -28748,7 +28784,7 @@ GameObject:
   - component: {fileID: 3477402287177729889}
   - component: {fileID: 3898671810424151510}
   - component: {fileID: 3898671810424151509}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.099
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -29545,7 +29581,7 @@ GameObject:
   - component: {fileID: 2800571914403777401}
   - component: {fileID: 4240459406953051452}
   - component: {fileID: 4240459406953051451}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.011
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -29792,7 +29828,7 @@ GameObject:
   - component: {fileID: 790347806726885799}
   - component: {fileID: 4350555198911556609}
   - component: {fileID: 4350555198911556608}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.020
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -30571,7 +30607,7 @@ GameObject:
   - component: {fileID: 5621599720169664562}
   - component: {fileID: 4708928321092520177}
   - component: {fileID: 4708928321092520176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.089
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -30639,7 +30675,7 @@ GameObject:
   - component: {fileID: 1953907098105308845}
   - component: {fileID: 4755858331860438691}
   - component: {fileID: 4755858331860438690}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.064
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -30701,7 +30737,7 @@ GameObject:
   - component: {fileID: 2240886050101906725}
   - component: {fileID: 4769297717694448937}
   - component: {fileID: 4769297717694448936}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.075
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -31040,7 +31076,7 @@ GameObject:
   - component: {fileID: 267064975919822750}
   - component: {fileID: 4888566361155568185}
   - component: {fileID: 4888566361155568184}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.050
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -31086,7 +31122,7 @@ GameObject:
   - component: {fileID: 1986306415803187070}
   - component: {fileID: 4904089715308175495}
   - component: {fileID: 4904089715308175494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.093
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -31240,7 +31276,7 @@ GameObject:
   - component: {fileID: 2725082895209109427}
   - component: {fileID: 4954333282922805707}
   - component: {fileID: 4954333282922805706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.048
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -31550,7 +31586,7 @@ GameObject:
   - component: {fileID: 1360171012479499972}
   - component: {fileID: 5044896068145563371}
   - component: {fileID: 5044896068145563370}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.012
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -31979,7 +32015,7 @@ GameObject:
   - component: {fileID: 549288579531621202}
   - component: {fileID: 5258433893573604809}
   - component: {fileID: 5258433893573604808}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.028
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -32136,7 +32172,7 @@ GameObject:
   - component: {fileID: 6833468047121356287}
   - component: {fileID: 5283346869309490419}
   - component: {fileID: 5283346869309490418}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.044
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -33540,7 +33576,7 @@ GameObject:
   - component: {fileID: 3032806570438078000}
   - component: {fileID: 5745622661757867862}
   - component: {fileID: 5745622661757867861}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.058
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -33614,7 +33650,7 @@ GameObject:
   - component: {fileID: 5271404050954308176}
   - component: {fileID: 5770190203814864675}
   - component: {fileID: 5770190203814864674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.005
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -33824,7 +33860,7 @@ GameObject:
   - component: {fileID: 2022254564636802304}
   - component: {fileID: 5856775415618570474}
   - component: {fileID: 5856775415618570473}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.038
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -34362,7 +34398,7 @@ GameObject:
   - component: {fileID: 7012781689323306330}
   - component: {fileID: 6087848041955030158}
   - component: {fileID: 6087848041955030157}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.014
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -34408,7 +34444,7 @@ GameObject:
   - component: {fileID: 3210293064949002878}
   - component: {fileID: 6089110660378099778}
   - component: {fileID: 6089110660378099777}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.040
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -34507,7 +34543,7 @@ GameObject:
   - component: {fileID: 3337094480294748306}
   - component: {fileID: 6134075661059016900}
   - component: {fileID: 6134075661059016899}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.097
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -34553,7 +34589,7 @@ GameObject:
   - component: {fileID: 579826986184426985}
   - component: {fileID: 6151310530370172954}
   - component: {fileID: 6151310530370172953}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.033
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -34758,7 +34794,7 @@ GameObject:
   - component: {fileID: 107387347013683850}
   - component: {fileID: 6207002768047623934}
   - component: {fileID: 6207002768047623933}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.087
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -35046,7 +35082,7 @@ GameObject:
   - component: {fileID: 2377512888392251940}
   - component: {fileID: 6350798364970468082}
   - component: {fileID: 6350798364970468081}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.051
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -35541,7 +35577,7 @@ GameObject:
   - component: {fileID: 2789144097084978594}
   - component: {fileID: 6669268448545799058}
   - component: {fileID: 6669268448545799057}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.096
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -35787,7 +35823,7 @@ GameObject:
   - component: {fileID: 7529649546078673066}
   - component: {fileID: 6778268592349232295}
   - component: {fileID: 6778268592349232294}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.074
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -36136,7 +36172,7 @@ GameObject:
   - component: {fileID: 8174784245575556706}
   - component: {fileID: 6996636530896684561}
   - component: {fileID: 6996636530896684560}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.080
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -36600,7 +36636,7 @@ GameObject:
   - component: {fileID: 1442803435282646944}
   - component: {fileID: 7182478596139244750}
   - component: {fileID: 7182478596139244749}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.073
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -36729,7 +36765,7 @@ GameObject:
   - component: {fileID: 2996694838047686404}
   - component: {fileID: 7208984766427532985}
   - component: {fileID: 7208984766427532984}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.083
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -37130,7 +37166,7 @@ GameObject:
   - component: {fileID: 3283023507029606985}
   - component: {fileID: 7294750108147229594}
   - component: {fileID: 7294750108147229593}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.041
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -37229,7 +37265,7 @@ GameObject:
   - component: {fileID: 979454126922897517}
   - component: {fileID: 7318540387347757265}
   - component: {fileID: 7318540387347757264}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.062
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -37408,7 +37444,7 @@ GameObject:
   - component: {fileID: 7294175912535684938}
   - component: {fileID: 7375978894878968539}
   - component: {fileID: 7375978894878968538}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.081
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -37681,7 +37717,7 @@ GameObject:
   - component: {fileID: 3211276715541054971}
   - component: {fileID: 7441106418046192664}
   - component: {fileID: 7441106418046192663}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.052
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -37846,7 +37882,7 @@ GameObject:
   - component: {fileID: 2596246740987017929}
   - component: {fileID: 7532922083721271773}
   - component: {fileID: 7532922083721271772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.002
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -38419,7 +38455,7 @@ GameObject:
   - component: {fileID: 7377346673792592244}
   - component: {fileID: 7751006720771064830}
   - component: {fileID: 7751006720771064829}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.032
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -38892,7 +38928,7 @@ GameObject:
   - component: {fileID: 2836804806355682952}
   - component: {fileID: 7872026797482386987}
   - component: {fileID: 7872026797482386986}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.016
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -39119,7 +39155,7 @@ GameObject:
   - component: {fileID: 1898740781037982909}
   - component: {fileID: 7912439858427743734}
   - component: {fileID: 7912439858427743733}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.010
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -39198,7 +39234,7 @@ GameObject:
   - component: {fileID: 8010605457161397173}
   - component: {fileID: 7931051669739227452}
   - component: {fileID: 7931051669739227451}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.047
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -39491,7 +39527,7 @@ GameObject:
   - component: {fileID: 3886857009284860024}
   - component: {fileID: 7993739024224697558}
   - component: {fileID: 7993739024224697557}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.077
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -39755,7 +39791,7 @@ GameObject:
   - component: {fileID: 2191637288956272207}
   - component: {fileID: 8023160114521062291}
   - component: {fileID: 8023160114521062290}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.054
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -40282,7 +40318,7 @@ GameObject:
   - component: {fileID: 4095649964480278662}
   - component: {fileID: 8236683630428064669}
   - component: {fileID: 8236683630428064668}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.008
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -40495,7 +40531,7 @@ GameObject:
   - component: {fileID: 7809432162980421957}
   - component: {fileID: 8311506949657863847}
   - component: {fileID: 8311506949657863846}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.088
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -40609,7 +40645,7 @@ GameObject:
   - component: {fileID: 425234950188838896}
   - component: {fileID: 8338315241702848625}
   - component: {fileID: 8338315241702848624}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.006
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -40827,7 +40863,7 @@ GameObject:
   - component: {fileID: 7774966276845346974}
   - component: {fileID: 8477819754595879081}
   - component: {fileID: 8477819754595879080}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.070
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -40895,7 +40931,7 @@ GameObject:
   - component: {fileID: 7795578318492579307}
   - component: {fileID: 8526422577813795169}
   - component: {fileID: 8526422577813795168}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.071
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -41088,7 +41124,7 @@ GameObject:
   - component: {fileID: 2808506166226790498}
   - component: {fileID: 8575467415151657139}
   - component: {fileID: 8575467415151657138}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.085
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -41203,7 +41239,7 @@ GameObject:
   - component: {fileID: 6582936572477177973}
   - component: {fileID: 8630826234456843470}
   - component: {fileID: 8630826234456843469}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.092
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -41551,7 +41587,7 @@ GameObject:
   - component: {fileID: 1033709443549733088}
   - component: {fileID: 8777409149883774203}
   - component: {fileID: 8777409149883774202}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.067
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -41948,7 +41984,7 @@ GameObject:
   - component: {fileID: 2835939417921184404}
   - component: {fileID: 8981495669129107629}
   - component: {fileID: 8981495669129107628}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.001
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -41994,7 +42030,7 @@ GameObject:
   - component: {fileID: 6445939390926627981}
   - component: {fileID: 8987076252769412472}
   - component: {fileID: 8987076252769412471}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.037
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -42394,7 +42430,7 @@ GameObject:
   - component: {fileID: 7422315116313305138}
   - component: {fileID: 9062137068579033281}
   - component: {fileID: 9062137068579033280}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.043
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -42440,7 +42476,7 @@ GameObject:
   - component: {fileID: 5684882419194650608}
   - component: {fileID: 9093652468985779674}
   - component: {fileID: 9093652468985779673}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.066
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -42546,7 +42582,7 @@ GameObject:
   - component: {fileID: 4116176422094540985}
   - component: {fileID: 9109288054806607367}
   - component: {fileID: 9109288054806607366}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.046
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -42606,7 +42642,7 @@ GameObject:
   - component: {fileID: 5511368799793153892}
   - component: {fileID: 9113289776949576035}
   - component: {fileID: 9113289776949576034}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.009
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}
@@ -42652,7 +42688,7 @@ GameObject:
   - component: {fileID: 944974477886170911}
   - component: {fileID: 9115210277722244355}
   - component: {fileID: 9115210277722244354}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CuadriculaColion.013
   m_TagString: cuadriculaColision
   m_Icon: {fileID: 0}

@@ -73,8 +73,8 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
                 StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
             }
            
-            // // // bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
-            // // // print("hay colision" + haycolision);
+            bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
+            print("hay colision" + haycolision);
             instanciarFuego(this.transform.position);
 
             //instanciar fuego en los barcos que estan en la pantalla de arriba tanto Yo como El otro jugador
