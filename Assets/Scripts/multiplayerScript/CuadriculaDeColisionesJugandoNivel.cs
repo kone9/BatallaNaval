@@ -50,6 +50,9 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
         _GamehandlerRED.SetPuedoPresionarBoton(false);
         yield return new WaitForSeconds(0.4f);
         _GamehandlerRED.IsTurnoEnemigo();
-
     }
+
+    
+
+
 }
