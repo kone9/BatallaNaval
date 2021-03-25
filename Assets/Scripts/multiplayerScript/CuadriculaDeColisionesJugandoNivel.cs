@@ -35,7 +35,10 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
 
     private void OnMouseDown()
     {
-        StartCoroutine("PresioneGrilla");
+        if(_GamehandlerRED.GetPuedoPresionarBoton())//si puedo presionar boton
+        {
+            StartCoroutine("PresioneGrilla");
+        }
     }
 
     /// <summary>Desactivo todo lo relacionado a la cuadricula y activa turno enemigo</summary>
