@@ -99,7 +99,6 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
      /// <summary>Guarda la posicion de los barcos ENEMIGOS</summary>
     public void GuardarPosicionBarcosEnemigos()
     {
-
         Vector3 barco1_posicion = barco_1.transform.position;
         Vector3 barco2_posicion = barco_2.transform.position;
         Vector3 barco3_posicion = barco_3.transform.position;
