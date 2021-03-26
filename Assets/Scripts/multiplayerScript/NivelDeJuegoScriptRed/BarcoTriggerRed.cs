@@ -24,6 +24,8 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     GameObject[] sonidoBarcoEnemigoDestruido;
     AudioSource musicaJugandoContraEnemigo;
     GameObject[] sound_hit;
+    AudioSource audio_hit_Own;//sonido hit pero para el enemigo
+    AudioSource audio_sink_Own;//sonido hundio barco  para el enemigo
 
     //ProbandoGithubDes
     
@@ -39,6 +41,9 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
         sonidoWinner = GameObject.Find("SonidoWinner").GetComponent<AudioSource>();
         sonidoBarcoEnemigoDestruido = GameObject.FindGameObjectsWithTag("SonidoBarcoEnemigoDestruido");//referencia a la sonido barcos destruidos
         musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();//referencia a la música del juego
+
+        audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
+        audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -73,8 +78,8 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
                 StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
             }
            
-            // // // bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
-            // // // print("hay colision" + haycolision);
+            bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
+            print("hay colision" + haycolision);
             instanciarFuego(this.transform.position);
 
             //instanciar fuego en los barcos que estan en la pantalla de arriba tanto Yo como El otro jugador
@@ -111,32 +116,6 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     }
 
 
-    void DispararAntiguoLuegoBorrar()
-    {
-        if(_GameHandlerRED.GetPuedoPresionarBoton())
-        {
-            instanciarFuego(this.transform.position);//instancio fuego en esta posición
-
-            _photonView.RPC("InstanciarFuegoEnMisBarcos", //Nombre de la función que es llamada localmente
-                RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
-                this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
-            ); 
-            
-            _GameHandlerRED.cantidadDeAciertosJugador += 1;
-
-            //tengo que usar un delay voy a tener que mover todo a una función
-            StartCoroutine("jugarContraEnemigoDelay");
-            // _GameHandlerRED.IsTurnoEnemigo();//turno enemigo
-
-            print("TENDRIA QUE INSTANCIAR EL FUEGO");
-        }
-
-        if(_GameHandlerRED.cantidadDeAciertosJugador == 21)
-        {
-            _GameHandlerRED.GameOverWinner();
-        }
-    }
-
     /// <summary>hace que sea el turno del enemigo cuando acertas al disparo</summary>
     IEnumerator jugarContraEnemigoDelay()
     {
@@ -169,6 +148,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     {
         Vector3 fuegoPosicionEnEnemigo = posicionInicialFuego;
         fuegoPosicionEnEnemigo.z += 250;
+        audio_hit_Own.Play();//activo sonido que dispara a mis barcos
         instanciarFuego(fuegoPosicionEnEnemigo);
     }
 
