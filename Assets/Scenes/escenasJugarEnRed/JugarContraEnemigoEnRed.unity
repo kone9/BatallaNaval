@@ -16507,6 +16507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &13180243347605751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16591,6 +16592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &44511972541863130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16702,6 +16704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &83802840249071205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16772,6 +16775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &91668642827028907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16984,7 +16988,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2916399185950136184}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -17252,6 +17256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &437995611768780900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17354,6 +17359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &514009751135378858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17781,6 +17787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &795233064109721839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17889,6 +17896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &810696245004270490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17998,6 +18006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &825174807761676203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18175,6 +18184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &928266916985522437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18291,6 +18301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &945466581648776307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18438,6 +18449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &968024958476023340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18658,6 +18670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1010420783809979414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18806,6 +18819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1068722544450461874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18936,6 +18950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1150005457390648109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19014,6 +19029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1240368828926441870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19123,6 +19139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1307771732790922618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19490,6 +19507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1526413415073300104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19612,6 +19630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1556683178424973496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19878,6 +19897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1838975153097774826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19987,6 +20007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1840152318545395106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20407,6 +20428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2048718706310999755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20518,6 +20540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2113884751026160349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20603,6 +20626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2190733908851835525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20735,6 +20759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2205596951718843797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21050,6 +21075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2342309599993945466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21120,6 +21146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2349025652051738655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21204,6 +21231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2367154288091456002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21594,6 +21622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2646065957851661238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21671,6 +21700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2682822916992313629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21740,6 +21770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2708568208682750832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22157,6 +22188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2901722780240573238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22363,6 +22395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2961834637796137292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22446,6 +22479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2975610021598872036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33335,6 +33369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3024529314298300883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33405,6 +33440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3031660951687470977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33608,6 +33644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3105660239140666977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34052,6 +34089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3294212254865557590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34135,6 +34173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3318564613981907446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34320,6 +34359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3364701537296403925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34411,6 +34451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3374646427139086283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34481,6 +34522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3383641960235588968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34550,6 +34592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3403220511207633998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34658,6 +34701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3411507774164543513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34885,6 +34929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3541917585393228990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35129,7 +35174,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4856885525991969987}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -35255,6 +35300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3824474358672708175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35371,6 +35417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3866738998549673554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35440,6 +35487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3885176476103299627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35549,6 +35597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3898671810424151511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36009,6 +36058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4240459406953051453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36210,6 +36260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4350555198911556610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36711,6 +36762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4708928321092520178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36788,6 +36840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4755858331860438692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36866,6 +36919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4769297717694448938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37062,6 +37116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4888566361155568186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37132,6 +37187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4904089715308175496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37223,6 +37279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4954333282922805708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37387,6 +37444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5044896068145563372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37571,6 +37629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5258433893573604810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37718,6 +37777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5283346869309490420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38354,6 +38414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5745622661757867863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38452,6 +38513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5770190203814864676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38632,6 +38694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5856775415618570475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39000,6 +39063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6087848041955030159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39069,6 +39133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6089110660378099779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39153,6 +39218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6134075661059016901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39222,6 +39288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6151310530370172955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39338,6 +39405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6207002768047623935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39551,6 +39619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6350798364970468083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39850,6 +39919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6669268448545799059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40036,6 +40106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6778268592349232296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40246,6 +40317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6996636530896684562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40376,7 +40448,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2594288726603058842}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -40565,6 +40637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7182478596139244751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40670,6 +40743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7208984766427532986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41008,6 +41082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7294750108147229595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41130,6 +41205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7318540387347757266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41261,6 +41337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7375978894878968540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41407,7 +41484,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8022957695093612687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -41543,6 +41620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7441106418046192665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41700,6 +41778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7532922083721271774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42055,6 +42134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7751006720771064831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42123,7 +42203,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9097337997971125798}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -42363,6 +42443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7872026797482386988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42535,6 +42616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7912439858427743735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42604,6 +42686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7931051669739227453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42755,6 +42838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7993739024224697559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42929,6 +43013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8023160114521062292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43300,6 +43385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8236683630428064670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43503,6 +43589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8311506949657863848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43632,6 +43719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8338315241702848626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43829,6 +43917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8477819754595879082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43920,6 +44009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8526422577813795170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44042,6 +44132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8575467415151657140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44141,6 +44232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8630826234456843471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44312,6 +44404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8777409149883774204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44513,6 +44606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8981495669129107630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44582,6 +44676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8987076252769412473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44812,6 +44907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9062137068579033282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44882,6 +44978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9093652468985779675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45003,6 +45100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9109288054806607368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45086,6 +45184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9113289776949576036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45155,6 +45254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio_miss: []
+  CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9115210277722244356
 MonoBehaviour:
   m_ObjectHideFlags: 0
