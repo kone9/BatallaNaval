@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2143103330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257151513950486821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eecb8b55c29afd4c8a4d7d2ca9cd098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2143103329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257151513773336648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eecb8b55c29afd4c8a4d7d2ca9cd098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2143103328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257151513578152421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eecb8b55c29afd4c8a4d7d2ca9cd098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2143103327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257151513465160761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eecb8b55c29afd4c8a4d7d2ca9cd098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2143103326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265745652157122972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eecb8b55c29afd4c8a4d7d2ca9cd098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &7292487555622888669
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155223153019169253, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6782542483689042783, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: m_Name
+      value: GridConBarcosAcomodarBarcosMultiplayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6782542484926645563, guid: 596d05538dca54248b781bf968e768b6, type: 3}
+    - {fileID: 6782542485106221286, guid: 596d05538dca54248b781bf968e768b6, type: 3}
+    - {fileID: 6782542485406223508, guid: 596d05538dca54248b781bf968e768b6, type: 3}
+    - {fileID: 6782542484553786875, guid: 596d05538dca54248b781bf968e768b6, type: 3}
+    - {fileID: 7387029874331217228, guid: 596d05538dca54248b781bf968e768b6, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 596d05538dca54248b781bf968e768b6, type: 3}
+--- !u!1 &4257151513950486821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6782542484553786872, guid: 596d05538dca54248b781bf968e768b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7292487555622888669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4257151513773336648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6782542485406223509, guid: 596d05538dca54248b781bf968e768b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7292487555622888669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4257151513578152421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6782542484926645560, guid: 596d05538dca54248b781bf968e768b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7292487555622888669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4257151513465160761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6782542485106221284, guid: 596d05538dca54248b781bf968e768b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7292487555622888669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &265745652157122972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7387029874331217217, guid: 596d05538dca54248b781bf968e768b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7292487555622888669}
+  m_PrefabAsset: {fileID: 0}
