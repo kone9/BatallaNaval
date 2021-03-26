@@ -53,4 +53,6 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
             _Gamehandler.IsTurnoEnemigo();
         }
     }
+
+    
 }
