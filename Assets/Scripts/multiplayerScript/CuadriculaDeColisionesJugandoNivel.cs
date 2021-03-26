@@ -60,7 +60,8 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Phot
     [PunRPC]
     public void DeshabilitarCuadriculaEnemigoSuperior(bool deshabilitarCuadricula)
     {
-        CuadriculaEnemigoSuperior.enabled = deshabilitarCuadricula;
+        CuadriculaEnemigoSuperior.enabled = deshabilitarCuadricula;//deshabilito cuadricula pero solo lo hace el enemigo
+        audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo pero solo lo escucha el enemigo
     }
 
     //estoy usando la interface por eso llamo a esto obligatoriamente
