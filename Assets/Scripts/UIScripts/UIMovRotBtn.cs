@@ -20,7 +20,8 @@ public class UIMovRotBtn : MonoBehaviour
 		instance = this;
 	}
 
-	public void ToggleMode()
+	/// <summary>Cambia el modo de rotación y cambia la letra que se ve en el boton</summary>
+	public void ToggleMode()//cambia 
 	{
 		MoveMode = !MoveMode;
 		if (MoveMode)
