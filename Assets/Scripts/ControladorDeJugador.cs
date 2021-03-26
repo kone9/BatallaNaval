@@ -84,13 +84,22 @@ public class ControladorDeJugador : MonoBehaviour
     {
         // if (!waitingForOtherPlayer)
         // {
-            //hay un pequeño bug con el movimiento
-            if (Input.GetMouseButtonDown(0))
+        //hay un pequeño bug con el movimiento
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (UIMovRotBtn.instance.MoveMode)
             {
+
                 _MoveAndRotateBoat.startPos = transform.localPosition;
                 puedoMover = true;//puedo mover
-                efectoBoton_2.Play();//activo sonido agarre
             }
+            else
+            {
+                if (_GameHandlerAcomodarPIezas.inGrid(_MoveAndRotateBoat.lengthBarco, _MoveAndRotateBoat.lenghtBarcoDerecha, _MoveAndRotateBoat.lenghtBarcoIzquierda, (_MoveAndRotateBoat.direccion + 1) % 4, _MoveAndRotateBoat.X_posicion_imaginaria, _MoveAndRotateBoat.Y_posicion_imaginaria))
+                    _MoveAndRotateBoat.RotarBarco();
+            }
+            efectoBoton_2.Play();//activo sonido agarre
+        }
         // }
     }
 
