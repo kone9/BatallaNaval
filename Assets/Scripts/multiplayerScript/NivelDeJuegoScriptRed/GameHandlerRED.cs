@@ -216,7 +216,7 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
             );  
     }
 
-
+    /// <summary>Ejecuta todo esto, pero en la red</summary>
     [PunRPC]
     private void IsTurnoEnemigoOJugadorAvisarRed(bool fondoTableroRed,bool puedoPresionarBotonRed,bool cambiarColorBotones)
     {

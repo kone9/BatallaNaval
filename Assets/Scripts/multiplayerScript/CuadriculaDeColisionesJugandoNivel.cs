@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
+using Photon.Pun;
+
+public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Photon.Pun.IPunObservable
 {
     GameHandlerRED _GamehandlerRED;
 
@@ -12,6 +14,8 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
     private MeshRenderer mymesh;
     private BoxCollider miCollyder;
 
+    public MeshRenderer CuadriculaEnemigoSuperior;
+
     
     private void Awake()
     {
@@ -19,18 +23,7 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
         audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");//sonido errar disparo
         mymesh = GetComponent<MeshRenderer>();
         miCollyder = GetComponent<BoxCollider>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CuadriculaEnemigoSuperior = GameObject.Find("A" + this.gameObject.name).GetComponent<MeshRenderer>();
     }
 
     private void OnMouseDown()
@@ -44,15 +37,35 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviour
     /// <summary>Desactivo todo lo relacionado a la cuadricula y activa turno enemigo</summary>
     IEnumerator PresioneGrilla()
     {
-        mymesh.enabled = false;
-        miCollyder.enabled = false;
+        mymesh.enabled = false;//desactivo esta cuadricula
+        miCollyder.enabled = false;//desactivo la colision de esta cuadricula
+        DeshabilitarCuadriculaPhoton();//desactivar cuadricula enemigo parte superior
+
         audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
-        _GamehandlerRED.SetPuedoPresionarBoton(false);
+        _GamehandlerRED.SetPuedoPresionarBoton(false);//no puedo volver a presionar los botones
         yield return new WaitForSeconds(0.4f);
-        _GamehandlerRED.IsTurnoEnemigo();
+        _GamehandlerRED.IsTurnoEnemigo();//es turno de enemigo
     }
 
-    
+     /// <summary>Desactivo o activa todo lo relacionado a la cuadricula superior. Si uso otros tendría que deshabilitarse la cuadricula superior del otro</summary>
+    private void DeshabilitarCuadriculaPhoton()
+    {
+        photonView.RPC("DeshabilitarCuadriculaEnemigoSuperior", //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered,//para llamar a la función en Otros
+                false//saca el tablero de color rojo del fondo
+            ); 
+    }
 
+     /// <summary>Para desactivar cuadricula usando Photon</summary>
+    [PunRPC]
+    public void DeshabilitarCuadriculaEnemigoSuperior(bool deshabilitarCuadricula)
+    {
+        CuadriculaEnemigoSuperior.enabled = deshabilitarCuadricula;
+    }
 
+    //estoy usando la interface por eso llamo a esto obligatoriamente
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+
+    }
 }
