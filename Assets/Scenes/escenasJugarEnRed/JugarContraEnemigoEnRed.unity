@@ -2490,8 +2490,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -33.095146, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 915021596}
   - {fileID: 1840721952}
+  - {fileID: 915021596}
   - {fileID: 1328290637}
   - {fileID: 1620081607}
   - {fileID: 2034528434}
@@ -4293,7 +4293,7 @@ RectTransform:
   - {fileID: 2038772118}
   - {fileID: 1805361873}
   m_Father: {fileID: 500765745}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8482,9 +8482,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0.35
-    y: 0.606
+    y: 0.59
     width: 0.58
-    height: 0.31
+    height: 0.32
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -9969,7 +9969,7 @@ Transform:
   - {fileID: 1998530763}
   - {fileID: 1316119819}
   m_Father: {fileID: 500765745}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1848812156
 GameObject:
