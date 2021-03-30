@@ -189,7 +189,6 @@ public class EnemigoHandler : MonoBehaviour
         GameObject fuegoInstance = Instantiate(fuego);
 
         fuegoInstance.transform.position = barcoJugadorColisiones[LugarAleatorio].transform.position;
-        barcoJugadorColisiones[LugarAleatorio].GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
 
         // elementoEliminar += 1;
         barcoJugadorColisiones.RemoveAt(LugarAleatorio);

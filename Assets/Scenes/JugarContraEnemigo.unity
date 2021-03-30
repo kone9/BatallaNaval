@@ -127,6 +127,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 74731628547906790}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &21192077 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350479934952171, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -139,6 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &139069077
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +446,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 204953326}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &209814561 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350479721220935, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -455,6 +459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &246363050
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +699,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276161455}
   m_Mesh: {fileID: -462981019419857548, guid: ddf3498943324f6799731427671fc0e8, type: 3}
+<<<<<<< HEAD
 --- !u!114 &299864234 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350479675744204, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -729,6 +736,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1001 &416173619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1014,6 +1023,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -1076,6 +1086,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 500765745}
+  m_Layer: 0
+  m_Name: MenuNivel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &500765745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500765744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -33.095146, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1840721952}
+  - {fileID: 915021596}
+  - {fileID: 1328290637}
+  - {fileID: 1620081607}
+  - {fileID: 1426434414}
+  - {fileID: 1747303148}
+  - {fileID: 591326169}
+  - {fileID: 12235348}
+  - {fileID: 703889759}
+  - {fileID: 1724735216282794820}
+  - {fileID: 6402581990707909249}
+  - {fileID: 416173620}
+  - {fileID: 204953327}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &552264625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,6 +1457,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606043368}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!114 &663370971 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350479368156093, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -1419,6 +1470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &668732417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,6 +1952,7 @@ MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834920815}
   m_Enabled: 1
@@ -1960,6 +2014,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834920815}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9ce4e07ce705417b9fd8461aa013520c, type: 2}
+  - {fileID: 2100000, guid: 6ea149caebbe480e8360ec009a375518, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &834920818
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834920815}
+  m_Mesh: {fileID: 78955963208986748, guid: c19f8961c0a0490daceaf860e200a047, type: 3}
+--- !u!95 &849430172 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3516741291242023224, guid: 484bc391cdb81d64c86ac03734eab5a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1353809691462450262}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &898077137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,7 +2222,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &915021596
 RectTransform:
@@ -2146,7 +2251,6 @@ RectTransform:
   - {fileID: 1285355124}
   - {fileID: 2131041420}
   - {fileID: 1934117359}
-  - {fileID: 1566464877}
   m_Father: {fileID: 500765745}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2931,6 +3035,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307299259}
   m_Mesh: {fileID: -1652597548402076581, guid: c19f8961c0a0490daceaf860e200a047, type: 3}
+<<<<<<< HEAD
 --- !u!114 &1309811901 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350478673472475, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -2943,6 +3048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &1316119818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3060,6 +3167,7 @@ Transform:
   m_Father: {fileID: 500765745}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1344815521 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350478573440711, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -3072,6 +3180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &1396923278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,6 +3382,7 @@ Transform:
   m_Father: {fileID: 1283067946}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1484432435 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350478444391253, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -3284,6 +3395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &1511833433
 GameObject:
   m_ObjectHideFlags: 0
@@ -8074,6 +8187,7 @@ Transform:
   m_Father: {fileID: 1426434414}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -9.9, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1554469220 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350478381227522, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -8086,6 +8200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &1561559567
 GameObject:
   m_ObjectHideFlags: 0
@@ -8120,6 +8236,7 @@ Transform:
   m_Father: {fileID: 1543309931}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1564402453 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350478390111347, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -8138,6 +8255,8 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7198350479914061670}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &1620081605
 GameObject:
   m_ObjectHideFlags: 0
@@ -8256,7 +8375,7 @@ Transform:
   m_GameObject: {fileID: 1622875639}
   m_LocalRotation: {x: 0.9126289, y: -0.32049248, z: -0.08407968, w: 0.23942369}
   m_LocalPosition: {x: 0.19215354, y: 0.257442, z: 0.4502967}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.010000001, y: 0.010000002, z: 0.0100000035}
   m_Children: []
   m_Father: {fileID: 1316119819}
   m_RootOrder: 0
@@ -8272,24 +8391,24 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_SensorSize: {x: 36.1, y: 24}
+  m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 28.13
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.29
-    y: 0.58
-    width: 0.69
-    height: 0.37
+    x: 0.425
+    y: 0.59
+    width: 0.28
+    height: 0.33
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 67.3
+  field of view: 46.205303
   orthographic: 0
   orthographic size: 27.94
-  m_Depth: 1
+  m_Depth: 2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8760,6 +8879,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715555847}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!114 &1718860478 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350478277211608, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -8772,6 +8892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &1737415428
 GameObject:
   m_ObjectHideFlags: 0
@@ -8929,6 +9051,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2967717138351866953, guid: 67c020da994d71945a4641c53acb47aa,
     type: 3}
   m_PrefabInstance: {fileID: 1747303147}
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1751038489 stripped
 MonoBehaviour:
@@ -8984,6 +9107,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1768669554 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1097101662219201017, guid: c3501efac08bb5c41a5a2bfed677ec28,
+    type: 3}
+  m_PrefabInstance: {fileID: 1097101662612039819}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &1840721951
 GameObject:
   m_ObjectHideFlags: 0
@@ -14262,6 +14394,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1965262493 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350477986744827, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -14274,6 +14407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &1998530762
 GameObject:
   m_ObjectHideFlags: 0
@@ -14662,6 +14797,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053812284}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 --- !u!114 &2080165391 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7198350477966606697, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
@@ -14674,6 +14810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
 --- !u!1 &2131041419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8391587729713230958, guid: 9a1415c650d8436408b005d6183c128f,
@@ -15310,6 +15448,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915021596}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 7198350478392169482, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
         type: 3}
       propertyPath: m_Name
@@ -15326,6 +15465,9 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+=======
+    - target: {fileID: 7597603064306664012, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
         type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -15518,6 +15660,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 7597603064306664012, guid: 9f35326c7c43fc74fa2cfe38a1943520,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15573,6 +15716,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GridConBarcosJugador
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
 --- !u!1001 &8391587728521717989
