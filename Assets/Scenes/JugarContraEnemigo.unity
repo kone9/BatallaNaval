@@ -127,21 +127,99 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 74731628547906790}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &21192077 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479934952171, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &21192075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21192076}
+  - component: {fileID: 21192078}
+  - component: {fileID: 21192077}
+  m_Layer: 5
+  m_Name: Submarino_EstadoMuerto_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &21192076
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21192075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1358882956}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -409.8, y: 437.69995}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &21192077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21192075}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &21192078
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21192075}
+  m_CullTransparentMesh: 0
+--- !u!1 &79953115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064550342305, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &79953116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79953115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 299864234}
 --- !u!1 &139069077
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +283,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &148094805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603063517250551, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &148094806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148094805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 663370971}
+--- !u!1 &154489849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603063813008689, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &154489850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154489849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1344815521}
 --- !u!1 &157279264
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,21 +562,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 204953326}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &209814561 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479721220935, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &209814559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209814560}
+  - component: {fileID: 209814562}
+  - component: {fileID: 209814561}
+  m_Layer: 5
+  m_Name: barco_1_EstadoMuerto_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &209814560
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209814559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 793241063}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -444.6, y: 438.7}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &209814561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209814559}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &209814562
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209814559}
+  m_CullTransparentMesh: 0
 --- !u!1 &246363050
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,45 +874,266 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276161455}
   m_Mesh: {fileID: -462981019419857548, guid: ddf3498943324f6799731427671fc0e8, type: 3}
-<<<<<<< HEAD
---- !u!114 &299864234 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479675744204, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &299864232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299864233}
+  - component: {fileID: 299864235}
+  - component: {fileID: 299864234}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &299864233
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299864232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1157256452}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -409.8, y: 509}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &299864234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299864232}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &350124679 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479591749089, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &299864235
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 299864232}
+  m_CullTransparentMesh: 0
+--- !u!1 &303926068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603065468947253, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &303926069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303926068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1824586566}
+--- !u!1 &350124677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350124678}
+  - component: {fileID: 350124680}
+  - component: {fileID: 350124679}
+  m_Layer: 5
+  m_Name: Submarino_EstadoMuerto_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &350124678
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350124677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1358882956}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -409.39984, y: 473.5}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &350124679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350124677}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &360892203 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479603566669, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &350124680
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 350124677}
+  m_CullTransparentMesh: 0
+--- !u!1 &357913431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064837293849, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &357913432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357913431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1554469220}
+--- !u!1 &360892201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 360892202}
+  - component: {fileID: 360892204}
+  - component: {fileID: 360892203}
+  m_Layer: 5
+  m_Name: Submarino_EstadoMuerto_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &360892202
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360892201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1358882956}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -373.09967, y: 437.7}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &360892203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360892201}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &360892204
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360892201}
+  m_CullTransparentMesh: 0
 --- !u!1001 &416173619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -813,6 +1209,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 416173619}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &435248451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064979992311, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &435248452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435248451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 21192077}
+--- !u!1 &449500280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064359119137, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &449500281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449500280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 360892203}
+--- !u!1 &459306721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603065501274227, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &459306722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459306721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1564402453}
 --- !u!1 &491747336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1476,6 @@ GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
-<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -1062,70 +1514,173 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &505304789 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479478495667, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &531750670 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479506247784, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-=======
+--- !u!1 &505304787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 500765745}
-  m_Layer: 0
-  m_Name: MenuNivel
+  - component: {fileID: 505304788}
+  - component: {fileID: 505304790}
+  - component: {fileID: 505304789}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &500765745
-Transform:
+--- !u!224 &505304788
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500765744}
+  m_GameObject: {fileID: 505304787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -33.095146, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1840721952}
-  - {fileID: 915021596}
-  - {fileID: 1328290637}
-  - {fileID: 1620081607}
-  - {fileID: 1426434414}
-  - {fileID: 1747303148}
-  - {fileID: 591326169}
-  - {fileID: 12235348}
-  - {fileID: 703889759}
-  - {fileID: 1724735216282794820}
-  - {fileID: 6402581990707909249}
-  - {fileID: 416173620}
-  - {fileID: 204953327}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Children: []
+  m_Father: {fileID: 1157256452}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -446, y: 509.00012}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &505304789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505304787}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &505304790
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505304787}
+  m_CullTransparentMesh: 0
+--- !u!1 &514137240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603065381278785, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &514137241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514137240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1756198344}
+--- !u!1 &531750668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 531750669}
+  - component: {fileID: 531750671}
+  - component: {fileID: 531750670}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &531750669
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531750668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1157256452}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -373.5, y: 545.6}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &531750670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531750668}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &531750671
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531750668}
+  m_CullTransparentMesh: 0
 --- !u!1 &552264625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,21 +2012,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606043368}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
---- !u!114 &663370971 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479368156093, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &663370969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 663370970}
+  - component: {fileID: 663370972}
+  - component: {fileID: 663370971}
+  m_Layer: 5
+  m_Name: barco_3_EstadoMuerto_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &663370970
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663370969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1126162334}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -409.8, y: 437.69995}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &663370971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663370969}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &663370972
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663370969}
+  m_CullTransparentMesh: 0
 --- !u!1 &668732417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +2529,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781100097}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &793241062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793241063}
+  m_Layer: 5
+  m_Name: barco_1_EstadoMuerto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &793241063
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793241062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 209814560}
+  - {fileID: 1756198343}
+  m_Father: {fileID: 1566464877}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 134, y: -186}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &834920815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +2603,6 @@ MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
-<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834920815}
   m_Enabled: 1
@@ -2002,69 +2652,137 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1353809691462450262}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &882628455 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350479050512385, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &869257236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869257237}
+  m_Layer: 5
+  m_Name: barco_2_EstadoMuerto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &869257237
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869257236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1718860477}
+  - {fileID: 1751038488}
+  - {fileID: 1766308780}
+  m_Father: {fileID: 1566464877}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -183.6}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &882628453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882628454}
+  - component: {fileID: 882628456}
+  - component: {fileID: 882628455}
+  m_Layer: 5
+  m_Name: barco_3_EstadoMuerto_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &882628454
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882628453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1126162334}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -373.09967, y: 437.70007}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &882628455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882628453}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834920815}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 9ce4e07ce705417b9fd8461aa013520c, type: 2}
-  - {fileID: 2100000, guid: 6ea149caebbe480e8360ec009a375518, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &834920818
-MeshFilter:
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &882628456
+CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834920815}
-  m_Mesh: {fileID: 78955963208986748, guid: c19f8961c0a0490daceaf860e200a047, type: 3}
---- !u!95 &849430172 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3516741291242023224, guid: 484bc391cdb81d64c86ac03734eab5a4,
+  m_GameObject: {fileID: 882628453}
+  m_CullTransparentMesh: 0
+--- !u!1 &890151351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603063503737609, guid: 9f35326c7c43fc74fa2cfe38a1943520,
     type: 3}
-  m_PrefabInstance: {fileID: 1353809691462450262}
+  m_PrefabInstance: {fileID: 7597603063818742165}
   m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+--- !u!114 &890151352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890151351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 882628455}
 --- !u!1 &898077137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,7 +2940,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &915021596
 RectTransform:
@@ -2251,6 +2969,7 @@ RectTransform:
   - {fileID: 1285355124}
   - {fileID: 2131041420}
   - {fileID: 1934117359}
+  - {fileID: 1566464877}
   m_Father: {fileID: 500765745}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2259,6 +2978,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &915205204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064072057130, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &915205205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915205204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1766308781}
 --- !u!1 &929295463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,6 +3602,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121030598}
   m_CullTransparentMesh: 0
+--- !u!1 &1126162333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126162334}
+  m_Layer: 5
+  m_Name: barco_3_EstadoMuerto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1126162334
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126162333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1484432434}
+  - {fileID: 663370970}
+  - {fileID: 882628454}
+  - {fileID: 1965262492}
+  m_Father: {fileID: 1566464877}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1157256451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1157256452}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1157256452
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157256451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 505304788}
+  - {fileID: 299864233}
+  - {fileID: 1554469219}
+  - {fileID: 1824586565}
+  - {fileID: 1344815520}
+  - {fileID: 531750669}
+  - {fileID: 1309811900}
+  - {fileID: 2080165390}
+  m_Father: {fileID: 1566464877}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1283067945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3035,21 +3855,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307299259}
   m_Mesh: {fileID: -1652597548402076581, guid: c19f8961c0a0490daceaf860e200a047, type: 3}
-<<<<<<< HEAD
---- !u!114 &1309811901 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478673472475, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &1309811899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309811900}
+  - component: {fileID: 1309811902}
+  - component: {fileID: 1309811901}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto_7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1309811900
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309811899}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1157256452}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -337.09967, y: 545.6}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1309811901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309811899}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1309811902
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309811899}
+  m_CullTransparentMesh: 0
 --- !u!1 &1316119818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,21 +4046,138 @@ Transform:
   m_Father: {fileID: 500765745}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!114 &1344815521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478573440711, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &1344815519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344815520}
+  - component: {fileID: 1344815522}
+  - component: {fileID: 1344815521}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1344815520
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344815519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1157256452}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -409.7, y: 545.6}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1344815521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344815519}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1344815522
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344815519}
+  m_CullTransparentMesh: 0
+--- !u!1 &1351236471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064460589729, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1351236472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351236471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1309811901}
+--- !u!1 &1358882955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358882956}
+  m_Layer: 5
+  m_Name: Submarino_EstadoMuerto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1358882956
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358882955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1564402452}
+  - {fileID: 21192076}
+  - {fileID: 360892202}
+  - {fileID: 350124678}
+  m_Father: {fileID: 1566464877}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -106.9}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1396923278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3382,21 +4378,99 @@ Transform:
   m_Father: {fileID: 1283067946}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!114 &1484432435 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478444391253, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &1484432433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484432434}
+  - component: {fileID: 1484432436}
+  - component: {fileID: 1484432435}
+  m_Layer: 5
+  m_Name: barco_3_EstadoMuerto_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1484432434
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484432433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1126162334}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -446, y: 437.7}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1484432435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484432433}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1484432436
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484432433}
+  m_CullTransparentMesh: 0
+--- !u!1 &1498124019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603065228028838, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1498124020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498124019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1484432435}
 --- !u!1 &1511833433
 GameObject:
   m_ObjectHideFlags: 0
@@ -8187,21 +9261,99 @@ Transform:
   m_Father: {fileID: 1426434414}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -9.9, z: 0}
-<<<<<<< HEAD
---- !u!114 &1554469220 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478381227522, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &1554469218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554469219}
+  - component: {fileID: 1554469221}
+  - component: {fileID: 1554469220}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1554469219
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554469218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1157256452}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -373.09967, y: 509.00012}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1554469220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554469218}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1554469221
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554469218}
+  m_CullTransparentMesh: 0
+--- !u!1 &1558381345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603065098757351, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1558381346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558381345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1751038489}
 --- !u!1 &1561559567
 GameObject:
   m_ObjectHideFlags: 0
@@ -8236,27 +9388,139 @@ Transform:
   m_Father: {fileID: 1543309931}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!114 &1564402453 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478390111347, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &1564402451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564402452}
+  - component: {fileID: 1564402454}
+  - component: {fileID: 1564402453}
+  m_Layer: 5
+  m_Name: Submarino_EstadoMuerto_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1564402452
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564402451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1358882956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -446, y: 437.7}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1564402453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564402451}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &1566464877 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1564402454
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_GameObject: {fileID: 1564402451}
+  m_CullTransparentMesh: 0
+--- !u!1 &1566464876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1566464877}
+  m_Layer: 5
+  m_Name: PiezasEstadoDestruidas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1566464877
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566464876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 793241063}
+  - {fileID: 869257237}
+  - {fileID: 1126162334}
+  - {fileID: 1157256452}
+  - {fileID: 1358882956}
+  m_Father: {fileID: 915021596}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1602628815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064523869652, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1602628816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602628815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 2080165391}
 --- !u!1 &1620081605
 GameObject:
   m_ObjectHideFlags: 0
@@ -8375,7 +9639,7 @@ Transform:
   m_GameObject: {fileID: 1622875639}
   m_LocalRotation: {x: 0.9126289, y: -0.32049248, z: -0.08407968, w: 0.23942369}
   m_LocalPosition: {x: 0.19215354, y: 0.257442, z: 0.4502967}
-  m_LocalScale: {x: 0.010000001, y: 0.010000002, z: 0.0100000035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1316119819}
   m_RootOrder: 0
@@ -8391,24 +9655,24 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
-  m_projectionMatrixMode: 2
+  m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
+  m_SensorSize: {x: 36.1, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 28.13
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.425
-    y: 0.59
-    width: 0.28
-    height: 0.33
+    x: 0.29
+    y: 0.58
+    width: 0.69
+    height: 0.37
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 46.205303
+  field of view: 67.3
   orthographic: 0
   orthographic size: 27.94
-  m_Depth: 2
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8879,21 +10143,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715555847}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
---- !u!114 &1718860478 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478277211608, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &1718860476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718860477}
+  - component: {fileID: 1718860479}
+  - component: {fileID: 1718860478}
+  m_Layer: 5
+  m_Name: barco_2_EstadoMuerto_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1718860477
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718860476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 869257237}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -446, y: 437.7}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1718860478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718860476}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1718860479
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718860476}
+  m_CullTransparentMesh: 0
 --- !u!1 &1737415428
 GameObject:
   m_ObjectHideFlags: 0
@@ -9051,71 +10374,328 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2967717138351866953, guid: 67c020da994d71945a4641c53acb47aa,
     type: 3}
   m_PrefabInstance: {fileID: 1747303147}
-<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1751038489 stripped
+--- !u!1 &1751038487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1751038488}
+  - component: {fileID: 1751038490}
+  - component: {fileID: 1751038489}
+  m_Layer: 5
+  m_Name: barco_2_EstadoMuerto_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1751038488
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751038487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 869257237}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -409.8, y: 437.69995}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1751038489
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478174123391, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1751038487}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1756198344 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478179515054, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1751038490
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1751038487}
+  m_CullTransparentMesh: 0
+--- !u!1 &1756198342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1756198343}
+  - component: {fileID: 1756198345}
+  - component: {fileID: 1756198344}
+  m_Layer: 5
+  m_Name: barco_1_EstadoMuerto_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1756198343
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756198342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 793241063}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -408.4, y: 438.7}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1756198344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756198342}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1766308781 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478190441675, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1756198345
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1756198342}
+  m_CullTransparentMesh: 0
+--- !u!1 &1766308779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766308780}
+  - component: {fileID: 1766308782}
+  - component: {fileID: 1766308781}
+  m_Layer: 5
+  m_Name: barco_2_EstadoMuerto_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1766308780
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766308779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 869257237}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -373.09967, y: 437.7}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1766308781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766308779}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1766308782
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766308779}
+  m_CullTransparentMesh: 0
 --- !u!224 &1768669554 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1097101662219201017, guid: c3501efac08bb5c41a5a2bfed677ec28,
     type: 3}
   m_PrefabInstance: {fileID: 1097101662612039819}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1824586566 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350478114731040, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+--- !u!1 &1810328091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064769509160, guid: 9f35326c7c43fc74fa2cfe38a1943520,
     type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+  m_PrefabInstance: {fileID: 7597603063818742165}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &1810328092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810328091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1965262493}
+--- !u!1 &1824586564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1824586565}
+  - component: {fileID: 1824586567}
+  - component: {fileID: 1824586566}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1824586565
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824586564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1157256452}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -337.1, y: 509.00012}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1824586566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824586564}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1824586567
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1768669554 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1097101662219201017, guid: c3501efac08bb5c41a5a2bfed677ec28,
-    type: 3}
-  m_PrefabInstance: {fileID: 1097101662612039819}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_GameObject: {fileID: 1824586564}
+  m_CullTransparentMesh: 0
 --- !u!1 &1840721951
 GameObject:
   m_ObjectHideFlags: 0
@@ -9229,6 +10809,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848812156}
   m_Mesh: {fileID: -1084052250020352450, guid: c19f8961c0a0490daceaf860e200a047, type: 3}
+--- !u!1 &1855794616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603065552178185, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1855794617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855794616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 505304789}
 --- !u!1 &1869044856
 GameObject:
   m_ObjectHideFlags: 0
@@ -9309,6 +10908,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869044856}
   m_Mesh: {fileID: -1652597548402076581, guid: c19f8961c0a0490daceaf860e200a047, type: 3}
+--- !u!1 &1901416605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603063875047868, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1901416606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901416605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 209814561}
 --- !u!1 &1919776396
 GameObject:
   m_ObjectHideFlags: 0
@@ -14394,21 +16012,99 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!114 &1965262493 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350477986744827, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &1965262491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965262492}
+  - component: {fileID: 1965262494}
+  - component: {fileID: 1965262493}
+  m_Layer: 5
+  m_Name: barco_3_EstadoMuerto_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1965262492
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965262491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1126162334}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -337.1, y: 437.70007}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1965262493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965262491}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1965262494
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965262491}
+  m_CullTransparentMesh: 0
+--- !u!1 &1996556912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064127111296, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1996556913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996556912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 531750670}
 --- !u!1 &1998530762
 GameObject:
   m_ObjectHideFlags: 0
@@ -14797,21 +16493,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053812284}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
---- !u!114 &2080165391 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7198350477966606697, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-    type: 3}
-  m_PrefabInstance: {fileID: 7198350479914061670}
+--- !u!1 &2080165389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080165390}
+  - component: {fileID: 2080165392}
+  - component: {fileID: 2080165391}
+  m_Layer: 5
+  m_Name: portaAvionesEstadosMuerto_8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2080165390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080165389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1157256452}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -300.5, y: 545.6}
+  m_SizeDelta: {x: 34, y: 34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2080165391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080165389}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 115d7e12db0b98948858b2376c6b9dab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2080165392
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080165389}
+  m_CullTransparentMesh: 0
+--- !u!1 &2099532876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064229241046, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2099532877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099532876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 350124679}
 --- !u!1 &2131041419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8391587729713230958, guid: 9a1415c650d8436408b005d6183c128f,
@@ -14824,6 +16598,25 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 8391587728521717989}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2144000400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7597603064679690485, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597603063818742165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2144000401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144000400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1718860478}
 --- !u!1001 &74731628547906790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15441,129 +17234,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec0e296b38d57374199b262206d7e541, type: 3}
---- !u!1001 &7198350479914061670
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 915021596}
-    m_Modifications:
-<<<<<<< HEAD
-    - target: {fileID: 7198350478392169482, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_Name
-      value: PiezasEstadoDestruidasImagenes
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-=======
-    - target: {fileID: 7597603064306664012, guid: 9f35326c7c43fc74fa2cfe38a1943520,
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6d82eeddc91b41a458ab26e1dbfe5333, type: 3}
 --- !u!1001 &7597603063818742165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15571,96 +17241,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 500765745}
     m_Modifications:
-    - target: {fileID: 79953116, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 299864234}
-    - target: {fileID: 148094806, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 663370971}
-    - target: {fileID: 154489850, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1344815521}
-    - target: {fileID: 303926069, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1824586566}
-    - target: {fileID: 357913432, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1554469220}
-    - target: {fileID: 435248452, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 21192077}
-    - target: {fileID: 449500281, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 360892203}
-    - target: {fileID: 459306722, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1564402453}
-    - target: {fileID: 514137241, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1756198344}
-    - target: {fileID: 890151352, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 882628455}
-    - target: {fileID: 915205205, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1766308781}
-    - target: {fileID: 1351236472, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1309811901}
-    - target: {fileID: 1498124020, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1484432435}
-    - target: {fileID: 1558381346, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1751038489}
-    - target: {fileID: 1602628816, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 2080165391}
-    - target: {fileID: 1810328092, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1965262493}
-    - target: {fileID: 1855794617, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 505304789}
-    - target: {fileID: 1901416606, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 209814561}
-    - target: {fileID: 1996556913, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 531750670}
-    - target: {fileID: 2099532877, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 350124679}
-    - target: {fileID: 2144000401, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
-      propertyPath: ParteDestruida
-      value: 
-      objectReference: {fileID: 1718860478}
+    - target: {fileID: 7597603063503737609, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603063813008689, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603064127111296, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603064229241046, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_4
+      objectReference: {fileID: 0}
     - target: {fileID: 7597603064306664012, guid: 9f35326c7c43fc74fa2cfe38a1943520,
         type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 7597603064306664012, guid: 9f35326c7c43fc74fa2cfe38a1943520,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15716,8 +17321,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: GridConBarcosJugador
       objectReference: {fileID: 0}
-=======
->>>>>>> parent of 12e19b8 (agregando estado de barcos jugador en imagenes al ser disparados por enemigo)
+    - target: {fileID: 7597603064359119137, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603064460589729, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603064523869652, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603064550342305, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603064837293849, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603064979992311, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603065468947253, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603065501274227, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597603065552178185, guid: 9f35326c7c43fc74fa2cfe38a1943520,
+        type: 3}
+      propertyPath: m_Name
+      value: barcoJugadorColisiones_1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f35326c7c43fc74fa2cfe38a1943520, type: 3}
 --- !u!1001 &8391587728521717989

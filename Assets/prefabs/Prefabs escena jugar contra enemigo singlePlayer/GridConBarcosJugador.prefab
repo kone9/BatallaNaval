@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7597603063503737608}
   - component: {fileID: 7597603063503737610}
   - component: {fileID: 7597603063503737611}
-  - component: {fileID: 890151352}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -62,19 +61,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &890151352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603063503737609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603063517250551
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +72,6 @@ GameObject:
   - component: {fileID: 7597603063517250550}
   - component: {fileID: 7597603063517250544}
   - component: {fileID: 7597603063517250545}
-  - component: {fileID: 148094806}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -137,19 +122,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &148094806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603063517250551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603063526041559
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,9 +799,8 @@ GameObject:
   - component: {fileID: 7597603063813008688}
   - component: {fileID: 7597603063813008690}
   - component: {fileID: 7597603063813008691}
-  - component: {fileID: 154489850}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_5
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -878,19 +849,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &154489850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603063813008689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603063820809381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,7 +1018,6 @@ GameObject:
   - component: {fileID: 7597603063875047871}
   - component: {fileID: 7597603063875047865}
   - component: {fileID: 7597603063875047870}
-  - component: {fileID: 1901416606}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -1111,19 +1068,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1901416606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603063875047868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603063879093584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,7 +1583,6 @@ GameObject:
   - component: {fileID: 7597603064072057173}
   - component: {fileID: 7597603064072057175}
   - component: {fileID: 7597603064072057172}
-  - component: {fileID: 915205205}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -1690,19 +1633,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &915205205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064072057130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064127111296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,9 +1644,8 @@ GameObject:
   - component: {fileID: 7597603064127111299}
   - component: {fileID: 7597603064127111309}
   - component: {fileID: 7597603064127111298}
-  - component: {fileID: 1996556913}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_6
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1765,19 +1694,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1996556913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064127111296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064134785608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,9 +2030,8 @@ GameObject:
   - component: {fileID: 7597603064229241041}
   - component: {fileID: 7597603064229241043}
   - component: {fileID: 7597603064229241040}
-  - component: {fileID: 2099532877}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_4
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2165,19 +2080,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2099532877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064229241046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064239141788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2622,9 +2524,8 @@ GameObject:
   - component: {fileID: 7597603064359119136}
   - component: {fileID: 7597603064359119138}
   - component: {fileID: 7597603064359119139}
-  - component: {fileID: 449500281}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_3
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2673,19 +2574,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &449500281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064359119137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064428223637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2776,9 +2664,8 @@ GameObject:
   - component: {fileID: 7597603064460589728}
   - component: {fileID: 7597603064460589730}
   - component: {fileID: 7597603064460589731}
-  - component: {fileID: 1351236472}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_7
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2827,19 +2714,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1351236472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064460589729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064523869652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,9 +2725,8 @@ GameObject:
   - component: {fileID: 7597603064523869655}
   - component: {fileID: 7597603064523869649}
   - component: {fileID: 7597603064523869654}
-  - component: {fileID: 1602628816}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_8
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2902,19 +2775,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1602628816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064523869652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064536824728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,9 +2896,8 @@ GameObject:
   - component: {fileID: 7597603064550342304}
   - component: {fileID: 7597603064550342306}
   - component: {fileID: 7597603064550342307}
-  - component: {fileID: 79953116}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_2
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3087,19 +2946,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &79953116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064550342305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064584883597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,7 +3273,6 @@ GameObject:
   - component: {fileID: 7597603064679690484}
   - component: {fileID: 7597603064679690486}
   - component: {fileID: 7597603064679690487}
-  - component: {fileID: 2144000401}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -3478,19 +3323,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2144000401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064679690485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064721880438
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,7 +3768,6 @@ GameObject:
   - component: {fileID: 7597603064769509163}
   - component: {fileID: 7597603064769509205}
   - component: {fileID: 7597603064769509162}
-  - component: {fileID: 1810328092}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -3987,19 +3818,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1810328092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064769509160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064805938082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4248,9 +4066,8 @@ GameObject:
   - component: {fileID: 7597603064837293848}
   - component: {fileID: 7597603064837293850}
   - component: {fileID: 7597603064837293851}
-  - component: {fileID: 357913432}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_3
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4299,19 +4116,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &357913432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064837293849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603064891861027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,9 +4364,8 @@ GameObject:
   - component: {fileID: 7597603064979992310}
   - component: {fileID: 7597603064979992304}
   - component: {fileID: 7597603064979992305}
-  - component: {fileID: 435248452}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_2
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4611,19 +4414,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &435248452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603064979992311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603065007983318
 GameObject:
   m_ObjectHideFlags: 0
@@ -5030,7 +4820,6 @@ GameObject:
   - component: {fileID: 7597603065098757350}
   - component: {fileID: 7597603065098757344}
   - component: {fileID: 7597603065098757345}
-  - component: {fileID: 1558381346}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -5081,19 +4870,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1558381346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603065098757351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603065153740686
 GameObject:
   m_ObjectHideFlags: 0
@@ -5359,7 +5135,6 @@ GameObject:
   - component: {fileID: 7597603065228028833}
   - component: {fileID: 7597603065228028835}
   - component: {fileID: 7597603065228028832}
-  - component: {fileID: 1498124020}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -5410,19 +5185,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1498124020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603065228028838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603065310039794
 GameObject:
   m_ObjectHideFlags: 0
@@ -5592,7 +5354,6 @@ GameObject:
   - component: {fileID: 7597603065381278784}
   - component: {fileID: 7597603065381278786}
   - component: {fileID: 7597603065381278787}
-  - component: {fileID: 514137241}
   m_Layer: 0
   m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
@@ -5643,19 +5404,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &514137241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603065381278785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603065468947253
 GameObject:
   m_ObjectHideFlags: 0
@@ -5667,9 +5415,8 @@ GameObject:
   - component: {fileID: 7597603065468947252}
   - component: {fileID: 7597603065468947254}
   - component: {fileID: 7597603065468947255}
-  - component: {fileID: 303926069}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_4
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5718,19 +5465,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &303926069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603065468947253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603065473405806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5935,9 +5669,8 @@ GameObject:
   - component: {fileID: 7597603065501274226}
   - component: {fileID: 7597603065501274236}
   - component: {fileID: 7597603065501274237}
-  - component: {fileID: 459306722}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_1
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5986,19 +5719,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &459306722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603065501274227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603065514561383
 GameObject:
   m_ObjectHideFlags: 0
@@ -6106,9 +5826,8 @@ GameObject:
   - component: {fileID: 7597603065552178184}
   - component: {fileID: 7597603065552178186}
   - component: {fileID: 7597603065552178187}
-  - component: {fileID: 1855794617}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones_1
+  m_Name: barcoJugadorColisiones
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6157,19 +5876,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1855794617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597603065552178185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParteDestruida: {fileID: 0}
 --- !u!1 &7597603065573955077
 GameObject:
   m_ObjectHideFlags: 0

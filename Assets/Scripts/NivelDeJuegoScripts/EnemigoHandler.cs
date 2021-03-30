@@ -121,7 +121,7 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
-        numeroAleatorio = Random.Range(0,5);//1;//Random.Range(0,5);//para representar dificultad
+        numeroAleatorio = 1;//Random.Range(0,1);//1;//Random.Range(0,5);//para representar dificultad
         // elementoEliminar = 0;
         // print("el numero aleatorio es: " + numeroAleatorio);
 
@@ -189,6 +189,7 @@ public class EnemigoHandler : MonoBehaviour
         GameObject fuegoInstance = Instantiate(fuego);
 
         fuegoInstance.transform.position = barcoJugadorColisiones[LugarAleatorio].transform.position;
+        barcoJugadorColisiones[LugarAleatorio].GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
 
         // elementoEliminar += 1;
         barcoJugadorColisiones.RemoveAt(LugarAleatorio);
