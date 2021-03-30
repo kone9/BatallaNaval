@@ -45,6 +45,7 @@ public class MoveAndRotateBoat : MonoBehaviourPun
     /// <summary>Rota 90 grados el barco</summary>
     public void RotarBarco()
     {
+        
         transform.Rotate(new Vector3(0,0,90),Space.Self);
         direccion += 1;//relacionado a los movimientos imaginorios para rotar el barco
         if(direccion > 3)//relacionado a los movimientos imaginorios para rotar el barco
