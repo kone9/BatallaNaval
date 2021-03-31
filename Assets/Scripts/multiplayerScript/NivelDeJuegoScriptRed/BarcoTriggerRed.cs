@@ -150,6 +150,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
         fuegoPosicionEnEnemigo.z += 250;
         audio_hit_Own.Play();//activo sonido que dispara a mis barcos
         instanciarFuego(fuegoPosicionEnEnemigo);
+        this.gameObject.GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
     }
 
     /// <summary>Para que dispare el fuego en los barcos del rival, osea la pantalla de abajo</summary>
