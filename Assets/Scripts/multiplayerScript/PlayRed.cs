@@ -28,10 +28,17 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     private bool listoEnemigoRED = false;
 
 
+    GameObject musicaInicio;
+    AudioSource PuertaSonido;
+    AudioSource efectoBoton_3;
+
+
     private void Awake() 
     {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
         photonMostrar = GetComponent<PhotonView>();
+        musicaInicio = GameObject.Find("musicaInicio");
+        efectoBoton_3 = GameObject.Find("efectoBoton_3").GetComponent<AudioSource>();
         
     }
 
@@ -67,8 +74,9 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     /// <summary>Al presionar el boton verifico si soy yo o si es el otro jugador</summary>
     public void PreparadoParaIniciarEnRed()
     {
+        efectoBoton_3.Play();
         pantallaEsperaRival.SetActive(true);
-        
+        Destroy(musicaInicio);
         //para probar luego borrar
         // listoPlayerRED = true;
         // listoEnemigoRED = true;
