@@ -27,6 +27,8 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     AudioSource audio_hit_Own;//sonido hit pero para el enemigo
     AudioSource audio_sink_Own;//sonido hundio barco  para el enemigo
 
+    AudioSource SonidoGameOver;//sonido GameOver cuando termino el juego
+
     //ProbandoGithubDes
     
     private void Awake()
@@ -44,6 +46,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
 
         audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
         audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
+        SonidoGameOver = GameObject.Find("SonidoGameOver").GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -111,6 +114,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
 
             _GameHandlerRED.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
             StartCoroutine("JugadorWinner");//hago las cosas de winner
+            StartCoroutine("EnemigoLosse");//hago las cosas del enemigo Losse
         }
 
     }
@@ -130,14 +134,47 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
          _GameHandlerRED.IsTurnoEnemigo();
     }
 
-    /// <summary>hace que termine el juego</summary>
+    /// <summary>hace que termine el juego con winner para el jugador</summary>
     IEnumerator JugadorWinner()
     {  
         yield return new WaitForSeconds(2);
+        _GameHandlerRED.SetPuedoPresionarBoton(false);
         musicaJugandoContraEnemigo.Stop();
         sonidoWinner.Play();//sonido winner
         yield return new WaitForSeconds(2);//despues de 2 segundos 
         _GameHandlerRED.GameOverWinner();//cambio a nivel winner
+    }
+
+    /// <summary>Le avisa al enemigo que esta muerto. El enemigo se maneja con photon</summary>
+    IEnumerator EnemigoLosse()
+    {
+        yield return new WaitForSeconds(2);
+        _photonView.RPC("GameOverRival", //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered//ejecuto en los otros que no ganaron
+            );
+
+        yield return new WaitForSeconds(2);//despues de 2 segundos 
+        _photonView.RPC("GameOverPantalla", //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered//ejecuto en los otros que no ganaron
+            );
+    }
+
+    /// <summary>Hace que no se puedan presionar los botones, desactiva la música y activa sonido GameOver</summary>
+    [PunRPC]
+    void GameOverRival()
+    {
+        _GameHandlerRED.fondoTablero.SetActive(false);
+        _GameHandlerRED.animacionLuzDecoradoRoja.SetBool("isTurnEnemy",false);//luz que aparece con el tablero
+        _GameHandlerRED.SetPuedoPresionarBoton(false);
+        musicaJugandoContraEnemigo.Stop();
+        SonidoGameOver.Play();
+    }
+
+    /// <summary>le Avisa al rival que activa pantalla gameOver</summary>
+    [PunRPC]
+    void GameOverPantalla()
+    {
+        _GameHandlerRED.GameOverLose();
     }  
 
 

@@ -25,6 +25,9 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 
     private bool puedoPresionarBoton = true;
 
+    public GameObject ui_Winner;
+    public GameObject ui_GameOver;
+
     public Animator animacionLuzDecoradoRoja;
 
 /////////////////////////////////////////////////////////
@@ -239,13 +242,13 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     /// <summary>Cambia al nivel GameOverWinner</summary>
     public void GameOverWinner()
     {
-        SceneManager.LoadScene("YouWinner");
+       ui_Winner.SetActive(true);
     }
 
     /// <summary>Cambia al nivel GameOverLose</summary>
     public void GameOverLose()
     {
-        SceneManager.LoadScene("Youlose");
+        ui_GameOver.SetActive(true);
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
