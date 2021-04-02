@@ -3707,7 +3707,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Waiting for\n a player \nto connect"
+  m_Text: "Waiting for\n a opponent\nto connect"
 --- !u!222 &1461790609
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13715,6 +13715,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915021596}
     m_Modifications:
+    - target: {fileID: 3490102796532164730, guid: 3b1428e41094dfc418a636829825d4d7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3490102798065976874, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
       propertyPath: m_Pivot.x
