@@ -12,12 +12,14 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
     GameObject _GestorDeRed;
     PhotonView _PhotonView;
     AudioSource SonidoWinner;
+    AudioSource MusicaJugandoContraEnemigo;
 
     private void Awake()
     {
+        SonidoWinner = GameObject.Find("SonidoWinner").GetComponent<AudioSource>();
+        MusicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();
         _GestorDeRed = GameObject.Find("GestorDeRed");
         _PhotonView = GetComponent<PhotonView>();
-        SonidoWinner = GameObject.Find("SonidoWinner").GetComponent<AudioSource>();
         _GameHandlerRED = FindObjectOfType<GameHandlerRED>();
     }
     // Start is called before the first frame update
@@ -66,6 +68,7 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
     {
         print("el rival volvio al menu de inicio, aparece pantalla enemyDisconect");
         _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar boton
+        MusicaJugandoContraEnemigo.Stop();
         SonidoWinner.Play();
         Ui_EnemyDisconect.SetActive(true);//activo el enemigo
     }
