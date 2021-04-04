@@ -40,8 +40,6 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
     {  
         PhotonNetwork.Disconnect();//desconecto del sirvidor
         Destroy(GestorDeRed.instanciaRed.gameObject);//destruyo el gestor de Red
-        Destroy(GestorDeRed.instanciaRed.gameObject);
-        
         SceneManager.LoadScene("MenuInicio");//reinicio a menu de inicio
     }
 
@@ -60,7 +58,6 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
         yield return new WaitForSeconds(0.5f);
         PhotonNetwork.Disconnect();//desconecto del sirvidor
         Destroy(GestorDeRed.instanciaRed.gameObject);//destruyo el gestor de Red
-        Destroy(GestorDeRed.instanciaRed.gameObject);
         // PhotonNetwork.DestroyAll();
         SceneManager.LoadScene("MenuInicio");//reinicio a menu de inicio
     }
