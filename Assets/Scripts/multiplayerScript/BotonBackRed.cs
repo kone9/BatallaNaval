@@ -8,8 +8,9 @@ using Photon.Pun;
 public class BotonBackRed : MonoBehaviour,IPunObservable
 {
     public GameObject Ui_EnemyDisconect;
-    GameHandlerRED _GameHandlerRED;
     GameObject _GestorDeRed;
+    GameObject _DatosGlobales;
+    GameHandlerRED _GameHandlerRED;
     PhotonView _PhotonView;
     AudioSource SonidoWinner;
     AudioSource MusicaJugandoContraEnemigo;
@@ -18,9 +19,10 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
     {
         SonidoWinner = GameObject.Find("SonidoWinner").GetComponent<AudioSource>();
         MusicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();
-        _GestorDeRed = GameObject.Find("GestorDeRed");
         _PhotonView = GetComponent<PhotonView>();
         _GameHandlerRED = FindObjectOfType<GameHandlerRED>();
+        _GestorDeRed = GameObject.Find("GestorDeRed");
+        _DatosGlobales = GameObject.Find("DatosGlobales");
     }
     // Start is called before the first frame update
     void Start()
@@ -35,11 +37,11 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
     }
 
     public void VolverYDesconectarDeRed()
-    {
-        
+    {  
         PhotonNetwork.Disconnect();//desconecto del sirvidor
-        Destroy(_GestorDeRed);//destruyo el gestor de Red
-
+        Destroy(GestorDeRed.instanciaRed.gameObject);//destruyo el gestor de Red
+        Destroy(GestorDeRed.instanciaRed.gameObject);
+        
         SceneManager.LoadScene("MenuInicio");//reinicio a menu de inicio
     }
 
@@ -57,8 +59,9 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
         );
         yield return new WaitForSeconds(0.5f);
         PhotonNetwork.Disconnect();//desconecto del sirvidor
-        Destroy(_GestorDeRed);//destruyo el gestor de Red
-
+        Destroy(GestorDeRed.instanciaRed.gameObject);//destruyo el gestor de Red
+        Destroy(GestorDeRed.instanciaRed.gameObject);
+        // PhotonNetwork.DestroyAll();
         SceneManager.LoadScene("MenuInicio");//reinicio a menu de inicio
     }
 
@@ -66,7 +69,6 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
     [PunRPC]
     void PlayerDisconect()
     {
-        print("el rival volvio al menu de inicio, aparece pantalla enemyDisconect");
         _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar boton
         MusicaJugandoContraEnemigo.Stop();
         SonidoWinner.Play();
@@ -77,4 +79,6 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
     {
         
     }
+
+
 }

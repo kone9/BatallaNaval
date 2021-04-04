@@ -3555,7 +3555,7 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents: []
-  viewIdField: 4
+  viewIdField: 450
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!1 &1415218235
