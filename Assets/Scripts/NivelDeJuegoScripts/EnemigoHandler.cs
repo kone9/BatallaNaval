@@ -121,8 +121,8 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
-        // numeroAleatorio = Random.Range(0,5);//1;//Random.Range(0,5);//para representar dificultad
-        numeroAleatorio = 1;
+        numeroAleatorio = Random.Range(0,5);//1;//Random.Range(0,5);//para representar dificultad
+        // numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
 
         yield return new WaitForSeconds(1f);//por defecto uno
 
