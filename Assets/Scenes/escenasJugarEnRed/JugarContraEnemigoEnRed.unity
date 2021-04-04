@@ -212,9 +212,10 @@ GameObject:
   - component: {fileID: 5032478}
   - component: {fileID: 5032477}
   - component: {fileID: 5032480}
+  - component: {fileID: 5032481}
   - component: {fileID: 5032479}
   m_Layer: 10
-  m_Name: Colisionbarco (25)
+  m_Name: submarino_Colisiones_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,6 +306,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &5032481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812772}
 --- !u!1 &28017828
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +331,7 @@ GameObject:
   - component: {fileID: 28017831}
   - component: {fileID: 28017830}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: portaAviones_Colisiones_5
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,9 +392,10 @@ GameObject:
   - component: {fileID: 51716910}
   - component: {fileID: 51716909}
   - component: {fileID: 51716912}
+  - component: {fileID: 51716913}
   - component: {fileID: 51716911}
   m_Layer: 10
-  m_Name: Colisionbarco (23)
+  m_Name: barco_3_Colisiones_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -471,6 +486,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 5120
+--- !u!114 &51716913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51716907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812759}
 --- !u!1 &54724025
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,9 +590,10 @@ GameObject:
   - component: {fileID: 74862785}
   - component: {fileID: 74862784}
   - component: {fileID: 74862787}
+  - component: {fileID: 74862788}
   - component: {fileID: 74862786}
   m_Layer: 10
-  m_Name: Colisionbarco (18)
+  m_Name: barco_1_Colisiones_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -655,6 +684,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &74862788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74862782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812755}
 --- !u!1 &87018766
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +867,7 @@ GameObject:
   - component: {fileID: 98891820}
   - component: {fileID: 98891819}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_1_Colisiones_1
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1586,7 +1628,7 @@ GameObject:
   - component: {fileID: 302541413}
   - component: {fileID: 302541412}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_3_Colisiones_2
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1753,7 +1795,7 @@ GameObject:
   - component: {fileID: 333101727}
   - component: {fileID: 333101726}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_3_Colisiones_3
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2370,9 +2412,10 @@ GameObject:
   - component: {fileID: 464175413}
   - component: {fileID: 464175412}
   - component: {fileID: 464175415}
+  - component: {fileID: 464175416}
   - component: {fileID: 464175414}
   m_Layer: 10
-  m_Name: Colisionbarco (21)
+  m_Name: barco_3_Colisiones_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2463,6 +2506,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 5120
+--- !u!114 &464175416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464175410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812761}
 --- !u!1 &500765744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2490,8 +2546,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -33.095146, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 915021596}
   - {fileID: 1840721952}
+  - {fileID: 915021596}
   - {fileID: 1328290637}
   - {fileID: 1620081607}
   - {fileID: 2034528434}
@@ -2517,9 +2573,10 @@ GameObject:
   - component: {fileID: 504022774}
   - component: {fileID: 504022773}
   - component: {fileID: 504022776}
+  - component: {fileID: 504022777}
   - component: {fileID: 504022775}
   m_Layer: 10
-  m_Name: Colisionbarco (24)
+  m_Name: submarino_Colisiones_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2610,6 +2667,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &504022777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504022771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812773}
 --- !u!1 &523723598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2723,7 @@ GameObject:
   - component: {fileID: 551452855}
   - component: {fileID: 551452854}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: submarino_Colisiones_3
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3392,9 +3462,10 @@ GameObject:
   - component: {fileID: 615155707}
   - component: {fileID: 615155706}
   - component: {fileID: 615155709}
+  - component: {fileID: 615155710}
   - component: {fileID: 615155708}
   m_Layer: 10
-  m_Name: Colisionbarco (20)
+  m_Name: barco_3_Colisiones_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3485,6 +3556,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 5120
+--- !u!114 &615155710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615155704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812762}
 --- !u!1 &620508416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,7 +3660,7 @@ GameObject:
   - component: {fileID: 717378359}
   - component: {fileID: 717378358}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: portaAviones_Colisiones_7
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3747,7 +3831,7 @@ GameObject:
   - component: {fileID: 765777719}
   - component: {fileID: 765777718}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: portaAviones_Colisiones_2
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3808,7 +3892,7 @@ GameObject:
   - component: {fileID: 772318276}
   - component: {fileID: 772318275}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: portaAviones_Colisiones_8
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3869,9 +3953,10 @@ GameObject:
   - component: {fileID: 813590106}
   - component: {fileID: 813590105}
   - component: {fileID: 813590108}
+  - component: {fileID: 813590109}
   - component: {fileID: 813590107}
   m_Layer: 10
-  m_Name: Colisionbarco (12)
+  m_Name: portaAviones_Colisiones_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3962,6 +4047,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &813590109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813590103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812769}
 --- !u!1 &825940159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3974,7 +4072,7 @@ GameObject:
   - component: {fileID: 825940162}
   - component: {fileID: 825940161}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_2_Colisiones_1
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3992,7 +4090,7 @@ Transform:
   m_LocalScale: {x: 0.010000001, y: 0.010000003, z: 0.010000003}
   m_Children: []
   m_Father: {fileID: 1985781189}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &825940161
 Rigidbody:
@@ -4242,7 +4340,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 1920}
-  m_ScreenMatchMode: 2
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 4
   m_FallbackScreenDPI: 96
@@ -4292,8 +4390,9 @@ RectTransform:
   - {fileID: 212712197}
   - {fileID: 2038772118}
   - {fileID: 1805361873}
+  - {fileID: 1989812752}
   m_Father: {fileID: 500765745}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4312,7 +4411,7 @@ GameObject:
   - component: {fileID: 920824088}
   - component: {fileID: 920824087}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: portaAviones_Colisiones_6
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4373,9 +4472,10 @@ GameObject:
   - component: {fileID: 946848140}
   - component: {fileID: 946848139}
   - component: {fileID: 946848142}
+  - component: {fileID: 946848143}
   - component: {fileID: 946848141}
   m_Layer: 10
-  m_Name: Colisionbarco (17)
+  m_Name: portaAviones_Colisiones_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4466,6 +4566,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &946848143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946848137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812764}
 --- !u!1 &949504323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,7 +4591,7 @@ GameObject:
   - component: {fileID: 949504326}
   - component: {fileID: 949504325}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: submarino_Colisiones_4
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4564,7 +4677,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4954,9 +5067,10 @@ GameObject:
   - component: {fileID: 990105525}
   - component: {fileID: 990105524}
   - component: {fileID: 990105527}
+  - component: {fileID: 990105528}
   - component: {fileID: 990105526}
   m_Layer: 10
-  m_Name: Colisionbarco (13)
+  m_Name: portaAviones_Colisiones_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5047,6 +5161,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &990105528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990105522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812768}
 --- !u!1 &998240224
 GameObject:
   m_ObjectHideFlags: 0
@@ -5217,9 +5344,10 @@ GameObject:
   - component: {fileID: 1029309095}
   - component: {fileID: 1029309094}
   - component: {fileID: 1029309097}
+  - component: {fileID: 1029309098}
   - component: {fileID: 1029309096}
   m_Layer: 10
-  m_Name: Colisionbarco (19)
+  m_Name: barco_1_Colisiones_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5310,6 +5438,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1029309098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029309092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812754}
 --- !u!1 &1033820539
 GameObject:
   m_ObjectHideFlags: 0
@@ -5322,9 +5463,10 @@ GameObject:
   - component: {fileID: 1033820542}
   - component: {fileID: 1033820541}
   - component: {fileID: 1033820544}
+  - component: {fileID: 1033820545}
   - component: {fileID: 1033820543}
   m_Layer: 10
-  m_Name: Colisionbarco (17)
+  m_Name: barco_2_Colisiones_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5415,6 +5557,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1033820545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033820539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812756}
 --- !u!1 &1060198921
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,9 +5661,10 @@ GameObject:
   - component: {fileID: 1065561263}
   - component: {fileID: 1065561262}
   - component: {fileID: 1065561265}
+  - component: {fileID: 1065561266}
   - component: {fileID: 1065561264}
   m_Layer: 10
-  m_Name: Colisionbarco (27)
+  m_Name: submarino_Colisiones_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5599,6 +5755,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1065561266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065561260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812770}
 --- !u!1 &1075413430
 GameObject:
   m_ObjectHideFlags: 0
@@ -5838,7 +6007,7 @@ GameObject:
   - component: {fileID: 1130245775}
   - component: {fileID: 1130245774}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: portaAviones_Colisiones_3
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6057,9 +6226,10 @@ GameObject:
   - component: {fileID: 1182939616}
   - component: {fileID: 1182939615}
   - component: {fileID: 1182939618}
+  - component: {fileID: 1182939619}
   - component: {fileID: 1182939617}
   m_Layer: 10
-  m_Name: Colisionbarco (16)
+  m_Name: portaAviones_Colisiones_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6150,6 +6320,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1182939619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182939613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812765}
 --- !u!1 &1223826323
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,7 +6736,7 @@ GameObject:
   - component: {fileID: 1272498021}
   - component: {fileID: 1272498020}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: submarino_Colisiones_2
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6689,7 +6872,7 @@ GameObject:
   - component: {fileID: 1291095413}
   - component: {fileID: 1291095412}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_2_Colisiones_2
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7147,9 +7330,10 @@ GameObject:
   - component: {fileID: 1386326823}
   - component: {fileID: 1386326822}
   - component: {fileID: 1386326825}
+  - component: {fileID: 1386326826}
   - component: {fileID: 1386326824}
   m_Layer: 10
-  m_Name: Colisionbarco (14)
+  m_Name: portaAviones_Colisiones_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7240,6 +7424,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1386326826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386326820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812767}
 --- !u!1 &1441995104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7252,7 +7449,7 @@ GameObject:
   - component: {fileID: 1441995107}
   - component: {fileID: 1441995106}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_2_Colisiones_3
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7270,7 +7467,7 @@ Transform:
   m_LocalScale: {x: 0.010000001, y: 0.010000003, z: 0.010000003}
   m_Children: []
   m_Father: {fileID: 1985781189}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1441995106
 Rigidbody:
@@ -7633,9 +7830,10 @@ GameObject:
   - component: {fileID: 1508536783}
   - component: {fileID: 1508536782}
   - component: {fileID: 1508536785}
+  - component: {fileID: 1508536786}
   - component: {fileID: 1508536784}
   m_Layer: 10
-  m_Name: Colisionbarco (16)
+  m_Name: barco_2_Colisiones_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7726,6 +7924,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1508536786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508536780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812757}
 --- !u!1 &1512854556
 GameObject:
   m_ObjectHideFlags: 0
@@ -8290,7 +8501,7 @@ GameObject:
   - component: {fileID: 1599381184}
   - component: {fileID: 1599381183}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_3_Colisiones_4
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8441,6 +8652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1622875640}
   - component: {fileID: 1622875642}
+  - component: {fileID: 1622875641}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -8462,6 +8674,19 @@ Transform:
   m_Father: {fileID: 1316119819}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 60.6, y: -38.7, z: 0}
+--- !u!114 &1622875641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622875639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806f668f74e97504085abf825181c4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1622875642}
 --- !u!20 &1622875642
 Camera:
   m_ObjectHideFlags: 0
@@ -8482,9 +8707,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0.35
-    y: 0.606
+    y: 0.59
     width: 0.58
-    height: 0.31
+    height: 0.32
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8750,7 +8975,7 @@ GameObject:
   - component: {fileID: 1663942103}
   - component: {fileID: 1663942102}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_1_Colisiones_2
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8811,9 +9036,10 @@ GameObject:
   - component: {fileID: 1667069587}
   - component: {fileID: 1667069586}
   - component: {fileID: 1667069589}
+  - component: {fileID: 1667069590}
   - component: {fileID: 1667069588}
   m_Layer: 10
-  m_Name: Colisionbarco (15)
+  m_Name: barco_1_Colisiones_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8904,6 +9130,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1667069590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667069584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812753}
 --- !u!1 &1676464157
 GameObject:
   m_ObjectHideFlags: 0
@@ -8916,9 +9155,10 @@ GameObject:
   - component: {fileID: 1676464160}
   - component: {fileID: 1676464159}
   - component: {fileID: 1676464162}
+  - component: {fileID: 1676464163}
   - component: {fileID: 1676464161}
   m_Layer: 10
-  m_Name: Colisionbarco (26)
+  m_Name: submarino_Colisiones_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9009,6 +9249,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1676464163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676464157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812771}
 --- !u!1 &1691007462
 GameObject:
   m_ObjectHideFlags: 0
@@ -9021,7 +9274,7 @@ GameObject:
   - component: {fileID: 1691007465}
   - component: {fileID: 1691007464}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: submarino_Colisiones_1
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9354,7 +9607,7 @@ GameObject:
   - component: {fileID: 1726472867}
   - component: {fileID: 1726472866}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: portaAviones_Colisiones_4
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9415,9 +9668,10 @@ GameObject:
   - component: {fileID: 1738816713}
   - component: {fileID: 1738816712}
   - component: {fileID: 1738816715}
+  - component: {fileID: 1738816716}
   - component: {fileID: 1738816714}
   m_Layer: 10
-  m_Name: Colisionbarco (22)
+  m_Name: barco_3_Colisiones_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9508,6 +9762,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 5120
+--- !u!114 &1738816716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738816710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812760}
 --- !u!1 &1755430800
 GameObject:
   m_ObjectHideFlags: 0
@@ -9599,7 +9866,7 @@ GameObject:
   - component: {fileID: 1778247071}
   - component: {fileID: 1778247070}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: portaAviones_Colisiones_1
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9969,7 +10236,7 @@ Transform:
   - {fileID: 1998530763}
   - {fileID: 1316119819}
   m_Father: {fileID: 500765745}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1848812156
 GameObject:
@@ -10376,8 +10643,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 873835504, guid: b6b1292117b0bcd4fb056237e6b1ff3d, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 873835504, guid: b6b1292117b0bcd4fb056237e6b1ff3d, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9182628058279682748, guid: b6b1292117b0bcd4fb056237e6b1ff3d,
         type: 3}
@@ -10606,7 +10877,7 @@ GameObject:
   - component: {fileID: 1946157622}
   - component: {fileID: 1946157621}
   m_Layer: 0
-  m_Name: barcoJugadorColisiones
+  m_Name: barco_3_Colisiones_1
   m_TagString: barcoJugadorColisiones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15601,9 +15872,9 @@ Transform:
   - {fileID: 1471779556}
   - {fileID: 54724026}
   - {fileID: 582227747}
-  - {fileID: 1441995105}
-  - {fileID: 1291095411}
   - {fileID: 825940160}
+  - {fileID: 1291095411}
+  - {fileID: 1441995105}
   m_Father: {fileID: 591326169}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15654,6 +15925,418 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985781188}
   m_Mesh: {fileID: -7859769766833144550, guid: 7063a574a58637d4685ce0d33b812bee, type: 3}
+--- !u!1001 &1989812751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 915021596}
+    m_Modifications:
+    - target: {fileID: 7198350477986744827, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478190441675, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478277211608, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478390111347, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169482, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Name
+      value: PiezasEstadoDestruidasImagenes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350478444391253, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350479478495667, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198350479591749089, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d82eeddc91b41a458ab26e1dbfe5333, type: 3}
+--- !u!224 &1989812752 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7198350478392169483, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1989812753 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478277211608, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478179515054, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479721220935, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812756 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478190441675, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812757 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478174123391, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812758 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350477966606697, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350477986744827, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479050512385, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479368156093, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812762 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478444391253, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812763 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478673472475, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479506247784, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812765 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478573440711, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812766 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478114731040, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812767 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478381227522, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812768 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479675744204, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479478495667, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479591749089, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479603566669, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812772 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350479934952171, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989812773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7198350478390111347, guid: 6d82eeddc91b41a458ab26e1dbfe5333,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989812751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1995689569
 GameObject:
   m_ObjectHideFlags: 0
@@ -15666,9 +16349,10 @@ GameObject:
   - component: {fileID: 1995689572}
   - component: {fileID: 1995689571}
   - component: {fileID: 1995689574}
+  - component: {fileID: 1995689575}
   - component: {fileID: 1995689573}
   m_Layer: 10
-  m_Name: Colisionbarco (18)
+  m_Name: portaAviones_Colisiones_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15759,6 +16443,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1995689575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995689569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812763}
 --- !u!1 &1998530762
 GameObject:
   m_ObjectHideFlags: 0
@@ -15912,9 +16609,10 @@ GameObject:
   - component: {fileID: 2021147752}
   - component: {fileID: 2021147751}
   - component: {fileID: 2021147754}
+  - component: {fileID: 2021147755}
   - component: {fileID: 2021147753}
   m_Layer: 10
-  m_Name: Colisionbarco (15)
+  m_Name: portaAviones_Colisiones_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16005,6 +16703,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &2021147755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021147749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812766}
 --- !u!4 &2034528434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2272484751275663074, guid: c7fc8cb1b72cf544fbac3fae12ddc06c,
@@ -16270,9 +16981,10 @@ GameObject:
   - component: {fileID: 2097705185}
   - component: {fileID: 2097705184}
   - component: {fileID: 2097705187}
+  - component: {fileID: 2097705188}
   - component: {fileID: 2097705186}
   m_Layer: 10
-  m_Name: Colisionbarco (19)
+  m_Name: portaAviones_Colisiones_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16363,6 +17075,19 @@ MonoBehaviour:
   isOverlapper:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &2097705188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097705182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00813659762e9334099bdf5dd1a5456c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParteDestruida: {fileID: 1989812758}
 --- !u!1 &2137827175
 GameObject:
   m_ObjectHideFlags: 0
