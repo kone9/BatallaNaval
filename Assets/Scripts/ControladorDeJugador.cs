@@ -2,8 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using UnityEngine.UI;
 
 public class ControladorDeJugador : MonoBehaviour
 {
@@ -18,6 +17,8 @@ public class ControladorDeJugador : MonoBehaviour
     AudioSource efectoBoton_2;
     AudioSource PuertaSonido;
 
+    public Button botonAuto;//referencia al boton
+    public Button BotonPlay;//referencia al boton
 	// private void OnEnable()
 	// {
     //     GestorDeRed.OnPlayersConnected += EnableMovement;
@@ -65,8 +66,7 @@ public class ControladorDeJugador : MonoBehaviour
 
             if(Input.GetMouseButtonUp(0))// si suelto el click izquierdo
             {
-                DejarDeMover();//verifico que no esten los barcos colisionando
-                PuertaSonido.Play();
+                StartCoroutine( DejarDeMover() );//verifico que no esten los barcos colisionando
             }
         }
 
@@ -102,7 +102,7 @@ public class ControladorDeJugador : MonoBehaviour
                 if (_GameHandlerAcomodarPIezas.inGrid(_MoveAndRotateBoat.lengthBarco, _MoveAndRotateBoat.lenghtBarcoDerecha, _MoveAndRotateBoat.lenghtBarcoIzquierda, (_MoveAndRotateBoat.direccion + 1) % 4, _MoveAndRotateBoat.X_posicion_imaginaria, _MoveAndRotateBoat.Y_posicion_imaginaria))
                 {
                     _MoveAndRotateBoat.RotarBarco();
-                    DejarDeMover();//si se superpone la rotación se acomoda en cualquier lugar
+                    StartCoroutine( DejarDeMover() );//si se superpone la rotación se acomoda en cualquier lugar activa sonido barco acomodado
                 }
                     
             }
@@ -112,16 +112,26 @@ public class ControladorDeJugador : MonoBehaviour
 
 
     /// <summary>Verifica que no existan dos barcos colisionandose, si se colisionan se reacomodan en un lugar aleatorio</summary>
-    void DejarDeMover()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
+    IEnumerator DejarDeMover()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
     {
         if(_MoveAndRotateBoat.EstaChocandoContraOtroBarco())
         {
             puedoMover = false;
-            StartCoroutine(_MoveAndRotateBoat.PosicionarBarcoAleatoriamenteSinColisionarConOtros());
-            PuertaSonido.Play();
+            Coroutine tiempoEspera = StartCoroutine(_MoveAndRotateBoat.PosicionarBarcoAleatoriamenteSinColisionarConOtros());
+            botonAuto.interactable = false;//no puedo tocar el boton
+            BotonPlay.interactable = false;//no puedo tocar el boton
+            yield return tiempoEspera;
+
+            botonAuto.interactable = true;//no puedo tocar el boton
+            BotonPlay.interactable = true;//no puedo tocar el boton
+            PuertaSonido.Play();//activo sonido
             // _MoverYrotar.PosicionarBarcoAleatoriamenteSinColisionarConOtros();
         }
-        puedoMover = false;
+        else
+        {
+            puedoMover = false;
+            PuertaSonido.Play();
+        }
     }
 
 

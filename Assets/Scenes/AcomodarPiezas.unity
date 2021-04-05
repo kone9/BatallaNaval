@@ -2508,6 +2508,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834920815}
   m_Mesh: {fileID: 78955963208986748, guid: c19f8961c0a0490daceaf860e200a047, type: 3}
+--- !u!114 &847277715 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2115690587300929516, guid: 864628b1f388f9d47bea9ef41d354212,
+    type: 3}
+  m_PrefabInstance: {fileID: 404514246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &867406499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13067,6 +13079,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: GridConBarcosAcomodarBarcos
       objectReference: {fileID: 0}
+    - target: {fileID: 6782542484553786875, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: BotonPlay
+      value: 
+      objectReference: {fileID: 487407321}
+    - target: {fileID: 6782542484553786875, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: botonAuto
+      value: 
+      objectReference: {fileID: 847277715}
+    - target: {fileID: 6782542484926645563, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: BotonPlay
+      value: 
+      objectReference: {fileID: 487407321}
+    - target: {fileID: 6782542484926645563, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: botonAuto
+      value: 
+      objectReference: {fileID: 847277715}
+    - target: {fileID: 6782542485106221286, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: BotonPlay
+      value: 
+      objectReference: {fileID: 487407321}
+    - target: {fileID: 6782542485106221286, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: botonAuto
+      value: 
+      objectReference: {fileID: 847277715}
+    - target: {fileID: 6782542485406223508, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: BotonPlay
+      value: 
+      objectReference: {fileID: 487407321}
+    - target: {fileID: 6782542485406223508, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: botonAuto
+      value: 
+      objectReference: {fileID: 847277715}
+    - target: {fileID: 7387029874331217228, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: BotonPlay
+      value: 
+      objectReference: {fileID: 487407321}
+    - target: {fileID: 7387029874331217228, guid: 596d05538dca54248b781bf968e768b6,
+        type: 3}
+      propertyPath: botonAuto
+      value: 
+      objectReference: {fileID: 847277715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 596d05538dca54248b781bf968e768b6, type: 3}
 --- !u!4 &5996637783109202668
