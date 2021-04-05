@@ -56,6 +56,7 @@ public class BotonBackRed : MonoBehaviour,IPunObservable
             RpcTarget.OthersBuffered
         );
         yield return new WaitForSeconds(0.5f);
+        
         PhotonNetwork.Disconnect();//desconecto del sirvidor
         Destroy(GestorDeRed.instanciaRed.gameObject);//destruyo el gestor de Red
         // PhotonNetwork.DestroyAll();
