@@ -15,12 +15,16 @@ public class Play : MonoBehaviour
     AudioSource PuertaSonido;
     AudioSource efectoBoton_3;
     AudioSource efectoBoton_2;
+    private GameObject _HandlerDificultadEntreNiveles;//para referencia a la dificultad entre niveles
+    private GameObject _DatosGlobales;
 
     private void Awake() {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
         musicaInicio = GameObject.Find("musicaInicio");
         efectoBoton_3 = GameObject.Find("efectoBoton_3").GetComponent<AudioSource>();
         efectoBoton_2 = GameObject.Find("efectoBoton_2").GetComponent<AudioSource>();
+        _HandlerDificultadEntreNiveles = GameObject.Find("HandlerDificultadEntreNiveles");//para obtener la referencía al script
+        _DatosGlobales = GameObject.Find("DatosGlobales");
     }
     // Start is called before the first frame update
     void Start()
@@ -55,11 +59,12 @@ public class Play : MonoBehaviour
         //destruyo la musica inicio
         Destroy(musicaInicio);
 
+        //SACO ESTO POR UN MINUTO VOLVER A COLOCARLO LUEGO DE VERIFICARLOS NIVELES
         //coloco cartel esperando enemigo
-        imagenEsperandoEnemigo.SetActive(true);
-        yield return new WaitForSeconds(2);
+        // imagenEsperandoEnemigo.SetActive(true);
+        // yield return new WaitForSeconds(2);
         //Presiono boton automatico para volver a acomodar y luego guardo las posiciones 
-        StartCoroutine(_botonAuto.PosicionarBarcoAleatoriamente());//vuelvo a posicionar los barcos
+        // StartCoroutine(_botonAuto.PosicionarBarcoAleatoriamente());//vuelvo a posicionar los barcos
         yield return new WaitForSeconds(1);
 
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcosEnemigos();//guardo sus posiciones
@@ -72,7 +77,9 @@ public class Play : MonoBehaviour
     /// <summary>Vuelve a la escena de Inicio</summary>
     public void Volver()
     {
-        SceneManager.LoadScene("MenuInicio");
+        Destroy(_HandlerDificultadEntreNiveles);//destruyo el _handler entre niveles que maneja dificultad y nivel actual
+        Destroy(_DatosGlobales);//destruyo los datos globales
+        SceneManager.LoadScene("MenuInicio");//cambio a menu de inicio
     }
 
     

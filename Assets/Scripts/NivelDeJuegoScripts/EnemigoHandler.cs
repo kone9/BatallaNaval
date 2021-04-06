@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemigoHandler : MonoBehaviour
 {
-    public GameObject fuego;
+    public GameObject fuego; //para instanciar fuego
     public int cantidadDeAciertosEnemigo;
     // private GameObject[] barcoJugadorColisiones;
     List<GameObject> barcoJugadorColisiones = new List<GameObject>();//listo de los barcos
@@ -22,6 +22,8 @@ public class EnemigoHandler : MonoBehaviour
     AudioSource musicaJugandoContraEnemigo;
     AudioSource sonidoGameOver;
 
+    private HandlerDificultadEntreNiveles _HandlerDificultadEntreNiveles;//para referencia a la dificultad entre niveles
+
     private void Awake()
     {
         barcoJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("barcoJugadorColisiones"));//referencia a todos los barcos guardados en una lista
@@ -33,6 +35,8 @@ public class EnemigoHandler : MonoBehaviour
         audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");
         musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();
         sonidoGameOver = GameObject.Find("SonidoGameOver").GetComponent<AudioSource>();
+
+        _HandlerDificultadEntreNiveles = FindObjectOfType<HandlerDificultadEntreNiveles>();//para obtener la referencía al script
 
         StartCoroutine("BuscarCuadriculaColisionJugador");//Busca las cuadriculas despues de un tiempo ya que deshabilito algunos
 
@@ -121,7 +125,7 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
-        numeroAleatorio = Random.Range(0,5);//1;//Random.Range(0,5);//para representar dificultad
+        numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultad);//1;//Random.Range(0,5);//para representar dificultad
         // numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
 
         yield return new WaitForSeconds(1f);//por defecto uno
@@ -157,6 +161,8 @@ public class EnemigoHandler : MonoBehaviour
             yield return new WaitForSeconds(2);//despues de 2 segundos 
             _Gamehandler.fondoTablero.SetActive(false);
             _Gamehandler.GameOverLose();//es game
+            //cambia al proximo nivel o muestra que es GameOVer
+
         }
     }
 
