@@ -9237,6 +9237,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3490102797972401801, guid: 3b1428e41094dfc418a636829825d4d7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3490102798065976874, guid: 3b1428e41094dfc418a636829825d4d7,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9346,6 +9351,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EfectosVisualesUi
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490102798248684592, guid: 3b1428e41094dfc418a636829825d4d7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490102798248684594, guid: 3b1428e41094dfc418a636829825d4d7,
+        type: 3}
+      propertyPath: m_Text
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b1428e41094dfc418a636829825d4d7, type: 3}

@@ -14,11 +14,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     public GameObject pantallaEsperaRival;
     private PhotonView photonMostrar;
 
-    public Toggle soyJugadorToggle;
-    public Toggle soyEnemigoToggle;
-
-    public Toggle ListoJugadorRedToglle;
-    public Toggle ListoEnemigoRedToglle;
 
     public int tiempoAntesDeCambiarEscena = 5;
    
@@ -47,8 +42,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     {
         listoPlayerRED = false;
         listoEnemigoRED = false;
-        ListoJugadorRedToglle.isOn = listoPlayerRED;
-        ListoEnemigoRedToglle.isOn = listoEnemigoRED;
     }
     
 
@@ -95,15 +88,10 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         if(isMine)//si soy jugador "YO"
         { 
             listoPlayerRED = true;
-            
-            ListoJugadorRedToglle.isOn = listoPlayerRED;
-            ListoEnemigoRedToglle.isOn = listoEnemigoRED;
         }
         if(!isMine)//si soy enemigo " NO YO "
         {
             listoEnemigoRED = true;
-            ListoJugadorRedToglle.isOn = listoPlayerRED;
-            ListoEnemigoRedToglle.isOn = listoEnemigoRED;
         }
     }
 
