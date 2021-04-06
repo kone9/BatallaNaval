@@ -89,13 +89,15 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     void Start()
     {
         AcomodarLosBarcos();//acomoda los barcos del jugador en la pantalla de arriba
-        StartCoroutine("cargarBarcosRivalRed");//carga las posiciones de los barcos desde la red
+        // StartCoroutine("cargarBarcosRivalRed");//carga las posiciones de los barcos desde la red
+        cargarBarcosRivalRed();
     }
 
     /// <summary>carga las posiciones de los barcos desde la red</summary>
-    IEnumerator cargarBarcosRivalRed()
+    void cargarBarcosRivalRed()
     {
-        yield return new WaitForSeconds(1);
+        // yield return new WaitForSeconds(0);
+        // yield return null;
         photonView.RPC("PosicionarBarcosDelEnemigo", //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered,//para obtener los parámetros de otros
                 _DatosGlobales.Posicion_barco_1,//Posicion del barco enemigo enviado por parametro
