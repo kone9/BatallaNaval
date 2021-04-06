@@ -17,7 +17,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
 
     public int tiempoAntesDeCambiarEscena = 5;
    
-
     private bool listoPlayerRED = false;
 
     private bool listoEnemigoRED = false;
