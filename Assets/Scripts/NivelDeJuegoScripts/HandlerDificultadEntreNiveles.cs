@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class HandlerDificultadEntreNiveles : MonoBehaviour
 {
-    public int dificultad = 5;
+    [Header("Dificultad Settings")]
+    [Tooltip("cuanto mayor es el número, menos es la posibilidad de acierto del enemigo, por lo tanto es mas facil")]
+    public int dificultadPosibilidadDeAcierto = 5;//cuanto mayor es el número menos es la posibilidad de acierto
 
+    [Header("Nivel Settings")]
+    [Tooltip("cuanto mayor es el número más posibilidades de terminar el juego")]
     public int nivelActual = 1;
 
     public static HandlerDificultadEntreNiveles instanciaGlobalScript;

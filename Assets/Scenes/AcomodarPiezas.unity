@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38da31518ee4eb44b797f06bdcd008b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dificultad: 5
+  dificultadPosibilidadDeAcierto: 5
   nivelActual: 1
 --- !u!4 &211302421
 Transform:

@@ -228,7 +228,7 @@ public class Gamehandler : MonoBehaviour
     public void CambiarAlProximoNivel()
     {
         SetPuedoPresionarBoton(false);//no puedo presionar boton
-        _HandlerDificultadEntreNiveles.dificultad -= 1;//aumento dificultad. la dificultad aumenta cuando baja la probabilidad de no acertar
+        _HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto -= 1;//aumento dificultad. la dificultad aumenta cuando baja la probabilidad de no acertar
         _HandlerDificultadEntreNiveles.nivelActual += 1;//aumento el nivel
         GameObject datosGlobalesActuales =  GameObject.Find("DatosGlobales");// busco los datos globales
         Destroy(datosGlobalesActuales);// destruyo los datos globales, es un game object que no se autodestruye
