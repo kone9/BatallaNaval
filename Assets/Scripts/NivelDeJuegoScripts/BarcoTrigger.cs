@@ -137,9 +137,20 @@ public class BarcoTrigger : MonoBehaviour
         yield return new WaitForSeconds(2);//espero 2 segundos
         musicaJugandoContraEnemigo.Stop();//detengo la música
         sonidoWinner.Play();//sonido winner
-        yield return new WaitForSeconds(2);//despues de 5 segundos 
+        yield return new WaitForSeconds(2f);//despues de 5 segundos 
         _Gamehandler.UI_CambiarNivel.SetActive(true);//activo fondo
-        yield return new WaitForSeconds(4);//despues de 5 segundos 
+        yield return new WaitForSeconds(1.4f);//despues de 5 segundos 
+        ///Para la barra de carga uso un contador
+        float barraCarga = 0;
+        while(barraCarga < 1)
+        {
+            _Gamehandler.barraCargaCambiarNivel.size = barraCarga;
+            yield return new WaitForSeconds(0.04f);//espero 0.4 segundos, son 10 por lo tanto son 4 segundos
+            barraCarga += 0.01f;
+        }
+        _Gamehandler.barraCargaCambiarNivel.size = 1;//hago que la barra llegue a 1
+        yield return new WaitForSeconds(1f);//espero 0.1 segundos
+        // yield return new WaitForSeconds(4);//despues de 5 segundos 
         _Gamehandler.CambiarAlProximoNivel();//cambio a nivel winner
     }    
 

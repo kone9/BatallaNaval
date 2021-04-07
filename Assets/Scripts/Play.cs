@@ -62,7 +62,14 @@ public class Play : MonoBehaviour
         //SACO ESTO POR UN MINUTO VOLVER A COLOCARLO LUEGO DE VERIFICARLOS NIVELES
         //coloco cartel esperando enemigo
         imagenEsperandoEnemigo.SetActive(true);//activo la imagen de fondo
-        GameObject.Find("nivelTextInfo").GetComponent<Text>().text = "nivel " +  GameObject.FindObjectOfType<HandlerDificultadEntreNiveles>().nivelActual; //pongo el texto del nivel actual
+        if(GameObject.FindObjectOfType<HandlerDificultadEntreNiveles>().nivelActual <= 3)
+        {
+            GameObject.Find("nivelTextInfo").GetComponent<Text>().text = "level " +  GameObject.FindObjectOfType<HandlerDificultadEntreNiveles>().nivelActual; //pongo el texto del nivel actual
+        }
+        else
+        {
+            GameObject.Find("nivelTextInfo").GetComponent<Text>().text = "final level "; //pongo el texto del nivel actual
+        }
         yield return new WaitForSeconds(2);//espero 2 segundos para acomodar los barcos
         //Presiono boton automatico para volver a acomodar y luego guardo las posiciones
         Coroutine EsperarHastaAcomodarBarcos =  StartCoroutine(_botonAuto.PosicionarBarcoAleatoriamente());//vuelvo a posicionar los barcos

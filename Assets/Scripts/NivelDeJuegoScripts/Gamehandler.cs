@@ -63,7 +63,7 @@ public class Gamehandler : MonoBehaviour
 
     private HandlerDificultadEntreNiveles _HandlerDificultadEntreNiveles;//para referencia a la dificultad entre niveles
 
-
+    public Scrollbar barraCargaCambiarNivel;
 
 //////////////////////////////////////////////////////    
 
