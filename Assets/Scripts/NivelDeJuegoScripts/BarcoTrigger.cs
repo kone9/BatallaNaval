@@ -137,8 +137,9 @@ public class BarcoTrigger : MonoBehaviour
         yield return new WaitForSeconds(2);//espero 2 segundos
         musicaJugandoContraEnemigo.Stop();//detengo la música
         sonidoWinner.Play();//sonido winner
+        yield return new WaitForSeconds(2);//despues de 5 segundos 
         _Gamehandler.UI_CambiarNivel.SetActive(true);//activo fondo
-        yield return new WaitForSeconds(5);//despues de 5 segundos 
+        yield return new WaitForSeconds(4);//despues de 5 segundos 
         _Gamehandler.CambiarAlProximoNivel();//cambio a nivel winner
     }    
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class Play : MonoBehaviour
 {
@@ -35,14 +35,14 @@ public class Play : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     /// <summary>Cambia a la escena principal de juego con el boton</summary>
     public void CambiarDeEscena()//Script para cambiar a la escena principal
     {
-        
-        StartCoroutine("acomodarBarcosParaCambiarDeNivel");  
+
+        StartCoroutine("acomodarBarcosParaCambiarDeNivel");
     }
 
 
@@ -61,15 +61,16 @@ public class Play : MonoBehaviour
 
         //SACO ESTO POR UN MINUTO VOLVER A COLOCARLO LUEGO DE VERIFICARLOS NIVELES
         //coloco cartel esperando enemigo
-        // imagenEsperandoEnemigo.SetActive(true);
-        // yield return new WaitForSeconds(2);
-        //Presiono boton automatico para volver a acomodar y luego guardo las posiciones 
-        // StartCoroutine(_botonAuto.PosicionarBarcoAleatoriamente());//vuelvo a posicionar los barcos
-        yield return new WaitForSeconds(1);
+        imagenEsperandoEnemigo.SetActive(true);//activo la imagen de fondo
+        GameObject.Find("nivelTextInfo").GetComponent<Text>().text = "nivel " +  GameObject.FindObjectOfType<HandlerDificultadEntreNiveles>().nivelActual; //pongo el texto del nivel actual
+        yield return new WaitForSeconds(2);//espero 2 segundos para acomodar los barcos
+        //Presiono boton automatico para volver a acomodar y luego guardo las posiciones
+        Coroutine EsperarHastaAcomodarBarcos =  StartCoroutine(_botonAuto.PosicionarBarcoAleatoriamente());//vuelvo a posicionar los barcos
+        yield return EsperarHastaAcomodarBarcos;//espero 1 segundo
 
         _GameHandlerAcomodarPIezas.GuardarPosicionBarcosEnemigos();//guardo sus posiciones
         _GameHandlerAcomodarPIezas.GuardarRotacionesBarcosEnemigo();//guardo sus posiciones
-        SceneManager.LoadScene("JugarContraEnemigo");
+        SceneManager.LoadScene("JugarContraEnemigo");//cargo la escena jugar contra enemigo
     }
 
 
@@ -82,6 +83,6 @@ public class Play : MonoBehaviour
         SceneManager.LoadScene("MenuInicio");//cambio a menu de inicio
     }
 
-    
+
 
 }
