@@ -15400,6 +15400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ui_GameOver
       objectReference: {fileID: 0}
+    - target: {fileID: 6432175249366434696, guid: fa69f432971cdb946a4c1f8e106aef7b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6432175249366434703, guid: fa69f432971cdb946a4c1f8e106aef7b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -15945,6 +15950,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915021596}
     m_Modifications:
+    - target: {fileID: 832224707762416548, guid: 9a1415c650d8436408b005d6183c128f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538780567917635123, guid: 9a1415c650d8436408b005d6183c128f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391587728864587273, guid: 9a1415c650d8436408b005d6183c128f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8391587729713230953, guid: 9a1415c650d8436408b005d6183c128f,
         type: 3}
       propertyPath: m_Pivot.x
