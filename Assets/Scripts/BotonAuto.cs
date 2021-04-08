@@ -37,16 +37,18 @@ public class BotonAuto : MonoBehaviour
     {
         this.GetComponent<Button>().interactable = false;//no puedo tocar el boton
         play.interactable = false;//deshabilita el boton
-        
         for (int i = 0; i < 5; i++)//Solo funciona hasta 3 tengo..No funciona portaAviones, ni submarino
         {
             GameObject barcoActual = barcos[i];
 
-            StartCoroutine(barcoActual.GetComponent<MoveAndRotateBoat>().PosicionarBarcoAleatoriamenteSinColisionarConOtros());    
+            Coroutine tiempoEspera = StartCoroutine(barcoActual.GetComponent<MoveAndRotateBoat>().PosicionarBarcoAleatoriamenteSinColisionarConOtros());//acomodo los barcos, ojo usa una corrutina, sino hay un bug grave de superposición de los barcos que hace que se acomoden mal    
+            
+            yield return tiempoEspera;//espera hasta que se cumpla la corrutina que esta arriba
         }
         
-        yield return new WaitForSeconds(1f);
+        // yield return new WaitForSeconds(1.0f);
         this.GetComponent<Button>().interactable = true;//puedo volver a tocar el boton
         play.interactable = true;//habilita el boton
     }
+
 }

@@ -57,7 +57,13 @@ public class Gamehandler : MonoBehaviour
     public GameObject UI_GameOver;
     public GameObject UI_Winner;
 
-    //TEST PARA SUBIR A RAMA ARIEL
+    public GameObject UI_CambiarNivel;
+
+    //////////////////////////////////////////////////
+
+    private HandlerDificultadEntreNiveles _HandlerDificultadEntreNiveles;//para referencia a la dificultad entre niveles
+
+    public Scrollbar barraCargaCambiarNivel;
 
 //////////////////////////////////////////////////////    
 
@@ -67,6 +73,7 @@ public class Gamehandler : MonoBehaviour
         _EnemigoHandler = FindObjectOfType<EnemigoHandler>();
         barcos = GameObject.FindGameObjectsWithTag("boat");
         barcosGrilla = GameObject.FindGameObjectsWithTag("barcosGrilla");
+        _HandlerDificultadEntreNiveles = GameObject.FindObjectOfType<HandlerDificultadEntreNiveles>();
         buscarBarcos();
     }
 
@@ -215,6 +222,17 @@ public class Gamehandler : MonoBehaviour
     {
         SetPuedoPresionarBoton(false);//no puedo presionar botones
         UI_GameOver.SetActive(true);
+    }
+
+    /// <summary>Cambia al Proximo nivel</summary>
+    public void CambiarAlProximoNivel()
+    {
+        SetPuedoPresionarBoton(false);//no puedo presionar boton
+        _HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto -= 1;//aumento dificultad. la dificultad aumenta cuando baja la probabilidad de no acertar
+        _HandlerDificultadEntreNiveles.nivelActual += 1;//aumento el nivel
+        GameObject datosGlobalesActuales =  GameObject.Find("DatosGlobales");// busco los datos globales
+        Destroy(datosGlobalesActuales);// destruyo los datos globales, es un game object que no se autodestruye
+        SceneManager.LoadScene("AcomodarPiezas");//vuelvo a cambiar a la escena acomodar piezas
     }
 
 }

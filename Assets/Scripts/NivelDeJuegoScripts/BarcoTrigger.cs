@@ -21,10 +21,16 @@ public class BarcoTrigger : MonoBehaviour
 
     GameObject[] sonidoBarcoEnemigoDestruido;
     AudioSource musicaJugandoContraEnemigo;
+
+    private HandlerDificultadEntreNiveles _HandlerDificultadEntreNiveles;//para referencia a la dificultad entre niveles
+
     
     private void Awake() {
         _BoxCollider = GetComponent<BoxCollider>();
         _Gamehandler = FindObjectOfType<Gamehandler>();
+        _HandlerDificultadEntreNiveles = FindObjectOfType<HandlerDificultadEntreNiveles>();//para obtener la referencía al script
+
+
         _BarcoHandler = transform.parent.GetComponent<BarcoHandler>();
         _Animator = transform.parent.GetComponent<Animator>();
         
@@ -86,8 +92,18 @@ public class BarcoTrigger : MonoBehaviour
             sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
             _Animator.SetBool("barcoDestruido", true);
 
-            _Gamehandler.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
-            StartCoroutine("JugadorWinner");//hago las cosas de winner
+            //verifico si cambio de nivel o muestro la pantalla WinnerGameOver
+            if (_HandlerDificultadEntreNiveles.nivelActual <= 3)
+            {
+                _Gamehandler.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
+                 StartCoroutine("PasarAlSiguienteNivelWinner");//hago las cosas de winner
+            }
+            else
+            {
+                _Gamehandler.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
+                 StartCoroutine("JugadorWinner");//hago las cosas de winner
+            }
+           
         }
 
     }
@@ -114,7 +130,29 @@ public class BarcoTrigger : MonoBehaviour
         sonidoWinner.Play();//sonido winner
         yield return new WaitForSeconds(2);//despues de 2 segundos 
         _Gamehandler.GameOverWinner();//cambio a nivel winner
-    }   
+    }
+
+    IEnumerator PasarAlSiguienteNivelWinner()
+    {  
+        yield return new WaitForSeconds(2);//espero 2 segundos
+        musicaJugandoContraEnemigo.Stop();//detengo la música
+        sonidoWinner.Play();//sonido winner
+        yield return new WaitForSeconds(1f);//despues de 5 segundos 
+        _Gamehandler.UI_CambiarNivel.SetActive(true);//activo fondo
+        yield return new WaitForSeconds(0.5f);//despues de 5 segundos 
+        ///Para la barra de carga uso un contador
+        float barraCarga = 0;
+        while(barraCarga < 1)
+        {
+            _Gamehandler.barraCargaCambiarNivel.size = barraCarga;
+            yield return new WaitForSeconds(0.05f);//espero 0.4 segundos, son 10 por lo tanto son 4 segundos
+            barraCarga += 0.01f;
+        }
+        _Gamehandler.barraCargaCambiarNivel.size = 1;//hago que la barra llegue a 1
+        yield return new WaitForSeconds(1f);//espero 0.1 segundos
+        // yield return new WaitForSeconds(4);//despues de 5 segundos 
+        _Gamehandler.CambiarAlProximoNivel();//cambio a nivel winner
+    }    
 
 
     public bool DeshabilitarFondo()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones

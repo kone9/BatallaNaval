@@ -12,8 +12,6 @@ public class GestorDeRed : MonoBehaviourPunCallbacks
 {
     public static Action OnPlayersConnected = delegate { };
 
-    public Text info;
-
     public static GestorDeRed instanciaRed;//para isntanciar la red PHOTON y conectarme al servidor
 
     private void Awake()
@@ -42,7 +40,6 @@ public class GestorDeRed : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.JoinLobby();
         print("Felicidades estoy conectado al servidor maestro");
-        info.text = "Felicidades estoy conectado\n al servidor maestro";
     }
 
     //al unirse al servidor crea un cuarto
@@ -55,14 +52,12 @@ public class GestorDeRed : MonoBehaviourPunCallbacks
     public override void OnCreatedRoom()
     {
         print("cuarto creado");
-        info.text = "cuarto creado";
     }
 
     
     public override void OnJoinedRoom()//cuando nos unamos al cuerto podemos instanciar jugadores o hacer cualquier cosa con los GameObjects
     {
         print("Este jugador se unido al cuerto");
-        info.text = "Este jugador se unio al cuerto";
 
         //desde aqui puedo isntanciar cosas al iniciar el nivel usar la carpeta resources de photon
         Vector3 posicion = new Vector3(0,4,0);

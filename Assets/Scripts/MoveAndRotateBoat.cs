@@ -170,7 +170,9 @@ public class MoveAndRotateBoat : MonoBehaviourPun
             Mover_Y_Rotar_Barcos_AutomaticamentePorCuadricula(cuadriculas[Random.Range(0,cuadriculas.Length)]);
             yield return new WaitForSeconds(0.1f);//prueba luego borrar
             // yield return null;
-        }      
+        }
+        // yield return new WaitForSeconds(0.1f);//prueba luego borrar
+      
     }
 
 
