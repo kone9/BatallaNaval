@@ -203,7 +203,7 @@ Material:
     - _Radius: 1
     - _Reflect: 1
     - _ReflectionContrast: 0.92
-    - _ReflectionSaturation: 0.72
+    - _ReflectionSaturation: 1.6
     - _ReflectionStrength: 2.45
     - _RefractionIntensity: 0.61
     - _RefractionSpeed: 1.61
