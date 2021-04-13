@@ -66,8 +66,15 @@ public class Gamehandler : MonoBehaviour
     public Scrollbar barraCargaCambiarNivel;
 
     ////////////////////////////////////////////////
-    public List<GameObject> BardeadaDisparar;//carteles disparar
-    public List<GameObject> BardeadaRecibirDisparo;//carteles recibir disparo
+    [SerializeField]
+    private List<GameObject> bardeadaJugadorAcertarDisparo;//cuando el jugador acierta disparo
+    [SerializeField]
+    private List<GameObject> bardeadaJugadorErrarDisparo;//cuando el jugador no acierta el disparo
+    [SerializeField]
+    private List<GameObject> bardeadaEnemigoAcertarDisparo;//cuando el enemigo acierta disparo en jugador
+    [SerializeField]
+    private List<GameObject> bardeadaEnemigoErrarDisparo;//cuando el enemigo no acierta el disparo
+
 
 //////////////////////////////////////////////////////    
 
@@ -238,5 +245,46 @@ public class Gamehandler : MonoBehaviour
         Destroy(datosGlobalesActuales);// destruyo los datos globales, es un game object que no se autodestruye
         SceneManager.LoadScene("AcomodarPiezas");//vuelvo a cambiar a la escena acomodar piezas
     }
+
+    /// <summary>activa y desactiva mensajes cuando el jugador SI acierta disparo</summary>
+    public IEnumerator Mensaje_bardeadaJugadorAcertarDisparo()
+    {
+        int fraseAleatoria = Random.Range(0,bardeadaJugadorAcertarDisparo.Count - 1);
+        bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
+    }
+
+    /// <summary>activa y desactiva mensajes cuando el jugador NO acierta disparo</summary>
+    public IEnumerator Mensaje_bardeadaJugadorErrarDisparo()
+    {
+        int fraseAleatoria = Random.Range(0,bardeadaJugadorErrarDisparo.Count - 1);
+        bardeadaJugadorErrarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(1);
+        bardeadaJugadorErrarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
+    }
+
+    /// <summary>activa y desactiva mensajes cuando el enemigo SI acierta disparo</summary>
+    public IEnumerator Mensaje_bardeadaEnemigoAcertarDisparo()
+    {
+        int fraseAleatoria = Random.Range(0,bardeadaEnemigoAcertarDisparo.Count - 1);
+        bardeadaEnemigoAcertarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaEnemigoAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
+
+    }
+
+     /// <summary>activa y desactiva mensajes cuando el enemigo NO acierta disparo</summary>
+    public IEnumerator Mensaje_bardeadaEnemigoErrarDisparo()
+    {
+        int fraseAleatoria = Random.Range(0,bardeadaEnemigoErrarDisparo.Count - 1);
+        bardeadaEnemigoErrarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(1);
+        bardeadaEnemigoErrarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
+    }
+
+    
+
+    
 
 }

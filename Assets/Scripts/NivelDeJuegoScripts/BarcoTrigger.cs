@@ -190,6 +190,7 @@ public class BarcoTrigger : MonoBehaviour
     private void instanciarFuego()
     {
         GameObject fuegoInstance = Instantiate(fuego);
+        StartCoroutine(_Gamehandler.Mensaje_bardeadaJugadorAcertarDisparo());
         //fuegoInstance.transform.SetParent(this.gameObject.transform);
         fuegoInstance.transform.position = this.transform.position;
         _BoxCollider.enabled = false;

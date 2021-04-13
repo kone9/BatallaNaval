@@ -44,9 +44,10 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
     IEnumerator PresioneGrilla()
     {
         if(_Gamehandler.GetPuedoPresionarBoton() == true)
-        {            // print("presione en el cubo");
+        {           
             mymesh.enabled = false;
             miCollyder.enabled = false;
+            StartCoroutine(_Gamehandler.Mensaje_bardeadaJugadorErrarDisparo());
             audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
             _Gamehandler.SetPuedoPresionarBoton(false);
             yield return new WaitForSeconds(0.4f);

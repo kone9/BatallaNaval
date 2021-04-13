@@ -147,6 +147,7 @@ public class EnemigoHandler : MonoBehaviour
         if(barcoJugadorColisiones.Count > 1)//si hay colisiones
         {
             InstanciarFuego();
+            StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoAcertarDisparo());
             // yield return new WaitForSeconds(2);//espera 2 segundos antes de volver a hacer lo mismo
             yield return new WaitForSeconds(2f);//por defecto 2 segundos funciona bien
             _Gamehandler.IsTurnoJugador();
@@ -171,6 +172,7 @@ public class EnemigoHandler : MonoBehaviour
     {
         if(GrillaJugadorColisiones.Count > 0)//si todavía hay grilla para disparar
         {
+            StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoErrarDisparo());
             int LugarAleatorio = Random.Range(0,GrillaJugadorColisiones.Count);//numero eleatorio entre cantidad de grillas
             GrillaJugadorColisiones[LugarAleatorio].GetComponent<MeshRenderer>().enabled = false;//deshabilito la malla
             GrillaJugadorColisiones.RemoveAt(LugarAleatorio);//elimino este lugar de la grilla
