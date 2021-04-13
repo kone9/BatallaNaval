@@ -37,6 +37,7 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Phot
     /// <summary>Desactivo todo lo relacionado a la cuadricula y activa turno enemigo</summary>
     IEnumerator PresioneGrilla()
     {
+        StartCoroutine(_GamehandlerRED.Mensaje_bardeadaJugadorErrarDisparo());//bardeo erro disparo
         mymesh.enabled = false;//desactivo esta cuadricula
         miCollyder.enabled = false;//desactivo la colision de esta cuadricula
         DeshabilitarCuadriculaPhoton();//desactivar cuadricula enemigo parte superior
@@ -60,6 +61,7 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Phot
     [PunRPC]
     public void DeshabilitarCuadriculaEnemigoSuperior(bool deshabilitarCuadricula)
     {
+        StartCoroutine(_GamehandlerRED.Mensaje_bardeadaEnemigoErrarDisparo());//bardeada enemigo erro disparo
         CuadriculaEnemigoSuperior.enabled = deshabilitarCuadricula;//deshabilito cuadricula pero solo lo hace el enemigo
         audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo pero solo lo escucha el enemigo
     }

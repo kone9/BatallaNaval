@@ -84,6 +84,8 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
             bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
             print("hay colision" + haycolision);
             instanciarFuego(this.transform.position);
+            StartCoroutine(_GameHandlerRED.Mensaje_bardeadaJugadorAcertarDisparo());//bardeada acierta disparo
+
 
             //instanciar fuego en los barcos que estan en la pantalla de arriba tanto Yo como El otro jugador
             _photonView.RPC("InstanciarFuegoEnMisBarcos", //Nombre de la función que es llamada localmente
@@ -179,11 +181,12 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
 
 
 
-    /// <summary>Para que dispare el fuego en mis barcos, osea la pantalla de arriba</summary>
+    /// <summary>Para que dispare el fuego en mis barcos, osea la pantalla de arriba cuando el enemigo acierta el disparo</summary>
     [PunRPC]
     void InstanciarFuegoEnMisBarcos(Vector3 posicionInicialFuego)
     {
         Vector3 fuegoPosicionEnEnemigo = posicionInicialFuego;
+        StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoAcertarDisparo());
         fuegoPosicionEnEnemigo.z += 250;
         audio_hit_Own.Play();//activo sonido que dispara a mis barcos
         instanciarFuego(fuegoPosicionEnEnemigo);
