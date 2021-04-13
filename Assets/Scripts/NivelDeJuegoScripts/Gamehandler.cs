@@ -251,7 +251,7 @@ public class Gamehandler : MonoBehaviour
     {
         int fraseAleatoria = Random.Range(0,bardeadaJugadorAcertarDisparo.Count - 1);
         bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
     }
 
@@ -269,7 +269,7 @@ public class Gamehandler : MonoBehaviour
     {
         int fraseAleatoria = Random.Range(0,bardeadaEnemigoAcertarDisparo.Count - 1);
         bardeadaEnemigoAcertarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         bardeadaEnemigoAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
 
     }
