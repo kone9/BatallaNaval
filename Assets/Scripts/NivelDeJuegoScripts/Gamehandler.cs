@@ -65,6 +65,10 @@ public class Gamehandler : MonoBehaviour
 
     public Scrollbar barraCargaCambiarNivel;
 
+    ////////////////////////////////////////////////
+    public List<GameObject> BardeadaDisparar;//carteles disparar
+    public List<GameObject> BardeadaRecibirDisparo;//carteles recibir disparo
+
 //////////////////////////////////////////////////////    
 
     private void Awake() {
