@@ -8,7 +8,7 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
     Gamehandler _Gamehandler;
     
     //AUDIO globales
-    public GameObject[] audio_miss;//sonido errar disparo
+    public GameObject[] audio_miss_enemigo;//sonido errar disparo enemigo en singleplayer
 
     private MeshRenderer mymesh;
     private BoxCollider miCollyder;
@@ -16,7 +16,7 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
     private void Awake()
     {
         _Gamehandler = FindObjectOfType<Gamehandler>();
-        audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");//sonido errar disparo
+        audio_miss_enemigo = GameObject.FindGameObjectsWithTag("miss_audio");//sonido errar disparo
         mymesh = GetComponent<MeshRenderer>();
         miCollyder = GetComponent<BoxCollider>();
        
@@ -48,7 +48,7 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
             mymesh.enabled = false;
             miCollyder.enabled = false;
             StartCoroutine(_Gamehandler.Mensaje_bardeadaJugadorErrarDisparo());
-            audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
+            audio_miss_enemigo[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
             _Gamehandler.SetPuedoPresionarBoton(false);
             yield return new WaitForSeconds(0.4f);
             _Gamehandler.IsTurnoEnemigo();

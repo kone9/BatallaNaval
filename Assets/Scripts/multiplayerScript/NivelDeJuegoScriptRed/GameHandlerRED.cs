@@ -271,7 +271,7 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     {
         int fraseAleatoria = Random.Range(0,bardeadaJugadorAcertarDisparo.Count - 1);
         bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
     }
 
