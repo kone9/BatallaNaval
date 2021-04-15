@@ -17,6 +17,7 @@ TagManager:
   - CuadriculaColisionJugador
   - SonidoBarcoEnemigoDestruido
   - Splash water
+  - miss_audio_jugador
   layers:
   - Default
   - TransparentFX

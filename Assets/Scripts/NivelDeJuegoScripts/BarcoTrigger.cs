@@ -81,9 +81,11 @@ public class BarcoTrigger : MonoBehaviour
 
         if(_BarcoHandler.vidas < 1 && _Gamehandler.cantidadDeAciertosJugador < 21)//si las vidas del barco es menor a uno
         {
+            
             sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
-            _Animator.SetBool("barcoDestruido", true);
             StartCoroutine( _Gamehandler.Mensaje_bardeadaJugadorDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
+            
+            _Animator.SetBool("barcoDestruido", true);
             _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
             StartCoroutine("jugarContraEnemigoDelayTargetDestroy");//delay antes de que el enemigo dispare           }  
         }
@@ -91,7 +93,8 @@ public class BarcoTrigger : MonoBehaviour
         if(_Gamehandler.cantidadDeAciertosJugador == 21)//si destrui todos los barcos
         {
             //destruyo última pieza del barco
-            sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
+            GameObject.Find("sink_Own_end").GetComponent<AudioSource>().Play();//activo sonido barco destruido final de la partida
+
             _Animator.SetBool("barcoDestruido", true);
 
             //verifico si cambio de nivel o muestro la pantalla WinnerGameOver
