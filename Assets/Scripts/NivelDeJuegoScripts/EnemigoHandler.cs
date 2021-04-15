@@ -15,10 +15,9 @@ public class EnemigoHandler : MonoBehaviour
     int numeroAcierto, numeroAleatorio, elementoEliminar;//para representar dificultad
 
     //Para el audio
-    AudioSource audio_hit_Own;//sonido hit
+    GameObject[] audio_hit_Own;//sonido hit
     AudioSource audio_hit_Own_end;//sonido hit
-    AudioSource audio_sink_Own;//sonido hundio barco
-    GameObject[] audio_miss;//sonido erro disparo
+    GameObject[] miss_enemy;//sonido erro disparo
 
     AudioSource musicaJugandoContraEnemigo;
     AudioSource sonidoGameOver;
@@ -31,10 +30,9 @@ public class EnemigoHandler : MonoBehaviour
         _Gamehandler = FindObjectOfType<Gamehandler>();
        
 
-        audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
-        audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
+        audio_hit_Own = GameObject.FindGameObjectsWithTag("hit_Own");
         audio_hit_Own_end = GameObject.Find("sink_Own_end").GetComponent<AudioSource>();
-        audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");
+        miss_enemy = GameObject.FindGameObjectsWithTag("miss_1_enemy");
         musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();
         sonidoGameOver = GameObject.Find("SonidoGameOver").GetComponent<AudioSource>();
 
@@ -149,7 +147,7 @@ public class EnemigoHandler : MonoBehaviour
         if(barcoJugadorColisiones.Count > 1)//si hay colisiones
         {
             InstanciarFuego();
-            audio_hit_Own.Play();//sonido acerto al barco
+            audio_hit_Own[Random.Range(0,audio_hit_Own.Length)].GetComponent<AudioSource>().Play();//sonido acerto al barco
             StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoAcertarDisparo());
             // yield return new WaitForSeconds(2);//espera 2 segundos antes de volver a hacer lo mismo
             yield return new WaitForSeconds(2f);//por defecto 2 segundos funciona bien
@@ -158,7 +156,7 @@ public class EnemigoHandler : MonoBehaviour
         else //sino es GameOver ya que gana el enemigo
         {
             InstanciarFuego();
-            audio_hit_Own_end.Play();
+            audio_hit_Own_end.Play();//sonido final termino la partida al ganar
             yield return new WaitForSeconds(1);
             _Gamehandler.SetPuedoPresionarBoton(false);
             musicaJugandoContraEnemigo.Stop();
@@ -181,7 +179,7 @@ public class EnemigoHandler : MonoBehaviour
             GrillaJugadorColisiones[LugarAleatorio].GetComponent<MeshRenderer>().enabled = false;//deshabilito la malla
             GrillaJugadorColisiones.RemoveAt(LugarAleatorio);//elimino este lugar de la grilla
             
-            audio_miss[1].GetComponent<AudioSource>().Play();
+            miss_enemy[Random.Range(0,miss_enemy.Length)].GetComponent<AudioSource>().Play();
 
             yield return new WaitForSeconds(1f);//por defecto es 1
             _Gamehandler.IsTurnoJugador();//es turno de jugador

@@ -18,6 +18,8 @@ TagManager:
   - SonidoBarcoEnemigoDestruido
   - Splash water
   - miss_audio_jugador
+  - miss_1_enemy
+  - hit_Own
   layers:
   - Default
   - TransparentFX
