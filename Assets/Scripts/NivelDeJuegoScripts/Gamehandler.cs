@@ -299,7 +299,7 @@ public class Gamehandler : MonoBehaviour
     public IEnumerator Mensaje_bardeadaEnemigoDestruyoBarco()
     {
         bardeadaEnemigoDestruyoBarco.gameObject.SetActive(true);//activo game object
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         bardeadaEnemigoDestruyoBarco.gameObject.SetActive(false);//activo game object
     }
 

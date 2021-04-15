@@ -16,6 +16,7 @@ public class EnemigoHandler : MonoBehaviour
 
     //Para el audio
     AudioSource audio_hit_Own;//sonido hit
+    AudioSource audio_hit_Own_end;//sonido hit
     AudioSource audio_sink_Own;//sonido hundio barco
     GameObject[] audio_miss;//sonido erro disparo
 
@@ -32,6 +33,7 @@ public class EnemigoHandler : MonoBehaviour
 
         audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
         audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
+        audio_hit_Own_end = GameObject.Find("sink_Own_end").GetComponent<AudioSource>();
         audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");
         musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();
         sonidoGameOver = GameObject.Find("SonidoGameOver").GetComponent<AudioSource>();
@@ -125,8 +127,8 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
-        numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto);//1;//Random.Range(0,5);//para representar dificultad
-        // numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
+        // numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto);//1;//Random.Range(0,5);//para representar dificultad
+        numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
 
         yield return new WaitForSeconds(1f);//por defecto uno
 
@@ -147,6 +149,7 @@ public class EnemigoHandler : MonoBehaviour
         if(barcoJugadorColisiones.Count > 1)//si hay colisiones
         {
             InstanciarFuego();
+            audio_hit_Own.Play();//sonido acerto al barco
             StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoAcertarDisparo());
             // yield return new WaitForSeconds(2);//espera 2 segundos antes de volver a hacer lo mismo
             yield return new WaitForSeconds(2f);//por defecto 2 segundos funciona bien
@@ -155,6 +158,7 @@ public class EnemigoHandler : MonoBehaviour
         else //sino es GameOver ya que gana el enemigo
         {
             InstanciarFuego();
+            audio_hit_Own_end.Play();
             yield return new WaitForSeconds(1);
             _Gamehandler.SetPuedoPresionarBoton(false);
             musicaJugandoContraEnemigo.Stop();
@@ -201,8 +205,6 @@ public class EnemigoHandler : MonoBehaviour
         // elementoEliminar += 1;
         barcoJugadorColisiones.RemoveAt(LugarAleatorio);
         // print("la cantidad de posiciones de barco para destruir son: " + barcoJugadorColisiones.Count );            
-
-        audio_hit_Own.Play();//sonido acerto al barco
     }
 
 

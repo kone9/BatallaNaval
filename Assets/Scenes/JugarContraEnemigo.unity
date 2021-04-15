@@ -14042,8 +14042,8 @@ MonoBehaviour:
   - {fileID: 1128622470}
   bardeadaEnemigoErrarDisparo:
   - {fileID: 1692910944}
-  bardeadaJugadorDestruyoBarco: {fileID: 0}
-  bardeadaEnemigoDestruyoBarco: {fileID: 0}
+  bardeadaJugadorDestruyoBarco: {fileID: 2996718640598615526}
+  bardeadaEnemigoDestruyoBarco: {fileID: 2996718640598615525}
 --- !u!4 &1963772911
 Transform:
   m_ObjectHideFlags: 0
@@ -15502,8 +15502,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8617481321237960329, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1495cf9ef4c7aa54ea250ac5902a9a54, type: 3}
+--- !u!1 &2996718640598615525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1703732990, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 2996718640598615524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2996718640598615526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8617481321237960329, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 2996718640598615524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4675073206583667546
 RectTransform:
   m_ObjectHideFlags: 0

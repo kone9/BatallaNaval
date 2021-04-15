@@ -66,6 +66,7 @@ public class BarcoTrigger : MonoBehaviour
             {
                 sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
                 _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
+                StartCoroutine(_Gamehandler.Mensaje_bardeadaJugadorAcertarDisparo());// mensaje bardeada acepto dipsaro
                 StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
             }
             bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
@@ -82,6 +83,7 @@ public class BarcoTrigger : MonoBehaviour
         {
             sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
             _Animator.SetBool("barcoDestruido", true);
+            StartCoroutine( _Gamehandler.Mensaje_bardeadaJugadorDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
             _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
             StartCoroutine("jugarContraEnemigoDelayTargetDestroy");//delay antes de que el enemigo dispare           }  
         }
@@ -190,7 +192,6 @@ public class BarcoTrigger : MonoBehaviour
     private void instanciarFuego()
     {
         GameObject fuegoInstance = Instantiate(fuego);
-        StartCoroutine(_Gamehandler.Mensaje_bardeadaJugadorAcertarDisparo());
         //fuegoInstance.transform.SetParent(this.gameObject.transform);
         fuegoInstance.transform.position = this.transform.position;
         _BoxCollider.enabled = false;
