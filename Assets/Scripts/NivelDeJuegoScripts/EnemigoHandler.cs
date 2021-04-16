@@ -13,7 +13,9 @@ public class EnemigoHandler : MonoBehaviour
     private Gamehandler _Gamehandler;
 
     int numeroAcierto, numeroAleatorio, elementoEliminar;//para representar dificultad
+    
 
+    ///////////////////////////////////////////////////
     //Para el audio
     GameObject[] audio_hit_Own;//sonido hit
     AudioSource audio_hit_Own_end;//sonido hit
@@ -28,7 +30,7 @@ public class EnemigoHandler : MonoBehaviour
     {
         barcoJugadorColisiones.AddRange(GameObject.FindGameObjectsWithTag("barcoJugadorColisiones"));//referencia a todos los barcos guardados en una lista
         _Gamehandler = FindObjectOfType<Gamehandler>();
-       
+        
 
         audio_hit_Own = GameObject.FindGameObjectsWithTag("hit_Own");
         audio_hit_Own_end = GameObject.Find("sink_Own_end").GetComponent<AudioSource>();
@@ -125,8 +127,8 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
-        numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto);//1;//Random.Range(0,5);//para representar dificultad
-        // numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
+        // numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto);//1;//Random.Range(0,5);//para representar dificultad
+        numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
 
         yield return new WaitForSeconds(1f);//por defecto uno
 
@@ -146,9 +148,19 @@ public class EnemigoHandler : MonoBehaviour
     {
         if(barcoJugadorColisiones.Count > 1)//si hay colisiones
         {
-            InstanciarFuego();
-            audio_hit_Own[Random.Range(0,audio_hit_Own.Length)].GetComponent<AudioSource>().Play();//sonido acerto al barco
-            StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoAcertarDisparo());
+            int vidasBarco = InstanciarFuego();// instancio el fuego y me dice la vida del barco que esta siendo atacado
+
+            if(vidasBarco >= 1)//si el barco tiene más de una vida
+            {
+                audio_hit_Own[Random.Range(0,audio_hit_Own.Length)].GetComponent<AudioSource>().Play();//sonido acerto al barco
+                StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoAcertarDisparo());
+            }
+            else//sino sonido y mensaje ayuda se destruyo el barco
+            {
+                GameObject.Find("sink_Own").GetComponent<AudioSource>().Play();//activo sonido ayuda
+                yield return new WaitForSeconds(2f);//espero 2 segundos el sonido
+                StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoDestruyoBarco());//cartel enemigo destruyo barco, pide ayuda el jugador
+            }
             // yield return new WaitForSeconds(2);//espera 2 segundos antes de volver a hacer lo mismo
             yield return new WaitForSeconds(2f);//por defecto 2 segundos funciona bien
             _Gamehandler.IsTurnoJugador();
@@ -190,19 +202,22 @@ public class EnemigoHandler : MonoBehaviour
         }
     }
 
-    /// <summary>Instancia el fuego a la escena en una cuadricula</summary>
-    void InstanciarFuego()
+    /// <summary>Instancia el fuego a la escena en una cuadricula y devuelve la cantidad de vidas del barco atacado</summary>
+    int InstanciarFuego()
     {
         int LugarAleatorio = Random.Range(0,barcoJugadorColisiones.Count);//el ultimo numero no se incluye asi que es correcto
 
         GameObject fuegoInstance = Instantiate(fuego);
 
         fuegoInstance.transform.position = barcoJugadorColisiones[LugarAleatorio].transform.position;
-        barcoJugadorColisiones[LugarAleatorio].GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
+        barcoJugadorColisiones[LugarAleatorio].transform.parent.GetComponentInParent<BarcoJugador>().vidasJugador -= 1;//resto una vida al jugador
+        int vidasBarco = barcoJugadorColisiones[LugarAleatorio].transform.parent.GetComponentInParent<BarcoJugador>().vidasJugador;//para saber cuantas vidas le queda a este barco
 
+        barcoJugadorColisiones[LugarAleatorio].GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
+        
         // elementoEliminar += 1;
         barcoJugadorColisiones.RemoveAt(LugarAleatorio);
-        // print("la cantidad de posiciones de barco para destruir son: " + barcoJugadorColisiones.Count );            
+        return vidasBarco;
     }
 
 
