@@ -60,6 +60,7 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 //////////////////////////////////////////////////////  
 
 //bardeadas UI
+    ////////////////////////////////////////////////
     [SerializeField]
     private List<GameObject> bardeadaJugadorAcertarDisparo;//cuando el jugador acierta disparo
     [SerializeField]
@@ -69,6 +70,11 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     [SerializeField]
     private List<GameObject> bardeadaEnemigoErrarDisparo;//cuando el enemigo no acierta el disparo
 
+    [SerializeField]
+    private GameObject bardeadaJugadorDestruyoBarco;
+    
+    [SerializeField]
+    private GameObject bardeadaEnemigoDestruyoBarco;
 
 //////////////////////////////////////////////////////
 
@@ -266,6 +272,7 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         ui_GameOver.SetActive(true);
     }
 
+
     /// <summary>activa y desactiva mensajes cuando el jugador SI acierta disparo</summary>
     public IEnumerator Mensaje_bardeadaJugadorAcertarDisparo()
     {
@@ -274,7 +281,6 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         yield return new WaitForSeconds(2);
         bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
     }
-
     /// <summary>activa y desactiva mensajes cuando el jugador NO acierta disparo</summary>
     public IEnumerator Mensaje_bardeadaJugadorErrarDisparo()
     {
@@ -283,13 +289,19 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         yield return new WaitForSeconds(1);
         bardeadaJugadorErrarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
     }
-
+    /// <summary>activa y desactiva mensajes cuando el jugador Destruyo el barco completamente</summary>
+    public IEnumerator Mensaje_bardeadaJugadorDestruyoBarco()
+    {
+        bardeadaJugadorDestruyoBarco.gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaJugadorDestruyoBarco.gameObject.SetActive(false);//activo game object
+    }
     /// <summary>activa y desactiva mensajes cuando el enemigo SI acierta disparo</summary>
     public IEnumerator Mensaje_bardeadaEnemigoAcertarDisparo()
     {
         int fraseAleatoria = Random.Range(0,bardeadaEnemigoAcertarDisparo.Count - 1);
         bardeadaEnemigoAcertarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         bardeadaEnemigoAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
 
     }
@@ -302,6 +314,16 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         yield return new WaitForSeconds(1);
         bardeadaEnemigoErrarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
     }
+    
+    /// <summary>activa y desactiva mensajes cuando el enemigo Destruyo el barco completamente</summary>
+    public IEnumerator Mensaje_bardeadaEnemigoDestruyoBarco()
+    {
+        bardeadaEnemigoDestruyoBarco.gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaEnemigoDestruyoBarco.gameObject.SetActive(false);//activo game object
+    }
+
+    
 
     
 

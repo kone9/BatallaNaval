@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemigoHandler : MonoBehaviour
 {
     public GameObject fuego; //para instanciar fuego
+    public GameObject granExplocion;
     public int cantidadDeAciertosEnemigo;
     // private GameObject[] barcoJugadorColisiones;
     List<GameObject> barcoJugadorColisiones = new List<GameObject>();//listo de los barcos
@@ -18,6 +19,7 @@ public class EnemigoHandler : MonoBehaviour
     ///////////////////////////////////////////////////
     //Para el audio
     GameObject[] audio_hit_Own;//sonido hit
+    GameObject[] sink_Own; 
     AudioSource audio_hit_Own_end;//sonido hit
     GameObject[] miss_enemy;//sonido erro disparo
 
@@ -33,6 +35,7 @@ public class EnemigoHandler : MonoBehaviour
         
 
         audio_hit_Own = GameObject.FindGameObjectsWithTag("hit_Own");
+        sink_Own = GameObject.FindGameObjectsWithTag("sink_Own");
         audio_hit_Own_end = GameObject.Find("sink_Own_end").GetComponent<AudioSource>();
         miss_enemy = GameObject.FindGameObjectsWithTag("miss_1_enemy");
         musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();
@@ -127,8 +130,8 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
-        // numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto);//1;//Random.Range(0,5);//para representar dificultad
-        numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
+        numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto);//1;//Random.Range(0,5);//para representar dificultad
+        // numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
 
         yield return new WaitForSeconds(1f);//por defecto uno
 
@@ -148,20 +151,23 @@ public class EnemigoHandler : MonoBehaviour
     {
         if(barcoJugadorColisiones.Count > 1)//si hay colisiones
         {
-            int vidasBarco = InstanciarFuego();// instancio el fuego y me dice la vida del barco que esta siendo atacado
+            GameObject ColisionDeBarcoActual = InstanciarFuego();// instancio el fuego y me dice la vida del barco que esta siendo atacado
+            int vidasBarco = ColisionDeBarcoActual.transform.parent.GetComponentInParent<BarcoJugador>().vidasJugador;
 
             if(vidasBarco >= 1)//si el barco tiene más de una vida
             {
                 audio_hit_Own[Random.Range(0,audio_hit_Own.Length)].GetComponent<AudioSource>().Play();//sonido acerto al barco
                 StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoAcertarDisparo());
             }
-            else//sino sonido y mensaje ayuda se destruyo el barco
+            else//sino destruccion del barco, sonido y mensaje ayuda se destruyo el barco
             {
-                GameObject.Find("sink_Own").GetComponent<AudioSource>().Play();//activo sonido ayuda
+                sink_Own[Random.Range(0,sink_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido ayuda
+                GameObject granExplocionInstanciada =  Instantiate(granExplocion);//instancio una gran explocion
+                granExplocionInstanciada.transform.position = ColisionDeBarcoActual.transform.parent.position;//posición del barco destruido
+                print("El nombre del padre del barco es: " + ColisionDeBarcoActual.transform.parent.name);
                 yield return new WaitForSeconds(2f);//espero 2 segundos el sonido
                 StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoDestruyoBarco());//cartel enemigo destruyo barco, pide ayuda el jugador
             }
-            // yield return new WaitForSeconds(2);//espera 2 segundos antes de volver a hacer lo mismo
             yield return new WaitForSeconds(2f);//por defecto 2 segundos funciona bien
             _Gamehandler.IsTurnoJugador();
         }
@@ -202,8 +208,8 @@ public class EnemigoHandler : MonoBehaviour
         }
     }
 
-    /// <summary>Instancia el fuego a la escena en una cuadricula y devuelve la cantidad de vidas del barco atacado</summary>
-    int InstanciarFuego()
+    /// <summary>Instancia el fuego a la escena en una cuadricula y devuelve el gameobject colisionado</summary>
+    GameObject InstanciarFuego()
     {
         int LugarAleatorio = Random.Range(0,barcoJugadorColisiones.Count);//el ultimo numero no se incluye asi que es correcto
 
@@ -211,13 +217,13 @@ public class EnemigoHandler : MonoBehaviour
 
         fuegoInstance.transform.position = barcoJugadorColisiones[LugarAleatorio].transform.position;
         barcoJugadorColisiones[LugarAleatorio].transform.parent.GetComponentInParent<BarcoJugador>().vidasJugador -= 1;//resto una vida al jugador
-        int vidasBarco = barcoJugadorColisiones[LugarAleatorio].transform.parent.GetComponentInParent<BarcoJugador>().vidasJugador;//para saber cuantas vidas le queda a este barco
+        GameObject barcoActual = barcoJugadorColisiones[LugarAleatorio];//para saber cuantas vidas le queda a este barco
 
         barcoJugadorColisiones[LugarAleatorio].GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
         
         // elementoEliminar += 1;
         barcoJugadorColisiones.RemoveAt(LugarAleatorio);
-        return vidasBarco;
+        return barcoActual;
     }
 
 

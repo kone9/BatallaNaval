@@ -23,9 +23,12 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
 
     GameObject[] sonidoBarcoEnemigoDestruido;
     AudioSource musicaJugandoContraEnemigo;
-    GameObject[] sound_hit;
-    AudioSource audio_hit_Own;//sonido hit pero para el enemigo
-    AudioSource audio_sink_Own;//sonido hundio barco  para el enemigo
+    
+    GameObject[] sound_hit; //sonido cuando el jugador acierta disparo
+    
+    GameObject[] audio_hit_Own;//sonido hit pero para el enemigo
+    GameObject[] audio_sink_Own;//sonido el enemigo hundio el barco
+
 
     AudioSource SonidoGameOver;//sonido GameOver cuando termino el juego
 
@@ -44,8 +47,8 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
         sonidoBarcoEnemigoDestruido = GameObject.FindGameObjectsWithTag("SonidoBarcoEnemigoDestruido");//referencia a la sonido barcos destruidos
         musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();//referencia a la música del juego
 
-        audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
-        audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
+        audio_hit_Own = GameObject.FindGameObjectsWithTag("hit_Own");
+        audio_sink_Own = GameObject.FindGameObjectsWithTag("sink_Own");
         SonidoGameOver = GameObject.Find("SonidoGameOver").GetComponent<AudioSource>();
     }
 
@@ -111,7 +114,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
         if(_GameHandlerRED.cantidadDeAciertosJugador == 21)//si destrui todos los barcos
         {
             //destruyo última pieza del barco
-            sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
+             GameObject.Find("sink_Own_end").GetComponent<AudioSource>().Play();;//activo sonido barco destruido FINAL
             _Animator.SetBool("barcoDestruido", true);
 
             _GameHandlerRED.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
@@ -186,11 +189,22 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     void InstanciarFuegoEnMisBarcos(Vector3 posicionInicialFuego)
     {
         Vector3 fuegoPosicionEnEnemigo = posicionInicialFuego;
-        StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoAcertarDisparo());
-        fuegoPosicionEnEnemigo.z += 250;
-        audio_hit_Own.Play();//activo sonido que dispara a mis barcos
-        instanciarFuego(fuegoPosicionEnEnemigo);
-        this.gameObject.GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
+        if(_BarcoHandler.vidas >= 1)
+        {
+            StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoAcertarDisparo());
+            fuegoPosicionEnEnemigo.z += 250;
+            audio_hit_Own[Random.Range(0,audio_hit_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido que dispara a mis barcos
+            instanciarFuego(fuegoPosicionEnEnemigo);
+            this.gameObject.GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
+        }
+        else
+        {
+            audio_sink_Own[Random.Range(0,audio_sink_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido ayuda
+            StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoDestruyoBarco() ); // bardeada enemigo destruyo barco
+            fuegoPosicionEnEnemigo.z += 250;
+            instanciarFuego(fuegoPosicionEnEnemigo);
+            this.gameObject.GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
+        }
     }
 
     /// <summary>Para que dispare el fuego en los barcos del rival, osea la pantalla de abajo</summary>

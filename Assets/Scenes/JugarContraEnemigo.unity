@@ -937,6 +937,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
+  granExplocion: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+    type: 3}
   cantidadDeAciertosEnemigo: 21
   cantidadDeGrillas: 0
 --- !u!1 &492765047
@@ -15270,20 +15272,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915021596}
     m_Modifications:
-    - target: {fileID: 1703732990, guid: 1495cf9ef4c7aa54ea250ac5902a9a54, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2996718638740935633, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2996718639048802436, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2996718639237492661, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
         type: 3}
       propertyPath: m_Name
@@ -15392,21 +15380,6 @@ PrefabInstance:
     - target: {fileID: 2996718639237492662, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2996718639579229282, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2996718640498527069, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617481321237960329, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

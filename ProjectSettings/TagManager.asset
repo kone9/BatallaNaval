@@ -20,6 +20,7 @@ TagManager:
   - miss_audio_jugador
   - miss_1_enemy
   - hit_Own
+  - sink_Own
   layers:
   - Default
   - TransparentFX

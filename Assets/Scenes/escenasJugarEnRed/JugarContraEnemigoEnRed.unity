@@ -3660,6 +3660,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620508416}
   m_Mesh: {fileID: -5053925668127403250, guid: 7063a574a58637d4685ce0d33b812bee, type: 3}
+--- !u!1 &674272386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1703732990, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 145804755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &717378356
 GameObject:
   m_ObjectHideFlags: 0
@@ -5863,6 +5869,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 7, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1150853543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8617481321237960329, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 145804755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1152691303
 GameObject:
   m_ObjectHideFlags: 0
@@ -15497,6 +15509,8 @@ MonoBehaviour:
   - {fileID: 145804758}
   bardeadaEnemigoErrarDisparo:
   - {fileID: 145804757}
+  bardeadaJugadorDestruyoBarco: {fileID: 1150853543}
+  bardeadaEnemigoDestruyoBarco: {fileID: 674272386}
 --- !u!1 &1985781188
 GameObject:
   m_ObjectHideFlags: 0
