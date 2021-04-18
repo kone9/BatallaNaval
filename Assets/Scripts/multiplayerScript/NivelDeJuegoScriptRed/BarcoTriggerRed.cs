@@ -94,8 +94,8 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
             _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones
             _BoxCollider.enabled = false;//la colisión está deshabilitida
         }
-    
-        if(_GameHandlerRED.cantidadDeAciertosJugador < 21)//si el juego continua
+
+        if(_GameHandlerRED.cantidadDeAciertosJugador <= 20)//si el juego continua
         {
             if(_BarcoHandler.vidas >= 1)//si el barco tiene vidas
             {
@@ -117,7 +117,6 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
                 
                 sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
                 _Animator.SetBool("barcoDestruido", true);
-                _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones
                 StartCoroutine("jugarContraEnemigoDelayTargetDestroy");//delay antes de que el enemigo dispare           }  
             }
         }
@@ -126,8 +125,6 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
             //destruyo última pieza del barco
              GameObject.Find("sink_Own_end").GetComponent<AudioSource>().Play();;//activo sonido barco destruido FINAL
             _Animator.SetBool("barcoDestruido", true);
-
-            _GameHandlerRED.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
             StartCoroutine("JugadorWinner");//hago las cosas de winner
             StartCoroutine("EnemigoLosse");//hago las cosas del enemigo Losse
         }
@@ -153,7 +150,6 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     IEnumerator JugadorWinner()
     {  
         yield return new WaitForSeconds(2);
-        _GameHandlerRED.SetPuedoPresionarBoton(false);
         musicaJugandoContraEnemigo.Stop();
         sonidoWinner.Play();//sonido winner
         yield return new WaitForSeconds(2);//despues de 2 segundos 
