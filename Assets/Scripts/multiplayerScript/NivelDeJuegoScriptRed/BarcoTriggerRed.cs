@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -79,32 +79,44 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
             if(_BarcoHandler.vidas > 1 && _GameHandlerRED.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
             {
                 sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
-                _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones 
+                _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones
+                
+                //instanciar fuego en los barcos que estan en la pantalla de arriba del enemigo 
+                _photonView.RPC("InstanciarFuegoEnBarcosEnemigos", //Nombre de la función que es llamada localmente
+                    RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
+                    this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
+                );
+                //instanciar sonidos y onomatopella que estan en la pantalla de arriba del enemigo al golpear barco
+                _photonView.RPC("EfectoEnEnemigoAlGolpearBarco", //Nombre de la función que es llamada localmente
+                    RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
+                ); 
 
                 StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
             }
-           
+            
             bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
             print("hay colision" + haycolision);
             instanciarFuego(this.transform.position);
             StartCoroutine(_GameHandlerRED.Mensaje_bardeadaJugadorAcertarDisparo());//bardeada acierta disparo
 
 
-            //instanciar fuego en los barcos que estan en la pantalla de arriba tanto Yo como El otro jugador
-            _photonView.RPC("InstanciarFuegoEnMisBarcos", //Nombre de la función que es llamada localmente
-                RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
-                this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
-            );
+            
 
-             _BoxCollider.enabled = false;
+            _BoxCollider.enabled = false;
             _GameHandlerRED.cantidadDeAciertosJugador += 1;//para saber cuando gano
             _BarcoHandler.vidas -= 1;//una vida menos
 
             print("TENDRIA QUE INSTANCIAR EL FUEGO");
         }
 
+        //si el barco está destruido
         if(_BarcoHandler.vidas < 1 && _GameHandlerRED.cantidadDeAciertosJugador < 21)//si las vidas del barco es menor a uno
         {
+            //instanciar sonidos y onomatopella que estan en la pantalla de arriba del enemigo al destruirse
+            _photonView.RPC("EfectoEnEnemigoAlDestruirBarco", //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
+            );
+
             sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
             _Animator.SetBool("barcoDestruido", true);
             _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones
@@ -183,43 +195,50 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     }  
 
 
-
-    /// <summary>Para que dispare el fuego en mis barcos, osea la pantalla de arriba cuando el enemigo acierta el disparo</summary>
+    /// <summary>Para que dispare el fuego en los barcos que estan en la pantalla de arriba, cuando el jugador acierta el disparo en el enemigo</summary>
     [PunRPC]
-    void InstanciarFuegoEnMisBarcos(Vector3 posicionInicialFuego)
+    void InstanciarFuegoEnBarcosEnemigos(Vector3 posicionInicialFuego)
     {
         Vector3 fuegoPosicionEnEnemigo = posicionInicialFuego;
-        if(_BarcoHandler.vidas >= 1)
-        {
-            StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoAcertarDisparo());
-            fuegoPosicionEnEnemigo.z += 250;
-            audio_hit_Own[Random.Range(0,audio_hit_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido que dispara a mis barcos
-            instanciarFuego(fuegoPosicionEnEnemigo);
-            this.gameObject.GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
-        }
-        else
-        {
-            audio_sink_Own[Random.Range(0,audio_sink_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido ayuda
-            StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoDestruyoBarco() ); // bardeada enemigo destruyo barco
-            fuegoPosicionEnEnemigo.z += 250;
-            instanciarFuego(fuegoPosicionEnEnemigo);
-            this.gameObject.GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
-        }
+        fuegoPosicionEnEnemigo.z += 250;
+        instanciarFuego(fuegoPosicionEnEnemigo);
+        this.gameObject.GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
+    }
+
+    /// <summary>Sonido y onomatopeya al golpear enemigo pantalla superior</summary>
+
+    [PunRPC]
+    void EfectoEnEnemigoAlGolpearBarco()
+    {
+        StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoAcertarDisparo());
+        audio_hit_Own[Random.Range(0,audio_hit_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido que dispara a mis barcos
+    }
+
+    /// <summary>Sonido y onomatopeya al destruir barco enemigo pantalla superior</summary>
+    [PunRPC]
+    void EfectoEnEnemigoAlDestruirBarco()
+    {
+        StartCoroutine( DestruirBarcoEfecto());
+    }
+
+    /// <summary>Muestra cartel y sonido enemigo destruido con un delay</summary>
+    IEnumerator DestruirBarcoEfecto()
+    {
+        audio_sink_Own[Random.Range(0,audio_sink_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido ayuda
+        yield return new WaitForSeconds(2.0f);
+        StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoDestruyoBarco() ); // bardeada enemigo destruyo barco
     }
 
     /// <summary>Para que dispare el fuego en los barcos del rival, osea la pantalla de abajo</summary>
     private void instanciarFuego(Vector3 posicionInicialFuego)
     {
         GameObject fuegoInstance = Instantiate(fuego);
-        //fuegoInstance.transform.SetParent(this.gameObject.transform);
         fuegoInstance.transform.position = posicionInicialFuego;
-        // _BoxCollider.enabled = false;
-        
     }
 
 
-
-     public bool DeshabilitarFondo()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
+    /// <summary>Deshabilita el fondo que esta debajo del barco al presionar está grilla</summary>
+    public bool DeshabilitarFondo()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
     {
         bool estaColisionando = false;
 

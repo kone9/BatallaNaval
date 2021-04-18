@@ -1065,6 +1065,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915021596}
     m_Modifications:
+    - target: {fileID: 1703732990, guid: 1495cf9ef4c7aa54ea250ac5902a9a54, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996718639048802436, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2996718639237492661, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
         type: 3}
       propertyPath: m_Name
@@ -1173,6 +1182,11 @@ PrefabInstance:
     - target: {fileID: 2996718639237492662, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996718639579229282, guid: 1495cf9ef4c7aa54ea250ac5902a9a54,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16854,7 +16868,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &13180243347605751
 MonoBehaviour:
@@ -16939,7 +16954,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &44511972541863130
 MonoBehaviour:
@@ -17051,7 +17067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &83802840249071205
 MonoBehaviour:
@@ -17122,7 +17139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &91668642827028907
 MonoBehaviour:
@@ -17603,7 +17621,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &437995611768780900
 MonoBehaviour:
@@ -17706,7 +17725,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &514009751135378858
 MonoBehaviour:
@@ -18134,7 +18154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &795233064109721839
 MonoBehaviour:
@@ -18243,7 +18264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &810696245004270490
 MonoBehaviour:
@@ -18353,7 +18375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &825174807761676203
 MonoBehaviour:
@@ -18531,7 +18554,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &928266916985522437
 MonoBehaviour:
@@ -18648,7 +18672,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &945466581648776307
 MonoBehaviour:
@@ -18796,7 +18821,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &968024958476023340
 MonoBehaviour:
@@ -19017,7 +19043,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1010420783809979414
 MonoBehaviour:
@@ -19166,7 +19193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1068722544450461874
 MonoBehaviour:
@@ -19316,7 +19344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1150005457390648109
 MonoBehaviour:
@@ -19395,7 +19424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1240368828926441870
 MonoBehaviour:
@@ -19505,7 +19535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1307771732790922618
 MonoBehaviour:
@@ -19873,7 +19904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1526413415073300104
 MonoBehaviour:
@@ -19996,7 +20028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1556683178424973496
 MonoBehaviour:
@@ -20263,7 +20296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1838975153097774826
 MonoBehaviour:
@@ -20373,7 +20407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &1840152318545395106
 MonoBehaviour:
@@ -20794,7 +20829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2048718706310999755
 MonoBehaviour:
@@ -20906,7 +20942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2113884751026160349
 MonoBehaviour:
@@ -20992,7 +21029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2190733908851835525
 MonoBehaviour:
@@ -21125,7 +21163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2205596951718843797
 MonoBehaviour:
@@ -21441,7 +21480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2342309599993945466
 MonoBehaviour:
@@ -21512,7 +21552,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2349025652051738655
 MonoBehaviour:
@@ -21597,7 +21638,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2367154288091456002
 MonoBehaviour:
@@ -21988,7 +22030,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2646065957851661238
 MonoBehaviour:
@@ -22066,7 +22109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2682822916992313629
 MonoBehaviour:
@@ -22136,7 +22180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2708568208682750832
 MonoBehaviour:
@@ -22554,7 +22599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2901722780240573238
 MonoBehaviour:
@@ -22761,7 +22807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2961834637796137292
 MonoBehaviour:
@@ -22845,7 +22892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &2975610021598872036
 MonoBehaviour:
@@ -33735,7 +33783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3024529314298300883
 MonoBehaviour:
@@ -33806,7 +33855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3031660951687470977
 MonoBehaviour:
@@ -34011,7 +34061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3105660239140666977
 MonoBehaviour:
@@ -34456,7 +34507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3294212254865557590
 MonoBehaviour:
@@ -34540,7 +34592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3318564613981907446
 MonoBehaviour:
@@ -34726,7 +34779,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3364701537296403925
 MonoBehaviour:
@@ -34818,7 +34872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3374646427139086283
 MonoBehaviour:
@@ -34889,7 +34944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3383641960235588968
 MonoBehaviour:
@@ -34959,7 +35015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3403220511207633998
 MonoBehaviour:
@@ -35068,7 +35125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3411507774164543513
 MonoBehaviour:
@@ -35296,7 +35354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3541917585393228990
 MonoBehaviour:
@@ -35667,7 +35726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3824474358672708175
 MonoBehaviour:
@@ -35784,7 +35844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3866738998549673554
 MonoBehaviour:
@@ -35854,7 +35915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3885176476103299627
 MonoBehaviour:
@@ -35964,7 +36026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &3898671810424151511
 MonoBehaviour:
@@ -36425,7 +36488,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4240459406953051453
 MonoBehaviour:
@@ -36627,7 +36691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4350555198911556610
 MonoBehaviour:
@@ -37129,7 +37194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4708928321092520178
 MonoBehaviour:
@@ -37207,7 +37273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4755858331860438692
 MonoBehaviour:
@@ -37286,7 +37353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4769297717694448938
 MonoBehaviour:
@@ -37483,7 +37551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4888566361155568186
 MonoBehaviour:
@@ -37554,7 +37623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4904089715308175496
 MonoBehaviour:
@@ -37646,7 +37716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &4954333282922805708
 MonoBehaviour:
@@ -37811,7 +37882,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5044896068145563372
 MonoBehaviour:
@@ -37996,7 +38068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5258433893573604810
 MonoBehaviour:
@@ -38144,7 +38217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5283346869309490420
 MonoBehaviour:
@@ -38814,7 +38888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5745622661757867863
 MonoBehaviour:
@@ -38913,7 +38988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5770190203814864676
 MonoBehaviour:
@@ -39094,7 +39170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &5856775415618570475
 MonoBehaviour:
@@ -39463,7 +39540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6087848041955030159
 MonoBehaviour:
@@ -39533,7 +39611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6089110660378099779
 MonoBehaviour:
@@ -39618,7 +39697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6134075661059016901
 MonoBehaviour:
@@ -39688,7 +39768,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6151310530370172955
 MonoBehaviour:
@@ -39805,7 +39886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6207002768047623935
 MonoBehaviour:
@@ -40019,7 +40101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6350798364970468083
 MonoBehaviour:
@@ -40755,7 +40838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6669268448545799059
 MonoBehaviour:
@@ -40942,7 +41026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6778268592349232296
 MonoBehaviour:
@@ -41153,7 +41238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &6996636530896684562
 MonoBehaviour:
@@ -41473,7 +41559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7182478596139244751
 MonoBehaviour:
@@ -41579,7 +41666,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7208984766427532986
 MonoBehaviour:
@@ -41918,7 +42006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7294750108147229595
 MonoBehaviour:
@@ -42041,7 +42130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7318540387347757266
 MonoBehaviour:
@@ -42173,7 +42263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7375978894878968540
 MonoBehaviour:
@@ -42456,7 +42547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7441106418046192665
 MonoBehaviour:
@@ -42614,7 +42706,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7532922083721271774
 MonoBehaviour:
@@ -42970,7 +43063,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7751006720771064831
 MonoBehaviour:
@@ -43297,7 +43391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7872026797482386988
 MonoBehaviour:
@@ -43544,7 +43639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7912439858427743735
 MonoBehaviour:
@@ -43614,7 +43710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7931051669739227453
 MonoBehaviour:
@@ -43766,7 +43863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &7993739024224697559
 MonoBehaviour:
@@ -43941,7 +44039,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8023160114521062292
 MonoBehaviour:
@@ -44321,7 +44420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8236683630428064670
 MonoBehaviour:
@@ -44525,7 +44625,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8311506949657863848
 MonoBehaviour:
@@ -44655,7 +44756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8338315241702848626
 MonoBehaviour:
@@ -45291,7 +45393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8477819754595879082
 MonoBehaviour:
@@ -45383,7 +45486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8526422577813795170
 MonoBehaviour:
@@ -45506,7 +45610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8575467415151657140
 MonoBehaviour:
@@ -45606,7 +45711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8630826234456843471
 MonoBehaviour:
@@ -45778,7 +45884,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8777409149883774204
 MonoBehaviour:
@@ -45980,7 +46087,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8981495669129107630
 MonoBehaviour:
@@ -46051,7 +46159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &8987076252769412473
 MonoBehaviour:
@@ -46282,7 +46391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9062137068579033282
 MonoBehaviour:
@@ -46353,7 +46463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9093652468985779675
 MonoBehaviour:
@@ -46475,7 +46586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9109288054806607368
 MonoBehaviour:
@@ -46559,7 +46671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9113289776949576036
 MonoBehaviour:
@@ -46629,7 +46742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d1a3160e2f8d849b95119b15ec0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio_miss: []
+  miss_audio_jugador: []
+  miss_1_enemy: []
   CuadriculaEnemigoSuperior: {fileID: 0}
 --- !u!114 &9115210277722244356
 MonoBehaviour:
