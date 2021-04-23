@@ -61,8 +61,8 @@ public class BarcoTrigger : MonoBehaviour
     {
         if(_Gamehandler.GetPuedoPresionarBoton())//si puedo presionar boton
         {
-            // puedoDesactivarFondo = true;
-            if(_BarcoHandler.vidas > 1 && _Gamehandler.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
+            // mensaje acerto disparo
+            if(_BarcoHandler.vidas > 1 && _Gamehandler.cantidadDeAciertosJugador != 12 && _Gamehandler.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
             {
                 sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
                 _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
@@ -82,9 +82,16 @@ public class BarcoTrigger : MonoBehaviour
         if(_BarcoHandler.vidas < 1 && _Gamehandler.cantidadDeAciertosJugador < 21)//si las vidas del barco es menor a uno
         {
             
+            _Gamehandler.cantidadDeBarcosEnemigo -=1;
             sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
-            StartCoroutine( _Gamehandler.Mensaje_bardeadaJugadorDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
-            
+            if(_Gamehandler.cantidadDeBarcosEnemigo != 2)//si cantidad de barcos es distinto de 2
+            {
+                StartCoroutine( _Gamehandler.Mensaje_bardeadaJugadorDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
+            }
+            else//si cantidad de barcos es igual a 2
+            {
+                StartCoroutine(_Gamehandler.Mensaje_EstamosGanando());//cartel enemigo destruyo barco, pide ayuda el jugador    
+            }
             _Animator.SetBool("barcoDestruido", true);
             _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
             StartCoroutine("jugarContraEnemigoDelayTargetDestroy");//delay antes de que el enemigo dispare           }  

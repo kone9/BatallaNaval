@@ -130,8 +130,8 @@ public class EnemigoHandler : MonoBehaviour
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
-        numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto);//1;//Random.Range(0,5);//para representar dificultad
-        // numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
+        // numeroAleatorio = Random.Range(0,_HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto);//1;//Random.Range(0,5);//para representar dificultad
+        numeroAleatorio = 1; //numero aleatorio para hacer pruebas de disparo
 
         yield return new WaitForSeconds(1f);//por defecto uno
 
@@ -160,13 +160,21 @@ public class EnemigoHandler : MonoBehaviour
                 StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoAcertarDisparo());
             }
             else//sino destruccion del barco, sonido y mensaje ayuda se destruyo el barco
-            {
+            {   
                 sink_Own[Random.Range(0,sink_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido ayuda
                 GameObject granExplocionInstanciada =  Instantiate(granExplocion);//instancio una gran explocion
                 granExplocionInstanciada.transform.position = ColisionDeBarcoActual.transform.parent.position;//posición del barco destruido
-                print("El nombre del padre del barco es: " + ColisionDeBarcoActual.transform.parent.name);
+                // print("El nombre del padre del barco es: " + ColisionDeBarcoActual.transform.parent.name);
                 yield return new WaitForSeconds(2f);//espero 2 segundos el sonido
-                StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoDestruyoBarco());//cartel enemigo destruyo barco, pide ayuda el jugador
+                if(_Gamehandler.cantidadDeBarcosJugador != 3)//si cantidad de barcos es distinto de 2
+                {
+                    StartCoroutine(_Gamehandler.Mensaje_bardeadaEnemigoDestruyoBarco());//cartel enemigo destruyo barco, pide ayuda el jugador    
+                }
+                else//si cantidad de barcos es igual a 2
+                {
+                    StartCoroutine(_Gamehandler.Mensaje_EstamosPerdiendo());//cartel enemigo destruyo barco, pide ayuda el jugador    
+                }
+                _Gamehandler.cantidadDeBarcosJugador -=1;
             }
             yield return new WaitForSeconds(2f);//por defecto 2 segundos funciona bien
             _Gamehandler.IsTurnoJugador();
