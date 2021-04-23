@@ -9,7 +9,8 @@ public class UIMovRotBtn : MonoBehaviour
     public static UIMovRotBtn instance;
 
     [SerializeField] private Button btn;
-    [SerializeField] private TextMeshProUGUI txt;
+	[SerializeField] private GameObject BotonMover;
+	[SerializeField] private GameObject BotonRotar;
 
 	private bool moveMode = true;
 
@@ -25,9 +26,16 @@ public class UIMovRotBtn : MonoBehaviour
 	{
 		MoveMode = !MoveMode;
 		if (MoveMode)
-			txt.SetText("M");
+		{
+			BotonMover.SetActive(true);
+			BotonRotar.SetActive(false);
+		}	
 		else
-			txt.SetText("R");
+		{
+			BotonMover.SetActive(false);
+			BotonRotar.SetActive(true);
+		}
+			
 	}
 
 }

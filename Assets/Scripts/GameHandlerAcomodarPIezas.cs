@@ -52,6 +52,7 @@ public class GameHandlerAcomodarPIezas : MonoBehaviour
 	private void DisableEspera()
 	{
         espera.SetActive(false);
+        GameObject.Find("sfx_player_connected").GetComponent<AudioSource>().Play();
 	}
 
 	private void Awake() {
