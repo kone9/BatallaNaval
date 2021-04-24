@@ -112,7 +112,16 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
                     _photonView.RPC("EfectoEnEnemigoAlDestruirBarco", //Nombre de la función que es llamada localmente
                         RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
                     );
-                    StartCoroutine(_GameHandlerRED.Mensaje_bardeadaJugadorDestruyoBarco());//bardeada acierta disparo
+
+                    _GameHandlerRED.cantidadDeBarcosEnemigo -=1;
+                    if(_GameHandlerRED.cantidadDeBarcosEnemigo != 2)//si cantidad de barcos es distinto de 2
+                    {
+                        StartCoroutine( _GameHandlerRED.Mensaje_bardeadaJugadorDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
+                    }
+                    else//si cantidad de barcos es igual a 2
+                    {
+                        StartCoroutine(_GameHandlerRED.Mensaje_EstamosGanando());//cartel enemigo destruyo barco, pide ayuda el jugador    
+                    }
                     
                     sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
                     _Animator.SetBool("barcoDestruido", true);
@@ -223,7 +232,15 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     {
         audio_sink_Own[Random.Range(0,audio_sink_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido ayuda
         yield return new WaitForSeconds(2.0f);
-        StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoDestruyoBarco() ); // bardeada enemigo destruyo barco
+        _GameHandlerRED.cantidadDeBarcosJugador -= 1;
+        if(_GameHandlerRED.cantidadDeBarcosJugador != 2)//si cantidad de barcos es distinto de 2
+        {
+            StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
+        }
+        else//si cantidad de barcos es igual a 2
+        {
+            StartCoroutine(_GameHandlerRED.Mensaje_EstamosPerdiendo());//cartel enemigo destruyo barco, pide ayuda el jugador    
+        }
     }
 
     /// <summary>Para que dispare el fuego en los barcos del rival, osea la pantalla de abajo</summary>

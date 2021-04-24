@@ -18,6 +18,9 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
 
 
     public int cantidadDeAciertosJugador = 0;
+    
+    public int cantidadDeBarcosJugador = 5;
+    public int cantidadDeBarcosEnemigo = 5;
 
     EnemigoHandler _EnemigoHandler;
 
@@ -75,6 +78,12 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
     
     [SerializeField]
     private GameObject bardeadaEnemigoDestruyoBarco;
+
+    [SerializeField]
+    private GameObject bardeadaEstamosPerdiendo;
+
+    [SerializeField]
+    private GameObject bardeadaEstamosGanando;
 
 //////////////////////////////////////////////////////
 
@@ -321,6 +330,22 @@ public class GameHandlerRED : MonoBehaviourPunCallbacks,IPunObservable
         bardeadaEnemigoDestruyoBarco.gameObject.SetActive(true);//activo game object
         yield return new WaitForSeconds(2);
         bardeadaEnemigoDestruyoBarco.gameObject.SetActive(false);//activo game object
+    }
+
+    /// <summary>activa y desactiva mensajes cuando el jugador esta perdiendo</summary>
+    public IEnumerator Mensaje_EstamosPerdiendo()
+    {
+        bardeadaEstamosPerdiendo.gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaEstamosPerdiendo.gameObject.SetActive(false);//activo game object
+    }
+
+    /// <summary>activa y desactiva mensajes cuando el jugador esta perdiendo</summary>
+    public IEnumerator Mensaje_EstamosGanando()
+    {
+        bardeadaEstamosGanando.gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(3);
+        bardeadaEstamosGanando.gameObject.SetActive(false);//activo game object
     }
 
     
