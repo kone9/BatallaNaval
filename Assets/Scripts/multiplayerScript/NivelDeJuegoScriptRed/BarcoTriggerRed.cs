@@ -80,11 +80,11 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
             // print("hay colision" + haycolision);
             instanciarFuego(this.transform.position);//instancía el juego en la cuadricula
             //Hace que sea visible la imagen en el enemigo que representa esta parte de barco
-            _photonView.RPC("DeshabilitarImagenQueRepresentaEstaCasillaEnEnemigoEnRed", //Nombre de la función que es llamada localmente
+            _photonView.RPC(nameof(DeshabilitarImagenQueRepresentaEstaCasillaEnEnemigoEnRed), //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
             );
             //instanciar fuego en los barcos que estan en la pantalla de arriba del enemigo 
-            _photonView.RPC("InstanciarFuegoEnBarcosEnemigos", //Nombre de la función que es llamada localmente
+            _photonView.RPC(nameof(InstanciarFuegoEnBarcosEnemigos), //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
                 this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
             );
@@ -101,7 +101,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
                     sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
                     StartCoroutine(_GameHandlerRED.Mensaje_bardeadaJugadorAcertarDisparo());//bardeada acierta disparo
                     //instanciar sonidos y onomatopella que estan en la pantalla de arriba del enemigo al golpear barco
-                    _photonView.RPC("EfectoEnEnemigoAlGolpearBarco", //Nombre de la función que es llamada localmente
+                    _photonView.RPC(nameof(EfectoEnEnemigoAlGolpearBarco), //Nombre de la función que es llamada localmente
                         RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
                     ); 
                     StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
@@ -109,7 +109,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
                 else// if(_BarcoHandler.vidas < 1)//sino el barco no tiene vidas
                 {
                     //instanciar sonidos y onomatopella que estan en la pantalla de arriba del enemigo al destruirse
-                    _photonView.RPC("EfectoEnEnemigoAlDestruirBarco", //Nombre de la función que es llamada localmente
+                    _photonView.RPC(nameof(EfectoEnEnemigoAlDestruirBarco), //Nombre de la función que es llamada localmente
                         RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
                     );
 
@@ -168,12 +168,12 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
     IEnumerator EnemigoLosse()
     {
         yield return new WaitForSeconds(2);
-        _photonView.RPC("GameOverRival", //Nombre de la función que es llamada localmente
+        _photonView.RPC(nameof(GameOverRival), //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered//ejecuto en los otros que no ganaron
             );
 
         yield return new WaitForSeconds(2);//despues de 2 segundos 
-        _photonView.RPC("GameOverPantalla", //Nombre de la función que es llamada localmente
+        _photonView.RPC(nameof(GameOverPantalla), //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered//ejecuto en los otros que no ganaron
             );
     }
