@@ -74,38 +74,6 @@ public class FixearCamara : MonoBehaviour
 
 
 
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private void Awake() {
         camaraActual = GetComponent<Camera>();
     }
