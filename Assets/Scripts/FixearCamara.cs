@@ -63,6 +63,139 @@ public class FixearCamara : MonoBehaviour
     Vector2 HTCDesire = new Vector2(480 ,800);
     Vector2 HTCEvo = new Vector2(480 ,800);
     Vector2 HTCOne = new Vector2(1080 ,1920);
+    Vector2 HTCOneM8yM9 = new Vector2(1080 ,1920);
+    Vector2 HTC10 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaM4 = new Vector2(720 ,1280);
+    Vector2 SonyXperiaM5 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaZ2 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaZ3 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaZ5 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaX = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaZ = new Vector2(1080 ,1920);
+    Vector2 OnePlusX = new Vector2(1080 ,1920);
+    Vector2 OnePlusOney2 = new Vector2(1080 ,1920);
+    Vector2 OnePlus3 = new Vector2(1080 ,1920);
+    Vector2 OnePlus6 = new Vector2(1080 ,1920);
+    Vector2 HuaweiHonor5X = new Vector2(1080 ,1920);
+    Vector2 HuaweiMate8 = new Vector2(1080 ,1920);
+    Vector2 HuaweiHonor8 = new Vector2(1080 ,1920);
+    Vector2 HuaweiMate10 = new Vector2(1440 ,2560);
+    Vector2 HuaweiMate10Plus = new Vector2(1080 ,2160);
+    Vector2 HuaweiP8 = new Vector2(1080, 1920);
+    Vector2 XiaomiNote3y4 = new Vector2(1080, 1920);
+    Vector2 XiaomiMi6 = new Vector2(1080, 1920);
+    Vector2 XiaomiMiA1 = new Vector2(1080, 1920);
+    Vector2 XiaomiMi8 = new Vector2(1080, 2248);
+    Vector2 NokiaLumia520 = new Vector2(480, 800);
+    Vector2 NokiaLumia710y800 = new Vector2(480, 800);
+    Vector2 NokiaLumia920 = new Vector2(768, 1280);
+    Vector2 MicrosoftLumia950 = new Vector2(1440, 2560);
+    Vector2 MotorolaDroid = new Vector2(480, 854);
+    Vector2 MotorolaDroid3y4 = new Vector2(540, 960);
+    Vector2 MotorolaDroidRazr = new Vector2(540, 960);
+    Vector2 MotorolaMotoG = new Vector2(720, 1280);
+    Vector2 MotorolaMotoXStyle = new Vector2(1440, 2560);
+    Vector2 MotorolaNexus6 = new Vector2(1440, 2560);
+    Vector2 MotorolaMotoZ = new Vector2(1440, 2560);
+    Vector2 AppleiPad1Y2 = new Vector2(768, 1024);
+    Vector2 AppleIPad3Y4 = new Vector2(1536, 2048);
+    Vector2 AppleiPadAir1y2 = new Vector2(1536, 2048);
+    Vector2 AppleiPadProLTE = new Vector2(1732, 2048);
+    Vector2 AppleiPadProWiFi = new Vector2(1732, 2048);
+    Vector2 AppleiPadPro97LTE = new Vector2(1536, 2048);
+    Vector2 AppleiPadMini = new Vector2(768, 1024);
+    Vector2 AppleiPadMini2 = new Vector2(1536, 2048);
+    Vector2 AppleiPadMini4WiFi = new Vector2(1536, 2048);
+    Vector2 BarnesYNobleNookTablet = new Vector2(600, 800);
+    Vector2 GoogleNexus7byAsus = new Vector2(800, 1280);
+    Vector2 HTCGoogleNexus9 = new Vector2(1536, 2048);
+    Vector2 GoogleNexus10bySamsung = new Vector2(1600, 2560);
+    Vector2 SamsungGalaxyTab101 = new Vector2(800, 1280);
+    Vector2 SamsungGalaxyTabS2101 = new Vector2(800, 1280);
+    Vector2 SamsungGalaxyTabS84 = new Vector2(800, 1280);
+    Vector2 HP7 = new Vector2(600, 1024);
+    Vector2 HP8 = new Vector2(800, 1280);
+    Vector2 MicrosoftSurfacePro = new Vector2(1080, 1920);
+    Vector2 MicrosoftSurface3LTE = new Vector2(1080, 1920);
+    Vector2 MicrosoftSurfacePro3 = new Vector2(1440, 2160);
+    Vector2 MicrosoftSurfacePro4 = new Vector2(1824, 2736);
+    Vector2 MicrosoftSurfaceBook = new Vector2(2000, 3000);
+    Vector2 AmazonKindleFireHD7 = new Vector2(800, 1280);
+    Vector2 AmazonKindleFireHD89 = new Vector2(1200, 1920);
+    Vector2 AsusTransformer = new Vector2(1200, 1920);
+    Vector2 LenovoYogaTab3Pro = new Vector2(1600, 2560);
+    Vector2 LGGPadX80 = new Vector2(1600, 1920);
+    Vector2 ChromebookPixel = new Vector2(1700, 2560);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
