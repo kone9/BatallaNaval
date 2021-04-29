@@ -11,8 +11,9 @@ public class FixearCamara : MonoBehaviour
 
     Vector2 pantallaActualDimension;//tamaño de pantalla actual
 
-    //referencia a dimensiones de pantalla de celulares
-    //cualquiera de estos puede representar 1080 X 1920
+            //referencia a dimensiones de pantalla de celulares
+    
+    //1080 X 1920 cualquiera de estos puede representar 
     Vector2 HuaweiP8 = new Vector2(1080, 1920);
     Vector2 XiaomiNote3y4 = new Vector2(1080, 1920);
     Vector2 XiaomiMi6 = new Vector2(1080, 1920);
@@ -45,7 +46,17 @@ public class FixearCamara : MonoBehaviour
     Vector2 MicrosoftSurfacePro = new Vector2(1080, 1920);
     Vector2 MicrosoftSurface3LTE = new Vector2(1080, 1920);
 
-    //
+    //720 X 1280 cualquiera de estos puede representar 
+    Vector2 SamsungGalaxyNexus = new Vector2(720 ,1280);
+    Vector2 SamsungGalaxyS3 = new Vector2(720 ,1280);
+    Vector2 SonyXperiaM4 = new Vector2(720 ,1280);
+    Vector2 SamsungA5 = new Vector2(720 ,1280);
+
+    //1440 X 2560 cualquiera de estos puede representar 
+    Vector2 GooglePixelXL = new Vector2(1440 ,2560);
+
+
+
     Vector2 iPhone6 = new Vector2(750 , 1334);
     Vector2 iPhone3GS = new Vector2(320, 480);
     Vector2 iPhone4 = new Vector2(640, 960);
@@ -60,10 +71,8 @@ public class FixearCamara : MonoBehaviour
     Vector2 iPhone11 = new Vector2(828 ,1792);
     Vector2 iPhone11Pro = new Vector2(1125 ,2436);
     Vector2 iPhone11ProMax = new Vector2(1242 ,2688);
-    Vector2 SamsungGalaxyNexus = new Vector2(720 ,1280);
     Vector2 SamsungGalaxyS = new Vector2(480 ,800);
     Vector2 SamsungGalaxyS2 = new Vector2(480 ,800);
-    Vector2 SamsungGalaxyS3 = new Vector2(720 ,1280);
     Vector2 SamsungGalaxyS6 = new Vector2(1440 ,2560);
     Vector2 SamsungGalaxyS7 = new Vector2(1440 ,2560);
     Vector2 SamsungGalaxyS7Edge = new Vector2(1440 ,2560);
@@ -71,7 +80,6 @@ public class FixearCamara : MonoBehaviour
     Vector2 SamsungGalaxyS8 = new Vector2(1440 ,2960);
     Vector2 SamsungGalaxyS9 = new Vector2(1440 ,2960);
     Vector2 SamsungGalaxyS9mas = new Vector2(1440 ,2960);
-    Vector2 SamsungA5 = new Vector2(720 ,1280);
     Vector2 SamsungGalaxyNote = new Vector2(800 ,1280);
     Vector2 SamsungGalaxyNote2 = new Vector2(720 ,1280);
     Vector2 SamsungGalaxyNote4 = new Vector2(1440 ,2560);
@@ -82,12 +90,10 @@ public class FixearCamara : MonoBehaviour
     Vector2 LGG3 = new Vector2(1440 ,2560);
     Vector2 LGG4 = new Vector2(1440 ,2560);
     Vector2 LGG6 = new Vector2(1440 ,2880);
-    Vector2 GooglePixelXL = new Vector2(1440 ,2560);
     Vector2 GooglePixel3 = new Vector2(1080 ,2160);
     Vector2 GooglePixel3XL = new Vector2(1440 ,2960);
     Vector2 HTCDesire = new Vector2(480 ,800);
     Vector2 HTCEvo = new Vector2(480 ,800);
-    Vector2 SonyXperiaM4 = new Vector2(720 ,1280);
     Vector2 HuaweiMate10 = new Vector2(1440 ,2560);
     Vector2 HuaweiMate10Plus = new Vector2(1080 ,2160);
     Vector2 XiaomiMi8 = new Vector2(1080, 2248);
