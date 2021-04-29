@@ -38,7 +38,7 @@ public class GestorDeRed : MonoBehaviourPunCallbacks
     //Cuando se conecta al servidor maestro
     public override void OnConnectedToMaster()
     {
-        PhotonNetwork.JoinLobby();
+        PhotonNetwork.JoinLobby();//Unirse o crear el lobby
         print("Felicidades estoy conectado al servidor maestro");
     }
 
@@ -46,7 +46,7 @@ public class GestorDeRed : MonoBehaviourPunCallbacks
     public override void OnJoinedLobby()
     {
         base.OnJoinedLobby();
-        PhotonNetwork.JoinOrCreateRoom("Cuarta", new RoomOptions{MaxPlayers = 4}, TypedLobby.Default );
+        PhotonNetwork.JoinOrCreateRoom("Cuarta", new RoomOptions{MaxPlayers = 2}, TypedLobby.Default );//creo el cuarto o me uno
     }
 
     public override void OnCreatedRoom()

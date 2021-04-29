@@ -9,21 +9,51 @@ public class FixearCamara : MonoBehaviour
     // float defaulAncho;
     // float NuevaPosicionCamara;
 
-    Vector2 pantallaActualDimension;
+    Vector2 pantallaActualDimension;//tamaño de pantalla actual
 
     //referencia a dimensiones de pantalla de celulares
+    //cualquiera de estos puede representar 1080 X 1920
+    Vector2 HuaweiP8 = new Vector2(1080, 1920);
+    Vector2 XiaomiNote3y4 = new Vector2(1080, 1920);
+    Vector2 XiaomiMi6 = new Vector2(1080, 1920);
+    Vector2 XiaomiMiA1 = new Vector2(1080, 1920);
+    Vector2 iPhone6Plus = new Vector2(1080, 1920);
+    Vector2 iPhone6SPlus = new Vector2(1080, 1920);
+    Vector2 iPhone7Plus = new Vector2(1080, 1920);
+    Vector2 iPhone8Plus = new Vector2(1080, 1920);
+    Vector2 SamsungGalaxyS4 = new Vector2(1080, 1920);
+    Vector2 SamsungGalaxyS5 = new Vector2(1080, 1920);
+    Vector2 GooglePixel = new Vector2(1080,1920);
+    Vector2 GooglePixel2 = new Vector2(1080, 1920);
+    Vector2 HTCOne = new Vector2(1080, 1920);
+    Vector2 HTCOneM8yM9 = new Vector2(1080, 1920);
+    Vector2 HTC10 = new Vector2(1080, 1920);
+    Vector2 SonyXperiaM5 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaZ2 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaZ3 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaZ5 = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaX = new Vector2(1080 ,1920);
+    Vector2 SonyXperiaZ = new Vector2(1080 ,1920);
+    Vector2 OnePlusX = new Vector2(1080 ,1920);
+    Vector2 OnePlusOney2 = new Vector2(1080 ,1920);
+    Vector2 OnePlus3 = new Vector2(1080 ,1920);
+    Vector2 OnePlus6 = new Vector2(1080 ,1920);
+    Vector2 HuaweiHonor5X = new Vector2(1080 ,1920);
+    Vector2 HuaweiMate8 = new Vector2(1080 ,1920);
+    Vector2 HuaweiHonor8 = new Vector2(1080 ,1920);
+    Vector2 LGG5 = new Vector2(1080 ,1920);
+    Vector2 MicrosoftSurfacePro = new Vector2(1080, 1920);
+    Vector2 MicrosoftSurface3LTE = new Vector2(1080, 1920);
+
+    //
+    Vector2 iPhone6 = new Vector2(750 , 1334);
     Vector2 iPhone3GS = new Vector2(320, 480);
     Vector2 iPhone4 = new Vector2(640, 960);
     Vector2 iPhone5 = new Vector2(640, 1136);
-    Vector2 iPhone6 = new Vector2(750 , 1334);
-    Vector2 iPhone6Plus = new Vector2(1080  , 1920);
     Vector2 iPhone6S = new Vector2(750 , 1334);
-    Vector2 iPhone6SPlus = new Vector2(1920 , 1080);
-    Vector2 iPhone7 = new Vector2(1334 , 750);
-    Vector2 iPhone7Plus = new Vector2(1080 , 1920);
-    Vector2 iPhone8 = new Vector2(1334 , 750);
-    Vector2 iPhone8Plus = new Vector2(1920 ,1080);
-    Vector2 iPhoneX = new Vector2(2046 ,1125);
+    Vector2 iPhone7 = new Vector2(750,1334);
+    Vector2 iPhone8 = new Vector2(750,1334);
+    Vector2 iPhoneX = new Vector2(1125,2046);
     Vector2 iPhoneXR = new Vector2(828 ,1792);
     Vector2 iPhoneXS = new Vector2(1125 ,2436);
     Vector2 iPhoneXSMax = new Vector2(1242 ,2688);
@@ -34,8 +64,6 @@ public class FixearCamara : MonoBehaviour
     Vector2 SamsungGalaxyS = new Vector2(480 ,800);
     Vector2 SamsungGalaxyS2 = new Vector2(480 ,800);
     Vector2 SamsungGalaxyS3 = new Vector2(720 ,1280);
-    Vector2 SamsungGalaxyS4 = new Vector2(1080 ,1920);
-    Vector2 SamsungGalaxyS5 = new Vector2(1080 ,1920);
     Vector2 SamsungGalaxyS6 = new Vector2(1440 ,2560);
     Vector2 SamsungGalaxyS7 = new Vector2(1440 ,2560);
     Vector2 SamsungGalaxyS7Edge = new Vector2(1440 ,2560);
@@ -53,38 +81,15 @@ public class FixearCamara : MonoBehaviour
     Vector2 SamsungGalaxyNote9 = new Vector2(1440 ,2560);
     Vector2 LGG3 = new Vector2(1440 ,2560);
     Vector2 LGG4 = new Vector2(1440 ,2560);
-    Vector2 LGG5 = new Vector2(1080 ,1920);
     Vector2 LGG6 = new Vector2(1440 ,2880);
-    Vector2 GooglePixel = new Vector2(1080 ,1920);
     Vector2 GooglePixelXL = new Vector2(1440 ,2560);
-    Vector2 GooglePixel2 = new Vector2(1080 ,1920);
     Vector2 GooglePixel3 = new Vector2(1080 ,2160);
     Vector2 GooglePixel3XL = new Vector2(1440 ,2960);
     Vector2 HTCDesire = new Vector2(480 ,800);
     Vector2 HTCEvo = new Vector2(480 ,800);
-    Vector2 HTCOne = new Vector2(1080 ,1920);
-    Vector2 HTCOneM8yM9 = new Vector2(1080 ,1920);
-    Vector2 HTC10 = new Vector2(1080 ,1920);
     Vector2 SonyXperiaM4 = new Vector2(720 ,1280);
-    Vector2 SonyXperiaM5 = new Vector2(1080 ,1920);
-    Vector2 SonyXperiaZ2 = new Vector2(1080 ,1920);
-    Vector2 SonyXperiaZ3 = new Vector2(1080 ,1920);
-    Vector2 SonyXperiaZ5 = new Vector2(1080 ,1920);
-    Vector2 SonyXperiaX = new Vector2(1080 ,1920);
-    Vector2 SonyXperiaZ = new Vector2(1080 ,1920);
-    Vector2 OnePlusX = new Vector2(1080 ,1920);
-    Vector2 OnePlusOney2 = new Vector2(1080 ,1920);
-    Vector2 OnePlus3 = new Vector2(1080 ,1920);
-    Vector2 OnePlus6 = new Vector2(1080 ,1920);
-    Vector2 HuaweiHonor5X = new Vector2(1080 ,1920);
-    Vector2 HuaweiMate8 = new Vector2(1080 ,1920);
-    Vector2 HuaweiHonor8 = new Vector2(1080 ,1920);
     Vector2 HuaweiMate10 = new Vector2(1440 ,2560);
     Vector2 HuaweiMate10Plus = new Vector2(1080 ,2160);
-    Vector2 HuaweiP8 = new Vector2(1080, 1920);
-    Vector2 XiaomiNote3y4 = new Vector2(1080, 1920);
-    Vector2 XiaomiMi6 = new Vector2(1080, 1920);
-    Vector2 XiaomiMiA1 = new Vector2(1080, 1920);
     Vector2 XiaomiMi8 = new Vector2(1080, 2248);
     Vector2 NokiaLumia520 = new Vector2(480, 800);
     Vector2 NokiaLumia710y800 = new Vector2(480, 800);
@@ -115,8 +120,6 @@ public class FixearCamara : MonoBehaviour
     Vector2 SamsungGalaxyTabS84 = new Vector2(800, 1280);
     Vector2 HP7 = new Vector2(600, 1024);
     Vector2 HP8 = new Vector2(800, 1280);
-    Vector2 MicrosoftSurfacePro = new Vector2(1080, 1920);
-    Vector2 MicrosoftSurface3LTE = new Vector2(1080, 1920);
     Vector2 MicrosoftSurfacePro3 = new Vector2(1440, 2160);
     Vector2 MicrosoftSurfacePro4 = new Vector2(1824, 2736);
     Vector2 MicrosoftSurfaceBook = new Vector2(2000, 3000);
@@ -126,84 +129,6 @@ public class FixearCamara : MonoBehaviour
     Vector2 LenovoYogaTab3Pro = new Vector2(1600, 2560);
     Vector2 LGGPadX80 = new Vector2(1600, 1920);
     Vector2 ChromebookPixel = new Vector2(1700, 2560);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -221,9 +146,467 @@ public class FixearCamara : MonoBehaviour
                     this.transform.position.z
                 );
         }
-        else if(pantallaActualDimension == iPhone3GS)
+        else if(pantallaActualDimension == iPhone4)
         {
 
+        }
+        else if(pantallaActualDimension == iPhone5)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone6)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone6Plus)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone6S)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone6SPlus)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone7)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone7Plus)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone8)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone8Plus)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhoneX)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhoneXR)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhoneXS)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhoneXSMax)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone11)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone11Pro)
+        {
+
+        }
+        else if(pantallaActualDimension == iPhone11ProMax)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNexus)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS2)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS3)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS4)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS5)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS6)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS7)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS7Edge)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS7Active)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS8)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS9)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS9mas)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungA5)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote2)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote4)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote5)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote7)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote8)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote9)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG3)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG4)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG5)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG6)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixelXL)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel2)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel3)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel3XL)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCDesire)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCEvo)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCOne)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCOneM8yM9)
+        {
+
+        }
+        else if(pantallaActualDimension == HTC10)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaM4)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaM5)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ2)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ3)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ5)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaX)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlusX)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlusOney2)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlus3)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlus6)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiHonor5X)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate8)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiHonor8)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate10)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate10Plus)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiP8)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiNote3y4)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMi6)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMiA1)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMi8)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia520)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia710y800)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia920)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftLumia950)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroid)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroid3y4)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroidRazr)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoG)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoXStyle)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaNexus6)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoZ)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPad1Y2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleIPad3Y4)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadAir1y2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadProLTE)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadProWiFi)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadPro97LTE)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini4WiFi)
+        {
+
+        }
+        else if(pantallaActualDimension == BarnesYNobleNookTablet)
+        {
+
+        }
+        else if(pantallaActualDimension == GoogleNexus7byAsus)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCGoogleNexus9)
+        {
+
+        }
+        else if(pantallaActualDimension == GoogleNexus10bySamsung)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTab101)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTabS2101)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTabS84)
+        {
+
+        }
+        else if(pantallaActualDimension == HP7)
+        {
+
+        }
+        else if(pantallaActualDimension == HP8)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurface3LTE)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro3)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro4)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfaceBook)
+        {
+
+        }
+        else if(pantallaActualDimension == AmazonKindleFireHD7)
+        {
+
+        }
+        else if(pantallaActualDimension == AmazonKindleFireHD89)
+        {
+
+        }
+        else if(pantallaActualDimension == AsusTransformer)
+        {
+
+        }
+        else if(pantallaActualDimension == LenovoYogaTab3Pro)
+        {
+
+        }
+        else if(pantallaActualDimension == LGGPadX80)
+        {
+
+        }
+        else if(pantallaActualDimension == ChromebookPixel)
+        {
+
+        }
+
+
+        else
+        {
+            camaraActual.transform.position = new Vector3(
+                    this.transform.position.x,
+                    75, //posicion de la camara en "Y"
+                    this.transform.position.z
+                );
         }
 
         // switch (pantallaActualDimension)
