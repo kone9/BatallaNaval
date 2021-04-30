@@ -309,6 +309,7 @@ public class FixearCamara : MonoBehaviour
         else if(pantallaActualDimension == SamsungGalaxyS3)
         {
 
+<<<<<<< HEAD
         }
         else if(pantallaActualDimension == SamsungGalaxyS4)
         {
@@ -688,29 +689,34 @@ public class FixearCamara : MonoBehaviour
             );
         }
         else if(pantallaActualDimension == new Vector2(1440,2160))
-        {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                76, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+=======
         }
+        else if(pantallaActualDimension == SamsungGalaxyS4)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS5)
+>>>>>>> parent of d72d413 (agregando todas las resoluciones)
+        {
+
+        }
+<<<<<<< HEAD
         else if(pantallaActualDimension == new Vector2(1824,2736))
+=======
+        else if(pantallaActualDimension == SamsungGalaxyS6)
+>>>>>>> parent of d72d413 (agregando todas las resoluciones)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
+<<<<<<< HEAD
         else if(pantallaActualDimension == new Vector2(2000,3000))
+=======
+        else if(pantallaActualDimension == SamsungGalaxyS7)
+>>>>>>> parent of d72d413 (agregando todas las resoluciones)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
+<<<<<<< HEAD
         else if(pantallaActualDimension == new Vector2(2000,3000))
         {
             camaraActual.transform.position = new Vector3(
@@ -736,6 +742,360 @@ public class FixearCamara : MonoBehaviour
             );
         }
 =======
+=======
+        else if(pantallaActualDimension == SamsungGalaxyS7Edge)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS7Active)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS8)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS9)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS9mas)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungA5)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote2)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote4)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote5)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote7)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote8)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote9)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG3)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG4)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG5)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG6)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixelXL)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel2)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel3)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel3XL)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCDesire)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCEvo)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCOne)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCOneM8yM9)
+        {
+
+        }
+        else if(pantallaActualDimension == HTC10)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaM4)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaM5)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ2)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ3)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ5)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaX)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlusX)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlusOney2)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlus3)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlus6)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiHonor5X)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate8)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiHonor8)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate10)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate10Plus)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiP8)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiNote3y4)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMi6)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMiA1)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMi8)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia520)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia710y800)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia920)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftLumia950)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroid)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroid3y4)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroidRazr)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoG)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoXStyle)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaNexus6)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoZ)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPad1Y2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleIPad3Y4)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadAir1y2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadProLTE)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadProWiFi)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadPro97LTE)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini4WiFi)
+        {
+
+        }
+        else if(pantallaActualDimension == BarnesYNobleNookTablet)
+        {
+
+        }
+        else if(pantallaActualDimension == GoogleNexus7byAsus)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCGoogleNexus9)
+        {
+
+        }
+        else if(pantallaActualDimension == GoogleNexus10bySamsung)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTab101)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTabS2101)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTabS84)
+        {
+
+        }
+        else if(pantallaActualDimension == HP7)
+        {
+
+        }
+        else if(pantallaActualDimension == HP8)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurface3LTE)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro3)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro4)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfaceBook)
+        {
+
+        }
+        else if(pantallaActualDimension == AmazonKindleFireHD7)
+        {
+
+        }
+        else if(pantallaActualDimension == AmazonKindleFireHD89)
+        {
+
+        }
+        else if(pantallaActualDimension == AsusTransformer)
+        {
+
+        }
+        else if(pantallaActualDimension == LenovoYogaTab3Pro)
+        {
+
+        }
+        else if(pantallaActualDimension == LGGPadX80)
+        {
+
+        }
+        else if(pantallaActualDimension == ChromebookPixel)
+        {
+
+        }
+>>>>>>> parent of d72d413 (agregando todas las resoluciones)
 
 
 >>>>>>> parent of d72d413 (agregando todas las resoluciones)
