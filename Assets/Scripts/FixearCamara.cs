@@ -84,7 +84,7 @@ public class FixearCamara : MonoBehaviour
     Vector2 iPhone7 = new Vector2(750,1334);
     Vector2 iPhone8 = new Vector2(750,1334);
 
-    //320 X 480 cualquiera de estos puede representar 
+    //750 X 1334 cualquiera de estos puede representar 
     Vector2 iPhone3GS = new Vector2(320, 480);
 
     //640 X 960 cualquiera de estos puede representar 
@@ -112,7 +112,7 @@ public class FixearCamara : MonoBehaviour
     Vector2 NokiaLumia520 = new Vector2(480, 800);
     Vector2 NokiaLumia710y800 = new Vector2(480, 800);
    
-    //800 X 1280 cualquiera de estos puede representar 
+    //480 X 800 cualquiera de estos puede representar 
     Vector2 SamsungGalaxyTab101 = new Vector2(800, 1280);
     Vector2 SamsungGalaxyTabS2101 = new Vector2(800, 1280);
     Vector2 SamsungGalaxyTabS84 = new Vector2(800, 1280);
@@ -138,7 +138,7 @@ public class FixearCamara : MonoBehaviour
     //1440 X 2960 cualquiera de estos puede representar
     Vector2 SamsungGalaxyS9mas = new Vector2(1440 ,2960);
 
-    //800 X 1280 cualquiera de estos puede representar
+    //1440 X 2960 cualquiera de estos puede representar
     Vector2 SamsungGalaxyNote = new Vector2(800 ,1280);
     Vector2 GoogleNexus7byAsus = new Vector2(800, 1280);
 
@@ -184,7 +184,7 @@ public class FixearCamara : MonoBehaviour
     //1732 X 2048 cualquiera de estos puede representar
     Vector2 AppleiPadProLTE = new Vector2(1732, 2048);
     Vector2 AppleiPadProWiFi = new Vector2(1732, 2048);
-    //hoy llegue hasta aqui
+
     //600 X 800 cualquiera de estos puede representar                                                                                                                
     Vector2 BarnesYNobleNookTablet = new Vector2(600, 800);
 
@@ -200,11 +200,8 @@ public class FixearCamara : MonoBehaviour
     //2000 X 3000 cualquiera de estos puede representar
     Vector2 MicrosoftSurfaceBook = new Vector2(2000, 3000);
 
-    //1700 X 2560 cualquiera de estos puede representar
+        //1700 X 2560 cualquiera de estos puede representar
     Vector2 ChromebookPixel = new Vector2(1700, 2560);
-
-    //720 X 1560 cualquiera de estos puede representar
-    Vector2 samsungGalaxyA20 = new Vector2(720, 1560);
 
 
 
@@ -221,7 +218,7 @@ public class FixearCamara : MonoBehaviour
     {
         //dependiendo el ancho de la pantalla cambio la posición en el eje "Y" de la Camara
         pantallaActualDimension = new Vector2(Screen.width,Screen.height);
-        if(pantallaActualDimension == new Vector2(1080,1920))
+        if(pantallaActualDimension == iPhone3GS)
         {
             camaraActual.transform.position = new Vector3(
                     this.transform.position.x,
@@ -229,233 +226,459 @@ public class FixearCamara : MonoBehaviour
                     this.transform.position.z
                 );
         }
-        else if(pantallaActualDimension == new Vector2(720,1280))
+        else if(pantallaActualDimension == iPhone4)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
-        }
-        else if(pantallaActualDimension == new Vector2(1440,2560))
-        {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
 
         }
-        else if(pantallaActualDimension == new Vector2(750,1334))
+        else if(pantallaActualDimension == iPhone5)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
 
         }
-        else if(pantallaActualDimension == new Vector2(750,1334))
+        else if(pantallaActualDimension == iPhone6)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
 
         }
-        else if(pantallaActualDimension == new Vector2(320,480))
+        else if(pantallaActualDimension == iPhone6Plus)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(640,960))
+        else if(pantallaActualDimension == iPhone6S)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(640,1136))
+        else if(pantallaActualDimension == iPhone6SPlus)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1440,2960))
+        else if(pantallaActualDimension == iPhone7)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                87, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1200,1920))
+        else if(pantallaActualDimension == iPhone7Plus)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(480,800))
+        else if(pantallaActualDimension == iPhone8)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(800,1280))
+        else if(pantallaActualDimension == iPhone8Plus)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1125,2046))
+        else if(pantallaActualDimension == iPhoneX)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                91, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(828,1792))
+        else if(pantallaActualDimension == iPhoneXR)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                91, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1242,2688))
+        else if(pantallaActualDimension == iPhoneXS)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                91, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(828,1792))
+        else if(pantallaActualDimension == iPhoneXSMax)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                91, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1440,2960))
+        else if(pantallaActualDimension == iPhone11)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                87, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(800,1280))
+        else if(pantallaActualDimension == iPhone11Pro)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1440,2880))
+        else if(pantallaActualDimension == iPhone11ProMax)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                85, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1080,2160))
+        else if(pantallaActualDimension == SamsungGalaxyNexus)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                85, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1600,2560))
+        else if(pantallaActualDimension == SamsungGalaxyS)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(800,1280))
+        else if(pantallaActualDimension == SamsungGalaxyS2)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1080,2248))
+        else if(pantallaActualDimension == SamsungGalaxyS3)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                88, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(768,1280))
+        else if(pantallaActualDimension == SamsungGalaxyS4)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                76, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(480,854))
+        else if(pantallaActualDimension == SamsungGalaxyS5)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(540,960))
+        else if(pantallaActualDimension == SamsungGalaxyS6)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                75, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(768,1024))
+        else if(pantallaActualDimension == SamsungGalaxyS7)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                76, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1536,2048))
+        else if(pantallaActualDimension == SamsungGalaxyS7Edge)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                76, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
-        else if(pantallaActualDimension == new Vector2(1536,2048))
+        else if(pantallaActualDimension == SamsungGalaxyS7Active)
         {
-            camaraActual.transform.position = new Vector3(
-                this.transform.position.x,
-                76, //posicion de la camara en "Y"
-                this.transform.position.z
-            );
+
         }
+        else if(pantallaActualDimension == SamsungGalaxyS8)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS9)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyS9mas)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungA5)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote2)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote4)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote5)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote7)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote8)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyNote9)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG3)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG4)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG5)
+        {
+
+        }
+        else if(pantallaActualDimension == LGG6)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixelXL)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel2)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel3)
+        {
+
+        }
+        else if(pantallaActualDimension == GooglePixel3XL)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCDesire)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCEvo)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCOne)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCOneM8yM9)
+        {
+
+        }
+        else if(pantallaActualDimension == HTC10)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaM4)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaM5)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ2)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ3)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ5)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaX)
+        {
+
+        }
+        else if(pantallaActualDimension == SonyXperiaZ)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlusX)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlusOney2)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlus3)
+        {
+
+        }
+        else if(pantallaActualDimension == OnePlus6)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiHonor5X)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate8)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiHonor8)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate10)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiMate10Plus)
+        {
+
+        }
+        else if(pantallaActualDimension == HuaweiP8)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiNote3y4)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMi6)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMiA1)
+        {
+
+        }
+        else if(pantallaActualDimension == XiaomiMi8)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia520)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia710y800)
+        {
+
+        }
+        else if(pantallaActualDimension == NokiaLumia920)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftLumia950)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroid)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroid3y4)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaDroidRazr)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoG)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoXStyle)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaNexus6)
+        {
+
+        }
+        else if(pantallaActualDimension == MotorolaMotoZ)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPad1Y2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleIPad3Y4)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadAir1y2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadProLTE)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadProWiFi)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadPro97LTE)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini2)
+        {
+
+        }
+        else if(pantallaActualDimension == AppleiPadMini4WiFi)
+        {
+
+        }
+        else if(pantallaActualDimension == BarnesYNobleNookTablet)
+        {
+
+        }
+        else if(pantallaActualDimension == GoogleNexus7byAsus)
+        {
+
+        }
+        else if(pantallaActualDimension == HTCGoogleNexus9)
+        {
+
+        }
+        else if(pantallaActualDimension == GoogleNexus10bySamsung)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTab101)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTabS2101)
+        {
+
+        }
+        else if(pantallaActualDimension == SamsungGalaxyTabS84)
+        {
+
+        }
+        else if(pantallaActualDimension == HP7)
+        {
+
+        }
+        else if(pantallaActualDimension == HP8)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurface3LTE)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro3)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfacePro4)
+        {
+
+        }
+        else if(pantallaActualDimension == MicrosoftSurfaceBook)
+        {
+
+        }
+        else if(pantallaActualDimension == AmazonKindleFireHD7)
+        {
+
+        }
+        else if(pantallaActualDimension == AmazonKindleFireHD89)
+        {
+
+        }
+        else if(pantallaActualDimension == AsusTransformer)
+        {
+
+        }
+        else if(pantallaActualDimension == LenovoYogaTab3Pro)
+        {
+
+        }
+        else if(pantallaActualDimension == LGGPadX80)
+        {
+
+        }
+        else if(pantallaActualDimension == ChromebookPixel)
+        {
+
+        }
+<<<<<<< HEAD
         else if(pantallaActualDimension == new Vector2(600,800))
         {
             camaraActual.transform.position = new Vector3(
@@ -512,6 +735,10 @@ public class FixearCamara : MonoBehaviour
                 this.transform.position.z
             );
         }
+=======
+
+
+>>>>>>> parent of d72d413 (agregando todas las resoluciones)
         else
         {
             camaraActual.transform.position = new Vector3(
