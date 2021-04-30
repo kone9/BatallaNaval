@@ -211,7 +211,14 @@ public class FixearCamara : MonoBehaviour
     private void Awake() {
         camaraActual = GetComponent<Camera>();
     }
-    private void Start() {
+    private void Start()
+    {
+        CalcularPosicionDeCamara();
+    }
+
+
+    void CalcularPosicionDeCamara()
+    {
         //dependiendo el ancho de la pantalla cambio la posición en el eje "Y" de la Camara
         pantallaActualDimension = new Vector2(Screen.width,Screen.height);
         if(pantallaActualDimension == new Vector2(1080,1920))
@@ -449,10 +456,62 @@ public class FixearCamara : MonoBehaviour
                 this.transform.position.z
             );
         }
-        
-        
-
-
+        else if(pantallaActualDimension == new Vector2(600,800))
+        {
+            camaraActual.transform.position = new Vector3(
+                this.transform.position.x,
+                76, //posicion de la camara en "Y"
+                this.transform.position.z
+            );
+        }
+        else if(pantallaActualDimension == new Vector2(1440,2160))
+        {
+            camaraActual.transform.position = new Vector3(
+                this.transform.position.x,
+                76, //posicion de la camara en "Y"
+                this.transform.position.z
+            );
+        }
+        else if(pantallaActualDimension == new Vector2(1824,2736))
+        {
+            camaraActual.transform.position = new Vector3(
+                this.transform.position.x,
+                75, //posicion de la camara en "Y"
+                this.transform.position.z
+            );
+        }
+        else if(pantallaActualDimension == new Vector2(2000,3000))
+        {
+            camaraActual.transform.position = new Vector3(
+                this.transform.position.x,
+                75, //posicion de la camara en "Y"
+                this.transform.position.z
+            );
+        }
+        else if(pantallaActualDimension == new Vector2(2000,3000))
+        {
+            camaraActual.transform.position = new Vector3(
+                this.transform.position.x,
+                75, //posicion de la camara en "Y"
+                this.transform.position.z
+            );
+        }
+        else if(pantallaActualDimension == new Vector2(1700,2560))
+        {
+            camaraActual.transform.position = new Vector3(
+                this.transform.position.x,
+                75, //posicion de la camara en "Y"
+                this.transform.position.z
+            );
+        }
+        else if(pantallaActualDimension == new Vector2(720,1560))
+        {
+            camaraActual.transform.position = new Vector3(
+                this.transform.position.x,
+                92, //posicion de la camara en "Y"
+                this.transform.position.z
+            );
+        }
         else
         {
             camaraActual.transform.position = new Vector3(
@@ -462,67 +521,7 @@ public class FixearCamara : MonoBehaviour
                 );
         }
 
-        // switch (pantallaActualDimension)
-        // {
-        //     case iPhone3GS:
-        //         camaraActual.transform.position = new Vector3(
-        //             this.transform.position.x,
-        //             75, //posicion de la camara en "Y"
-        //             this.transform.position.z
-        //         );
-        //         break;
-
-        //     case 720:
-        //         camaraActual.transform.position = new Vector3(
-        //             this.transform.position.x,
-        //             91, //posicion de la camara en "Y"
-        //             this.transform.position.z
-        //         );
-        //         break;
-
-        //     case 828:
-        //         camaraActual.transform.position = new Vector3(
-        //             this.transform.position.x,
-        //             91, //posicion de la camara en "Y"
-        //             this.transform.position.z
-        //         );
-        //         break;
-
-        //     case 750:
-        //         camaraActual.transform.position = new Vector3(
-        //             this.transform.position.x,
-        //             91, //posicion de la camara en "Y"
-        //             this.transform.position.z
-        //         );
-        //         break;
-
-        //     case 1125:
-        //         camaraActual.transform.position = new Vector3(
-        //             this.transform.position.x,
-        //             91, //posicion de la camara en "Y"
-        //             this.transform.position.z
-        //         );
-        //         break;
-
-        //     case 640:
-        //         camaraActual.transform.position = new Vector3(
-        //             this.transform.position.x,
-        //             91, //posicion de la camara en "Y"
-        //             this.transform.position.z
-        //         );
-        //         break;
-
-        //     default:
-        //         camaraActual.transform.position = new Vector3(
-        //                 this.transform.position.x,
-        //                 75, //posicion de la camara en "Y"
-        //                 this.transform.position.z
-        //             );
-        //         break;
-        // }
-        
     }
-
 
     // void Update()
     // {
