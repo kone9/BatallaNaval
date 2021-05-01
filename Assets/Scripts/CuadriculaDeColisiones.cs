@@ -14,13 +14,13 @@ public class CuadriculaDeColisiones : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        this.gameObject.GetComponent<MeshRenderer>().enabled = true;//activo la malla de vista
+        // this.gameObject.GetComponent<MeshRenderer>().enabled = true;//activo la malla de vista
         // _Gamehandler.SetGrilla(this.gameObject);
     }
 
     private void OnMouseExit()
     {
-        this.gameObject.GetComponent<MeshRenderer>().enabled = false;//desactivo la malla de vista
+        // this.gameObject.GetComponent<MeshRenderer>().enabled = false;//desactivo la malla de vista
     }
     // // private void OnTriggerEnter(Collider other) {
     // //     // if(other.transform.tag == "boat")
