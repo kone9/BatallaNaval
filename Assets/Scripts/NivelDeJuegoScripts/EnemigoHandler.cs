@@ -162,8 +162,8 @@ public class EnemigoHandler : MonoBehaviour
             else//sino destruccion del barco, sonido y mensaje ayuda se destruyo el barco
             {   
                 sink_Own[Random.Range(0,sink_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido ayuda
-                GameObject granExplocionInstanciada =  Instantiate(granExplocion);//instancio una gran explocion
-                granExplocionInstanciada.transform.position = ColisionDeBarcoActual.transform.parent.position;//posición del barco destruido
+                // GameObject granExplocionInstanciada =  Instantiate(granExplocion);//instancio una gran explocion
+                // granExplocionInstanciada.transform.position = ColisionDeBarcoActual.transform.parent.position;//posición del barco destruido
                 // print("El nombre del padre del barco es: " + ColisionDeBarcoActual.transform.parent.name);
                 yield return new WaitForSeconds(2f);//espero 2 segundos el sonido
                 if(_Gamehandler.cantidadDeBarcosJugador != 3)//si cantidad de barcos es distinto de 2
