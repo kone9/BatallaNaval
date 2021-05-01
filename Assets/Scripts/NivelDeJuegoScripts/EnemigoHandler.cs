@@ -126,7 +126,7 @@ public class EnemigoHandler : MonoBehaviour
     }
 
 
-    /// <summary>Hace la comprobación para saber si disparar a grilla o barco</summary>
+    /// <summary>Hace la comprobación para saber si disparar a grilla o barco el enemigo</summary>
     IEnumerator GameHandlerDisparar()
     {
         numeroAcierto = 1;//para representar dificultad
