@@ -62,7 +62,7 @@ public class BarcoTrigger : MonoBehaviour
         if(_Gamehandler.GetPuedoPresionarBoton())//si puedo presionar boton
         {
             // mensaje acerto disparo
-            if(_BarcoHandler.vidas > 1 && _Gamehandler.cantidadDeAciertosJugador != 12 && _Gamehandler.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
+            if(_BarcoHandler.vidas > 1 && _Gamehandler.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
             {
                 sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
                 _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
