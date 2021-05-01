@@ -21,10 +21,16 @@ public class BarcoTrigger : MonoBehaviour
 
     GameObject[] sonidoBarcoEnemigoDestruido;
     AudioSource musicaJugandoContraEnemigo;
+
+    private HandlerDificultadEntreNiveles _HandlerDificultadEntreNiveles;//para referencia a la dificultad entre niveles
+
     
     private void Awake() {
         _BoxCollider = GetComponent<BoxCollider>();
         _Gamehandler = FindObjectOfType<Gamehandler>();
+        _HandlerDificultadEntreNiveles = FindObjectOfType<HandlerDificultadEntreNiveles>();//para obtener la referencía al script
+
+
         _BarcoHandler = transform.parent.GetComponent<BarcoHandler>();
         _Animator = transform.parent.GetComponent<Animator>();
         
@@ -55,11 +61,12 @@ public class BarcoTrigger : MonoBehaviour
     {
         if(_Gamehandler.GetPuedoPresionarBoton())//si puedo presionar boton
         {
-            // puedoDesactivarFondo = true;
+            // mensaje acerto disparo
             if(_BarcoHandler.vidas > 1 && _Gamehandler.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
             {
                 sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
                 _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
+                StartCoroutine(_Gamehandler.Mensaje_bardeadaJugadorAcertarDisparo());// mensaje bardeada acepto dipsaro
                 StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
             }
             bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
@@ -74,7 +81,17 @@ public class BarcoTrigger : MonoBehaviour
 
         if(_BarcoHandler.vidas < 1 && _Gamehandler.cantidadDeAciertosJugador < 21)//si las vidas del barco es menor a uno
         {
+            
+            _Gamehandler.cantidadDeBarcosEnemigo -=1;
             sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
+            if(_Gamehandler.cantidadDeBarcosEnemigo != 2)//si cantidad de barcos es distinto de 2
+            {
+                StartCoroutine( _Gamehandler.Mensaje_bardeadaJugadorDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
+            }
+            else//si cantidad de barcos es igual a 2
+            {
+                StartCoroutine(_Gamehandler.Mensaje_EstamosGanando());//cartel enemigo destruyo barco, pide ayuda el jugador    
+            }
             _Animator.SetBool("barcoDestruido", true);
             _Gamehandler.SetPuedoPresionarBoton(false);//no puedo presionar los botones
             StartCoroutine("jugarContraEnemigoDelayTargetDestroy");//delay antes de que el enemigo dispare           }  
@@ -83,11 +100,22 @@ public class BarcoTrigger : MonoBehaviour
         if(_Gamehandler.cantidadDeAciertosJugador == 21)//si destrui todos los barcos
         {
             //destruyo última pieza del barco
-            sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
+            GameObject.Find("sink_Own_end").GetComponent<AudioSource>().Play();//activo sonido barco destruido final de la partida
+
             _Animator.SetBool("barcoDestruido", true);
 
-            _Gamehandler.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
-            StartCoroutine("JugadorWinner");//hago las cosas de winner
+            //verifico si cambio de nivel o muestro la pantalla WinnerGameOver
+            if (_HandlerDificultadEntreNiveles.nivelActual <= 3)
+            {
+                _Gamehandler.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
+                 StartCoroutine("PasarAlSiguienteNivelWinner");//hago las cosas de winner
+            }
+            else
+            {
+                _Gamehandler.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
+                 StartCoroutine("JugadorWinner");//hago las cosas de winner
+            }
+           
         }
 
     }
@@ -114,7 +142,29 @@ public class BarcoTrigger : MonoBehaviour
         sonidoWinner.Play();//sonido winner
         yield return new WaitForSeconds(2);//despues de 2 segundos 
         _Gamehandler.GameOverWinner();//cambio a nivel winner
-    }   
+    }
+
+    IEnumerator PasarAlSiguienteNivelWinner()
+    {  
+        yield return new WaitForSeconds(2);//espero 2 segundos
+        musicaJugandoContraEnemigo.Stop();//detengo la música
+        sonidoWinner.Play();//sonido winner
+        yield return new WaitForSeconds(1f);//despues de 5 segundos 
+        _Gamehandler.UI_CambiarNivel.SetActive(true);//activo fondo
+        yield return new WaitForSeconds(0.5f);//despues de 5 segundos 
+        ///Para la barra de carga uso un contador
+        float barraCarga = 0;
+        while(barraCarga < 1)
+        {
+            _Gamehandler.barraCargaCambiarNivel.size = barraCarga;
+            yield return new WaitForSeconds(0.05f);//espero 0.4 segundos, son 10 por lo tanto son 4 segundos
+            barraCarga += 0.01f;
+        }
+        _Gamehandler.barraCargaCambiarNivel.size = 1;//hago que la barra llegue a 1
+        yield return new WaitForSeconds(1f);//espero 0.1 segundos
+        // yield return new WaitForSeconds(4);//despues de 5 segundos 
+        _Gamehandler.CambiarAlProximoNivel();//cambio a nivel winner
+    }    
 
 
     public bool DeshabilitarFondo()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones

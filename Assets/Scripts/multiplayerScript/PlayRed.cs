@@ -14,24 +14,25 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     public GameObject pantallaEsperaRival;
     private PhotonView photonMostrar;
 
-    public Toggle soyJugadorToggle;
-    public Toggle soyEnemigoToggle;
-
-    public Toggle ListoJugadorRedToglle;
-    public Toggle ListoEnemigoRedToglle;
 
     public int tiempoAntesDeCambiarEscena = 5;
    
-
     private bool listoPlayerRED = false;
 
     private bool listoEnemigoRED = false;
+
+
+    GameObject musicaInicio;
+    AudioSource PuertaSonido;
+    AudioSource efectoBoton_3;
 
 
     private void Awake() 
     {
         _GameHandlerAcomodarPIezas = FindObjectOfType<GameHandlerAcomodarPIezas>();
         photonMostrar = GetComponent<PhotonView>();
+        musicaInicio = GameObject.Find("musicaInicio");
+        efectoBoton_3 = GameObject.Find("efectoBoton_3").GetComponent<AudioSource>();
         
     }
 
@@ -40,8 +41,6 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     {
         listoPlayerRED = false;
         listoEnemigoRED = false;
-        ListoJugadorRedToglle.isOn = listoPlayerRED;
-        ListoEnemigoRedToglle.isOn = listoEnemigoRED;
     }
     
 
@@ -67,8 +66,9 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
     /// <summary>Al presionar el boton verifico si soy yo o si es el otro jugador</summary>
     public void PreparadoParaIniciarEnRed()
     {
+        efectoBoton_3.Play();
         pantallaEsperaRival.SetActive(true);
-        
+        Destroy(musicaInicio);
         //para probar luego borrar
         // listoPlayerRED = true;
         // listoEnemigoRED = true;
@@ -87,15 +87,10 @@ public class PlayRed : MonoBehaviourPunCallbacks , Photon.Pun.IPunObservable
         if(isMine)//si soy jugador "YO"
         { 
             listoPlayerRED = true;
-            
-            ListoJugadorRedToglle.isOn = listoPlayerRED;
-            ListoEnemigoRedToglle.isOn = listoEnemigoRED;
         }
         if(!isMine)//si soy enemigo " NO YO "
         {
             listoEnemigoRED = true;
-            ListoJugadorRedToglle.isOn = listoPlayerRED;
-            ListoEnemigoRedToglle.isOn = listoEnemigoRED;
         }
     }
 

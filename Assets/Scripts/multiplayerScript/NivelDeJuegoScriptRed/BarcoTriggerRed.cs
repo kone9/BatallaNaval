@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,9 +23,14 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
 
     GameObject[] sonidoBarcoEnemigoDestruido;
     AudioSource musicaJugandoContraEnemigo;
-    GameObject[] sound_hit;
-    AudioSource audio_hit_Own;//sonido hit pero para el enemigo
-    AudioSource audio_sink_Own;//sonido hundio barco  para el enemigo
+    
+    GameObject[] sound_hit; //sonido cuando el jugador acierta disparo
+    
+    GameObject[] audio_hit_Own;//sonido hit pero para el enemigo
+    GameObject[] audio_sink_Own;//sonido el enemigo hundio el barco
+
+
+    AudioSource SonidoGameOver;//sonido GameOver cuando termino el juego
 
     //ProbandoGithubDes
     
@@ -42,8 +47,9 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
         sonidoBarcoEnemigoDestruido = GameObject.FindGameObjectsWithTag("SonidoBarcoEnemigoDestruido");//referencia a la sonido barcos destruidos
         musicaJugandoContraEnemigo = GameObject.Find("MusicaJugandoContraEnemigo").GetComponent<AudioSource>();//referencia a la música del juego
 
-        audio_hit_Own = GameObject.Find("hit_Own").GetComponent<AudioSource>();
-        audio_sink_Own = GameObject.Find("sink_Own").GetComponent<AudioSource>();
+        audio_hit_Own = GameObject.FindGameObjectsWithTag("hit_Own");
+        audio_sink_Own = GameObject.FindGameObjectsWithTag("sink_Own");
+        SonidoGameOver = GameObject.Find("SonidoGameOver").GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -67,52 +73,70 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
      /// <summary>Disparo contra los barcos y hago todo lo referenciado a disparar</summary>
     void Diparar()
     {
-        if(_GameHandlerRED.GetPuedoPresionarBoton())//si puedo presionar boton
-        {
-            // importante aca esta la lógica principal de disparar
-            if(_BarcoHandler.vidas > 1 && _GameHandlerRED.cantidadDeAciertosJugador < 21)//si vidas de barco es mayor a uno
-            {
-                sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
-                _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones 
-
-                StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
-            }
-           
+        //si puedo presionar boton
+        if(_GameHandlerRED.GetPuedoPresionarBoton())
+        {     
             bool haycolision = DeshabilitarFondo();//deshabilito el fondo que esta abajo de barco
-            print("hay colision" + haycolision);
-            instanciarFuego(this.transform.position);
-
-            //instanciar fuego en los barcos que estan en la pantalla de arriba tanto Yo como El otro jugador
-            _photonView.RPC("InstanciarFuegoEnMisBarcos", //Nombre de la función que es llamada localmente
+            // print("hay colision" + haycolision);
+            instanciarFuego(this.transform.position);//instancía el juego en la cuadricula
+            //Hace que sea visible la imagen en el enemigo que representa esta parte de barco
+            _photonView.RPC(nameof(DeshabilitarImagenQueRepresentaEstaCasillaEnEnemigoEnRed), //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
+            );
+            //instanciar fuego en los barcos que estan en la pantalla de arriba del enemigo 
+            _photonView.RPC(nameof(InstanciarFuegoEnBarcosEnemigos), //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered,//para obtener los parámetros o ejecutar en otros
                 this.transform.position//posicion de este gameobject para usar en la posición de mis barcos en la pantalla de arriba
             );
 
-             _BoxCollider.enabled = false;
-            _GameHandlerRED.cantidadDeAciertosJugador += 1;//para saber cuando gano
-            _BarcoHandler.vidas -= 1;//una vida menos
-
-            print("TENDRIA QUE INSTANCIAR EL FUEGO");
-        }
-
-        if(_BarcoHandler.vidas < 1 && _GameHandlerRED.cantidadDeAciertosJugador < 21)//si las vidas del barco es menor a uno
-        {
-            sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
-            _Animator.SetBool("barcoDestruido", true);
+            _GameHandlerRED.cantidadDeAciertosJugador += 1;//para saber cuando gano sumo un acierto
+            _BarcoHandler.vidas -= 1;//para saber las vidas del barco, descuento una en cada acierto
             _GameHandlerRED.SetPuedoPresionarBoton(false);//no puedo presionar los botones
-            StartCoroutine("jugarContraEnemigoDelayTargetDestroy");//delay antes de que el enemigo dispare           }  
+            _BoxCollider.enabled = false;//la colisión está deshabilitida
+
+            if(_GameHandlerRED.cantidadDeAciertosJugador <= 20)//si el juego continua
+            {
+                if(_BarcoHandler.vidas >= 1)//si el barco tiene vidas
+                {
+                    sound_hit[Random.Range(0,sound_hit.Length)].GetComponent<AudioSource>().Play();
+                    StartCoroutine(_GameHandlerRED.Mensaje_bardeadaJugadorAcertarDisparo());//bardeada acierta disparo
+                    //instanciar sonidos y onomatopella que estan en la pantalla de arriba del enemigo al golpear barco
+                    _photonView.RPC(nameof(EfectoEnEnemigoAlGolpearBarco), //Nombre de la función que es llamada localmente
+                        RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
+                    ); 
+                    StartCoroutine("jugarContraEnemigoDelay");//delay antes de que el enemigo dispare           }  
+                }
+                else// if(_BarcoHandler.vidas < 1)//sino el barco no tiene vidas
+                {
+                    //instanciar sonidos y onomatopella que estan en la pantalla de arriba del enemigo al destruirse
+                    _photonView.RPC(nameof(EfectoEnEnemigoAlDestruirBarco), //Nombre de la función que es llamada localmente
+                        RpcTarget.OthersBuffered//para obtener los parámetros o ejecutar en otros
+                    );
+
+                    _GameHandlerRED.cantidadDeBarcosEnemigo -=1;
+                    if(_GameHandlerRED.cantidadDeBarcosEnemigo != 2)//si cantidad de barcos es distinto de 2
+                    {
+                        StartCoroutine( _GameHandlerRED.Mensaje_bardeadaJugadorDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
+                    }
+                    else//si cantidad de barcos es igual a 2
+                    {
+                        StartCoroutine(_GameHandlerRED.Mensaje_EstamosGanando());//cartel enemigo destruyo barco, pide ayuda el jugador    
+                    }
+                    
+                    sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
+                    _Animator.SetBool("barcoDestruido", true);
+                    StartCoroutine("jugarContraEnemigoDelayTargetDestroy");//delay antes de que el enemigo dispare           }  
+                }
+            }
+            else// if(_GameHandlerRED.cantidadDeAciertosJugador == 21)//sino destrui todos los barcos y no continua el juego
+            {
+                //destruyo última pieza del barco
+                GameObject.Find("sink_Own_end").GetComponent<AudioSource>().Play();;//activo sonido barco destruido FINAL
+                _Animator.SetBool("barcoDestruido", true);
+                StartCoroutine("JugadorWinner");//hago las cosas de winner
+                StartCoroutine("EnemigoLosse");//hago las cosas del enemigo Losse
+            }
         }
-
-        if(_GameHandlerRED.cantidadDeAciertosJugador == 21)//si destrui todos los barcos
-        {
-            //destruyo última pieza del barco
-            sonidoBarcoEnemigoDestruido[Random.Range(0,sonidoBarcoEnemigoDestruido.Length)].GetComponent<AudioSource>().Play();//activo sonido barco destruido
-            _Animator.SetBool("barcoDestruido", true);
-
-            _GameHandlerRED.SetPuedoPresionarBoton(false);//ya no puedo presionar la grilla
-            StartCoroutine("JugadorWinner");//hago las cosas de winner
-        }
-
     }
 
 
@@ -130,7 +154,7 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
          _GameHandlerRED.IsTurnoEnemigo();
     }
 
-    /// <summary>hace que termine el juego</summary>
+    /// <summary>hace que termine el juego con winner para el jugador</summary>
     IEnumerator JugadorWinner()
     {  
         yield return new WaitForSeconds(2);
@@ -138,33 +162,96 @@ public class BarcoTriggerRed : MonoBehaviourPunCallbacks,IPunObservable
         sonidoWinner.Play();//sonido winner
         yield return new WaitForSeconds(2);//despues de 2 segundos 
         _GameHandlerRED.GameOverWinner();//cambio a nivel winner
+    }
+
+    /// <summary>Le avisa al enemigo que esta muerto. El enemigo se maneja con photon</summary>
+    IEnumerator EnemigoLosse()
+    {
+        yield return new WaitForSeconds(2);
+        _photonView.RPC(nameof(GameOverRival), //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered//ejecuto en los otros que no ganaron
+            );
+
+        yield return new WaitForSeconds(2);//despues de 2 segundos 
+        _photonView.RPC(nameof(GameOverPantalla), //Nombre de la función que es llamada localmente
+                RpcTarget.OthersBuffered//ejecuto en los otros que no ganaron
+            );
+    }
+
+    /// <summary>Hace que no se puedan presionar los botones, desactiva la música y activa sonido GameOver</summary>
+    [PunRPC]
+    void GameOverRival()
+    {
+        _GameHandlerRED.fondoTablero.SetActive(false);
+        _GameHandlerRED.animacionLuzDecoradoRoja.SetBool("isTurnEnemy",false);//luz que aparece con el tablero
+        _GameHandlerRED.SetPuedoPresionarBoton(false);
+        musicaJugandoContraEnemigo.Stop();
+        SonidoGameOver.Play();
+    }
+
+    /// <summary>le Avisa al rival que activa pantalla gameOver</summary>
+    [PunRPC]
+    void GameOverPantalla()
+    {
+        _GameHandlerRED.GameOverLose();
     }  
 
 
-
-    /// <summary>Para que dispare el fuego en mis barcos, osea la pantalla de arriba</summary>
+    /// <summary>Para que dispare el fuego en los barcos que estan en la pantalla de arriba, cuando el jugador acierta el disparo en el enemigo</summary>
     [PunRPC]
-    void InstanciarFuegoEnMisBarcos(Vector3 posicionInicialFuego)
+    void InstanciarFuegoEnBarcosEnemigos(Vector3 posicionInicialFuego)
     {
         Vector3 fuegoPosicionEnEnemigo = posicionInicialFuego;
         fuegoPosicionEnEnemigo.z += 250;
-        audio_hit_Own.Play();//activo sonido que dispara a mis barcos
         instanciarFuego(fuegoPosicionEnEnemigo);
+    }
+
+    [PunRPC]
+    void DeshabilitarImagenQueRepresentaEstaCasillaEnEnemigoEnRed()
+    {
+        this.gameObject.GetComponent<PiezasEstadoDestruidas>().DesHabilitarParteDestruida();
+    }
+
+    /// <summary>Sonido y onomatopeya al golpear enemigo pantalla superior</summary>
+    [PunRPC]
+    void EfectoEnEnemigoAlGolpearBarco()
+    {
+        StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoAcertarDisparo());
+        audio_hit_Own[Random.Range(0,audio_hit_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido que dispara a mis barcos
+    }
+
+    /// <summary>Sonido y onomatopeya al destruir barco enemigo pantalla superior</summary>
+    [PunRPC]
+    void EfectoEnEnemigoAlDestruirBarco()
+    {
+        StartCoroutine( DestruirBarcoEfecto());
+    }
+
+    /// <summary>Muestra cartel y sonido enemigo destruido con un delay</summary>
+    IEnumerator DestruirBarcoEfecto()
+    {
+        audio_sink_Own[Random.Range(0,audio_sink_Own.Length)].GetComponent<AudioSource>().Play();//activo sonido ayuda
+        yield return new WaitForSeconds(2.0f);
+        _GameHandlerRED.cantidadDeBarcosJugador -= 1;
+        if(_GameHandlerRED.cantidadDeBarcosJugador != 2)//si cantidad de barcos es distinto de 2
+        {
+            StartCoroutine( _GameHandlerRED.Mensaje_bardeadaEnemigoDestruyoBarco()); //mensaje bardeada destruyo barco enemigo
+        }
+        else//si cantidad de barcos es igual a 2
+        {
+            StartCoroutine(_GameHandlerRED.Mensaje_EstamosPerdiendo());//cartel enemigo destruyo barco, pide ayuda el jugador    
+        }
     }
 
     /// <summary>Para que dispare el fuego en los barcos del rival, osea la pantalla de abajo</summary>
     private void instanciarFuego(Vector3 posicionInicialFuego)
     {
         GameObject fuegoInstance = Instantiate(fuego);
-        //fuegoInstance.transform.SetParent(this.gameObject.transform);
         fuegoInstance.transform.position = posicionInicialFuego;
-        // _BoxCollider.enabled = false;
-        
     }
 
-
-
-     public bool DeshabilitarFondo()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
+    /// <summary>Deshabilita el fondo que esta debajo del barco al presionar está grilla</summary>
+    public bool DeshabilitarFondo()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
     {
         bool estaColisionando = false;
 

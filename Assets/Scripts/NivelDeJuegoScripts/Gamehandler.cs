@@ -11,6 +11,9 @@ public class Gamehandler : MonoBehaviour
     GameObject[] barcosGrilla;
 
     public int cantidadDeAciertosJugador = 0;
+    public int cantidadDeBarcosJugador = 5;
+    public int cantidadDeBarcosEnemigo = 5;
+
 
     EnemigoHandler _EnemigoHandler;
 
@@ -57,7 +60,36 @@ public class Gamehandler : MonoBehaviour
     public GameObject UI_GameOver;
     public GameObject UI_Winner;
 
-    //TEST PARA SUBIR A RAMA ARIEL
+    public GameObject UI_CambiarNivel;
+
+    //////////////////////////////////////////////////
+
+    private HandlerDificultadEntreNiveles _HandlerDificultadEntreNiveles;//para referencia a la dificultad entre niveles
+
+    public Scrollbar barraCargaCambiarNivel;
+
+    ////////////////////////////////////////////////
+    [SerializeField]
+    private List<GameObject> bardeadaJugadorAcertarDisparo;//cuando el jugador acierta disparo
+    [SerializeField]
+    private List<GameObject> bardeadaJugadorErrarDisparo;//cuando el jugador no acierta el disparo
+    [SerializeField]
+    private List<GameObject> bardeadaEnemigoAcertarDisparo;//cuando el enemigo acierta disparo en jugador
+    [SerializeField]
+    private List<GameObject> bardeadaEnemigoErrarDisparo;//cuando el enemigo no acierta el disparo
+
+    [SerializeField]
+    private GameObject bardeadaJugadorDestruyoBarco;
+    
+    [SerializeField]
+    private GameObject bardeadaEnemigoDestruyoBarco;
+
+    [SerializeField]
+    private GameObject bardeadaEstamosPerdiendo;
+
+    [SerializeField]
+    private GameObject bardeadaEstamosGanando;
+
 
 //////////////////////////////////////////////////////    
 
@@ -67,6 +99,7 @@ public class Gamehandler : MonoBehaviour
         _EnemigoHandler = FindObjectOfType<EnemigoHandler>();
         barcos = GameObject.FindGameObjectsWithTag("boat");
         barcosGrilla = GameObject.FindGameObjectsWithTag("barcosGrilla");
+        _HandlerDificultadEntreNiveles = GameObject.FindObjectOfType<HandlerDificultadEntreNiveles>();
         buscarBarcos();
     }
 
@@ -216,5 +249,85 @@ public class Gamehandler : MonoBehaviour
         SetPuedoPresionarBoton(false);//no puedo presionar botones
         UI_GameOver.SetActive(true);
     }
+
+    /// <summary>Cambia al Proximo nivel</summary>
+    public void CambiarAlProximoNivel()
+    {
+        SetPuedoPresionarBoton(false);//no puedo presionar boton
+        _HandlerDificultadEntreNiveles.dificultadPosibilidadDeAcierto -= 1;//aumento dificultad. la dificultad aumenta cuando baja la probabilidad de no acertar
+        _HandlerDificultadEntreNiveles.nivelActual += 1;//aumento el nivel
+        GameObject datosGlobalesActuales =  GameObject.Find("DatosGlobales");// busco los datos globales
+        Destroy(datosGlobalesActuales);// destruyo los datos globales, es un game object que no se autodestruye
+        SceneManager.LoadScene("AcomodarPiezas");//vuelvo a cambiar a la escena acomodar piezas
+    }
+
+    /// <summary>activa y desactiva mensajes cuando el jugador SI acierta disparo</summary>
+    public IEnumerator Mensaje_bardeadaJugadorAcertarDisparo()
+    {
+        int fraseAleatoria = Random.Range(0,bardeadaJugadorAcertarDisparo.Count - 1);
+        bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaJugadorAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
+    }
+
+    /// <summary>activa y desactiva mensajes cuando el jugador NO acierta disparo</summary>
+    public IEnumerator Mensaje_bardeadaJugadorErrarDisparo()
+    {
+        int fraseAleatoria = Random.Range(0,bardeadaJugadorErrarDisparo.Count - 1);
+        bardeadaJugadorErrarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(1);
+        bardeadaJugadorErrarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
+    }
+    /// <summary>activa y desactiva mensajes cuando el jugador Destruyo el barco completamente</summary>
+    public IEnumerator Mensaje_bardeadaJugadorDestruyoBarco()
+    {
+        bardeadaJugadorDestruyoBarco.gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaJugadorDestruyoBarco.gameObject.SetActive(false);//activo game object
+    }
+    /// <summary>activa y desactiva mensajes cuando el enemigo SI acierta disparo</summary>
+    public IEnumerator Mensaje_bardeadaEnemigoAcertarDisparo()
+    {
+        int fraseAleatoria = Random.Range(0,bardeadaEnemigoAcertarDisparo.Count - 1);
+        bardeadaEnemigoAcertarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaEnemigoAcertarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
+
+    }
+
+     /// <summary>activa y desactiva mensajes cuando el enemigo NO acierta disparo</summary>
+    public IEnumerator Mensaje_bardeadaEnemigoErrarDisparo()
+    {
+        int fraseAleatoria = Random.Range(0,bardeadaEnemigoErrarDisparo.Count - 1);
+        bardeadaEnemigoErrarDisparo[fraseAleatoria].gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(1);
+        bardeadaEnemigoErrarDisparo[fraseAleatoria].gameObject.SetActive(false);//activo game object
+    }
+    
+    /// <summary>activa y desactiva mensajes cuando el enemigo Destruyo el barco completamente</summary>
+    public IEnumerator Mensaje_bardeadaEnemigoDestruyoBarco()
+    {
+        bardeadaEnemigoDestruyoBarco.gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaEnemigoDestruyoBarco.gameObject.SetActive(false);//activo game object
+    }
+
+    /// <summary>activa y desactiva mensajes cuando el jugador esta perdiendo</summary>
+    public IEnumerator Mensaje_EstamosPerdiendo()
+    {
+        bardeadaEstamosPerdiendo.gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(2);
+        bardeadaEstamosPerdiendo.gameObject.SetActive(false);//activo game object
+    }
+
+    /// <summary>activa y desactiva mensajes cuando el jugador esta perdiendo</summary>
+    public IEnumerator Mensaje_EstamosGanando()
+    {
+        bardeadaEstamosGanando.gameObject.SetActive(true);//activo game object
+        yield return new WaitForSeconds(3);
+        bardeadaEstamosGanando.gameObject.SetActive(false);//activo game object
+    }
+
+    
 
 }

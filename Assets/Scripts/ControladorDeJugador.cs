@@ -2,8 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using UnityEngine.UI;
 
 public class ControladorDeJugador : MonoBehaviour
 {
@@ -18,6 +17,8 @@ public class ControladorDeJugador : MonoBehaviour
     AudioSource efectoBoton_2;
     AudioSource PuertaSonido;
 
+    public Button botonAuto;//referencia al boton
+    public Button BotonPlay;//referencia al boton
 	// private void OnEnable()
 	// {
     //     GestorDeRed.OnPlayersConnected += EnableMovement;
@@ -52,21 +53,20 @@ public class ControladorDeJugador : MonoBehaviour
             //hay un pequeño bug con el movimiento
             StartCoroutine(MoverSoloUnaVes());
 
-            if(Input.GetMouseButtonDown(1))
+            if(Input.GetMouseButtonDown(1))//si presiono click derecho
             {
                 //si esta en la grilla
                 if(_GameHandlerAcomodarPIezas.inGrid(_MoveAndRotateBoat.lengthBarco,_MoveAndRotateBoat.lenghtBarcoDerecha,_MoveAndRotateBoat.lenghtBarcoIzquierda, (_MoveAndRotateBoat.direccion + 1) % 4,_MoveAndRotateBoat.X_posicion_imaginaria,_MoveAndRotateBoat.Y_posicion_imaginaria))
                 {
                     //puedo rotar
-                    _MoveAndRotateBoat.RotarBarco();
-                    efectoBoton_2.Play();
+                    _MoveAndRotateBoat.RotarBarco();//rotar barco
+                    efectoBoton_2.Play();//efecto sonido rotar barco
                 }
             }
 
-            if(Input.GetMouseButtonUp(0))
+            if(Input.GetMouseButtonUp(0))// si suelto el click izquierdo
             {
-                DejarDeMover();
-                PuertaSonido.Play();
+                StartCoroutine( DejarDeMover() );//verifico que no esten los barcos colisionando
             }
         }
 
@@ -82,30 +82,56 @@ public class ControladorDeJugador : MonoBehaviour
 
     private void OnMouseOver()//si el mouse esta arriba de la colision
     {
-        // if (!waitingForOtherPlayer)
-        // {
-            //hay un pequeño bug con el movimiento
-            if (Input.GetMouseButtonDown(0))
-            {
-                _MoveAndRotateBoat.startPos = transform.localPosition;
-                puedoMover = true;//puedo mover
-                efectoBoton_2.Play();//activo sonido agarre
-            }
-        // }
+        Rotar_o_Mover();//puedo rotar o mover el barco al presionar click
     }
 
 
-    void DejarDeMover()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
+    /// <summary>Dependiendo el estado del boton que esta en la interface rota o mueve el barco al presionar click izquierdo</summary>
+    private void Rotar_o_Mover()
+    {
+        //hay un pequeño bug con el movimiento
+        if (Input.GetMouseButtonDown(0))//si presiono cEro
+        {
+            if (UIMovRotBtn.instance.MoveMode)//Su es verdadero el tipo de movimiento puedo mover
+            {
+                _MoveAndRotateBoat.startPos = transform.localPosition;
+                puedoMover = true;//puedo mover
+            }
+            else //Sino solo puedo Rotar
+            {
+                if (_GameHandlerAcomodarPIezas.inGrid(_MoveAndRotateBoat.lengthBarco, _MoveAndRotateBoat.lenghtBarcoDerecha, _MoveAndRotateBoat.lenghtBarcoIzquierda, (_MoveAndRotateBoat.direccion + 1) % 4, _MoveAndRotateBoat.X_posicion_imaginaria, _MoveAndRotateBoat.Y_posicion_imaginaria))
+                {
+                    _MoveAndRotateBoat.RotarBarco();
+                    StartCoroutine( DejarDeMover() );//si se superpone la rotación se acomoda en cualquier lugar activa sonido barco acomodado
+                }
+                    
+            }
+            efectoBoton_2.Play();//activo sonido agarre
+        }
+    }
+
+
+    /// <summary>Verifica que no existan dos barcos colisionandose, si se colisionan se reacomodan en un lugar aleatorio</summary>
+    IEnumerator DejarDeMover()//tengo que usar una corrutina para esperar un segundo sino se presiona el boton inmediatamente y hay un error de sincronización de botones
     {
         if(_MoveAndRotateBoat.EstaChocandoContraOtroBarco())
         {
             puedoMover = false;
-            StartCoroutine(_MoveAndRotateBoat.PosicionarBarcoAleatoriamenteSinColisionarConOtros());
+            Coroutine tiempoEspera = StartCoroutine(_MoveAndRotateBoat.PosicionarBarcoAleatoriamenteSinColisionarConOtros());
+            botonAuto.interactable = false;//no puedo tocar el boton
+            BotonPlay.interactable = false;//no puedo tocar el boton
+            yield return tiempoEspera;
+
+            botonAuto.interactable = true;//no puedo tocar el boton
+            BotonPlay.interactable = true;//no puedo tocar el boton
+            PuertaSonido.Play();//activo sonido
             // _MoverYrotar.PosicionarBarcoAleatoriamenteSinColisionarConOtros();
         }
-        puedoMover = false;
-        
-        // print("Ahora tendria que dejar de moverse")
+        else
+        {
+            puedoMover = false;
+            PuertaSonido.Play();
+        }
     }
 
 

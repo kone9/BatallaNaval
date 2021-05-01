@@ -9,7 +9,8 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Phot
     GameHandlerRED _GamehandlerRED;
 
      //AUDIO globales
-    public GameObject[] audio_miss;//sonido errar disparo
+    public GameObject[] miss_audio_jugador;//sonido errar disparo jugador
+    public GameObject[] miss_1_enemy;//sonido errar disparo enemigo 
 
     private MeshRenderer mymesh;
     private BoxCollider miCollyder;
@@ -20,7 +21,8 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Phot
     private void Awake()
     {
         _GamehandlerRED = FindObjectOfType<GameHandlerRED>();
-        audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");//sonido errar disparo
+        miss_audio_jugador = GameObject.FindGameObjectsWithTag("miss_audio_jugador");//sonido errar disparo jugador
+        miss_1_enemy = GameObject.FindGameObjectsWithTag("miss_1_enemy");//sonido errar disparo enemigo
         mymesh = GetComponent<MeshRenderer>();
         miCollyder = GetComponent<BoxCollider>();
         CuadriculaEnemigoSuperior = GameObject.Find("A" + this.gameObject.name).GetComponent<MeshRenderer>();
@@ -37,11 +39,13 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Phot
     /// <summary>Desactivo todo lo relacionado a la cuadricula y activa turno enemigo</summary>
     IEnumerator PresioneGrilla()
     {
+        StartCoroutine(_GamehandlerRED.Mensaje_bardeadaJugadorErrarDisparo());//bardeo erro disparo
+        miss_audio_jugador[Random.Range(0,miss_audio_jugador.Length)].GetComponent<AudioSource>().Play();//activo sonido errar disparo
+        
         mymesh.enabled = false;//desactivo esta cuadricula
         miCollyder.enabled = false;//desactivo la colision de esta cuadricula
         DeshabilitarCuadriculaPhoton();//desactivar cuadricula enemigo parte superior
 
-        audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
         _GamehandlerRED.SetPuedoPresionarBoton(false);//no puedo volver a presionar los botones
         yield return new WaitForSeconds(0.4f);
         _GamehandlerRED.IsTurnoEnemigo();//es turno de enemigo
@@ -52,7 +56,7 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Phot
     {
         photonView.RPC("DeshabilitarCuadriculaEnemigoSuperior", //Nombre de la función que es llamada localmente
                 RpcTarget.OthersBuffered,//para llamar a la función en Otros
-                false//saca el tablero de color rojo del fondo
+                false//saca la parte del tablero que corresponde a esta cuadricula
             ); 
     }
 
@@ -60,9 +64,11 @@ public class CuadriculaDeColisionesJugandoNivel : MonoBehaviourPunCallbacks,Phot
     [PunRPC]
     public void DeshabilitarCuadriculaEnemigoSuperior(bool deshabilitarCuadricula)
     {
+        StartCoroutine(_GamehandlerRED.Mensaje_bardeadaEnemigoErrarDisparo());//bardeada enemigo erro disparo
+        miss_1_enemy[Random.Range(0,miss_1_enemy.Length)].GetComponent<AudioSource>().Play();//activo sonido errar disparo pero solo lo escucha el enemigo
         CuadriculaEnemigoSuperior.enabled = deshabilitarCuadricula;//deshabilito cuadricula pero solo lo hace el enemigo
-        audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo pero solo lo escucha el enemigo
     }
+    
 
     //estoy usando la interface por eso llamo a esto obligatoriamente
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)

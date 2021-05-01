@@ -8,7 +8,7 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
     Gamehandler _Gamehandler;
     
     //AUDIO globales
-    public GameObject[] audio_miss;//sonido errar disparo
+    public GameObject[] miss_audio_jugador;//sonido errar disparo enemigo en singleplayer
 
     private MeshRenderer mymesh;
     private BoxCollider miCollyder;
@@ -16,7 +16,7 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
     private void Awake()
     {
         _Gamehandler = FindObjectOfType<Gamehandler>();
-        audio_miss = GameObject.FindGameObjectsWithTag("miss_audio");//sonido errar disparo
+        miss_audio_jugador = GameObject.FindGameObjectsWithTag("miss_audio_jugador");//sonido errar disparo
         mymesh = GetComponent<MeshRenderer>();
         miCollyder = GetComponent<BoxCollider>();
        
@@ -44,10 +44,11 @@ public class CuadriculaDeColisionJugandoNivelSinglePlayer : MonoBehaviour
     IEnumerator PresioneGrilla()
     {
         if(_Gamehandler.GetPuedoPresionarBoton() == true)
-        {            // print("presione en el cubo");
+        {           
             mymesh.enabled = false;
             miCollyder.enabled = false;
-            audio_miss[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
+            StartCoroutine(_Gamehandler.Mensaje_bardeadaJugadorErrarDisparo());
+            miss_audio_jugador[1].GetComponent<AudioSource>().Play();//activo sonido errar disparo
             _Gamehandler.SetPuedoPresionarBoton(false);
             yield return new WaitForSeconds(0.4f);
             _Gamehandler.IsTurnoEnemigo();

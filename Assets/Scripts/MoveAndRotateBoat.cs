@@ -45,6 +45,7 @@ public class MoveAndRotateBoat : MonoBehaviourPun
     /// <summary>Rota 90 grados el barco</summary>
     public void RotarBarco()
     {
+        
         transform.Rotate(new Vector3(0,0,90),Space.Self);
         direccion += 1;//relacionado a los movimientos imaginorios para rotar el barco
         if(direccion > 3)//relacionado a los movimientos imaginorios para rotar el barco
@@ -169,7 +170,9 @@ public class MoveAndRotateBoat : MonoBehaviourPun
             Mover_Y_Rotar_Barcos_AutomaticamentePorCuadricula(cuadriculas[Random.Range(0,cuadriculas.Length)]);
             yield return new WaitForSeconds(0.1f);//prueba luego borrar
             // yield return null;
-        }      
+        }
+        // yield return new WaitForSeconds(0.1f);//prueba luego borrar
+      
     }
 
 
